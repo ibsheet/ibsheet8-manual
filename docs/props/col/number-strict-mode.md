@@ -1,0 +1,43 @@
+# NumberStrictMode ***(col)***
+
+> 0(false)으로 설정 시 조회 시 숫자 타입(Int, Float)에 빈 값이나 숫자 형태가 아닌 경우 0으로 처리합니다.
+>
+> 천단위 구분자 ","가 포함된 문자열 형태의 숫자를 입력하는 경우 숫자로 표시됩니다.
+
+
+### Type
+`boolean`
+
+### Options
+|Value|Description|
+|-----|-----|
+|`0(false)`|숫자가 아닌 데이터에 대해 엄격하게 검사하지 않음. 숫자가 아닌 경우 NaN 대신 0으로 표시|
+|`1(true)`|숫자 타입 열에서 데이터의 타입에 대해 엄격하게 검사. 숫자형태가 아닌 경우 NaN으로 표시 (`default`)|
+
+
+### Example
+```javascript
+options.Cols = [
+    ...
+    {
+        Header: '정수(Int)',
+        Type: 'Int',
+        Name: 'IntData',
+        Width: 80,
+        Align: 'Right',
+        NumberStrictMode: 0   // 숫자가 아닌 데이터에 대해 엄격하게 검사하지 않음.
+    },
+    ...
+];
+```
+
+### Read More
+- [Type appendix](/docs/appx/type)
+<!--!
+- `[비공개]` [NumberStrictMode cell](/docs/props/cell/number-strict-mode)
+!-->
+
+### Since
+|product|version|desc|
+|---|---|---|
+|core|8.0.0.17|기능 추가|
