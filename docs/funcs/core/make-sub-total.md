@@ -244,6 +244,20 @@ sheet.makeSubTotal([
 ], 1);
 ```
 
+### 소계행 식별 / 제외
+
+`makeSubTotal`로 생성된 소계행은 `Name` 속성이 `"SubSum"`으로 설정됩니다. 일반 데이터 행은 `Name`이 `undefined`이므로, 특정 행이 소계행인지 이 값으로 판별할 수 있습니다. 소계행도 `Kind`는 `"Data"`이므로 `Kind`로는 구분되지 않습니다.
+
+```javascript
+// 특정 행이 소계행인지 확인
+if (row.Name === "SubSum") { /* 소계행 */ }
+
+// 소계/누계 행을 제외한 데이터 행만 가져오기
+var dataRows = sheet.getDataRows(1);
+```
+
+`getPrevRow` / `getNextRow` 등 행 탐색 함수는 소계행도 포함해 반환하므로, 소계를 건너뛰려면 위 방법으로 판별하거나 `getDataRows(1)` 배열을 사용하세요. 소계행 전체 목록이 필요하면 [getSubTotalRows](./get-sub-total-rows)를 사용합니다.
+
 ### Read More
 - [SearchMode cfg](/docs/props/cfg/search-mode)
 - [CalcMergeMode cfg](/docs/props/cfg/calc-merge-mode)

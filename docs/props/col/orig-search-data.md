@@ -44,7 +44,7 @@ Cols: [
 ### Read More
 - [OrigSearchData cfg](/docs/props/cfg/orig-search-data)
 - [행 객체](/docs/appx/row-object)
-- [시트 객체 구조](/docs/appx/init-structure)
+- [시트 객체 구조](/docs/start/basic-structure)
 - [loadSearchData method](/docs/funcs/core/load-search-data)
 - [doSearch method](/docs/funcs/core/do-search)
 - [getValue method](/docs/funcs/core/get-value)

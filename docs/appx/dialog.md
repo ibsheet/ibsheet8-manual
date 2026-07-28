@@ -144,7 +144,7 @@ function calc() {
 - [showEditDialog method](/docs/funcs/dialog/show-edit-dialog)
 - [showFindDialog method](/docs/funcs/dialog/show-find-dialog)
 - [showPivotDialog method](/docs/funcs/dialog/show-pivot-dialog)
-- [showUploadDialog method](/docs/funcs/dialog/show-upload-dialoㅡg)
+- [showUploadDialog method](/docs/funcs/dialog/show-upload-dialog)
 - [showDialog static](/docs/static/show-dialog)
 
 ### Since

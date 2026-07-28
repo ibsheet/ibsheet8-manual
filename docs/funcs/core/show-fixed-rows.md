@@ -1,10 +1,8 @@
 # showFixedRows ***(method)***
 
-> `Head` 행, `Foot` 행을 생성합니다. 
->
-> 인자로 전달하는 `Head,Foot` object 객체의 구조는 [시트 객체구조](/docs/appx/init-structure) 를 참고해주세요. 
->
-> `object` 의 인자 중 `Kind` 를 통해 `Head` 혹은 `Foot` 을 생성할 수 있습니다.
+> `Head` 행, `Foot` 행을 생성합니다.  
+> 인자로 전달하는 `Head`/`Foot` 행 객체의 구조는 [Head / Foot appendix](/docs/appx/head-foot) 를 참고해주세요.  
+> 각 행 객체의 `Kind`(행의 **종류**)에 `"Head"` 또는 `"Foot"`을 지정해 어떤 고정행을 만들지 정합니다. → [Kind appendix](/docs/appx/kind)
 
 
 ### Syntax
@@ -15,7 +13,7 @@ boolean showFixedRows( fixedobject );
 ### Parameters
 |Name|Type|Required| Description |
 |----------|-----|---|----|
-|fixedobject |`array[object]`|<span class='required'>필수</span>|객체를 배열로 감싸서 전달. 각 객체에 `Kind` 필수 (`Foot` or `Head`)|
+|fixedobject |`array[object]`|<span class='required'>필수</span>|객체를 배열로 감싸서 전달.<br/> 각 객체에 `Kind`(행 종류) 필수 — `"Head"` 또는 `"Foot"`|
 
 
 ### Return Value
@@ -57,7 +55,7 @@ var OPTS = {
 };
 
 // 2-2. 컬럼이 많은 경우 Cols를 순회하여 자동 생성
-var OPTS = {
+var options = {
     Events: {
         onRenderFirstFinish: function(evtParam) {
             var footRow = { Kind: "Foot", id: "myFootRow" };
@@ -108,6 +106,7 @@ IBSheet.onBeforeCreate = function(obj) {
 ```
 
 ### Read More
+- [Head / Foot appendix](/docs/appx/head-foot)
 - [SearchMode cfg](/docs/props/cfg/search-mode)
 - [행(Row) 구조](/docs/start/row)
 - [setValue method](/docs/funcs/core/set-value)

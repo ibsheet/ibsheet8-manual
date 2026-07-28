@@ -1,6 +1,6 @@
 # importData ***(method)***
 
-<!-- synonyms: 엑셀 업로드, 엑셀 가져오기, 클라이언트 엑셀 업로드, jszip 엑셀, xlsx 업로드, txt csv 업로드, import data -->
+<!-- synonyms: 엑셀 업로드, 엑셀 가져오기, 클라이언트 엑셀 업로드, jszip 엑셀, xlsx 업로드, txt csv 업로드, import data, DRM, 문서보안, DRM 해제 -->
 
 > 엑셀 파일의 내용을 시트로 불러옵니다. (브라우저에서 처리되는 클라이언트 기능)  
 > 사용 전 `/plugins/jszip.min.js` 파일이 반드시 로드되어 있어야 합니다.  

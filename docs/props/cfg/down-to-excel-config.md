@@ -29,6 +29,7 @@ options.Cfg = {
 - [down2Excel method](/docs/funcs/excel/down-to-excel)
 - [LoadExcelConfig cfg](./load-excel-config)
 - [AutoExcelMode cfg](./auto-excel-mode)
+- [SuppressExportMessage cfg](./suppress-export-message)
 - [IBSheet.CommonOptions static](/docs/static/common-options)
 
 ### Since

@@ -2,7 +2,7 @@
 
 <!-- synonyms: 전체 체크 대상, 보이는 행만 체크, 필터링 체크, 숨김 행 제외 체크 -->
 
-> 헤더의 전체 체크 박스([HeaderCheck](/docs/props/col/header-check))가 활성화된 시트에서 헤더의 전체 체크 박스를 클릭 시 체크 대상이 되는 행을 설정합니다.
+> 헤더의 전체 체크 박스([HeaderCheck](/docs/props/col/header-check))가 활성화된 시트에서 헤더 전체 체크박스 클릭이나 [setAllCheck](/docs/funcs/core/set-all-check) 호출 시 체크 대상이 되는 행을 설정합니다.
 
 ### Type
 `number`

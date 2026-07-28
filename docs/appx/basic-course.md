@@ -233,7 +233,7 @@ var OPT = {
 ```
 
 ## 5. 공통 기능 정의 (Def 와 ibsheet-common.js)
-#### 1) <a href="../../#docs/appx/init-structure" target="_blank">Def</a> 의 역할
+#### 1) <a href="../../#docs/start/basic-structure" target="_blank">Def</a> 의 역할
 시트 내에 모든 행이나 열에 공통 기능을 설정 할 수 있습니다.<br/>
 options.Def.Col을 통해 특정 속성을 모든 열에 설정해도, options.Cols를 통해 개별 열에 동일한 속성이 설정된 경우 개별 열에 설정된 값이 우선됩니다.
 
@@ -470,7 +470,7 @@ Formula만 사용할때 계산 순서를 결정하는  [CalcOrder](/docs/props/r
 - [파일 구성 introduction](/docs/intro/files)
 - [Quick Start getting started](/docs/start/quick-start)
 - [시트 객체 기본 구조 getting stated](/docs/start/basic-structure)
-- [시트 객체 구조 getting stated](/docs/appx/init-structure)
+- [시트 객체 구조 getting stated](/docs/start/basic-structure)
 - [SearchMode cfg](/docs/props/cfg/search-mode)
 - [Extend col](/docs/props/col/extend)
 - [method 사용법 기초 method](/docs/funcs/method)

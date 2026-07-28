@@ -19,6 +19,10 @@ options.Cfg = {
 ```
 
 ### Read More
+- [SuppressMessage cfg](./suppress-message)
+- [AutoExcelMode cfg](./auto-excel-mode)
+- [down2Excel method](/docs/funcs/excel/down-to-excel)
+- [loadExcel method](/docs/funcs/excel/load-excel)
 
 ### Since
 

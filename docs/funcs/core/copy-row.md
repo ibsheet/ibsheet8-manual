@@ -3,6 +3,7 @@
 <!-- synonyms: 행 복사, 로우 복사, 단일 행 복사, copy row, 행 복제 -->
 
 > 지정한 행을 특정 위치로 복사합니다.  
+> 값뿐 아니라 셀 속성(색상, 글자색 등)도 함께 복사됩니다. (`empty: true`로 호출하면 데이터를 복사하지 않고 행만 추가됩니다.)  
 > 행이 추가되므로 [onRowAdd](/docs/events/on-row-add) 이벤트가, 복사 동작이므로 [onAfterRowCopy](/docs/events/on-after-row-copy) 이벤트가 발생합니다.
 
 ### Syntax

@@ -1,6 +1,6 @@
 # NoDataMiddle ***(cfg)***
 
-> 조회 된 데이터가 없는 경우 표시되는 NoData행을 화면 가운데에 표시합니다.
+> 조회된 데이터가 없는 경우 표시되는 NoData행을 화면 가운데에 표시합니다.
 
 ### Type
 `boolean`
@@ -11,11 +11,11 @@
 |`0(false)`|NoData행을 상단에 표시 (`default`)|
 |`1(true)`|NoData행을 화면 가운데에 표시|
 
-NoDataMiddle : 0 (`default`)<br>
-![NoDataMiddle:0](/assets/imgs/NoDataMiddle0.png "NoDataMiddle:0")<br/>
-<br>
-NoDataMiddle : 1 <br>
-![NoDataMiddle:1](/assets/imgs/NoDataMiddle.png "NoDataMiddle:1")<br/>
+NoDataMiddle : 0 (`default`)  
+![NoDataMiddle:0](/assets/imgs/NoDataMiddle0.png "NoDataMiddle:0")
+
+NoDataMiddle : 1  
+![NoDataMiddle:1](/assets/imgs/NoDataMiddle.png "NoDataMiddle:1")
 
 
 ### Example
@@ -26,10 +26,8 @@ options.Cfg = {
 };
 ```
 
-### Try it
-- [True](https://jsfiddle.net/gh/get/library/pure/ibsheet/ibsheet8-manual-sample/tree/master/samples/properties/Cfg/NoDataMessage/)
-
 ### Read More
+- [NoDataMessage cfg](/docs/props/cfg/no-data-message)
 
 ### Since
 

@@ -1,5 +1,7 @@
 # Solid ***(appendix)***
-> 시트 내에 헤더 주변이나 푸터 주변에 고정된 행을 생성하여 사용하 실 수 있습니다.<br/>솔리드로 만들어진 행은 시트의 열의 개수나 너비에 영향을 받지 않고 독립적으로 구성됩니다.
+> 시트 내에 헤더 주변이나 푸터 주변에 고정된 행을 생성하여 사용하실 수 있습니다.  
+> 솔리드로 만들어진 행은 시트의 열의 개수나 너비에 영향을 받지 않고 독립적으로 구성됩니다.  
+> 따라서 시트에 **가로 스크롤**이 있어도 솔리드 행은 **좌우로 밀리지 않고 고정**됩니다. (열에 맞춰 셀이 배치되는 [Head / Foot](/docs/appx/head-foot)은 가로 스크롤 시 열과 함께 좌우로 움직입니다.)
 
 ![솔리드 행](/assets/imgs/solid1.gif "솔리드 사용 예")<br/>
 [솔리드로 생성된 행 예]
@@ -14,7 +16,7 @@ options.Solid = [
         "Height": 40, //솔리드 행의 높이 설정
         "Cells": "Today,Spacer1,DESC,BtnRed,Spacer1,BtnYellow,Spacer2,DESC2,DESC3", //커스텀 셀의 순서
         "CanFormula": 1,
-        "CalcuOrder": "DESC3",
+        "CalcOrder": "DESC3",
 
         //각 셀의 기능 정의
         "Spacer1": { // 중간 공백 셀
@@ -185,7 +187,8 @@ options.Solid = [
 
 
 ### Read More
-[Kind appendix](./kind)
+- [Head / Foot appendix](/docs/appx/head-foot)
+- [Kind appendix](./kind)
 
 ### Since
 

@@ -26,10 +26,14 @@ var dlg = {
   "CloseClick": 1,
   "MinHeight": 50
 };
-IBSheet.showDialog(
+//반환된 다이얼로그 객체를 변수에 보관
+var dialogObj = IBSheet.showDialog(
   dlg ,
   {"Align":"center, middle", "Width":document.body.clientWidth, "Height":document.body.clientHeight}
 );
+
+//다이얼로그 닫기
+dialogObj.Close();
 ```
 ### Read More
 

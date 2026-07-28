@@ -1,4 +1,7 @@
 # getSavedCurrentInfo ***(method)***
+
+<!-- synonyms: 저장된 컬럼 정보 조회, 스토리지 컬럼 정보 조회, 로컬 스토리지 조회, 세션 스토리지 조회, 저장 레이아웃 조회, get saved current info, read saved column layout -->
+
 > [saveCurrentInfo](./save-current-info)로 로컬 스토리지 혹은 세션 스토리지에 저장된 시트의 컬럼 정보를 문자열로 가져옵니다.
 
 ### Syntax

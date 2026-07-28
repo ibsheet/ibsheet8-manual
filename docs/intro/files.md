@@ -8,16 +8,23 @@ ibsheet 최상위 폴더
 ├─ ibsheet.js      // ibsheet 코어파일 (기본)
 ├─ ibleaders.js    // 라이선스 파일    (기본)
 │
-├─ css             // CSS 폴더
-│   ├─ default/main.css    // 기본 테마 css 파일   (기본)
-│   ├─ meterial/main.css   // meterial 테마 css 파일
-│   ├─ simple/main.css     // simple 테마 css 파일
-│   ├─ mint/main.css       // mint 테마 css 파일
-│   └─ grace/main.css      // grace 테마 css 파일
+├─ css             // 테마(css) 폴더
+│   ├─ default/main.css      // 기본 테마 (svg 아이콘)     (기본)
+│   ├─ default_img/main.css  // 기본 테마 (png/gif 아이콘)
+│   ├─ grace/main.css        // grace 테마 (svg 아이콘)
+│   ├─ gray/main.css         // gray 테마 (svg 아이콘)
+│   ├─ krds/main.css         // krds 테마 (svg 아이콘)
+│   ├─ material/main.css     // material 테마 (svg 아이콘)
+│   ├─ mint/main.css         // mint 테마 (svg 아이콘)
+│   └─ simple/main.css       // simple 테마 (svg 아이콘)
 │
-├─ loacle             // 다국어 메세지 폴더
-│   ├─ ko.js    // 한국어 메세지 파일  (기본)
-│   └─ en.js    // 영어 메세지 파일
+├─ locale             // 다국어 메세지 폴더 (브라우저 로케일 값에 맞춰 로드)
+│   ├─ ko.js    // 한국어  (기본)
+│   ├─ en.js    // 영어
+│   ├─ ja.js    // 일본어
+│   ├─ jp.js    // 일본어 (ja와 내용 동일, 로케일 코드 대응용)
+│   ├─ cn.js    // 중국어
+│   └─ zh.js    // 중국어 (cn과 내용 동일, 로케일 코드 대응용)
 │
 ├─ fonts         // ibsheet가 사용하는 폰트(.ttf, .otf)를 담고 있는 폴더
 │
@@ -37,13 +44,13 @@ ibleaders.license = "W2FtSztPKCBzbD8emM5ZzV7fAQnTXcJYS4gLHA0bXp0PTx1EGsBbEA6Nicl
 ```
 
 ### *ibsheet.js*
-제품의 코어 파일로 안의 내용은 **`절대 수정하시면 안됩니다`.**<br/>
+제품의 코어 파일로 안의 내용은 **절대 수정하시면 안 됩니다.**  
 파일 상단에 제품에 대한 버전 정보가 있습니다.
 
 ### *css(folder)*
-시트에서 사용하는 css파일(`/css/default/main.css`)이 해당 폴더에 들어있습니다.<br/>
-**`css 폴더 구조 변경 안됩니다`.**<br/>
- ibsheet.js 와 같은 경로에 css 폴더가 존재 해야 합니다.<br/>
+시트에서 사용하는 css파일(`/css/default/main.css`)이 해당 폴더에 들어있습니다.  
+**css 폴더 구조를 변경하면 안 됩니다.**  
+ibsheet.js 와 같은 경로에 css 폴더가 존재 해야 합니다. 경로가 다르면 화면 표시는 정상이지만 **엑셀/PDF 다운로드 결과물에 디자인(스타일)이 적용되지 않습니다.**
 
 <!--
 ### *css/compatible(folder)* - IE9 이하 브라우저 전용 css
@@ -53,6 +60,8 @@ ibleaders.license = "W2FtSztPKCBzbD8emM5ZzV7fAQnTXcJYS4gLHA0bXp0PTx1EGsBbEA6Nicl
 시트 내부에서 사용하는 여러가지 상수와 사용자가 보게 되는 메세지가 정의 되어 있습니다.
 * 한글: `/locale/ko.js`
 * 영문: `/locale/en.js`
+* 일본어: `/locale/ja.js` (또는 `/locale/jp.js` — 내용 동일)
+* 중국어: `/locale/cn.js` (또는 `/locale/zh.js` — 내용 동일)
 
 ### *fonts(folder)*
 시트에서 사용하는 폰트파일(`.ttf, .otf`)이 들어있습니다.

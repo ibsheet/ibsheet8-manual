@@ -1,9 +1,7 @@
 # RecordHColTitle ***(col)***
-> 멀티레코드([MultiRecord](/docs/props/cfg/multi-record)) 기능을 사용하는 시트에서 [RecordHColSpan](/docs/props/col/record-h-col-span)이 설정 되어 있는 헤더의 열의 제목을 설정합니다.
->
+> 멀티레코드([MultiRecord](/docs/props/cfg/multi-record)) 기능을 사용하는 시트에서 [RecordHColSpan](/docs/props/col/record-h-col-span)이 설정 되어 있는 헤더의 열의 제목을 설정합니다.  
 > **데이터와 상관없이 동작하며 서버로 전송되지 않습니다.**
->
-> **<mark>주의</mark> : [MultiRecord](/docs/props/cfg/multi-record)를 `2`로 설정하였을 때, 해당 속성은 사용할 수 없습니다.**
+<!--! > **<mark>주의</mark> : [MultiRecord](/docs/props/cfg/multi-record)를 `2`로 설정하였을 때, 해당 속성은 사용할 수 없습니다.** !-->
 
 
 
@@ -56,11 +54,10 @@ Cols: [
 ```
 
 ### Read More
-- [RowSpan cell](./row-span)
-- [Spanned row](/docs/props/row/spanned)
+- [RecordHColSpan col](/docs/props/col/record-h-col-span)
 - [RecordRowSpan col](/docs/props/col/record-row-span)
 - [RecordColSpan col](/docs/props/col/record-col-span)
-- [RecordHColSpan col](/docs/props/col/record-h-col-span)
+- [MultiRecordHeaderRows cfg](/docs/props/cfg/multi-record-header-rows)
 - [MultiRecord cfg](/docs/props/cfg/multi-record)
 
 ### Since

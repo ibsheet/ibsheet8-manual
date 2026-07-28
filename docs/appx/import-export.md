@@ -41,6 +41,112 @@
 |wkhtmltopdf.exe|pdf생성 모듈|
 
 
+## Maven 의존성 설정
+
+Maven을 사용하는 경우 `pom.xml`에 아래 의존성을 추가합니다. (POI `4.1.2` 기준) POI 계열과 이미지 처리 라이브러리를 명시적으로 지정하며, IBSheet 코어 모듈(`ibsheet8`)과 PDF 다운로드용 `ib-itext`는 공개 Maven 저장소에 없으므로 `system` scope로 `WEB-INF/lib`의 jar 경로를 직접 지정합니다.
+
+```xml
+<dependencies>
+    <!--이미지 처리 관련 JAR-->
+    <dependency>
+        <groupId>org.apache.xmlgraphics</groupId>
+        <artifactId>batik-all</artifactId>
+        <version>1.17</version>
+        <type>pom</type>
+    </dependency>
+    <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.11.0</version>
+    </dependency>
+    <dependency>
+        <groupId>xml-apis</groupId>
+        <artifactId>xml-apis-ext</artifactId>
+        <version>1.3.04</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.xmlgraphics</groupId>
+        <artifactId>xmlgraphics-commons</artifactId>
+        <version>2.9</version>
+    </dependency>
+
+    <!--엑셀 처리 관련 JAR-->
+    <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>1.13</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-collections4</artifactId>
+        <version>4.4</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-compress</artifactId>
+        <version>1.19</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.1.3</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-math3</artifactId>
+        <version>3.6.1</version>
+    </dependency>
+    <dependency>
+        <groupId>com.github.virtuald</groupId>
+        <artifactId>curvesapi</artifactId>
+        <version>1.06</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>4.1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>4.1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml-schemas</artifactId>
+        <version>4.1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>com.zaxxer</groupId>
+        <artifactId>SparseBitSet</artifactId>
+        <version>1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.xmlbeans</groupId>
+        <artifactId>xmlbeans</artifactId>
+        <version>3.1.0</version>
+    </dependency>
+
+    <!--IBSheet 코어 모듈 (공개 저장소에 없음 → system scope)-->
+    <dependency>
+        <groupId>ibsheet.ui</groupId>
+        <artifactId>ibsheet8</artifactId>
+        <version>1.1.1</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/ibsheet8-1.1.1.jar</systemPath>
+    </dependency>
+    <dependency>
+        <groupId>ib-itext</groupId>
+        <artifactId>ib-itext</artifactId>
+        <version>1.0</version>
+        <scope>system</scope>
+        <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/ib-itext.jar</systemPath>
+    </dependency>
+</dependencies>
+```
+
+`batik-all`, `poi` 등의 버전은 사용하는 서버 모듈(jar) 버전에 맞춰 조정하세요. IBSheet 코어(`ibsheet8`)와 `ib-itext`의 `version` / `systemPath`도 실제 사용 중인 jar 파일명과 경로에 맞게 지정합니다.
+
 ### 서버모듈 확인 방법(엑셀 모듈)
 
 서버에서 jar 파일이 정상적으로 로드되었는지 다음 구문을 통해 확인 할 수 있습니다.

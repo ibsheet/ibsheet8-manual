@@ -1,4 +1,7 @@
 # getCurrentInfo ***(method)***
+
+<!-- synonyms: 컬럼 정보 추출, 컬럼 상태 추출, 컬럼 레이아웃 추출, 컬럼 순서 추출, 너비 추출, 숨김 상태 추출, 현재 컬럼 정보 문자열 반환, get current info, column state export, extract column layout -->
+
 > 현재 시트의 컬럼 정보를 **문자열로 반환**합니다. 반환된 값을 서버 등에 직접 저장하여 활용할 수 있습니다.  
 > 사용자가 컬럼을 숨기거나, 이동하거나, 사이즈를 조절한 상태를 추출할 수 있습니다.  
 > 반환된 문자열을 [setCurrentInfo](./set-current-info)에 전달하면 시트의 컬럼 상태를 복원할 수 있습니다.

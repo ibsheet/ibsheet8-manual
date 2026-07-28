@@ -1,12 +1,26 @@
-# 초기화 구문 변경(객체 생성 및 초기화)
-
-## 2. 객체 생성 및 초기화 <a name="chapter-2"></a>
-
-### 초기화 구문 변경 부분 <a name="init-ibsheet"></a>
+# 초기화 구문 변경
 
 기존 IBSheet7의 각 열 별 타입, 포맷, 기능에 대해서 IBSheet8에서 변경된 내용을 아래에서 확인해 보세요.
 
 **주요 초기화 기능 변경**
+
+**전역 공통 설정 파일 (`ibsheet.cfg`)**
+
+IBSheet7은 `ibsheet.cfg` 파일에서 모든 시트에 공통으로 적용되는 전역 설정을 관리했습니다.  
+IBSheet8에는 `ibsheet.cfg` 파일이 없습니다.  
+모든 시트에 공통으로 적용할 설정은 `ibsheet-common.js`에서 [IBSheet.CommonOptions (static)](/docs/static/common-options)에 지정합니다.  
+`CommonOptions`에 둔 `Cfg`, `Def`, `Events` 값은 각 화면에서 생성하는 시트 초기값과 머지되어 적용되며, 값이 다르면 화면별 설정이 우선합니다.
+
+```javascript
+// ibsheet-common.js 등에서 (ibsheet.js 로드 이후에 설정)
+IBSheet.CommonOptions = {
+    Cfg: {
+        // 모든 시트에 공통 적용할 Cfg (IBSheet7 ibsheet.cfg 전역 설정 대체)
+        Alternate: 2,
+        InfoRowConfig: { Visible: 1 }
+    }
+};
+```
 
 ***Cfg(SetConfig)***
 
@@ -16,19 +30,18 @@
 |CountFormat,CountPosition,PagingPosition|조회된 데이터 건수 표시 기능|[InfoRowConfig (cfg)](/docs/props/cfg/info-row-config) 속성을 통해 설정|
 |DragMode|드래그 방식,가능 여부 설정| [CanDrag (cfg)](/docs/props/cfg/can-drag) 속성을 통해 설정 가능|
 |HeaderRowHeight,DataRowHeight|헤더,데이터 행의 높이를 설정|css 를 통해 설정하는 형태로 변경<br/>[Size (cfg)](/docs/props/cfg/size)를 통해 시트의 행 높이, 아이콘 크기, 버튼 크기 등 전체적인 크기 조절이 가능|
-|FrozenCol,FrozenColRight|좌우측 열고정 기능|[LeftCols, RightCols](/docs/appx/init-structure) 속성을 통해 시트 생성시 설정. 이후로는 [setFixedCols (method)](/docs/funcs/core/set-fixed-cols) 함수로 변경가능|
+|FrozenCol,FrozenColRight|좌우측 열고정 기능|[LeftCols, RightCols](/docs/start/basic-structure) 속성을 통해 시트 생성시 설정. 이후로는 [setFixedCols (method)](/docs/funcs/core/set-fixed-cols) 함수로 변경가능|
 |MergeSheet|헤더, 데이터행의 머지종류 설정|[HeaderMerge (cfg)](/docs/props/cfg/header-merge),[DataMerge (cfg)](/docs/props/cfg/data-merge), [PrevColumnMerge (cfg)](/docs/props/cfg/prev-column-merge) 속성으로 변경|
 |Page|한번에 렌더링할 행의 개수|[PageLength (cfg)](/docs/props/cfg/page-length)로 명칭 변경|
+|ReverseSortOrder|헤더 클릭 시 다중 정렬 처리 방법(정렬 우선순위) 설정|[HeaderSortMode (cfg)](/docs/props/cfg/header-sort-mode)로 대체 (클릭 순서대로 정렬은 `HeaderSortMode:4`)|
 |SearchMode|조회 렌더링 방식 설정|[SearchMode (cfg)](/docs/props/cfg/search-mode) 속성으로 동일하지만 Mode는 조금씩 다르며 일부 모드는 추가됨|
 |SumPosition|합계 행에 대한 위치|[setFormulaRowPosition (method)](/docs/funcs/core/set-formula-row-position) 함수를 통해 설정|
 |ToolTip|풍선도움말 사용여부|row,col 속성 설정에서 `Tip` [(row)](/docs/props/row/tip) [(col)](/docs/props/col/tip) [(cell)](/docs/props/cell/tip)으로 변경|
-|UseHeaderActionMenu|헤더행 컨텍스트 메뉴 기능|IBSheet8은 헤더 컨텍스트 메뉴를 기본 제공하며, [UseHeaderContextMenu (cfg)](/docs/props/cfg/use-header-context-menu)로 표시 여부를 제어. 메뉴 항목을 직접 구성하려면 [Def/Header](/docs/appx/init-structure)에 [Menu](/docs/appx/menu) 속성으로 설정|
-
-<br/><br/><br/>
+|UseHeaderActionMenu|헤더행 컨텍스트 메뉴 기능|IBSheet8은 헤더 컨텍스트 메뉴를 기본 제공하며, [UseHeaderContextMenu (cfg)](/docs/props/cfg/use-header-context-menu)로 표시 여부를 제어. 메뉴 항목을 직접 구성하려면 [Def/Header](/docs/start/basic-structure)에 [Menu](/docs/appx/menu) 속성으로 설정|
 
 ***Cols(InitColumns)***
 
-#### [Type](/docs/appx/type) 속성 <a name="init-col-type"></a>
+### [Type](/docs/appx/type) 속성
 |IBSheet7 Type|IBSheet8 대응|
 |---|---|
 |Text|일반 문자형 타입으로 동일합니다.|
@@ -43,7 +56,7 @@
 |Image|`Img`타입으로 변경되었습니다.<br/>특히 데이터 구조가 크게 변경되었으므로 [Type](/docs/appx/type)부분의 내용을 참고해 주세요.|
 |Int|`Int`로 동일합니다.|
 |Float|`Float`로 동일합니다.|
-|Date|`Date`로 동일합니다. 단 `Type:"Date"`만 지정하면 날짜가 원하는 형식으로 표시되지 않으므로 [Format (col)](/docs/props/col/format), [DataFormat (col)](/docs/props/col/data-format), [EditFormat (col)](/docs/props/col/edit-format) 세 속성을 반드시 함께 지정해야 합니다.<br/>날짜 구분자(예: `yyyy.MM.dd` → `yyyy-MM-dd`)를 변경하려는 경우에도 위 세 속성을 함께 설정합니다.<br/>예: `Format:"yyyy.MM.dd"`, `DataFormat:"yyyyMMdd"`, `EditFormat:"yyyyMMdd"`<br/>자세한 사항은 아래 <a href="#init-format">Format 속성</a>을 참고하세요.|
+|Date|`Date`로 동일합니다. 단 `Type:"Date"`만 지정하면 날짜가 원하는 형식으로 표시되지 않으므로 [Format (col)](/docs/props/col/format), [DataFormat (col)](/docs/props/col/data-format), [EditFormat (col)](/docs/props/col/edit-format) 세 속성을 반드시 함께 지정해야 합니다.<br/>날짜 구분자(예: `yyyy.MM.dd` → `yyyy-MM-dd`)를 변경하려는 경우에도 위 세 속성을 함께 설정합니다.<br/>예: `Format:"yyyy.MM.dd"`, `DataFormat:"yyyyMMdd"`, `EditFormat:"yyyyMMdd"`<br/>자세한 사항은 아래 Format 속성을 참고하세요.|
 |Popup|지원안함.<br/>열 우측에 버튼을 두고자 하시는 경우에는 `Button`속성을 통해 설정하실 수 있습니다.<br/>ex) {Type:"Text",Name:"DEPTPOP",`Button:"../assets/imgs/popup.png"`}<br/>버튼 클릭시 발생하는 이벤트는 [onButtonClick (event)](/docs/events/on-button-click)을 참고하세요.<br/>또는 `IB_Preset.Popup`을 [Extend](/docs/props/col/extend)하시면 ibsheet7 Popup 모양을 그대로 재현할 수 있습니다. 자세한 코드는 아래 [Popup 타입 마이그레이션](/docs/migration/migration-06-06) 부분 참고해주세요.|
 |Pass|`Pass`로 동일합니다.|
 |Seq|지원안함<br/> 열의 타입을 Int로 설정하시고, `Name`을 `"SEQ"`로 지정하시면 자동 순번열 형태로 동작합니다.|
@@ -53,8 +66,9 @@
 |Sparkline|D3 라이브러리를 이용하여 구현 가능 ([스파크차트 예제 참고](https://www.ibsheet.com/v8/ibsheet/html/examples.html))|
 
 
-#### [Format](/docs/appx/format) 속성 <a name="init-format"></a>
-IBSheet7은 `Ymd`, `Integer`, `IdNo`처럼 **이름 하나로 형식을 지정**했으나, IBSheet8은 **열의 `Type`(`Date`/`Int`/`Text` 등)을 먼저 정하고 거기에 `Format` 같은 형식 속성을 함께 설정**합니다.  
+### [Format](/docs/appx/format) 속성
+IBSheet7은 `Ymd`, `Integer`, `IdNo`처럼 **이름 하나로 형식을 지정**했으나,  
+IBSheet8은 **열의 `Type`(`Date`/`Int`/`Text` 등)을 먼저 정하고 거기에 `Format` 같은 형식 속성을 함께 설정**합니다.  
 (형식 패턴, 예약어 등 자세한 내용은 [Format (appendix)](/docs/appx/format) 참고)
 
 |IBSheet7 Format|IBSheet8 대응|
@@ -64,7 +78,8 @@ IBSheet7은 `Ymd`, `Integer`, `IdNo`처럼 **이름 하나로 형식을 지정**
 |IdNo(주민), SaupNo(사업자), PostNo(우편), CardNo(카드), PhoneNo(전화)|`Type:"Text"` + [CustomFormat (col)](/docs/props/col/custom-format) (숫자+구분자 마스크)|
 |Number|`Type:"Text"` + [EditMask (col)](/docs/props/col/edit-mask)로 숫자만 입력|
 
-날짜의 경우, 자주 쓰는 포맷 묶음(`Format`/`DataFormat`/`EditFormat`)을 `IB_Preset` 변수에 정의해 두고 [Extend (col)](/docs/props/col/extend)로 한 번에 설정할 수 있습니다.
+날짜의 경우, 자주 쓰는 포맷 묶음(`Format`/`DataFormat`/`EditFormat`)을 `IB_Preset` 변수에 정의해 두고  
+[Extend (col)](/docs/props/col/extend)로 한 번에 설정할 수 있습니다.
 ```javascript
 //AS-IS
 var Cols = [
@@ -82,7 +97,7 @@ opt.Cols = [
 IB_Preset 변수는 `ibsheet-common.js` 파일 내에 있습니다.
 
 
-#### 그외에 속성 <a name="init-etc"></a>
+### 그외에 속성
 |IBSheet7 속성|IBSheet8 대응|
 |---|---|
 |AcceptKeys,ExceptKeys|지원안함<br/>[ResultMask (col)](/docs/props/col/result-mask) 속성을 통해 정규식으로 로직을 구성하셔야 합니다.<br/>기존 코드에 대해 IBSheet8에서 [EditMask (col)](/docs/props/col/edit-mask) 변환하는 코드는 아래 [AcceptKeys,ExceptKeys 마이그레이션](/docs/migration/migration-06-04)을 참고해 주세요.|

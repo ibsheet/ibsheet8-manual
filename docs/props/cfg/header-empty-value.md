@@ -1,6 +1,8 @@
 # HeaderEmptyValue ***(cfg)***
 
-> 헤더행의 셀 값이 없거나 공백 문자열인 경우 그대로 공백 설정 되도록 설정하는 기능입니다.
+<!-- synonyms: 빈 헤더, 공백 헤더, 헤더 Name 노출, 헤더 이름 표시, empty header, header blank -->
+
+> 헤더행의 셀 값이 없거나 공백 문자열일 때, 컬럼 `Name` 값으로 대체하지 않고 그대로 공백으로 표시할지 설정합니다.
 
 ### Type
 `boolean`
@@ -26,6 +28,9 @@ options.Cols = [
 ]
 ```
 
+### Read More
+- [Header col](/docs/props/col/header)
+- [Name col](/docs/props/col/name)
 
 ### Since
 

@@ -1,13 +1,10 @@
 # Header ***(col)***
-> 열의 헤더 셀을 정의합니다.
->
-> 헤더 셀에는 단순 문자열을 넣거나, 배경색과 정렬(alignment) 등 속성을 함께 설정할 수 있습니다.
->
-> 여러 개의 헤더 행을 만들려면 배열로 설정하며, **컬럼별 배열 길이는 동일**해야 합니다. 
->
-> **<mark>주의</mark>** : Header를 string로 설정시 빈 헤더를 설정하려면 공백 문자열을 사용해야 합니다.
->
-> Header:"<mark> </mark>"
+> 열의 헤더 셀을 정의합니다.  
+> 헤더 셀에는 단순 문자열을 넣거나, 배경색과 정렬(alignment) 등 속성을 함께 설정할 수 있습니다.  
+> 여러 개의 헤더 행을 만들려면 배열로 설정하며, **컬럼별 배열 길이는 동일**해야 합니다.  
+> **<mark>주의</mark>** : Header를 string으로 설정 시 빈 헤더를 만들려면 공백 문자열 `" "`을 사용합니다.  
+> 빈 문자열 `""`이나 값이 없으면 컬럼 `Name` 값이 대신 표시됩니다.  
+> 또는 [(Cfg)HeaderEmptyValue](/docs/props/cfg/header-empty-value)를 `1`로 설정하면 `""`나 값 없는 헤더도 `Name`으로 대체되지 않고 그대로 공백으로 표시됩니다.
 
 
 ### Type
@@ -80,6 +77,7 @@ options.Cols = [
 
 ### Read More
 - [HeaderMerge cfg](/docs/props/cfg/header-merge)
+- [HeaderEmptyValue cfg](/docs/props/cfg/header-empty-value)
 - [Span cell](/docs/props/cell/span)
 - [RowSpan cell](/docs/props/cell/row-span)
 ### Since

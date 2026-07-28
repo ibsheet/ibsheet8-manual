@@ -34,6 +34,7 @@ options = {
 - [Format col](/docs/props/col/format)
 - [CustomFormat col](/docs/props/col/custom-format)
 - [EditFormat col](/docs/props/col/edit-format)
+- [NoCRLF cfg](/docs/props/cfg/no-crlf)
 
 ### Since
 

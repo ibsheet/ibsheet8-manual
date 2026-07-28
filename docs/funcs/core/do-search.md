@@ -8,6 +8,7 @@
 > 비동기형식으로 동작하므로, 데이터 로드 후 처리는 [onReceiveData](/docs/events/on-receive-data), [onBeforeDataLoad](/docs/events/on-before-data-load), [onDataLoad](/docs/events/on-data-load) 이벤트에서 구현해야 합니다.  
 > 기본적으로 `doSearch`는 시트의 기존 데이터를 제거하고 서버에서 가져온 데이터를 로드합니다.  
 > 기존 데이터 뒤에 새 데이터를 추가하려면 `append: true` 옵션을 사용하세요.  
+> 데이터는 새로 로드되지만 기존 필터와 정렬 상태는 유지되어 새 데이터에 다시 적용됩니다. 조회 시 이를 초기화하려면 조회 전에 [clearFilter](/docs/funcs/core/clear-filter)나 [clearSort](/docs/funcs/core/clear-sort)를 호출하세요.  
 > 서버 응답(JSON) 구조와 관련된 상세 내용은 [조회 응답 규격](/docs/dataStructure/data-structure)을 참고하세요.  
 > 조회 시 자동 포커스 [(Cfg)IgnoreFocused](/docs/props/cfg/ignore-focused), 메시지 표시 [(Cfg)SuppressMessage](/docs/props/cfg/suppress-message), 프로그레스바 [(Cfg)SearchProgress](/docs/props/cfg/search-progress)를 참고하세요.
 
@@ -77,6 +78,8 @@ sheet.doSearch({
 - [조회 응답 규격](/docs/dataStructure/data-structure)
 - [loadSearchData method](./load-search-data)
 - [doSearchPaging method](./do-search-paging)
+- [clearSort method](./clear-sort)
+- [clearFilter method](./clear-filter)
 - [onReceiveData event](/docs/events/on-receive-data)
 - [onBeforeDataLoad event](/docs/events/on-before-data-load)
 - [onDataLoad event](/docs/events/on-data-load)

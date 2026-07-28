@@ -1,12 +1,9 @@
 # showSortDialog ***(method)***
 
-> 시트의 정렬을 설정할 수 있는 다이얼로그 창을 오픈합니다.
->
-> 확인 버튼 클릭시 다이얼로그에서 설정한 순서대로 정렬이 실행됩니다.
->
-> <mark>해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.</mark>
->
-> 다이얼로그에 대한 자세한 수정은 `ibsheet-dialog.js`파일에서 하실 수 있습니다.
+> 시트의 정렬을 설정할 수 있는 다이얼로그 창을 오픈합니다.  
+> 확인 버튼 클릭시 다이얼로그에서 설정한 순서대로 정렬이 실행됩니다.  
+> <mark>해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.</mark>  
+> 다이얼로그 커스터마이징은 [Dialog Templates appendix](/docs/appx/dialog-templates)를 참고하세요.
 
 ###
 ![다운로드](/assets/imgs/showSortDialog.png)
@@ -45,6 +42,7 @@ sheet.showSortDialog({
 ```
 
 ### Read More
+- [Dialog Templates appendix](/docs/appx/dialog-templates)
 - [showDialog static](/docs/static/show-dialog)
 - [Dialog appendix](/docs/appx/dialog)
 - [NumberSort col](/docs/props/col/number-sort)
@@ -56,3 +54,4 @@ sheet.showSortDialog({
 |product|version|desc|
 |---|---|---|
 |dialog|0.0.8|기능 추가|
+|dialog|1.0.46|HTML/CSS를 dlgTemplates 외부 템플릿 파일로 분리|

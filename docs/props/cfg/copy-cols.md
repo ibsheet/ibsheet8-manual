@@ -29,6 +29,7 @@ options = {
 - [CanCopyPaste col](/docs/props/col/can-copy-paste)
 - [CopyEdit cfg](./copy-edit)
 - [CopyValue cell](/docs/props/cell/copy-value)
+- [NoCRLF cfg](/docs/props/cfg/no-crlf)
 
 ### Since
 

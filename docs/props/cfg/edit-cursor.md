@@ -20,6 +20,8 @@ options.Cfg :{
 ```
 
 ### Read More
+- [EnterMode cfg](./enter-mode)
+- [InEditMode cfg](./in-edit-mode)
 
 ### Since
 

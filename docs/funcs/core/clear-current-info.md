@@ -1,6 +1,8 @@
 # clearCurrentInfo ***(method)***
-> [saveCurrentInfo](./save-current-info)로 저장된 현재 시트의 컬럼 정보를 로컬 스토리지 혹은 세션 스토리지에서 제거하는 메소드입니다.
->
+
+<!-- synonyms: 저장된 컬럼 정보 삭제, 스토리지 정보 삭제, 레이아웃 삭제, 로컬 스토리지 삭제, 세션 스토리지 삭제, clear current info, remove saved column layout -->
+
+> [saveCurrentInfo](./save-current-info)로 저장된 현재 시트의 컬럼 정보를 로컬 스토리지 혹은 세션 스토리지에서 제거하는 메소드입니다.  
 > [StorageSession](/docs/props/cfg/storage-session) 값이 0인 경우에는 제거 동작을 하지 않습니다.
 
 ### Syntax

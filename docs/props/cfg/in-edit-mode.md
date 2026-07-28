@@ -28,7 +28,7 @@ options.Cfg = {
 ```
 
 ### Read More
-
+- [EditCursor cfg](./edit-cursor)
 
 ### Since
 

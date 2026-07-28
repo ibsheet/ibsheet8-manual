@@ -1,11 +1,8 @@
 # EnterMode ***(cfg)***
 
-> `Enter` 키를 눌렀을때 셀 편집을 동작시키거나, 아래 방향키(down)나 우측 방향키(또는 Tab 키)와 같이 포커스가 이동하도록 설정할 수 있습니다.
->
-> 이동시 `EnterMode` 에 따라 편집 가능한 다음 셀로 이동합니다.
->
-> 편집이 불가능한 셀에서는 포커스만 이동합니다. 
->
+> `Enter` 키를 눌렀을때 셀 편집을 동작시키거나, 아래 방향키(down)나 우측 방향키(또는 Tab 키)와 같이 포커스가 이동하도록 설정할 수 있습니다.  
+> 기본적으로 `Enter`는 편집을 거친 뒤 `mode`에 따라 이동합니다. 편집 없이 바로 이동하려면 [ForceEnterEdit](/docs/props/cfg/force-enter-edit)를 `false`로 설정합니다.  
+> 편집이 불가능한 셀에서는 포커스만 이동합니다.  
 > `EnterMode`는 `object`로 사용하여 `option` 기능을 사용할 수 있습니다. (`option` 기능은 비트연산으로 제공합니다.)
 
 
@@ -16,7 +13,7 @@
 ### Options
 |Name|Type|Description|
 |-----|-----|-----|
-|mode|`number`|`0`: `Enter` 키를 누르면 `값 편집(edit) 시작`, (편집 상태) `Enter` 키를 누르면 `편집 종료` (`default`) <br/>`1`:`Enter` 키를 누르면 `아래 셀(down) 이동`, 마지막 셀에서 첫 행, 첫 열으로 이동 <br/>`2`:`Enter` 키를 누르면 `아래 셀(down) 이동`, 각 열의 마지막 셀에서 행 추가 후 이동 <br/>`3`:`Enter` 키를 누르면 `오른쪽 셀(tab) 이동`, 마지막 셀에서 첫 행, 첫 열으로 이동 <br/>`4`:`Enter` 키를 누르면 `오른쪽 셀(tab) 이동`, 마지막 셀에서 행 추가 후 첫 열으로 이동 <br/>`5`:`Enter` 키를 누르면 `아래 셀(down) 이동`, 마지막 셀에서 포커스 유지 <br/>`6`:`Enter` 키를 누르면 `오른쪽 셀(tab) 이동`, 마지막 셀에서 포커스 유지|
+|mode|`number`|`0`: `Enter` 키를 누르면 `값 편집(edit) 시작`, (편집 상태) `Enter` 키를 누르면 `편집 종료` (`default`) <br/>`1`: `아래 셀(down)로 이동`, 마지막 셀에서 첫 행, 첫 열으로 이동 <br/>`2`: `아래 셀(down)로 이동`, 각 열의 마지막 셀에서 행 추가 후 이동 <br/>`3`: `오른쪽 셀(tab)로 이동`, 마지막 셀에서 첫 행, 첫 열으로 이동 <br/>`4`: `오른쪽 셀(tab)로 이동`, 마지막 셀에서 행 추가 후 첫 열으로 이동 <br/>`5`: `아래 셀(down)로 이동`, 마지막 셀에서 포커스 유지 <br/>`6`: `오른쪽 셀(tab)로 이동`, 마지막 셀에서 포커스 유지|
 |option|`number`|`0`:`CanFocus: 0`인 셀을 제외한 모든 셀을 포커스 이동에 포함. (`default`) <br/>`1`:`CanEdit: 0` 를 `EnterMode` 포커스 이동에 포함하지 않음.|
 <!--!
 `[비공개]` mode|`number`|`7`:(포커스 상태, 편집가능한 셀, 편집 상태) `Enter` 키를 누르면 아무런 동작 없이 포커스만 유지|
@@ -39,11 +36,12 @@ options.Cfg = {
 ```
 
 ### Try it
-- [0 by default with setEnterMode](https://jsfiddle.net/gh/get/library/pure/ibsheet/ibsheet8-manual-sample/tree/master/samples/properties/Cfg/EnterMode/)
+- [EnterMode 데모](https://jsfiddle.net/gh/get/library/pure/ibsheet/ibsheet8-manual-sample/tree/master/samples/properties/Cfg/EnterMode/)
 
 ### Read More
 
 - [ForceEnterEdit cfg](./force-enter-edit)
+- [EditCursor cfg](./edit-cursor)
 - [AcceptEnters col](/docs/props/col/accept-enters)
 - [AcceptEnters cell](/docs/props/cell/accept-enters)
 - [setEnterMode method](/docs/funcs/core/set-enter-mode)

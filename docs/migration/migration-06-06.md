@@ -66,8 +66,56 @@ var initSheet = {
 };
 ```
 
-참고
-- `IB_Preset.Popup`의 내용을 ibsheet-common.js에서 찾아보면 [ButtonFormula](/docs/props/col/attribute-formula)([attribute+Formula (col)](/docs/props/col/attribute-formula))를 사용하므로, [Def/Row](/docs/start/init-structure)에 [CanFormula (row)](/docs/props/row/can-formula) 속성을 `1`로 설정하고 [CalcOrder (row)](/docs/props/row/calc-order)에 `열이름Button` 형식 항목을 추가해야 합니다.
+## 참고
+
+- `IB_Preset.Popup`은 [ButtonFormula](/docs/props/col/attribute-formula)([attribute+Formula (col)](/docs/props/col/attribute-formula))를 사용합니다.  
+  따라서 [Def/Row](/docs/start/basic-structure)에 [CanFormula (row)](/docs/props/row/can-formula)를 `1`로 설정하고, [CalcOrder (row)](/docs/props/row/calc-order)에 `열이름Button` 형식 항목을 추가해야 합니다.
 - 여러 컬럼에 적용할 경우 CalcOrder를 `"DEPTPOPButton,EMPPOPButton"` 형식으로 콤마로 연결합니다(항목 사이 공백 없음).
-- ibsheet7의 `Popup` 타입은 기본적으로 셀 텍스트 편집이 불가했지만, `IB_Preset.Popup`은 `Type:"Text"` 기반이므로 ibsheet8에서는 셀이 기본 편집 가능합니다. ibsheet7과 동일하게 셀 텍스트 편집을 막으려면 [onStartEdit (event)](/docs/events/on-start-edit)에서 `return true`로 편집 시작을 취소합니다. `CanEdit:0`은 사용하지 마세요 — `ButtonFormula`가 `getCanEdit` 기반이라 버튼도 함께 숨겨집니다.
+- ibsheet7의 `Popup` 타입은 셀 텍스트 편집이 불가했지만, `IB_Preset.Popup`은 `Type:"Text"` 기반이라 ibsheet8에서는 셀이 기본 편집 가능합니다.  
+  ibsheet7처럼 셀 텍스트 편집을 막으려면 [onStartEdit (event)](/docs/events/on-start-edit)에서 `return true`로 편집 시작을 취소합니다.  
+  `CanEdit:0`은 사용하지 마세요 — `ButtonFormula`가 `getCanEdit` 기반이라 버튼도 함께 숨겨집니다.
 - 버튼 클릭 이벤트는 [onButtonClick (event)](/docs/events/on-button-click)에서 처리합니다.
+
+## 공통 적용 (onBeforeCreate로 자동 처리)
+
+Popup 컬럼마다 `Def.Row.CanFormula: 1, CalcOrder: "열이름Button"`과 편집 취소용 `onStartEdit`을 넣는 것이 번거로우면, [onBeforeCreate (static)](/docs/static/on-before-create)에서 공통으로 처리할 수 있습니다.  
+`IB_Preset.Popup`처럼 `ButtonFormula`를 사용하는 프리셋을 [Extend (col)](/docs/props/col/extend)한 열을 찾아 `CalcOrder`를 자동 주입하고, `Popup:1`로 표시한 열의 편집 시작을 공통으로 취소합니다.  
+이렇게 하면 각 시트 옵션에서는 `Extend`와 `Popup:1`만 지정하고 `Def.Row.CanFormula`/`CalcOrder`와 `onStartEdit`은 생략할 수 있습니다.
+
+```javascript
+// 시트 생성 직전에 호출 (IBSheet.create 인자가 opt.options에 들어있음)
+IBSheet.onBeforeCreate = function (opt) {
+    var calcCols = [];
+    var collect = function (cols) {
+        if (!cols) return;
+        for (var i = 0; i < cols.length; i++) {
+            // ButtonFormula를 사용하는 프리셋(IB_Preset.Popup 등)을 Extend한 열은 CalcOrder 항목이 "열이름Button"
+            if (cols[i].Extend && cols[i].Extend.ButtonFormula) calcCols.push(cols[i].Name + "Button");
+        }
+    };
+    collect(opt.options.Cols);
+    collect(opt.options.LeftCols);
+    collect(opt.options.RightCols);
+
+    if (calcCols.length) {
+        opt.options.Def = opt.options.Def || {};
+        opt.options.Def.Row = opt.options.Def.Row || {};
+        opt.options.Def.Row.CanFormula = 1;
+        // 기존 CalcOrder가 있으면 이어붙인다.
+        opt.options.Def.Row.CalcOrder = opt.options.Def.Row.CalcOrder
+            ? opt.options.Def.Row.CalcOrder + ',' + calcCols.join(',')
+            : calcCols.join(',');
+    }
+
+    // Popup:1로 표시한 컬럼의 셀 텍스트 편집을 공통으로 막는다 (화면별 onStartEdit이 있으면 보존)
+    var events = opt.options.Events || (opt.options.Events = {});
+    var userStartEdit = events.onStartEdit;
+    events.onStartEdit = function (evtParam) {
+        if (evtParam.sheet.Cols[evtParam.col].Popup === 1) return true; // 편집 시작 취소
+        if (userStartEdit) return userStartEdit.apply(this, arguments); // 화면별 onStartEdit 이어서 실행
+    };
+
+    // 반드시 수정된 opt를 리턴해야 시트가 만들어짐
+    return opt;
+};
+```

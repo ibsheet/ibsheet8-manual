@@ -46,6 +46,7 @@ sheet.loadExcel();
 - [loadExcel method](/docs/funcs/excel/load-excel)
 - [exportData method](/docs/funcs/core/export-data)
 - [importData method](/docs/funcs/core/import-data)
+- [SuppressExportMessage cfg](./suppress-export-message)
 
 ### Since
 

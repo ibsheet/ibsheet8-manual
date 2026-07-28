@@ -32,7 +32,7 @@ var options = {
 ### Options
 |Value|Description|
 |-----|-----|
-|`object`|[LeftCols, Cols, RightCols](/docs/appx/init-structure)에 들어가는 설정값 들|
+|`object`|[LeftCols, Cols, RightCols](/docs/start/basic-structure)에 들어가는 설정값 들|
 
 
 ### Example

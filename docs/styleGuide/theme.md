@@ -3,7 +3,7 @@
 ## 기본 테마 종류
 현재 배포되고 있는 테마는 다음과 같습니다.
 
-`기본`, `기본(이미지)`, `grace`, `material`, `mint`, `simple`, `gray`
+`기본`, `기본(이미지)`, `grace`, `material`, `mint`, `simple`, `gray`, `krds`
 
 이 중 기본(이미지) 테마에서만 이미지를 png, gif파일로 제공합니다. 그 외의 테마는 base64로 인코딩된 svg파일로 이미지를 제공합니다.
 
@@ -32,7 +32,7 @@ grace 테마 (`IBGR`)
 
 ![grace theme](/assets/imgs/styleguide_css_grace_theme.png "grace theme")
 
-material 테마 (`IBTR`)
+material 테마 (`IBMR`)
 ```html
 <link rel="stylesheet" href="/assets/ibsheet/css/material/main.css"/>
 ```
@@ -59,6 +59,17 @@ gray 테마 (`IBGY`)
 ```
 
 ![gray theme](/assets/imgs/styleguide_css_gray_theme.png "gray theme")
+
+krds 테마 (`IBKD`)
+`krds.go.kr`(전자정부 디자인 시스템, egov) 권고를 반영한 테마입니다. 주요 특징은 다음과 같습니다.
+- 불필요한 세로 구분선(Border)을 제거해 깔끔한 UI를 제공합니다.
+- 세로 스크롤바를 기본은 슬림하게 표시하고, 마우스를 올리면(hover) 확대합니다.
+- 편집 가능한 셀에 input 스타일 border를 적용해, 읽기 전용 셀과 구분되도록 강조합니다.
+```html
+<link rel="stylesheet" href="/assets/ibsheet/css/krds/main.css"/>
+```
+
+![krds theme](/assets/imgs/styleguide_css_krds_theme.png "krds theme")
 
 * * *
 

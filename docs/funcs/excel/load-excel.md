@@ -1,13 +1,15 @@
 # loadExcel ***(method)***
 
-<!-- synonyms: 엑셀 업로드, 엑셀 가져오기, load excel, 서버 엑셀 업로드, 엑셀 파싱, jsp 엑셀 업로드 -->
+<!-- synonyms: 엑셀 업로드, 엑셀 가져오기, load excel, 서버 엑셀 업로드, 엑셀 파싱, jsp 엑셀 업로드, DRM, 문서보안, DRM 복호화, DRM 해제 -->
 
 > 엑셀 파일의 내용을 시트로 `import`합니다.  
 > 사용 전 [서버모듈 설치](/docs/appx/import-export)와 `/plugins/ibsheet-excel.js` 스크립트 로드가 필요합니다.  
-> 이 함수를 호출하면 파일 선택 창이 나타나고, 사용자가 선택한 엑셀 파일이 `Cfg.Export` 속성에 지정한 `LoadExcel.jsp`(또는 `LoadExcel.aspx`)로 전달됩니다. 이 jsp 파일이 엑셀을 파싱해 JSON 형태로 시트에 반환합니다. 시트마다 반복 설정이 번거로우면 [IBSheet.CommonOptions](/docs/static/common-options)로 공통 적용할 수 있습니다.  
-> 엑셀 데이터를 시트에 어떻게 매핑할지는 `mode` 옵션이 결정합니다. (기본값 `HeaderMatch` — 헤더 타이틀 매칭)  
-> 업로드가 안 되거나 한글이 깨지면 먼저 확인하세요. `/plugins/ibsheet-excel.js` 로드 여부, `Cfg.Export`의 `LoadExcel.jsp`(또는 `.aspx`) 경로와 서버 모듈 설치 상태, `mode`와 헤더 매칭 설정. 한글이 깨지는 경우는 서버 파싱 단계의 문자 인코딩 문제일 수 있습니다.  
-> 그 밖의 환경설정, 에러, 트러블슈팅 상세는 IBSheet 지원 포털의 [엑셀 가이드 모음](https://portal.ibsheet.com/support/solutions/folders/72000394868)에서 확인하세요.
+> 이 함수를 호출하면 파일 선택 창이 나타나고, 사용자가 선택한 엑셀 파일이 `Cfg.Export` 속성에 지정한 `LoadExcel.jsp`(또는 `LoadExcel.aspx`)로 전달됩니다.  
+> 이 jsp 파일이 엑셀을 파싱해 JSON 형태로 시트에 반환합니다.  
+> 시트마다 반복 설정이 번거로우면 [IBSheet.CommonOptions](/docs/static/common-options)로 공통 적용할 수 있습니다.  
+> 엑셀 데이터를 시트에 어떻게 매핑할지는 `mode` 옵션이 결정합니다. (기본값 `HeaderMatch` — 헤더 타이틀 매칭)
+
+업로드가 서버에서 실패하면 결과 코드와 오류 메시지는 [onImportFinish](/docs/events/on-import-finish)의 `result`(음수 코드)와 `message`로 전달됩니다.
 
 ### Syntax
 ```javascript
@@ -77,6 +79,10 @@ sheet.loadExcel({columnMapping:"5|4|3|2|1"});
 - [down2Text method](./down-to-text)
 - [onImportFinish event](../events/on-import-finish)
 - [onSelectFile event](../events/on-select-file)
+- [엑셀 업로드/다운로드 설정 appendix](/docs/appx/import-export)
+- [엑셀 서버 모듈 트러블슈팅 appendix](/docs/appx/excel-server-troubleshooting)
+- [엑셀 DRM 처리 appendix](/docs/appx/excel-drm)
+- [엑셀 비밀번호 설정 appendix](/docs/appx/excel-password)
 
 ### Since
 

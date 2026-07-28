@@ -31,6 +31,33 @@ IBSheet.create(
 
 > **<mark>주의</mark> : 객체 생성 이후에 이벤트를 추가하는 것은 [onBeforeCreate](/docs/static/on-before-create)에서 공통으로 처리한 로직을 무시하므로 권장하지 않습니다.**
 
+## 이벤트 파라미터(evtParam)
+
+모든 이벤트 콜백은 **1개의 객체 파라미터**(`evtParam`)를 받습니다. 공통으로 이벤트가 발생한 시트 객체(`sheet`)와 이벤트명(`eventName`)이 들어 있으며, 이벤트에 따라 `row`(행 객체), `col`(열 이름), `value`, `x`, `y`, `keyCode` 등이 포함됩니다.
+
+```javascript
+onBeforeChange: function(evtParam) {
+    evtParam.sheet;      // 이벤트가 발생한 시트 객체
+    evtParam.eventName;  // 이벤트명 (예: "onBeforeChange")
+    evtParam.row;        // 행 객체
+    evtParam.col;        // 열 이름
+    evtParam.val;        // 변경하려는 값 (이벤트마다 값 관련 파라미터명이 다름: onBeforeChange는 val)
+}
+```
+
+![이벤트 파라미터(evtParam) 객체 구조](/assets/imgs/evtParam.png "onBeforeChange evtParam 예시")
+
+## return 값으로 동작 제어
+
+일부 이벤트는 콜백에서 값을 `return`해 동작을 제어할 수 있습니다. (자세한 동작은 각 이벤트 문서의 Return 설명 참고)
+
+| 이벤트 | return 동작 |
+|---|---|
+| [onBeforeSave](./on-before-save) | `1(true)` 리턴 시 저장 작업 중단 |
+| [onStartEdit](./on-start-edit) | `1(true)` 리턴 시 편집 불가 |
+| [onBeforeChange](./on-before-change) | 변경할 값을 리턴하면 사용자 입력과 무관하게 그 값이 셀에 반영 |
+| [onEndEdit](./on-end-edit) | `save` 인자가 `true`일 때 리턴 값으로 셀에 반영 (`true` 리턴 시 편집 유지) |
+
 ### Example
 ```javascript
 options.Events = {

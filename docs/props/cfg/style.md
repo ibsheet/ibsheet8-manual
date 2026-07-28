@@ -22,6 +22,7 @@
 |`material` 폴더|`IBMR`|시트에서 사용하는 이미지를 svg 제공|
 |`mint` 폴더|`IBMT`|시트에서 사용하는 이미지를 svg 제공|
 |`simple` 폴더|`IBSP`|시트에서 사용하는 이미지를 svg 제공|
+|`krds` 폴더|`IBKD`|시트에서 사용하는 이미지를 svg 제공|
 
 
 ### Example

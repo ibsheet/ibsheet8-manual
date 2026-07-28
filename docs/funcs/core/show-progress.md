@@ -36,6 +36,23 @@ function popup(){
 }
 ```
 
+전체 데이터를 순회하며 값을 변경하는 동안 진행률을 표시하는 예제입니다.  
+단계를 `setTimeout`으로 쪼개야 화면이 갱신되어 진행 바가 오릅니다(동기 `for` 루프에서는 갱신되지 않습니다).
+
+```javascript
+var rows = sheet.getDataRows();
+var total = rows.length;
+(function step(i) {
+    if (i >= total) {
+        sheet.hideMessage();   // 완료 시 다이얼로그 닫기 (시트 활성화)
+        return;
+    }
+    sheet.showProgress({ caption: "처리 중", text: (i + 1) + " / " + total, pos: i + 1, cnt: total });
+    sheet.setValue(rows[i], "결과", "완료");        // 행별 값 변경
+    setTimeout(function () { step(i + 1); }, 0);    // 단계를 쪼개 화면 갱신
+})(0);
+```
+
 ### Read More
 
 - [SuppressMessage cfg](/docs/props/cfg/suppress-message)

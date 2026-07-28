@@ -164,6 +164,67 @@ const handleGetData = (evt) => {
 <mark>[IBSheet 객체 생성 시점에 따른 주의 사항](./spa-vue-caution)</mark>
 
 
+### 2.3 IBSheet 컴포넌트 제거 / 리셋
+
+`IBSheetVue` 컴포넌트로 생성한 시트는 **컴포넌트가 언마운트될 때 시트 객체가 자동으로 소멸(dispose)**됩니다.  
+따라서 `v-if`(조건부 렌더링)로 컴포넌트를 제거하면 시트도 함께 사라지며, 별도로 `dispose()`를 호출할 필요가 없습니다.  
+컬럼 구성 등을 바꿔 다시 생성(리셋)하려면 `v-if`를 껐다가 `nextTick()` 이후 다시 켭니다. 재생성 시 시트 id는 자동으로 새로 부여되어 충돌하지 않습니다.
+
+[App.vue 파일]
+```html
+<script setup>
+import { IBSheetVue, IB_Preset } from '@ibsheet/vue';
+import { ref, nextTick } from 'vue';
+
+// v-if로 컴포넌트 표시 여부 제어
+const showSheet = ref(true);
+
+const sheetOptions = {
+  Cfg: { Style: 'mint' },
+  Def: { Col: { RelWidth: 1 } },
+  Cols: [
+    { Header: 'No', Type: 'Text', Name: 'SEQ' },
+    { Header: 'Name', Type: 'Text', Name: 'name' },
+    { Header: 'Age', Type: 'Int', Name: 'age' },
+    { Header: 'Ymd', Name: 'sDate_Ymd', Extend: IB_Preset.YMD, Width: 110 },
+  ],
+};
+
+const customStyle = { width: '100%', height: '400px', border: '1px solid #ccc' };
+
+// 시트 제거: v-if를 끄면 컴포넌트가 언마운트되며 시트가 자동 정리됨
+const handleRemoveSheet = () => {
+  showSheet.value = false;
+};
+
+// 시트 리셋: 제거 → 컬럼 변경 → 재생성
+const handleResetSheet = async () => {
+  showSheet.value = false;   // 1. 컴포넌트 언마운트 (시트 자동 정리)
+
+  // 2. 초기화 옵션에서 컬럼 변경
+  sheetOptions.Cols = [
+    { Header: 'No', Type: 'Text', Name: 'SEQ' },
+    { Header: '이름', Type: 'Text', Name: 'name' },
+    { Header: '나이', Type: 'Int', Name: 'age' },
+    { Header: '입사일', Name: 'sDate_Ymd', Extend: IB_Preset.YMD, Width: 110 },
+  ];
+
+  await nextTick();          // 3. DOM 업데이트 대기
+  showSheet.value = true;    // 4. 재마운트 → 새 시트 생성 (id 자동 부여)
+};
+</script>
+
+<template>
+  <button @click="handleRemoveSheet">Remove Sheet</button>
+  <button @click="handleResetSheet">Reset Sheet</button>
+  <IBSheetVue
+    v-if="showSheet"
+    :options="sheetOptions"
+    :style="customStyle"
+  />
+</template>
+```
+
 ## 3. vue + typescript 를 이용한 개발시 IBSheet interface 사용
 @ibsheet/vue 컴포넌트에 포함된 typescript interface를 이용 할 수 있습니다.<br>
 앞선 1. ibsheet-loader를 통해 ibsheetjs 파일을 로드하는 부분은 동일합니다.

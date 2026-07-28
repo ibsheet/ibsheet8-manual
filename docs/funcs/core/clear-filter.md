@@ -1,6 +1,10 @@
 # clearFilter ***(method)***
+
+<!-- synonyms: 필터 해제, 필터 초기화, 필터 제거, clear filter, 전체 필터 해제 -->
+
 > 시트에 **적용된 모든 필터를 해제**하고 **필터행(Filter Row)에 입력된 값을 초기화**합니다.  
-> 필터는 `필터행 입력`, `setFilter`, `doFilter` 등 어떤 방식으로 적용된 경우에도 모두 해제됩니다.
+> 필터는 `필터행 입력`, `setFilter`, `doFilter` 등 어떤 방식으로 적용된 경우에도 모두 해제됩니다.  
+> 조회해도 필터 상태는 유지되므로([doSearch](./do-search) 참고), 재조회 시 이전 필터가 다시 적용되는 것을 막으려면 조회 전에 이 함수를 호출합니다.
 
 ### Syntax
 ```javascript
@@ -24,6 +28,8 @@ sheet.clearFilter();
 - [hideFilterRow method](./hide-filter-row)
 - [doFilter method](./do-filter)
 - [setFilter method](./set-filter)
+- [doSearch method](./do-search)
+- [loadSearchData method](./load-search-data)
 
 ### Since
 

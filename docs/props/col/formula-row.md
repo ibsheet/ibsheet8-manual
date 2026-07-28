@@ -75,7 +75,8 @@ sheet.getRowById("FormulaRow")["sDetailVisible"] = 1; // 셀의 Visible 속성�
 sheet.getRowById("FormulaRow")["sDetail"] = "가나다";
 sheet.refreshRow(sheet.getRowById("FormulaRow"));
 
-//setValue로 값 교체
+//setValue로 값 교체 (FormulaRow 속성이 없는 컬럼의 셀만 변경 가능)
+//Sum/Avg 등 집계가 설정된 컬럼의 셀은 자동 계산되므로 setValue로 바꿀 수 없습니다.
 sheet.setValue(sheet.getRowById("FormulaRow"),"sDetail","가나다");
 
 ```

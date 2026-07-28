@@ -36,7 +36,7 @@ void setTheme( prefix, csspath, render );
 |`material` 폴더|`IBMR`|시트에서 사용하는 이미지를 svg 제공|
 |`mint` 폴더|`IBMT`|시트에서 사용하는 이미지를 svg 제공|
 |`simple` 폴더|`IBSP`|시트에서 사용하는 이미지를 svg 제공|
-|`krds` 폴터|`IBKD`|시트에서 사용하는 이미지를 svg 제공|
+|`krds` 폴더|`IBKD`|시트에서 사용하는 이미지를 svg 제공|
 
 
 ### Example
@@ -53,4 +53,4 @@ sheet.setTheme("SH", "./newTheme/partnerStyle.css", 1);
 |product|version|desc|
 |---|---|---|
 |core|8.0.0.0|기능 추가|
-|core|8.3.0.56|egov 테마 추가|
+|core|8.3.0.56|krds(egov) 테마 추가|

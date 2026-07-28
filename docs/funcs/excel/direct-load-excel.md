@@ -5,9 +5,12 @@
 > 사용자가 선택한 엑셀 파일을 시트에 로드하지 않고 지정한 서버 측 페이지로 바로 전달합니다.  
 > 엑셀 내용을 시트에 띄울 필요 없이 서버에서 직접 처리하는 경우 사용합니다.  
 > 사용 전 [서버모듈 설치](/docs/appx/import-export)와 `/plugins/ibsheet-excel.js` 스크립트 로드가 필요합니다.  
-> 이 함수를 호출하면 파일 선택 창이 나타나고, 사용자가 선택한 엑셀 파일이 `Cfg.Export` 속성에 지정한 `DirectLoadExcel.jsp`(또는 `DirectLoadExcel.aspx`)로 전달됩니다. 이 jsp 파일이 엑셀을 파싱한 뒤 `extendParam`의 `FP` 인자로 지정한 서버 측 페이지로 데이터를 forward합니다.
+> 이 함수를 호출하면 파일 선택 창이 나타나고, 사용자가 선택한 엑셀 파일이 `Cfg.Export` 속성에 지정한 `DirectLoadExcel.jsp`(또는 `DirectLoadExcel.aspx`)로 전달됩니다.   
+> 이 jsp 파일이 엑셀을 파싱한 뒤 `extendParam`의 `FP` 인자로 지정한 서버 측 페이지로 데이터를 forward합니다.
 
 ![DirectLoadExcel 과정](/assets/imgs/directloadexcel_process.png)
+
+업로드 실패 시 결과 코드와 메시지는 [onImportFinish](/docs/events/on-import-finish)의 `result`(음수 코드)와 `message`로 받습니다. 중계 페이지에서 조건에 따라 오류 메시지를 내보내는 방법은 [엑셀 서버 모듈 트러블슈팅](/docs/appx/excel-server-troubleshooting)을 참고하세요.
 
 
 ### Syntax
@@ -86,6 +89,10 @@ foreach (Dictionary<String, String> row in data) {
 - [importData method](/docs/funcs/core/import-data)
 - [onSelectFile event](/docs/events/on-select-file)
 - [onImportFinish event](/docs/events/on-import-finish)
+- [엑셀 업로드/다운로드 설정 appendix](/docs/appx/import-export)
+- [엑셀 서버 모듈 트러블슈팅 appendix](/docs/appx/excel-server-troubleshooting)
+- [엑셀 DRM 처리 appendix](/docs/appx/excel-drm)
+- [엑셀 비밀번호 설정 appendix](/docs/appx/excel-password)
 
 ### Since
 

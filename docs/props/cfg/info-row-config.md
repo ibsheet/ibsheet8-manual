@@ -1,9 +1,9 @@
 # InfoRowConfig ***(cfg)***
-> 시트 상단 혹은 하단에 별도의 행을 통해 조회된 데이터의 개수나 페이지 네비게이션을 설정합니다.
->
-> 건수정보표시행에 임의의 문자나 숫자를 추가적으로 설정 하는 것도 가능합니다.
->
-> `Layout`에 셀에 대한 속성 및 타입을 설정 할 수 있습니다.
+> 시트 상단 혹은 하단에 별도의 행을 통해 조회된 데이터의 개수나 페이지 네비게이션을 설정합니다.  
+> 건수정보표시행에 임의의 문자나 숫자를 추가적으로 설정 하는 것도 가능합니다.  
+> `Layout`에 셀에 대한 속성 및 타입을 설정 할 수 있습니다.  
+> InfoRow 행의 높이는 이 옵션이 아니라 `Def.InfoRow.Height`로 지정합니다. (예: `Def: { InfoRow: { Height: 30 } }`)  
+> InfoRow도 내부적으로 Formula를 지원하므로, `Layout` 셀에 `Formula` 함수를 지정해 계산 값을 표시할 수 있습니다.
 
 ### Type
 `object`
@@ -63,6 +63,19 @@ options.Cfg = {
             "Count"
         ],
         "Space": "Top"
+    }
+};
+
+// InfoRow 셀에 Formula 적용 (계산 값 표시)
+// Layout에 추가한 임의의 셀은 내부적으로 CustomCells1, CustomCells2 ... 로 생성됩니다.
+options.Cfg = {
+    InfoRowConfig: {
+        "Visible": true,
+        "Layout": [
+            // CustomCells1 로 생성됨 — 체크된 행 수를 표시
+            {Align:"left", Formula:function(fr){ return fr.Sheet.getRowsByChecked("sCheck").length + " 건 체크"; }},
+            "Count"
+        ]
     }
 };
 ```

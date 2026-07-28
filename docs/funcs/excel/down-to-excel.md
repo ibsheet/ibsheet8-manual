@@ -1,13 +1,13 @@
 # down2Excel ***(method)***
 
-<!-- synonyms: 엑셀 다운로드, 엑셀 내려받기, down to excel, 서버 엑셀 다운, jsp 엑셀, POI 엑셀, xlsx 다운로드 -->
+<!-- synonyms: 엑셀 다운로드, 엑셀 내려받기, down to excel, 서버 엑셀 다운, jsp 엑셀, POI 엑셀, xlsx 다운로드, DRM, 문서보안, DRM 적용 -->
 
 > 시트의 내용을 엑셀 파일로 다운로드합니다.  
 > 사용 전 [서버모듈 설치](/docs/appx/import-export)와 `/plugins/ibsheet-excel.js` 스크립트 로드가 필요합니다.  
 > 이 함수를 호출하면 `Cfg.Export` 속성에 지정한 `Down2Excel.jsp`(또는 `Down2Excel.aspx`)가 호출되며, 이 jsp 파일이 시트 정보(컬럼 정의 등)와 데이터를 받아 엑셀 파일을 생성해 클라이언트로 전송합니다.  
-> 시트마다 반복 설정이 번거로우면 [IBSheet.CommonOptions](/docs/static/common-options)로 공통 적용할 수 있습니다.  
-> 다운로드가 안 되면 먼저 확인하세요. `/plugins/ibsheet-excel.js` 로드 여부, `Cfg.Export`의 `Down2Excel.jsp`(또는 `.aspx`) 경로(경로가 틀리면 `404`), 서버 모듈과 라이브러리 설치 상태.  
-> 그 밖의 환경설정, 에러, 트러블슈팅 상세는 IBSheet 지원 포털의 [엑셀 가이드 모음](https://portal.ibsheet.com/support/solutions/folders/72000394868)에서 확인하세요.
+> 시트마다 반복 설정이 번거로우면 [IBSheet.CommonOptions](/docs/static/common-options)로 공통 적용할 수 있습니다.
+
+다운로드가 서버에서 실패하면 오류 메시지는 [onExportFinish](/docs/events/on-export-finish)의 `message`로 전달됩니다(`result`가 `0`일 때).
 
 ### Syntax
 ```javascript
@@ -18,13 +18,13 @@ void down2Excel( param );
 
 |Name|Type|Required|Description|
 |----------|-----|---|----|
-|fileName|`string`|<span class='optional'>선택</span>|생성할 엑셀파일 명 (`default: "Excel.xlsx"`) <br/>**이 속성에서 파일명과 함께 확장자를 xls, xlsx로 붙이느냐에 따라서 생성 파일이 xls형식이나, xlsx형식으로 만들어집니다.**|
-|sheetName|`string`|<span class='optional'>선택</span>|만들어지는 엑셀 파일의 WorkSheet에 부여할 이름|
+|fileName|`string`|<span class='optional'>선택</span>|생성할 엑셀파일 명 (`default: "Excel.xlsx"`) <br/>**이 속성에서 파일명과 함께 확장자를 xls, xlsx로 붙이느냐에 따라서 생성 파일이 xls형식이나, xlsx형식으로 만들어집니다.**<br/>파일 이름에 쓸 수 없는 특수문자(`\ / : * ? " < > \|`)가 포함되면 다운로드한 파일을 열 때 복구 경고가 뜨거나 손상될 수 있으니 제거하세요.|
+|sheetName|`string`|<span class='optional'>선택</span>|만들어지는 엑셀 파일의 WorkSheet에 부여할 이름<br/>워크시트 이름에 쓸 수 없는 특수문자(`\ / ? * [ ] :`)가 포함되면 다운로드한 파일을 열 때 복구 경고가 뜨거나 손상될 수 있으니 제거하세요.|
 |downRows|`string`|<span class='optional'>선택</span>|지정한 행만 다운로드 합니다.<br/>(ex: "1\|3\|4\|5\|9" 식의 문자열)<br> 별도의 설정이 없을 시 모든 행이 다운로드 됩니다.<br/> 화면에 보이는 행 또는 필터된 행만 포함하고 싶은 경우 `"Visible"`로 설정하면 됩니다.<br/> `downRows`로 행을 일부만 다운로드하면 **데이터 영역의 머지가 정상 적용되지 않습니다**(헤더 머지는 유지). 행 일부만 받을 때는 머지를 기대하지 마세요.<br> 데이터 행만 설정할 수 있으며, 데이터 행의 시작 Index는 1부터 시작합니다.|
 |downCols|`string`|<span class='optional'>선택</span>|지정한 열만 다운로드 합니다.<br/> 별도의 설정이 없을시 모든 열이 다운로드 됩니다.<br> 보여지는 열만 다운로드하고 싶을 경우 `"Visible"`로 설정하면 됩니다.<br/>(ex: "Price\|AMT\|TOTAL" 식의 문자열)<br/> 지정한 순서대로 컬럼이 재배열되므로, 머지가 있는 시트에서 컬럼 순서를 바꾸면 헤더 머지가 어긋날 수 있습니다(화면과 같은 순서 권장). 특정 컬럼을 제외하면 머지는 남은 컬럼에 맞춰 조정됩니다.|
 |downTreeHide|`boolean`|<span class='optional'>선택</span>|tree를 사용하는 경우, 접혀진 행도 엑셀에 다운로드 할지 여부<br>`0(false)`:접혀진 행(자식노드)들 다운로드 대상 제외 (`default`)<br>`1(true)`:접혀진 행(자식노드)들 다운로드 대상 포함|
 |downHeader|`boolean`|<span class='optional'>선택</span>|헤더행을 다운로드 할지 여부를 설정합니다.<br>`0(false)`:다운로드 시 헤더행 미포함<br>`1(true)`:다운로드 시 헤더행 포함 (`default`)|
-|sheetDesign|`number`|<span class='optional'>선택</span>|`main.css` 파일에 설정된 시트의 디자인 요소를 엑셀에도 반영할지 여부를 설정합니다.<br> 반영되는 디자인 요소는 다음과 같습니다.<br/>헤더의 배경색, 헤더의 폰트 색상,<br/> 폰트명(main.css 파일에 설정한 IBMain class 속성값),<br/>폰트크기(excelFontSize 속성값),데이터 배경색 <br> `0`:셀 외곽선을 제외한 모든 디자인을 적용하지 않습니다.<br/> `1`:셀 외곽선을 포함해 모든 디자인을 적용합니다. (`default`)<br>`2`:셀 외곽선을 제외한 셀 스타일을 적용합니다.<br/>`3`:셀 외곽선 및 스타일을 모두 적용하지 않습니다.<br/> `4`:헤더행에만 모든 디자인을 적용합니다. **해당 옵션을 사용하시려면 서버모듈을 1.1.16 이후 버전으로 업데이트해주셔야 합니다.**
+|sheetDesign|`number`|<span class='optional'>선택</span>|시트에 적용된 디자인 요소를 엑셀에도 반영할지 여부를 설정합니다.<br>`main.css` 스타일뿐 아니라 `setAttribute`로 지정한 `Color`/`TextColor`도 반영됩니다.<br>반영되는 디자인 요소는 다음과 같습니다.<br/>헤더의 배경색(`main.css` 파일에 설정한 `IBCellHeader` class 속성값), 헤더의 폰트 색상(`main.css` 파일에 설정한 `IBHeaderText` class 속성값),<br/> 폰트명(`main.css` 파일에 설정한 `IBMain` class 속성값, excelFontFamily로 재지정 가능),<br/>폰트크기(`main.css` 파일에 설정한 `.IBMain, .IBMain *` 값, excelFontSize 속성으로 재지정 가능),데이터 배경색 <br> `0`:셀 외곽선을 제외한 모든 디자인을 적용하지 않습니다.<br/> `1`:셀 외곽선을 포함해 모든 디자인을 적용합니다. (`default`)<br>`2`:셀 외곽선을 제외한 셀 스타일을 적용합니다.<br/>`3`:셀 외곽선 및 스타일을 모두 적용하지 않습니다.<br/> `4`:헤더행에만 모든 디자인을 적용합니다. **해당 옵션을 사용하시려면 서버모듈을 1.1.16 이후 버전으로 업데이트해주셔야 합니다.**
 |titleText|`string`|<span class='optional'>선택</span>|엑셀 문서의 상단에 원하는 문자를 추가합니다.<br/> 문자는 열구분자("\|")와 행구분자("\r\n")을 통해서 작성하실수 있습니다.<br/>가령 "A\|B\|C\r\nD\|E\|F" 와 같이 입력한 경우 첫 행에 3개의 셀에 각각 A,B,C 값이 들어가고 두번째 행의 3개의 셀에 각각 D,E,F 값이 입력됩니다. <br/> 값 안에서 엔터를 포함하려면 \r 이나 \n 을 삽입하면 됩니다. \r\n 이 10개가 포함되면 11줄을 차지하게 되고 12번째 행부터 시트 내용이 출력됩니다.|
 |userMerge|`string`|<span class='optional'>선택</span>|`TitleText`와 더불어 사용하면서 엑셀 안에 원하는 영역을 머지(병합)합니다.<br/> 입력방법은 4개의 숫자로 <br/>`"머지시작셀 row index,머지시작셀 col index,아래로 병합할 행 개수(1을 설정하면 병합 없음),우측으로 병합할 개수"`<br/>로 이루어 집니다.(여러개 병합시에는 띄어쓰기로 구분)<br/>가령 `"2,2,1,6 3,2,3,3"`위와 같이 설정하였다면 2,2 셀부터 오른쪽으로 6칸이 병합되고, 3,2 셀부터 아래로 3칸, 오른쪽으로 3칸이 병합 됩니다.<br/>![userMerge](/assets/imgs/userMerge.png)|
 |excelRowHeight|`number`|<span class='optional'>선택</span>|엑셀 문서의 행 높이를 설정합니다. -1 설정시 셀의 내용물 크기에 맞춰 엑셀 문서의 행 높이가 조절됩니다.|
@@ -39,7 +39,8 @@ void down2Excel( param );
 |checkBoxOnValue|`string`|<span class='optional'>선택</span>|체크박스와 라디오 박스에서 체크를 한 경우 `1`값 대신 지정한 값을 사용합니다.|
 |checkBoxOffValue|`string`|<span class='optional'>선택</span>|체크박스와 라디오 박스에서 체크 해제를 한 경우 `0`값 대신 지정한 값을 사용합니다.|
 |downSum|`boolean`|<span class='optional'>선택</span>|합계 행 다운로드 여부를 설정합니다.<br>`0(false)`:합계 행 다운로드 시 미포함<br>`1(true)`:합계 행 다운로드 시 포함 (`default`)|
-|excelFontSize|`number`|<span class='optional'>선택</span>|엑셀의 폰트 크기를 설정합니다.|
+|excelFontSize|`number`|<span class='optional'>선택</span>|엑셀의 폰트 크기를 설정합니다.<br/>미지정 시 `main.css`의 `.IBMain, .IBMain *`에 설정된 폰트 크기가 기본 적용되며, 화면과 다른 크기로 내리려면 이 값을 지정합니다.|
+|excelFontFamily|`string`|<span class='optional'>선택</span>|엑셀의 폰트(글꼴)를 설정합니다.<br/>미지정 시 `main.css`의 `.IBMain`에 설정된 폰트명이 기본 적용되며, 화면과 다른 글꼴로 내리려면 이 값을 지정합니다.|
 |excludeFooterRow|`boolean`|<span class='optional'>선택</span>|푸터 행 제외 여부를 설정합니다.<br>`0(false)`:푸터 행 포함 (`default`) <br>`1(true)`:푸터 행 제외|
 |numberTypeToText|`boolean`|<span class='optional'>선택</span>|`Int`, `Float` 타입의 컬럼을 `Text` 타입으로 다운로드 받을지 여부를 설정합니다.<br>`0(false)`:`Int`, `Float` 타입의 컬럼을 `Text` 타입으로 설정 안함 (`default`)<br>`1(true)`:`Int`, `Float` 타입의 컬럼을 `Text` 타입으로 설정|
 |reqHeader|`object`|<span class='optional'>선택</span>|서버 전송 헤더에 사용자가 지정한 헤더 정보를 설정합니다.|
@@ -327,6 +328,10 @@ var param = {
 - [down2Pdf method](./down-to-pdf)
 - [onBeforeExport event](/docs/events/on-before-export)
 - [onExportFinish event](/docs/events/on-export-finish)
+- [엑셀 업로드/다운로드 설정 appendix](/docs/appx/import-export)
+- [엑셀 서버 모듈 트러블슈팅 appendix](/docs/appx/excel-server-troubleshooting)
+- [엑셀 DRM 처리 appendix](/docs/appx/excel-drm)
+- [엑셀 비밀번호 설정 appendix](/docs/appx/excel-password)
 
 
 ### Since

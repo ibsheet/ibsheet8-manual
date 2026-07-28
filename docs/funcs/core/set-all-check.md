@@ -5,6 +5,7 @@
 > `Bool` 타입의 열 전체를 체크/체크해제합니다.  
 > 편집 불가능한 셀은 일괄 처리에서 제외됩니다. (편집 불가 셀까지 체크하려면 [setValue](./set-value)를 사용하세요)  
 > 사용자 클릭이 아닌 코드 호출이므로 [HeaderCheckPageOnly](/docs/props/cfg/header-check-page-only)와 [AllCheckIgnoreEvent](/docs/props/col/all-check-ignore-event) 설정은 적용되지 않습니다. (페이징과 무관하게 모든 행이 대상이며, `onAfterChange` 이벤트도 행마다 발생합니다)  
+> 단, [HeaderCheckMode](/docs/props/cfg/header-check-mode)를 `1`로 설정하면 보이는 행만 체크 대상이 됩니다(필터 등으로 감춰진 행 제외).  
 > 이벤트를 차단하려면 `ignoreEvent` 인자를 `true`로 지정하세요.
 
 ### Syntax
@@ -36,6 +37,7 @@ sheet.setAllCheck("CHK", 0, true);
 - [HeaderCheck cfg](/docs/props/cfg/header-check)
 - [HeaderCheck col](/docs/props/col/header-check)
 - [HeaderCheckPageOnly cfg](/docs/props/cfg/header-check-page-only)
+- [HeaderCheckMode cfg](/docs/props/cfg/header-check-mode)
 - [AllCheckIgnoreEvent col](/docs/props/col/all-check-ignore-event)
 - [onBeforeCheckAll event](/docs/events/on-before-check-all)
 - [onCheckAllFinish event](/docs/events/on-check-all-finish)
