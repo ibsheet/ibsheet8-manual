@@ -31,6 +31,10 @@
 |`[비공개]` `Expand`|접음/펼침 기능을 사용하기 위한 버튼이 표시됩니다.|
 !-->
 
+> **주의**: `Button` 속성에는 위 표의 정해진 키워드(`Button` / `Clear` / `Check` / `Html` / `Defaults` / 공백) 또는 이미지 파일 URL만 지정해야 합니다.  
+> 그 외의 문자열(예: `<u>...</u>` 같은 HTML 마크업)을 지정하면 해당 문자열을 이미지 URL로 간주하여, 그 경로로 불필요한 요청(대개 404)이 렌더마다 발생합니다.  
+> 조건에 따라 HTML을 표시하려면 마크업을 `Button` 속성이 아니라 [ButtonText](./button-text)에 넣으세요.
+
 > `Html`이나 이미지 버튼 사용 시 버튼 너비는 [WidthPad](./width-pad) 속성으로 설정할 수 있습니다.
 
 
@@ -38,8 +42,8 @@
 
 |Value|Description|
 |---|---|
-|`Button`|일반적인 버튼 형태로 표시합니다. [UseButton](/docs/props/cfg/use-button) 속성에 따라 셀 값이 `<u>` 태그 또는 `<button>` 태그로 렌더링됩니다.|
-|`Html`|셀 값을 HTML 형태로 표시합니다 (예: `<div class="button">버튼</div>`).|
+|`Button`|일반적인 버튼 형태로 표시합니다. [UseButton](/docs/props/cfg/use-button) 속성에 따라 [ButtonText](./button-text)에 설정한 값이 `<u>` 태그 또는 `<button>` 태그로 렌더링됩니다.|
+|`Html`|[ButtonText](./button-text)에 설정한 값을 HTML로 해석해 표시합니다 (예: `<div class="button">버튼</div>`).<br/>HTML 콘텐츠는 `ButtonText`에 넣으며, `Button` 속성 자체에는 HTML 마크업을 넣지 마세요.|
 <!--!
 |`[비공개]` `Class`|셀에 커스텀 css Class를 적용합니다.<br/>가령 기본테마를 사용하면서 `Button속성`의 값을 "Class"로, [ButtonClass](./button-class)속성의 값을 "CUST_BTN"으로 설정하면,<br/>실제 해당셀의 클레스는 **IBToolCUST_BTN** 으로 설정됩니다.| 
 !-->
