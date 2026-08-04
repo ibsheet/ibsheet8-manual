@@ -4,7 +4,7 @@
 > 다이얼로그 안에서는 한 행의 내용을 IBSheet(그리드) 형태로 표현합니다.  
 > 다이얼로그 내에서 값을 수정하실 수도 있으나, `Formula`, `Related`(관계형 Enum)는 동작하지 않습니다.  
 > (가급적 다이얼로그 내에서 직접 수정보다는 확인 용도로 사용하실 것을 권합니다.)  
-> <mark>해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.</mark>  
+> 해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.  
 > 다이얼로그 커스터마이징은 [Dialog Templates appendix](/docs/appx/dialog-templates)를 참고하세요.
 
 ###

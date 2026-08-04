@@ -2,7 +2,7 @@
 
 > 한 행의 내용을 다이얼로그로 열어 보여줍니다.  
 > [showEditDialog](/docs/funcs/dialog/show-edit-dialog)와 용도는 같지만, 행 내용을 IBSheet(그리드)가 아닌 순수 HTML 태그로 표현합니다.  
-> <mark>해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.</mark>  
+> 해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.  
 > 다이얼로그 커스터마이징은 [Dialog Templates appendix](/docs/appx/dialog-templates)를 참고하세요.
 
 ###

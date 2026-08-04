@@ -1,8 +1,10 @@
 # showDownloadDialog ***(method)***
 
 > 시트의 내용을 엑셀이나 Text형식으로 다운로드 받기 위한 다이얼로그 창을 오픈합니다.  
-> 해당 기능은 `Cfg.Export.Url` 에 `jsp(aspx)`파일에 대한 경로가 설정되어 있어야 합니다.  
-> <mark>해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.</mark>  
+> 해당 함수는 `/plugins/ibsheet-dialog.js` 파일이 포함되어 있어야 사용하실 수 있습니다.  
+> 이 함수는 내부적으로 `down2Excel`을 호출하므로 [AutoExcelMode](/docs/props/cfg/auto-excel-mode) 값에 따라 필요 조건이 달라집니다.  
+> - 기본(서버 모듈, `AutoExcelMode:1`): `/plugins/ibsheet-excel.js` 로드와 `Cfg.Export.Url`(`jsp`/`aspx`) 설정이 필요합니다.  
+> - 클라이언트 모듈(`AutoExcelMode:2`): 내부적으로 `exportData`로 처리되어 브라우저에서 다운로드하므로 `ibsheet-excel.js`/`Export.Url`이 필요 없습니다.  
 > 다이얼로그 커스터마이징은 [Dialog Templates appendix](/docs/appx/dialog-templates)를 참고하세요.
 <!--!
 <br/>
@@ -10,7 +12,6 @@
 !-->
 
 ### 상세 설명
-> `sheet.showDownloadDialog()`를 호출하여 동일한 기능 사용 가능합니다.  
 > `rowchk` 인자를 사용하여 `1(default)`인 경우 행 선택 열 생성, `0`인 경우 행 선택 열을 생성하지 않습니다.  
 > `title` 인자에는 원하는 타이틀명을 입력할 수 있습니다. 입력하지 않으면 기본적으로 파일 다운로드라는 타이틀명을 사용합니다.  
 > `title` 에 `html 태그`를 사용할 수 있습니다. ex) `<span style='color:red;'>사내 정규직 지원 리스트</span>`  

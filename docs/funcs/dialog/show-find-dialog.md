@@ -2,7 +2,7 @@
 
 > 시트 내에 데이터(텍스트 기준)를 찾기 위한 다이얼로그를 오픈합니다.  
 > 바꾸기 기능을 통해 검색 데이터를 변경할 수 있습니다.  
-> <mark>해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.</mark>  
+> 해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.  
 > 다이얼로그 커스터마이징은 [Dialog Templates appendix](/docs/appx/dialog-templates)를 참고하세요.
 
 ###

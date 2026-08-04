@@ -1,7 +1,7 @@
 # showChartDialog ***(method)***
 
 > 시트의 선택된 영역을 기준으로 차트를 보여주는 다이얼로그 창을 보여줍니다.  
-> <mark>해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일과 `IBChart` 가 포함되어 있어야 사용하실 수 있습니다.</mark>  
+> 해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일과 `IBChart` 가 포함되어 있어야 사용하실 수 있습니다.  
 > 다이얼로그 커스터마이징은 [Dialog Templates appendix](/docs/appx/dialog-templates)를 참고하세요.
 
 ### 상세 설명

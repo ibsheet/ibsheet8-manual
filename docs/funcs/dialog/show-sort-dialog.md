@@ -2,7 +2,7 @@
 
 > 시트의 정렬을 설정할 수 있는 다이얼로그 창을 오픈합니다.  
 > 확인 버튼 클릭시 다이얼로그에서 설정한 순서대로 정렬이 실행됩니다.  
-> <mark>해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.</mark>  
+> 해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.  
 > 다이얼로그 커스터마이징은 [Dialog Templates appendix](/docs/appx/dialog-templates)를 참고하세요.
 
 ###

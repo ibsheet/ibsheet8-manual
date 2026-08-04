@@ -2,7 +2,7 @@
 
 > 피벗 데이터를 확인하기 위한 다이얼로그를 오픈합니다.  
 > 대상 컬럼(일반/숫자)을 아래 4개 영역(필터, 기준 행, 기준 열, 값)에 끌어놓아 설정한 후, 피벗 테이블 생성 버튼을 클릭하면 원본시트 위치에 동적으로 생성된 피벗 시트가 보여집니다.  
-> <mark>해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.</mark>  
+> 해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.  
 > 다이얼로그 커스터마이징은 [Dialog Templates appendix](/docs/appx/dialog-templates)를 참고하세요.  
 > **<mark>주의</mark> : 피벗 다이얼로그 사용 시, 필터 다이얼로그([UseFilterDialog (cfg)](/docs/props/cfg/use-filter-dialog))는 사용 하실 수 없습니다.**
 
