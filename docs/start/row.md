@@ -14,7 +14,7 @@
 - **커스텀 행(`Head`)** — 헤더행 아래에 고정으로 넣는 행입니다.
 
 ### *헤더행*
-시트 생성시 `options.Cols.Header`를 통해 설정한 값들이 헤더에 들어가게 됩니다.<br/>
+시트 생성시 `options.Cols.Header`를 통해 설정한 값들이 헤더에 들어가게 됩니다.  
 헤더 셀은 클릭시 소팅이 되거나 드래그를 통해 열의 위치이동, 컬럼의 사이즈 조절 등의 역할을 수행합니다.
 
 ```javascript
@@ -54,7 +54,7 @@ var options = {
     ]
 };
 ```
-![해더행](/assets/imgs/header1.png "헤더행")<br/>
+![해더행](/assets/imgs/header1.png "헤더행")  
 [생성된 헤더행]
 
 ### *필터행*
@@ -62,17 +62,17 @@ var options = {
 ```javascript
 sheet.showFilterRow();
 ```
-![필터행](/assets/imgs/header2.png "필터행")<br/>
+![필터행](/assets/imgs/header2.png "필터행")  
 [필터행]
 
 ### *커스텀 행(Head)*
-`options.Head`에 정의해 **헤더행 아래**(필터행이 있으면 그 아래)에 고정 행을 원하는 개수만큼 만듭니다. 행 구성과 예제는 → [Head / Foot appendix](/docs/appx/head-foot)
+`options.Head`에 정의해 **헤더행 아래**(필터행이 있으면 그 아래)에 고정 행을 원하는 개수만큼 만듭니다. 행 구성과 예제는 → [Head / Foot appendix](/docs/appx/head-foot)  
 ![커스텀 헤드행](/assets/imgs/header3.png "커스텀 헤드행")
 
 ---
 ## 가운데 (데이터)
-가운데는 [doSearch()](/docs/funcs/core/do-search), [loadSearchData()](/docs/funcs/core/load-search-data)함수로 조회하거나 [addRow()](/docs/funcs/core/add-row)함수로 추가한 데이터가 보여지는 데이터 영역입니다.<br/>
-![데이터 영역](/assets/imgs/body.png "데이터 영역")<br/>
+가운데는 [doSearch()](/docs/funcs/core/do-search), [loadSearchData()](/docs/funcs/core/load-search-data)함수로 조회하거나 [addRow()](/docs/funcs/core/add-row)함수로 추가한 데이터가 보여지는 데이터 영역입니다.  
+![데이터 영역](/assets/imgs/body.png "데이터 영역")  
 [**데이터 영역**]
 
 ---
@@ -98,8 +98,8 @@ sheet.showFilterRow();
 ## 기타
 
 ### *솔리드 행*
-상단 고정이나 하단 고정 주변에 임의의 행을 추가할 수 있습니다.<br/>
-이렇게 추가된 행은 시트 내 열과 무관하게 기능과 크기를 갖을 수 있습니다.<br/>
+상단 고정이나 하단 고정 주변에 임의의 행을 추가할 수 있습니다.  
+이렇게 추가된 행은 시트 내 열과 무관하게 기능과 크기를 가질 수 있습니다.  
 보다 자세한 내용은 (appendix) [Soild](/docs/appx/solid)을 참고하세요.
 
 
