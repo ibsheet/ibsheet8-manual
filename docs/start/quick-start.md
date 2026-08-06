@@ -1,6 +1,6 @@
 # Quick Start
 
-<!-- synonyms: 시작하기, 빠른 시작, 설치, 셋업, setup, getting started, 시트 생성, 첫 시트, 튜토리얼, 따라하기 -->
+<!-- synonyms: 시작하기, 빠른 시작, 설치, 셋업, setup, getting started, 시트 생성, 첫 시트, 튜토리얼, 따라하기, 스크립트 로드, 파일 로드, import, ibsheet.js, ko.js, locale, 로케일, main.css, css 로드, ibleaders.js, 라이선스 파일, 로드 순서 -->
 
 IBSheet8을 처음 접하는 개발자가 **아무 설정도 없는 상태에서 화면에 시트 하나를 띄우기까지**를 순서대로 따라할 수 있도록 정리한 문서입니다.  
 각 단계를 위에서부터 그대로 따라오면 됩니다.

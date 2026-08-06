@@ -82,6 +82,8 @@ IBSheet.create({
 
 `onRenderStart`와 `onRenderFinish`는 생성뿐 아니라 조회, 화면 크기 변경(`Ctrl + 휠` 확대/축소 등), `rerender`, `setTheme`, `makeSubTotal` 등 **시트를 다시 그리는 여러 동작**에서 발생하는 일반 이벤트입니다. 전체 발생 시점은 [onRenderFinish](/docs/events/on-render-finish)를 참고하세요. 단, `renderBody`(데이터 영역만 렌더링)로는 발생하지 않습니다. `onRenderFirstFinish`만 최초 생성 시 1회 발생합니다.
 
+### 주의 사항
+
 > **생성 시점 주의**: `create()`는 기본이 비동기(`sync: 0`)로 동작합니다.  
 > 함수가 반환한 직후에는 시트가 아직 완성되지 않았을 수 있으므로, 생성 후 데이터 로드나 시트 조작은 [onRenderFirstFinish (event)](/docs/events/on-render-first-finish)에서 처리하고, 반드시 동기로 생성해야 한다면 `sync` 인자를 `1`로 지정합니다.  
 > `create()`는 `Promise`가 아니라 **시트 객체를 반환**하므로 `await IBSheet.create(...)`로 감싸도 완료를 기다려 주지 않습니다. `async/await` 대신 위 방법(`onRenderFirstFinish` 또는 `sync: 1`)을 사용하세요.
@@ -93,6 +95,10 @@ async function initSheet() {
   sheet.doSearch("/search.do"); // 시트가 아직 준비되지 않아 오류
 }
 ```
+
+> **id 중복 주의**: `id`가 중복되면 `Can't creation : Duplicate sheet_id already exists` 경고가 발생하며 생성되지 않습니다. SPA나 팝업처럼 UNIQ한 `id`를 지정하기 어려우면, [IBSheet.hasSheet](./has-sheet)로 확인한 뒤 [dispose (method)](/docs/funcs/core/dispose) 또는 [IBSheet.disposeAll (static)](./dispose-all)로 제거하고 다시 생성하세요.
+
+> **파일 로드 주의**: `ibsheet.js`, `main.css` 등 IBSheet 관련 파일은 한 페이지(DOM)당 1회만 로드합니다. 특히 팝업 화면을 기존 DOM에 `append`하는 형태라면 팝업 쪽에서 이 파일들을 다시 호출하면 안 됩니다. 재로드하면 전역 `IBSheet`가 재초기화되어 **이미 생성된 시트가 관리 목록(`IBSheet` 배열)에서 사라집니다.**
 
 ### Read More
  - [IBSheet.CommonOptions static](./common-options)

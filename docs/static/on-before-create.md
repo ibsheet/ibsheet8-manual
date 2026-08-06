@@ -1,9 +1,9 @@
 # onBeforeCreate ***(static)***
 
-> [(Static) IBSheet.create()](./create)함수가 호출되고 시트가 생성되기 전에 전달되는 `parameter(el, id, options 등)`를 수정할 수 있는 일종의 이벤트 입니다.<br/>
-> [(Static) IBSheet.CommonOptions](./common-options)와 시트 생성에 사용되는 옵션이 머지된 `options`를 `parameter`로 받습니다.<br/>
-> 해당 함수를 직접 구현하여 `options`에 설정되어야 할 프로젝트의 공통적인 내용을 정의하거나 수정할 수 있습니다.<br>
-> <mark>해당 함수를 사용 시에는 반드시 수정된 parameter객체를 리턴해 주어야 정상적으로 시트가 생성됩니다.</mark>
+> [(Static) IBSheet.create()](./create)함수가 호출되고 시트가 생성되기 전에 전달되는 `parameter(el, id, options 등)`를 수정할 수 있는 훅(콜백)입니다.  
+> [(Static) IBSheet.CommonOptions](./common-options)와 시트 생성에 사용되는 옵션이 머지된 `options`를 `parameter`로 받습니다.  
+> 해당 콜백을 직접 구현하여 `options`에 설정되어야 할 프로젝트의 공통적인 내용을 정의하거나 수정할 수 있습니다.  
+> <mark>해당 콜백을 사용할 때는 반드시 수정된 `obj`를 리턴해 주어야 정상적으로 시트가 생성됩니다.</mark>
 
 ### Syntax
 ```javascript
@@ -21,7 +21,7 @@ IBSheet.onBeforeCreate = function(obj){
 |data|`array[object]`|시트 생성과 동시에 로드될 `데이터 배열`|
 
 ### Return Value
-***object*** : `options` 인자로 받은 받은 내용을 일부 수정하거나 그대로 리턴
+***object*** : 인자로 받은 `obj`(`id`/`el`/`options`/`data`)를 필요 시 수정하여 그대로 리턴
 
 ### Example
 ```javascript
@@ -56,6 +56,7 @@ IBSheet.onBeforeCreate = function (obj) {
     return obj;
 }
 ```
+
 ### Read More
  - [IBSheet.create static](./create)
  - [IBSheet.CommonOptions static](./common-options)
