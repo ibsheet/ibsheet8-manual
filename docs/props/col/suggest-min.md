@@ -1,5 +1,7 @@
 # SuggestMin ***(col)***
 
+<!-- synonyms: 자동완성 최소 글자, Suggest 최소, 최소 입력 수, suggest min, autocomplete min chars, minimum length, trigger length -->
+
 > `Suggest`속성을 통해 설정한 메뉴를 보여주기 위한 최소 글자수를 입력합니다. 
 >
 > 설정을 하지 않으면 한글자라도 입력시 바로 `Suggest목록`이 보여지게 됩니다.

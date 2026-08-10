@@ -1,5 +1,7 @@
 # IgnoreHeaderColMerge ***(cfg)***
 
+<!-- synonyms: IgnoreHeaderColMerge, ignore header col merge, header col merge skip, ColMerge header exclude, header ColMerge disable, 헤더 ColMerge 무시, 헤더 병합 무시, 헤더 열 병합 제외, ColMerge 헤더 -->
+
 > `ColMerge` 속성을 헤더 영역에도 적용할지 여부를 결정합니다.  
 > 헤더 셀에 개별적으로 [ColMerge(cell)](/docs/props/cell/col-merge)를 설정하면 컬럼 설정과 다르게 제어할 수도 있습니다.
 

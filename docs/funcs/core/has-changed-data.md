@@ -1,4 +1,7 @@
 # hasChangedData ***(method)***
+
+<!-- synonyms: hasChangedData, has-changed-data, 변경 여부, 수정 여부, 데이터 변경, 변경 확인, 수정 확인, 변경사항, has, changed, modified, data -->
+
 > 시트 내에 변경된 내용(입력, 수정, 삭제)이 있는지 확인합니다.
 
 

@@ -1,4 +1,7 @@
 # IconAlign ***(cell)***
+
+<!-- synonyms: IconAlign, icon-align, 아이콘 정렬, 아이콘 위치, 좌측 아이콘, 우측 아이콘, icon align, icon position, left icon, right icon, 아이콘 좌우, 아이콘 배치 -->
+
 > 셀 좌측에 버튼(혹은 체크박스)을 표시하는 [Icon](./icon)속성 사용시, 버튼의 위치를 설정합니다. 
 >
 > 다른 설정이 없을시 셀의 좌측에 표시됩니다..

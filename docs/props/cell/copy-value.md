@@ -1,5 +1,7 @@
 # CopyValue ***(cell)***
 
+<!-- synonyms: 복사 값, 클립보드 복사, Ctrl+C 값, 복사값 지정, 복사 문자열, 셀 복사 값, 실제 값 대신 복사, copy-value, copy value, clipboard copy, copy string, override copy value -->
+
 > `Ctrl + C`로 셀을 복사할 때 **클립보드에 복사될 값을 설정합니다.**  
 > `CopyValue`가 설정된 경우 **셀의 실제 데이터 값 대신 `CopyValue` 값이 복사됩니다.**  
 > `Html`, `Button` 등 표시 내용과 실제 데이터가 다른 셀에서 복사 값을 지정할 때 유용합니다.
@@ -34,8 +36,8 @@ ROW["CLSCopyValue"] = "복사불가필드";
 
 ### Read More
 - [CanCopyPaste col](/docs/props/col/can-copy-paste)
-- [CopyCols cfg](./copy-cols)
-- [CopyEdit cfg](./copy-edit)
+- [CopyCols cfg](../cfg/copy-cols)
+- [CopyEdit cfg](../cfg/copy-edit)
 
 ### Since
 

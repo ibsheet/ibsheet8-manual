@@ -1,5 +1,7 @@
 # Timeout ***(cfg)***
 
+<!-- synonyms: Timeout, ajax timeout, server timeout, request timeout, connection timeout, 타임아웃, 서버 통신 타임아웃, 서버 요청 타임아웃, ajax 타임아웃, doSave timeout, 서버 대기 시간 -->
+
 > 시트에서 사용되는 서버통신의 최대 대기 시간 값을 설정합니다. 
 >
 > 입력 값은 `초(second)` 단위입니다. 기본값은 `60초` 입니다. 

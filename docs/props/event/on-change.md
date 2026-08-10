@@ -1,5 +1,7 @@
 # OnChange ***(json event)***
 
+<!-- synonyms: on change json event, cell value changed, json onChange, value change event, edit value different, cell change handler, 값 변경 이벤트, 셀 값 변경, 편집값 다름, Json 이벤트 OnChange, 값 변경 콜백, OnChange 셀 이벤트 -->
+
 > 셀 값을 변경했을 때 셀 값과 편집된 셀값이 다를 경우 호출되는 `Json` 이벤트입니다.
 >
 > `Json` 이벤트는 셀, 행, 열에서 선언될 수 있으며 적용되는 우선 순위는 **셀 > 행 > 열**입니다. 

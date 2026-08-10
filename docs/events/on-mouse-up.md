@@ -1,4 +1,7 @@
 # onMouseUp ***(event)***
+
+<!-- synonyms: 마우스 업, 마우스 버튼 뗌, 마우스 클릭 해제, on-mouse-up, mouse up, mouseup, button release -->
+
 > 시트에서 눌려진 마우스 버튼이 올라올 때 호출되는 이벤트로, [onMouseDown](./on-mouse-down) 뒤에 발생합니다.
 >
 > `1(true)`를 리턴 시 `onMouseUp`의 기본 동작을 막습니다.

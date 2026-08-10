@@ -1,4 +1,7 @@
 # hideTip ***(method)***
+
+<!-- synonyms: hideTip, hide-tip, 풍선도움말 감춤, 풍선도움말 숨김, 툴팁 감춤, 툴팁 숨기기, tip 숨김, hide, tip, tooltip, hide tip -->
+
 > 시트가 띄운 풍선도움말을 감춥니다.
 
 ### Syntax

@@ -1,4 +1,7 @@
 # showFilterRow ***(method)***
+
+<!-- synonyms: showFilterRow, show-filter-row, 필터, 필터행, 필터 행, 필터 조건, 표시, 보이기, filter, row, header -->
+
 > 헤더행 바로 아래에 **필터행(Filter Row)을 표시합니다.**
 >
 > 필터행이 표시되면 각 열에 조건을 입력하여 데이터를 필터링할 수 있습니다.  

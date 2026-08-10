@@ -1,5 +1,7 @@
 # Focus, Hover, Select에 따른 스타일 적용
 
+<!-- synonyms: 스타일, 디자인, 테마, style, theme, 커스터마이징, 외관, 시트 스타일, 선택 스타일, selection style, 포커스 스타일, 하이라이트 -->
+
 ## 포커스 영역
 
 시트에서 Focus 시, Focus 된 셀은 FocusCell로, 해당 행에서 그 외의 영역은 FocusRow로 나뉘어집니다.

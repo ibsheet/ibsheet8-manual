@@ -1,5 +1,7 @@
 # AddClass ***(col)***
 
+<!-- synonyms: 버튼 클래스, 버튼 CSS, 셀 버튼 스타일, 커스텀 클래스, 추가 클래스, button class, css class, add class, button style, custom style -->
+
 > 열의 Type이 `Button`이고 `Button` 속성의 값이 `Button`인 경우, 버튼에 적용할 CSS Class 명을 설정합니다.
 ### Type
 `string`

@@ -1,4 +1,7 @@
 # IconWidth ***(cell)***
+
+<!-- synonyms: IconWidth, icon-width, 아이콘 너비, 아이콘 크기, 버튼 너비, icon width, icon size, 아이콘 폭, 아이콘 픽셀, 아이콘 width, 아이콘 사이즈 -->
+
 > 셀 좌측에 버튼을 표시하는 [Icon](./icon)속성 사용시, 버튼의 너비를 설정합니다. 
 >
 > 너비는 pixel단위로 설정됩니다.

@@ -1,5 +1,7 @@
 # 데이터(본문 영역)
 
+<!-- synonyms: 스타일, 디자인, 테마, style, theme, 커스터마이징, 외관, 시트 스타일, 데이터 스타일, 데이터 행 디자인, row style, data style -->
+
 ## 짝/홀수 행 배경색
 짝수 혹은 홀수 행일 때 강조 배경색은 [Alternate cfg](/docs/props/cfg/alternate)의 설정에 따라 적용됩니다.
 

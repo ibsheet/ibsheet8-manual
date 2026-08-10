@@ -1,4 +1,7 @@
 # getRowsFromPage ***(method)***
+
+<!-- synonyms: getRowsFromPage, get-rows-from-page, 페이지 행, 페이지 로우, 페이지 데이터, 페이지 조회, 위치 조회, page, rows -->
+
 > 특정 페이지 내에 위에서부터 pos 번째에 위치한 [데이터 로우 객체](/docs/appx/row-object)를 리턴합니다.
 >
 > pos값은 보여지는 행을 기준으로 합니다.

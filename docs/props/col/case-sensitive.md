@@ -1,5 +1,7 @@
 # CaseSensitive ***(col)***
 
+<!-- synonyms: 대소문자 구분, 대소문자 무시, 정렬 대소문자, 필터 대소문자, case sensitive, case insensitive, sort case, filter case -->
+
 > 열 소팅시(혹은 필터 사용시) 대소문자 구분 여부를 설정합니다.
 
 ### Type

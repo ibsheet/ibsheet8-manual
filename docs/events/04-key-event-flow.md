@@ -1,5 +1,7 @@
 # 키보드 입력 이벤트 발생 순서 ***(event flow)***
 
+<!-- synonyms: 키보드 이벤트 순서, 키 입력 흐름, 키다운 키업 순서, 키 이벤트 시퀀스, key event flow, keyboard event order, keydown keyup sequence -->
+
 > 데이터 셀 키보드 입력 시 이벤트 발생 순서입니다.
 
 ### 발생 순서

@@ -1,5 +1,7 @@
 # SearchCells ***(cfg)***
 
+<!-- synonyms: SearchCells, search cells, search row cell unit, find scope, search unit, 검색 단위, 셀 단위 검색, 행 단위 검색, 찾기 셀 단위, 찾기 행 단위, Search 행 검색 단위 -->
+
 > 찾기 행 사용 시 행 단위로 검색할지 셀 단위로 검색할지 여부를 선택할 수 있습니다.
 
 

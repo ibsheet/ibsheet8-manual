@@ -1,4 +1,7 @@
 # rerender ***(method)***
+
+<!-- synonyms: rerender, 리렌더링, 재렌더링, 다시 그리기, 시트 렌더링, 화면 갱신, 화면 반영, render, redraw, refresh -->
+
 > 시트 전체 영역을 다시 렌더링 합니다.
 >
 > [setAttribute](./set-attribute)함수나 데이터에 대해 직접 접근하여 수정한 내용을 한꺼번에 화면에 반영할 때 사용됩니다.

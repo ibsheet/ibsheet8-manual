@@ -1,5 +1,7 @@
 # getGroupRows ***(method)***
 
+<!-- synonyms: getGroupRows, get-group-rows, 그룹 행, 그룹 로우, 그룹행 조회, 그룹 목록, 그룹핑 행, 그룹 결과, group, rows -->
+
 > 그룹으로 생성된 그룹행들을 반환합니다.
 >
 > 리턴 값은 다음과 같습니다

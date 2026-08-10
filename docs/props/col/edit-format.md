@@ -1,4 +1,7 @@
 # EditFormat ***(col)***
+
+<!-- synonyms: 편집 포맷, 편집 모드 포맷, 입력 형식, 편집 시 표시, 편집 마스크, edit format, input format, editing format, edit mask -->
+
 > 셀을 편집 모드로 전환했을 때 적용되는 **입력 포맷(edit format)** 을 설정합니다.  
 > `Format`이 화면에 표시되는 값을 정의한다면, `EditFormat`은 **사용자가 데이터를 편집할 때 표시되는 형식**을 정의합니다.  
 > `EditFormat`은 열의 [Type](/docs/appx/type)에 따라 설정 방식과 동작이 달라지며, **`Date`, `Text`, `Lines` 타입에서 사용할 수 있습니다.**  

@@ -1,5 +1,7 @@
 # getCanFocus ***(method)***
 
+<!-- synonyms: getCanFocus, get-can-focus, 포커스 가능 여부, 포커스 가능, 포커스 확인, 셀 포커스, CanFocus 조회, 행 포커스, focusable, can focus -->
+
 > 특정 행이나 셀이 포커스 될 수 있는지 여부를 확인합니다.
 
 

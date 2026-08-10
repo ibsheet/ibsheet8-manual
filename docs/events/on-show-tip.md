@@ -1,4 +1,7 @@
 # onShowTip ***(event)***
+
+<!-- synonyms: 풍선도움말, 툴팁 표시, tip 표시, 풍선도움말 표시, 도움말 표시, 셀 도움말, on-show-tip, show tip, tooltip, balloon tip -->
+
 > 시트의 셀 내부에 마우스 커서를 위치 시 풍선도움말이 화면에 띄워질 때 호출되는 이벤트입니다.
 >
 > 시트에 [Tip](/docs/props/row/tip)이 설정되어있지 않아도 **이 이벤트는 항상 발생합니다**.

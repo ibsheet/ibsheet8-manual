@@ -1,7 +1,10 @@
 # showRow ***(method)***
+
+<!-- synonyms: showRow, show-row, 행 보이기, 행 표시, 숨긴 행, 로우, 감춘 행, 표시, row, visible, unhide -->
+
 > 숨겨진 행을 보여지게 합니다.
 >
-> 대량으로 행을 감추거나 보이게 끔 하고자 할때는 `norender`값을 `1`로 설정하여 작업하신 후, [renderBody()](./renderBody)나 [rerender()](./rerender)함수를 호출하여 한꺼번에 화면에 반영하는 것이 좋습니다.
+> 대량으로 행을 감추거나 보이게 끔 하고자 할때는 `norender`값을 `1`로 설정하여 작업하신 후, [renderBody()](./render-body)나 [rerender()](./rerender)함수를 호출하여 한꺼번에 화면에 반영하는 것이 좋습니다.
 
 
 ### Syntax

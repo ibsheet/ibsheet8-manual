@@ -1,5 +1,7 @@
 # onRenderFinish ***(event)*** 
 
+<!-- synonyms: 렌더링 완료, 렌더 종료, 화면 그리기 완료, on-render-finish, render finish, render complete -->
+
 > 시트가 렌더링된 후 발생되는 이벤트입니다.
 >
 > 아래와 같은 부분에서 이벤트 발생합니다.
@@ -64,7 +66,7 @@ options.Events = {
 ### Read More
 
 - [onRenderStart event](./on-render-start)
-- [render method](/docs/funcs/core/render)
+- [rerender method](/docs/funcs/core/rerender)
 
 ### Since
 

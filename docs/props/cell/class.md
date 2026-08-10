@@ -1,5 +1,7 @@
 # Class ***(cell)***
 
+<!-- synonyms: 클래스, CSS 클래스, 사용자 정의 CSS, 스타일 클래스, 셀 클래스, 셀 스타일, class, css class, custom css, class-name, cell-class, className -->
+
 > 셀에 적용할 `사용자 정의 CSS`를 설정합니다.
 
 ### Type

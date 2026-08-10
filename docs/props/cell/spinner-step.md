@@ -1,4 +1,7 @@
 # SpinnerStep ***(cell)***
+
+<!-- synonyms: 스피너 스텝, 증감 간격, 증가 단위, 감소 단위, 증분, 증감폭, 스피너 단위, 화살표 증감, spinner step, step value, increment, delta, stride -->
+
 > [SpinnerVisible](./spinner-visible)을 사용하는 셀에서 입력 값의 증감 간격을 설정할 수 있습니다.
 >
 > 

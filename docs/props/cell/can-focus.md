@@ -1,4 +1,7 @@
 # CanFocus ***(cell)***
+
+<!-- synonyms: CanFocus, can-focus, 포커스 가능, 포커스 진입, 포커스 이동, Tab 키 이동, 포커스 제한, 열 건너뛰기, focusable, cell focus, tab navigation, skip focus -->
+
 > 셀에 클릭이나 키보드를 통한 이동시 포커스 가능 여부를 설정합니다.
 >
 > `CanFocus:0(false)`으로 설정된 셀에 대해서는 클릭을 통한 포커스 진입이 불가능하고, 키보드의 Tab 키를 이용한 이동시 열을 건너뛰게 됩니다.

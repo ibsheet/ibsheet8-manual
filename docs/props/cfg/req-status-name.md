@@ -1,5 +1,7 @@
 # ReqStatusName ***(cfg)***
 
+<!-- synonyms: ReqStatusName, req status name, save status name, status field name, STATUS field, doSave status name, 상태 필드명, 상태 변수명, 저장 상태명, STATUS 컬럼, 서버 전송 상태명, Added Changed Deleted 이름 -->
+
 > 저장 함수([doSave](/docs/funcs/core/do-save), [getSaveString](/docs/funcs/core/get-save-string), [getSaveJson](/docs/funcs/core/get-save-json)) 호출시 각 행의 상태(`Added`, `Changed`, `Deleted`)에 대해서 전달하는 변수 명을 설정합니다.
 >
 > 별도의 설정이 없는 경우에는 `"STATUS"`로 전달 됩니다. 

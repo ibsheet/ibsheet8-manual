@@ -1,5 +1,7 @@
 # RowMerge ***(row)***
 
+<!-- synonyms: row merge, horizontal merge, per-row data merge, header merge exclude, cell value merge, dataMerge target, 가로 병합, 좌우 병합, 값 기준 병합, 데이터 병합 대상, 헤더 병합 대상, RowMerge 속성 -->
+
 > 데이터 영역/헤더 영역에서 값 기준 병합 실행([DataMerge](/docs/props/cfg/data-merge), [HeaderMerge](/docs/props/cfg/header-merge)) 시 해당 행의 가로(좌우) 병합 여부를 설정합니다.
 
 ### Type

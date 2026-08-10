@@ -1,4 +1,7 @@
 # Tip ***(col)***
+
+<!-- synonyms: 툴팁, 풍선도움말, 마우스 오버 도움말, hover 툴팁, tip, tooltip, balloon help, hover text -->
+
 > 열 위에 마우스 커서 오버 시 풍선도움말을 표시할지 여부와,
 > 풍선도움말에 표시될 내용을 설정합니다.
 > 

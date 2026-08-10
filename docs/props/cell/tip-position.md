@@ -1,5 +1,7 @@
 # TipPosition ***(cell)***
 
+<!-- synonyms: 팁 위치, 풍선도움말 위치, 툴팁 위치, 툴팁 좌표, 툴팁 정렬, X축 위치, Y축 위치, 풍선도움말 좌표, tip position, tooltip position, tooltip offset, tooltip alignment, xy offset -->
+
 > 풍선도움말 객체의 위치나 크기,정렬을 설정합니다.
 
 ### Type

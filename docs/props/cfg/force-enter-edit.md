@@ -1,5 +1,7 @@
 # ForceEnterEdit ***(cfg)***
 
+<!-- synonyms: ForceEnterEdit, force enter edit, enter to edit, enter key edit, edit before move, enter edit then move, 엔터 편집 강제, Enter 편집 진입, EnterMode 편집, Enter 편집 후 이동, 강제 편집 진입, Enter 포커스 편집, 편집 없이 이동 -->
+
 > [EnterMode](/docs/props/cfg/enter-mode)의 `mode`가 `0`이 아닌(이동) 경우, 포커스 상태에서 `Enter`를 눌렀을 때 편집을 먼저 시작한 뒤 이동할지(`true`) 아니면 편집 없이 바로 이동할지(`false`)를 설정합니다.
 
 

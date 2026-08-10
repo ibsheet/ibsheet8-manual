@@ -1,5 +1,7 @@
 # hideRows ***(method)***
 
+<!-- synonyms: hide rows, bulk hide rows, hide multiple rows, hide row array, batch hide rows, hide many rows, 행 감추기, 여러 행 숨기기, 다중 행 숨기기, 행 일괄 숨김, 행 감춤, hideRows 메소드 -->
+
 > 여러 개의 행을 한꺼번에 숨깁니다. 
 
 

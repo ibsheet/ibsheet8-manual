@@ -1,4 +1,7 @@
 # RowSpan ***(cell)***
+
+<!-- synonyms: RowSpan, row-span, 행 병합, 세로 병합, 셀 세로 병합, 아래로 병합, 병합 개수, 행 결합, row span, vertical merge, cell rowspan, merge rows -->
+
 > 특정 셀을 기준으로 아래쪽으로 합쳐질 셀의 개수를 설정합니다.  
 > `col`에 [Spanned](/docs/props/col/spanned):`1`이 설정되어 있어야 사용할 수 있습니다.  
 > [DataMerge](/docs/props/cfg/data-merge), [HeaderMerge](/docs/props/cfg/header-merge) 설정 시 적용되지 않습니다.  

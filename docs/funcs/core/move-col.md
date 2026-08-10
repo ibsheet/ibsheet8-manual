@@ -1,4 +1,7 @@
 # moveCol ***(method)***
+
+<!-- synonyms: moveCol, move-col, 열 이동, 컬럼 이동, 열 위치 이동, 컬럼 위치 변경, 열 순서 변경, move, col, column, move col -->
+
 > 지정한 열의 위치를 이동합니다.  
 > 열의 순서를 코드에서 직접 변경할 때 사용합니다.  
 > `tocol`을 공백(`""`)으로 설정하면 `right` 값에 따라 해당 영역(section)의 맨 앞 또는 맨 뒤로 이동합니다.  

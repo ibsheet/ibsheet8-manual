@@ -1,5 +1,7 @@
 # DisableKeyWord ***(cfg)***
 
+<!-- synonyms: DisableKeyWord, disable-keyword, 필터 예약어 비활성화, 필터 키워드 비활성화, OR AND 예약어, 세미콜론 쉼표 필터, 필터 특수문자, 예약어 무시, filter reserved word, disable filter keyword, filter special char, and or filter -->
+
 > 필터행에서 문자열 컬럼 필터에 사용되는 예약어 `;`(OR)와 `,`(AND)의 사용 여부를 설정합니다.  
 > `1(true)`로 설정하면 예약어 기능이 비활성화되며, 필터행에 입력된 값을 예약어로 해석하지 않고 **일반 문자열로 처리하여 필터링**합니다. 
 >

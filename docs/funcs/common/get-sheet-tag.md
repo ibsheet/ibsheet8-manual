@@ -1,5 +1,7 @@
 # getSheetTag ***(method)***
 
+<!-- synonyms: get sheet tag, sheet dom element, sheet div tag, sheet table tag, sheet container element, sheet root element, 시트 태그, 시트 DOM, 시트 div 태그, 시트 table 태그, 시트 요소, getSheetTag 메소드 -->
+
 > 시트의 태그를 반환합니다. 기본으로 div 태그, 인자 사용시 table 태그를 반환할 수 있습니다. 
 
 ### Syntax

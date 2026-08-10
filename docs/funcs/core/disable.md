@@ -1,4 +1,7 @@
 # disable ***(method)***
+
+<!-- synonyms: 시트 비활성화, 비활성화, 잠금, 사용 중지, 이벤트 차단, disable, deactivate, lock, block, freeze -->
+
 > 시트를 비활성화 합니다.
 >
 > 시트 위에 투명한 layer가 덮혀 hover 관련 기능을 차단하고 기타 키보드, 마우스 이벤트가 차단됩니다. 

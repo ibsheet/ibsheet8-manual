@@ -1,4 +1,7 @@
 # SpinnerStep ***(col)***
+
+<!-- synonyms: 스피너 간격, 증감 단위, step 값, 스피너 스텝, spinner step, increment step, step value, spinner interval -->
+
 > [SpinnerVisible](./spinner-visible)을 사용하는 열에서 입력 값의 증감 간격을 설정할 수 있습니다.
 >
 > 

@@ -1,5 +1,7 @@
 # GroupSort ***(cfg)***
 
+<!-- synonyms: GroupSort, group sort, sort before group, group after sort, group sort mode, 그룹 정렬, 그룹핑 정렬, 정렬 후 그룹, 그룹 기준 정렬, sort 그룹, 그룹핑 sort 순서 -->
+
 > 그룹핑시 기준컬럼에 대한 정렬 처리 여부를 설정합니다.
 
 

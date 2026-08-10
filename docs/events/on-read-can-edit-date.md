@@ -1,4 +1,7 @@
 # onReadCanEditDate ***(event)***
+
+<!-- synonyms: 달력 편집 가능 여부, 날짜 편집 허용, 캘린더 셀 편집 가능, on-read-can-edit-date, can edit date, date editable -->
+
 > 달력창을 보여줄 때 달력 내에 생성되는 모든 날짜들에 대해 호출되는 이벤트입니다.
 >
 > 모든 날짜에 대해 호출되기에 많은 작업을 실행 시 느려질 수 있습니다.

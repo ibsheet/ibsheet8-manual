@@ -1,5 +1,7 @@
 # MidWidth ***(cfg)***
 
+<!-- synonyms: MidWidth, mid width, middle section width, center section width, mid section, 중앙 섹션 너비, 가운데 섹션 너비, 중앙 열 너비, 중앙 영역 너비, 중간 섹션 너비 -->
+
 > 중앙 열 섹션의 최대 너비를 설정합니다. 
 >
 > 열 섹션의 열들이 설정된 너비보다 큰 경우 스크롤바가 생성됩니다.

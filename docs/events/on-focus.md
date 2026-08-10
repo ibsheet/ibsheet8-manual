@@ -1,4 +1,7 @@
 # onFocus ***(event)***
+
+<!-- synonyms: 포커스, 셀 포커스, 커서 이동, 셀 활성화, on-focus, focus, cell focus, focused -->
+
 > 시트 내 셀이 포커스 되었을때 호출되는 이벤트입니다.
 
 ### Syntax

@@ -1,4 +1,7 @@
 # onDragFinish ***(event)***
+
+<!-- synonyms: 드래그 완료, 드래그 종료, 드롭 후 최종, on-drag-finish, drag finish, drag complete, drop end -->
+
 > 드래그된 행들이 드랍된 후, 가장 마지막에 발생하는 이벤트입니다.  
 > 이 이벤트는 대상 시트(`tosheet`)에 드래그 결과가 모두 반영된 이후 호출됩니다.  
 > 시트 간 이동 시 이 이벤트는 **드래그 시작 시트에서만 발생**합니다.

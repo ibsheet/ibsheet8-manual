@@ -1,4 +1,7 @@
 # hideRow ***(method)***
+
+<!-- synonyms: hideRow, hide-row, 행 숨김, 행 감춤, 행 감추기, 로우 숨기기, 행 삭제, hide, row, hide row, remove -->
+
 > 지정한 행을 감춥니다.
 >
 > 두번째 `del` 인자의 값이 `1(true)` 일 경우 실제 DOM을 삭제하고 숨겨집니다. ([SearchMode](/docs/props/cfg/search-mode) : 2 일 경우 사용)

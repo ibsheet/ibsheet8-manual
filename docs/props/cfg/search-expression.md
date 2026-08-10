@@ -1,5 +1,7 @@
 # SearchExpression ***(cfg)***
 
+<!-- synonyms: SearchExpression, search expression, search query, search keyword, search string, google like search, 검색어, 검색 표현식, 검색 문자열, 검색 조건, 시트 검색, 검색 쿼리, 조건 검색 -->
+
 > 시트에서 검색할 문자열을 설정합니다.
 >
 > 구글에서 검색하듯이 일반적인 문자열 및 검색 조건을 사용할 수 있습니다.

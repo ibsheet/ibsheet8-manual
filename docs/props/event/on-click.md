@@ -1,5 +1,7 @@
 # OnClick ***(json event)***
 
+<!-- synonyms: on click json event, cell click event, json onClick, cell click handler, click callback, row click event, 셀 클릭 이벤트, 클릭 이벤트, Json 이벤트 OnClick, 셀 클릭 콜백, 클릭 핸들러, OnClick json -->
+
 > 셀 클릭시 호출되는 `Json` 이벤트입니다.
 >
 > `Json` 이벤트는 셀, 행, 열에서 선언될 수 있으며 적용되는 우선 순위는 **셀 > 행 > 열**입니다. 

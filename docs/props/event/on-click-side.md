@@ -1,5 +1,7 @@
 # OnClickSide ***(json event)***
 
+<!-- synonyms: on click side, button click event, icon click event, side button click, cell button click, json onClickSide, check button click, 버튼 클릭 이벤트, 아이콘 클릭 이벤트, 셀 버튼 클릭, Json 이벤트 OnClickSide, Check 버튼 클릭 -->
+
 > [Button](/docs/props/col/button) 또는 [Icon](/docs/props/col/icon)이 속성을 사용하는 셀에 만들어지는 버튼을 클릭시 호출되는 `Json` 이벤트 입니다.
 >
 > `Json` 이벤트는 셀, 행, 열에서 선언될 수 있으며 적용되는 우선 순위는 **셀 > 행 > 열**입니다. 

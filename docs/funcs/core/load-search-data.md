@@ -1,6 +1,6 @@
 # loadSearchData ***(method)***
 
-<!-- synonyms: 조회, 데이터 조회, 데이터 바인딩, 대기이미지, 로딩, search, data bind, data load, loading -->
+<!-- synonyms: 데이터 조회, 데이터 바인딩, 대기이미지, 로딩, search, data bind, data load, loading -->
 
 > JSON형식의 데이터를 시트에 바인딩합니다. AJAX 통신 없이 데이터만 로드합니다.  
 > [SearchMode](/docs/props/cfg/search-mode) 0, 1, 2에서 사용합니다.  

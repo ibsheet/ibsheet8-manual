@@ -1,5 +1,7 @@
 # OnSame ***(json event)***
 
+<!-- synonyms: on same json event, same value edit, json onSame, edit same value, cell unchanged event, value equal event, 같은 값 편집, 값 동일 이벤트, 같은 값 이벤트, Json 이벤트 OnSame, 편집 값 같음, OnSame json -->
+
 > 셀 값을 변경했을 때 셀 값과 편집된 셀값이 같을 경우 호출되는 `Json` 이벤트입니다.
 >
 > `Json` 이벤트는 셀, 행, 열에서 선언될 수 있으며 적용되는 우선 순위는 **셀 > 행 > 열**입니다. 

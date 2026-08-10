@@ -1,5 +1,7 @@
 # onBeforeCreate ***(static)***
 
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, onBeforeCreate, 시트 생성 전, before create, 생성 이벤트 -->
+
 > [(Static) IBSheet.create()](./create)함수가 호출되고 시트가 생성되기 전에 전달되는 `parameter(el, id, options 등)`를 수정할 수 있는 훅(콜백)입니다.  
 > [(Static) IBSheet.CommonOptions](./common-options)와 시트 생성에 사용되는 옵션이 머지된 `options`를 `parameter`로 받습니다.  
 > 해당 콜백을 직접 구현하여 `options`에 설정되어야 할 프로젝트의 공통적인 내용을 정의하거나 수정할 수 있습니다.  

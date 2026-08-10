@@ -1,5 +1,7 @@
 # ScrollTop ***(cfg)***
 
+<!-- synonyms: ScrollTop, scroll top, vertical scroll position, vscroll position, scroll y, 세로 스크롤 위치, 수직 스크롤 위치, 시트 위아래 스크롤 위치, 세로 스크롤바 위치, 스크롤 상단 위치 -->
+
 > 시트의 세로 스크롤바 위치를 설정합니다. (단위: `pixel`) 
 >
 > 스크롤바의 위치값을 0 이상으로 설정하는 경우 이동된 스크롤 바 위치의 데이터가 보여집니다.

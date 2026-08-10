@@ -1,5 +1,7 @@
 # SignFontStyle ***(col)***
 
+<!-- synonyms: 부호별 폰트, 양수 음수 0 폰트, 숫자 색상, 마이너스 빨강, 음수 폰트 스타일, sign font style, negative color, positive color, zero style, number sign style -->
+
 > 숫자형 컬럼 (Int, Float 타입)에서 7장 appendix의 [Format](/docs/appx/format)의 내용과 같이 양수, 음수, 0 일때의 Text속성들을 설정하여 적용하실 수 있습니다.
 >
 > Col의 Text속성 ([TextColor](./text-color), [TextFont](./text-font), [TextSize](./text-size), [TextStyle](./text-style)) 보다 우선 적용 됩니다.
@@ -41,7 +43,6 @@ sheet.setAttribute("", "IntData", "SignFontStyle", {TextColor: ";;aqua"});
 - [TextFont col](./text-font)
 - [TextSize col](./text-size)
 - [TextStyle col](./text-style)
-- [SignFontStyle cell](/docs/props/cell/sign-font-style)
 
 
 ### Since

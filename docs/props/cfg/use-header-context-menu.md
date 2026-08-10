@@ -1,5 +1,7 @@
 # UseHeaderContextMenu ***(cfg)***
 
+<!-- synonyms: UseHeaderContextMenu, use header context menu, header right click menu, header context menu, header contextmenu, 헤더 컨텍스트 메뉴, 헤더 우클릭 메뉴, 헤더 오른쪽 클릭 메뉴, 헤더 메뉴 표시 -->
+
 > 헤더 컨텍스트 메뉴의 표시/비표시를 제어할 수 있는 기능입니다.
 
 

@@ -1,4 +1,7 @@
 # Path ***(cell)***
+
+<!-- synonyms: Path, 파일 경로, 다운로드 경로, 파일 다운로드 경로, File 타입 경로, 파일 위치, 파일 URL, 첨부 경로, file path, download path, file url, file location -->
+
 > 열의 [Type](/docs/props/cell/type)이 `File`인 경우 파일을 다운받을 경로를 설정합니다.
 >
 > `File` [Type](/docs/props/cell/type)을 사용하시는 경우 반드시 설정해야 정상적으로 다운로드 됩니다. 

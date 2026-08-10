@@ -1,6 +1,8 @@
 # Combo/ComboEdit 타입 마이그레이션
 
-`Combo` 타입은 [Enum](/docs/appx/type)타입으로 변경되었고, `ComboText`, `ComboCode`는 각각 [Enum (col)](/docs/props/col/enum), [EnumKeys (col)](/docs/props/enum-keys) 속성으로 변경되었습니다.
+<!-- synonyms: IBSheet7, 마이그레이션, sheet7, migration, v7, v8, ibsheet7에서 ibsheet8로, Combo, ComboEdit, Combo 타입, ComboEdit 타입, 콤보 박스, dropdown, combobox, Enum 변환 -->
+
+`Combo` 타입은 [Enum](/docs/appx/type)타입으로 변경되었고, `ComboText`, `ComboCode`는 각각 [Enum (col)](/docs/props/col/enum), [EnumKeys (col)](/docs/props/col/enum-keys) 속성으로 변경되었습니다.
 
 ```javascript
 //AS-IS

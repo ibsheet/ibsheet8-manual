@@ -1,4 +1,7 @@
 # onReadDefaults ***(event)***
+
+<!-- synonyms: 기본값 메뉴 표시, Defaults 메뉴, 기본값 팝업, on-read-defaults, read defaults, defaults menu -->
+
 > [Defaults](/docs/props/col/defaults)에 설정된 메뉴가 화면에 보여질 때 호출되는 이벤트입니다.
 >
 > 사용자가 원하는 메뉴를 문자열 또는 객체로 리턴 시 이에 해당하는 메뉴가 화면에 보여지며, 기존에 설정된 메뉴는 무시됩니다.

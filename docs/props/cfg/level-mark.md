@@ -1,5 +1,7 @@
 # LevelMark ***(cfg)***
 
+<!-- synonyms: LevelMark, level mark, tree indent mark, tree separator, tree level char, tree indent character, 트리 구분자, 트리 레벨 표시, 트리 들여쓰기 문자, 엑셀 트리 구분자, down2Excel 트리, 트리 마크 -->
+
 > 트리구조에서 [exportData](/docs/funcs/core/export-data), [down2Excel](/docs/funcs/excel/down-to-excel)를 사용하여 엑셀 다운 시 나타내고 싶은 트리구분자를 지정할 수 있다. 
 >
 > 기본적으로 트리구조를 엑셀, 텍스트 다운시 트리 구분자를 지원해주고 있다. 

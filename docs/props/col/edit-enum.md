@@ -1,4 +1,7 @@
 # EditEnum ***(col)***
+
+<!-- synonyms: 편집 콤보, 드롭다운 텍스트, Enum 편집 표시, 콤보 표시값, 다중 컬럼 콤보, edit enum, dropdown display, enum edit text, combo display, multi column dropdown -->
+
 > [Type](/docs/appx/type)이 `Enum`인 열에서 드랍리스트가 펼쳐졌을때 보여지는 아이템의 `Text`를 [Enum](./enum)에서 설정한 값과 다르게 하고자 할때 사용합니다.
 >
 > '\t'구분자를 이용하여 아이템을 여러개의 컬럼으로 표현할 수 있습니다.

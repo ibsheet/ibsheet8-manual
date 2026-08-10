@@ -1,5 +1,7 @@
 # setCountInfoElement ***(method)***
 
+<!-- synonyms: setCountInfoElement, set-count-info-element, 건수 정보, 데이터 행수, 행수 표시, 정보 요소, 외부 표시, 카운트 표시, count info, row count, info element, display count, set info -->
+
 > [InfoRowConfig cfg](/docs/props/cfg/info-row-config) 기능 사용시 표시되는 데이터 행수 정보를 시트 외부의 Dom Element 에 표시합니다.
 
 ### Syntax

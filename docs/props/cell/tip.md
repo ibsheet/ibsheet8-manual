@@ -1,4 +1,7 @@
 # Tip ***(cell)***
+
+<!-- synonyms: 팁, 툴팁, 풍선도움말, 툴팁 표시, 도움말, 마우스 오버, 마우스오버, 호버, 셀 툴팁, HTML 툴팁, tip, tooltip, hover tooltip, mouse tooltip, hint -->
+
 > 셀 위에 마우스 커서 오버 시 풍선도움말을 표시할지 여부와,
 > 풍선도움말에 표시될 내용을 설정합니다.
 > 

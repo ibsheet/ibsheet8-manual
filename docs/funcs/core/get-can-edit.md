@@ -1,5 +1,7 @@
 # getCanEdit ***(method)***
 
+<!-- synonyms: getCanEdit, get-can-edit, 편집 가능 여부, 편집 가능, 편집 확인, 셀 편집, CanEdit 조회, 수정 가능, editable, can edit -->
+
 > 특정 셀에 적용된 `CanEdit` 값을 확인합니다.  
 > `Cell`, `Row`, `Col`, `Cfg` 설정이 모두 반영된 **최종 적용 상태**를 반환합니다.  
 

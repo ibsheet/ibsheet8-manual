@@ -1,5 +1,7 @@
 # ExportDataConfig ***(cfg)***
 
+<!-- synonyms: ExportDataConfig, export data config, export default config, exportData 공통 옵션, 엑셀 다운로드 공통, 엑셀 export 기본값, exportData 인자, 공통 옵션 엑셀, 화면 공통 export, CommonOptions export -->
+
 > [exportData](/docs/funcs/core/export-data) 함수 호출시 들어가는 인자를 공통으로 설정합니다.
 >
 > [CommontOptions (static)](/docs/static/common-options)에 Cfg속성에 설정하시면 모든 화면에서 [exportData](/docs/funcs/core/export-data) 함수 호출시 기본적인 속성을 설정하실 수 있습니다.

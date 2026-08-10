@@ -1,4 +1,7 @@
 # refreshRow ***(method)***
+
+<!-- synonyms: refreshRow, refresh-row, 행 갱신, 로우 갱신, 행 새로고침, 행 반영, 행 다시 그리기, refresh, row, render, redraw -->
+
 > 특정 행의 변경된 내용을 화면에 반영합니다.
 >
 > 반영이 이루어질 때 화면이 깜빡이지 않습니다.

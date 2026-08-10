@@ -1,5 +1,7 @@
 # doPrint ***(method)***
 
+<!-- synonyms: 인쇄, 프린트, 시트 인쇄, 출력, 프린트 실행, 인쇄 실행, do-print, doPrint, do print, print sheet, print, printing -->
+
 > 시트의 내용을 원하는 규격으로 인쇄합니다.
 >
 > 용지 규격과 방향은 브라우저의 인쇄 설정과 동일하게 설정해 주어야 합니다.

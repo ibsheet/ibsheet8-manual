@@ -1,5 +1,7 @@
 # TipStart ***(cfg)***
 
+<!-- synonyms: TipStart, tip start, tooltip delay, tip show delay, hover delay, 팁 표시 지연, 툴팁 지연, 툴팁 대기 시간, 팁 시작 지연, 풍선도움말 지연, hover 대기 시간 -->
+
 > `Tip`기능을 이용하여 풍선도움말을 기능 사용시, 마우스 커서가 멈춘 후 부터 풍선도움말이 보여지기까지 시간을 설정합니다..
 >
 > 단위는 `ms` 이며, 설정하지 않으면 500ms 후에 풍선도움말이 표시됩니다.

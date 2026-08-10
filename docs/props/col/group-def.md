@@ -1,4 +1,7 @@
 # GroupDef ***(col)***
+
+<!-- synonyms: 그룹 정의, 그룹행 설정, 그룹 Def, 그룹 공통 설정, 그룹 커스텀, group def, group definition, group custom config, group row config -->
+
 > 열이 그룹핑될때, 그룹행에 적용될 공통 설정을 지정합니다.
 >
 > 시트 초기화시 `Def` 영역에 커스텀하게 기능을 설정해 두고, 해당 열에서 `Def`에 정의된 ID를 지정해 설정하실 수 있습니다.

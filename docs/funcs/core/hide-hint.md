@@ -1,4 +1,7 @@
 # hideHint ***(method)***
+
+<!-- synonyms: hideHint, hide-hint, 힌트 감춤, 힌트 숨김, 힌트 숨기기, 힌트 감추기, 힌트 제거, hide, hint, tooltip, hide hint -->
+
 > 현재 보여지고 있는 힌트를 감춥니다.
 
 ###

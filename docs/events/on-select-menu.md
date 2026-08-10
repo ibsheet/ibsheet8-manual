@@ -1,4 +1,7 @@
 # onSelectMenu ***(event)***
+
+<!-- synonyms: 메뉴 선택, 컨텍스트 메뉴 선택, 우클릭 메뉴 클릭, 메뉴 아이템 클릭, 팝업 메뉴 선택, on-select-menu, select menu, menu item click, context menu select -->
+
 > 마우스 오른쪽 클릭 시 시트에 설정된 메뉴([Menu](/docs/props/col/menu))의 아이템을 클릭했을 때 호출되는 이벤트입니다.
 >
 > **[showMenu](/docs/funcs/core/show-menu) 메소드로 생성된 메뉴를 클릭 시 호출되지 않습니다.**

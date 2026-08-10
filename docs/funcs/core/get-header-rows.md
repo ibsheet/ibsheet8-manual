@@ -1,4 +1,7 @@
 # getHeaderRows ***(method)***
+
+<!-- synonyms: getHeaderRows, get-header-rows, 헤더 행, 헤더 로우, 헤더 목록, 헤더 배열, 헤더 조회, 머리글 행, header, rows -->
+
 > 헤더 영역에 있는 [헤더 로우 객체](/docs/appx/row-object)들의 배열을 반환합니다.
 
 

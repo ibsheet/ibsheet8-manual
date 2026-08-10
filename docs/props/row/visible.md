@@ -1,5 +1,7 @@
 # Visible ***(row)***
 
+<!-- synonyms: row visible, visibility, show hide row, filter hidden visible, row show hide, 보임 감춤, 행 보임, 행 감춤, 행 표시, 필터 감춤, 보임 여부, Visible 속성 -->
+
 > 행의 보임/감춤 여부를 설정합니다.
 >
 > 필터를 통해 감춰지는 행은 자동으로 `Visible: (0)false` 속성이 설정됩니다.

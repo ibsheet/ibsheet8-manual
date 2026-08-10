@@ -1,5 +1,7 @@
 # Wrap ***(row)***
 
+<!-- synonyms: row wrap, text wrap, line wrap, word wrap, white-space wrap, auto wrap, 줄넘김, 줄바꿈, 자동 줄바꿈, 텍스트 랩, 줄 바꿈 표시, Wrap 속성 -->
+
 > 셀의 내용이 열의 너비보다 많은 경우 줄넘김을 통해 표현할지 여부를 설정합니다.(css의 white-space속성)
 >
 > 줄넘김이 발생할때 행의 높이가 자동으로 조절됩니다.

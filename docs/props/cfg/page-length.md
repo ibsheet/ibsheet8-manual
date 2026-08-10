@@ -1,5 +1,7 @@
 # PageLength ***(cfg)***
 
+<!-- synonyms: PageLength, page length, page size, rows per page, paging size, 페이지 크기, 페이지 행 수, 페이지 당 행 개수, 페이징 사이즈, 한 페이지 행 수, SearchMode 페이징, 서버 페이징 크기 -->
+
 > 한 페이지(`Page`)에 표시할 행(`Row`) 의 개수를 설정합니다. 
 >
 > `SearchMode: 1 (클라이언트 페이징)`로 조회시 한 페이지에 표시되는 데이터 행수로 처리됩니다.

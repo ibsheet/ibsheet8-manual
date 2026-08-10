@@ -1,5 +1,7 @@
 # 셀 편집 이벤트 발생 순서 ***(event flow)***
 
+<!-- synonyms: 편집 이벤트 순서, 셀 편집 흐름, 편집 모드 진입, 편집 시작 종료, edit event flow, cell edit sequence, editing order -->
+
 > 셀 편집모드 진입부터 데이터 변경까지의 이벤트 발생 순서입니다.
 
 ### 편집모드 진입 → 편집 → 종료

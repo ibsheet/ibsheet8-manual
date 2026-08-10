@@ -1,5 +1,7 @@
 # Type ***(col)***
 
+<!-- synonyms: 열 타입, 컬럼 타입, 데이터 유형, Text Int Float Date Bool Enum, 셀 타입, type, column type, cell type, data type -->
+
 > 셀이 갖고있는 데이터 유형을 의미합니다.
 >
 > 열을 생성시에는 반드시 선언되어야 합니다.

@@ -1,5 +1,7 @@
 # getPivotFilterRows ***(method)***
 
+<!-- synonyms: getPivotFilterRows, get-pivot-filter-rows, 피벗 필터, 원본 행, 피벗 시트, 필터링, pivot filter rows -->
+
 > 피벗 시트에서 특정 셀의 데이터를 구성하는 원본 시트의 행을 가져오는 함수입니다.
 >
 > <mark>**주의!: 해당 API는 원본 시트의 필터링 내용을 제거합니다. API 사용시 원본 시트의 필터링 내용이 변경될 수 있습니다.**</mark>

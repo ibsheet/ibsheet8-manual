@@ -1,4 +1,7 @@
 # getRowsByStatus ***(method)***
+
+<!-- synonyms: getRowsByStatus, get-rows-by-status, 상태별 행, 행 상태, 추가된 행, 변경된 행, 삭제된 행, 상태 조회, status, rows -->
+
 > 특정 상태의 행을 배열로 리턴 합니다.
 >
 > 행이 상태는 `Added, Changed, Deleted`이 있습니다. 

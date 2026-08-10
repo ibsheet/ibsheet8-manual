@@ -1,5 +1,7 @@
 # getUserOptions ***(method)***
 
+<!-- synonyms: getUserOptions, get-user-options, 사용자 옵션, 초기 옵션, 설정값, 시트 설정, 옵션 조회, 설정 조회, user, options, settings -->
+
 > 시트 초기화 설정값을 리턴합니다.
 >
 > 시트 생성시 [IBSheet.create({options})](/docx/static/create)으로 설정한 내용을 리턴합니다.

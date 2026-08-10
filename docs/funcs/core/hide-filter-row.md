@@ -1,4 +1,7 @@
 # hideFilterRow ***(method)***
+
+<!-- synonyms: hideFilterRow, hide-filter-row, 필터 행 숨김, 필터 행 감춤, 필터 감추기, 필터 해제, 필터 숨기기, hide, filter, row, hide filter row -->
+
 > 필터 행(Filter Row)을 감춥니다.
 >
 > 필터 행을 감추면 화면에서 필터링이 해제되어 모든 행이 다시 표시됩니다.  

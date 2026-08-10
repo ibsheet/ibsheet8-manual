@@ -1,4 +1,7 @@
 # setMergeCancel ***(method)***
+
+<!-- synonyms: setMergeCancel, set-merge-cancel, 병합 해제, 셀 병합 해제, 병합 취소, 머지 해제, 병합 제거, 셀 병합 취소, 병합 해제 설정, unmerge, cancel merge, remove merge, set merge cancel, clear merge -->
+
 > 특정 셀의 병합을 해제합니다.  
 > [SearchMode](/docs/props/cfg/search-mode):0에서는 스크롤 시 병합 상태가 유지되지 않아 정상 지원되지 않습니다.
 

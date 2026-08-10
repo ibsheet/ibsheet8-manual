@@ -1,4 +1,7 @@
 # onShowEditEnum ***(event)***
+
+<!-- synonyms: EditEnum 표시, 편집 열거 리스트, 편집 콤보 리스트, 편집 드롭다운 표시, 편집 리스트 열림, on-show-edit-enum, show edit enum, edit enum list, edit dropdown -->
+
 > [EditEnum](/docs/props/col/edit-enum)타입의 열에서 리스트가 열리기 직전에 호출되는 이벤트입니다.
 >
 > 새로운 [EditEnum](/docs/props/col/edit-enum) 리스트를 만들고 리턴하여 [EditEnum](/docs/props/col/edit-enum)을 대체해서 사용할 수 있습니다(기존에 [EditEnum](/docs/props/col/edit-enum)이 설정되어 있지 않아도 사용가능 합니다).

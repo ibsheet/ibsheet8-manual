@@ -1,4 +1,7 @@
 # onShowDefaults ***(event)***
+
+<!-- synonyms: 기본값 메뉴 표시, 디폴트 메뉴 표시, defaults 메뉴, 기본 메뉴 열림, 메뉴 순서 수정, on-show-defaults, show defaults, defaults menu, show default -->
+
 > [Defaults](/docs/props/col/defaults)에 설정된 메뉴가 화면에 보여질 때 호출되는 이벤트입니다.([onReadDefaults](/docs/events/on-read-defaults) 이벤트 발생 후 발생합니다.)
 >
 > 표시될 메뉴의 순서나 내용을 수정할 수 있습니다.

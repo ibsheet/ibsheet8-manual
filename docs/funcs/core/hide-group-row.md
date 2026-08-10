@@ -1,4 +1,7 @@
 # hideGroupRow ***(method)***
+
+<!-- synonyms: hideGroupRow, hide-group-row, 그룹 행 숨김, 그룹 행 감춤, 그룹 행 제거, 그룹행 삭제, 그룹 숨기기, hide, group, row, remove -->
+
 > 그룹행을 제거하거나 숨깁니다.
 
 ### Syntax

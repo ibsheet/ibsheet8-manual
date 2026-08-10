@@ -1,4 +1,7 @@
 # CanDrag ***(col)***
+
+<!-- synonyms: 드래그 가능, 열 드래그, 컬럼 드래그, 드래그 앤 드롭, 드래그 제한, drag enable, column drag, drag drop, draggable -->
+
 > 열의 Drag 가능여부를 설정합니다.
 >
 > [CanDrag cfg](/docs/props/cfg/can-drag) 속성이 `1(true)`인 경우 사용 가능합니다

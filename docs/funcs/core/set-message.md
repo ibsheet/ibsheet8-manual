@@ -1,4 +1,7 @@
 # setMessage ***(method)***
+
+<!-- synonyms: setMessage, set-message, 메시지 설정, 메시지 변경, 알림 설정, Alert 설정, 메시지 등록, 사용자 메시지, 메시지 정의, message, set message, define message, alert, apply message -->
+
 > 시트에 새로운 메시지를 설정합니다.
 > 결과로 받은 객체를 통해 메시지의 설정/변경사항을 확인할 수 있습니다.
 

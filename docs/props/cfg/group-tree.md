@@ -1,4 +1,7 @@
 # GroupTree ***(cfg)***
+
+<!-- synonyms: GroupTree, group tree, group tree node, group as tree, tree grouping, group tree icon, 그룹 트리, 그룹 트리 노드, 트리 그룹핑, 트리 아이콘 그룹, 그룹핑 트리, 트리 형태 그룹, 트리 그룹 편집 -->
+
 > 그룹핑 시 각 그룹 기준 컬럼에서 트리 노드를 사용합니다.
 >
 > 옵션에 따라 트리 아이콘, [CanEdit](./can-edit)여부를 다르게 설정할 수 있습니다.

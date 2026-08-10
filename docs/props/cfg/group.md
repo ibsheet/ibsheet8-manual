@@ -1,5 +1,7 @@
 # Group ***(cfg)***
 
+<!-- synonyms: Group, grouping, group by, group columns, initial grouping, ColName group, 그룹, 그룹핑, 그룹핑 컬럼, 그룹 열, 초기 그룹핑, 그룹 기준, Solid Row Group, 열 그룹핑 -->
+
 > 시트 로딩시 그룹핑 하고자 하는 열의 `ColName` 을 "," 구분자을 넣어 문자열로 설정합니다.  
 >
 > `Solid Row 의 Kind: "Group"` 를 설정하면 그룹핑한 열의 헤더text 가 그룹행에 표시되며, 사용자가 마우스 드롭 다운으로 통해 다른 열을 그룹핑에 추가하거나 기존 그룹핑 열을 변경 할 수 있습니다. 

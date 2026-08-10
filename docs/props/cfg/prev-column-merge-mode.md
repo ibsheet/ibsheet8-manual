@@ -1,4 +1,7 @@
 # PrevColumnMergeMode ***(cfg)***
+
+<!-- synonyms: PrevColumnMergeMode, prev column merge mode, page based merge, SearchMode 2 merge, merge performance, page unit merge, 페이지 단위 병합, 이전 컬럼 병합 모드, SearchMode 2 병합, 페이지 경계 병합, 머지 성능 개선 -->
+
 > [SearchMode:2](/docs/props/cfg/search-mode)에서 셀을 머지하는 기준을 설정하는 옵션입니다.  
 > SearchMode:2는 머지된 모든 Row가 한 Table 안에 그려지기 때문에 머지된 셀이 많은 경우 성능 문제가 발생할 수 있습니다.  
 > `PrevColumnMergeMode:1` 설정 시 [PageLength](/docs/props/cfg/page-length)만큼 페이지 단위로 나누어 그려지기 때문에 성능이 향상됩니다. 단, 페이지 경계에서 머지가 끊어집니다.

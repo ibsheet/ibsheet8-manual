@@ -1,5 +1,7 @@
 # NoColor ***(cell)***
 
+<!-- synonyms: NoColor, no-color, 배경색 무시, 색상 무시, 셀 배경색 무시, 대체 색상 무시, 상태 색상 무시, 선택 색상 무시, no color, ignore background color, disable cell color, no background -->
+
 > 셀에 적용된 배경색이 무시됩니다.
 >
 > 홀수/짝수행에 대한 배경색([AlternateColor](/docs/props/row/alternate-color)), 상태(입력/수정/삭제)및 선택, 편집불가 컬럼에 대한 색상이 무시됩니다.<br/> [Color](./color) 속성으로 통한 배경색도 적용되지 않게 할 수 있습니다.

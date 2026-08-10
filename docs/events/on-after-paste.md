@@ -1,4 +1,7 @@
 # onAfterPaste ***(event)***
+
+<!-- synonyms: 붙여넣기 후, 붙여넣기 완료, Ctrl+V 이후, 클립보드 붙여넣기 완료, on-after-paste, after paste, paste done -->
+
 > 시트 내에서 `ctrl+v`를 통해 붙여넣기가 동작 된 이후에 발생합니다.
 
 ### Syntax

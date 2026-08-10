@@ -1,4 +1,7 @@
 # DialogsArea ***(cfg)***
+
+<!-- synonyms: DialogsArea, dialogs area, dialog container, shadow dom, LWC dialog, dialog root, 다이얼로그 영역, 다이얼로그 컨테이너, 팝업 영역, LWC 다이얼로그, 세일즈포스 다이얼로그, 다이얼로그 기준 영역, 다이얼로그 부모 -->
+
 > 시트 내 다이얼로그가 표시될 **기준 영역(container)** 을 지정합니다.  
 >
 > Salesforce의 Lightning Web Component(LWC) 또는 Shadow DOM 환경처럼  

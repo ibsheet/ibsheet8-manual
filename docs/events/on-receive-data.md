@@ -1,4 +1,7 @@
 # onReceiveData ***(event)***
+
+<!-- synonyms: 데이터 수신, 조회 응답 수신, 서버 응답 받음, on-receive-data, receive data, data received, ajax response -->
+
 > 데이터 조회 시([doSearch](/docs/funcs/core/do-search), [doSearchPaging](/docs/funcs/core/do-search-paging), [loadSearchData](/docs/funcs/core/load-search-data)), 시트가 데이터를 받은 직후 발생하는 이벤트입니다.
 >
 > [onBeforeDataLoad](/docs/events/on-before-data-load) 이벤트 보다 먼저 발생합니다.

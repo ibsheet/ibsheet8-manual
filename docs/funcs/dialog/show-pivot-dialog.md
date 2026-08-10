@@ -1,5 +1,7 @@
 # showPivotDialog ***(method)***
 
+<!-- synonyms: show pivot dialog, pivot dialog, pivot table dialog, pivot popup, pivot builder, pivot config dialog, 피벗 다이얼로그, 피벗 테이블 창, 피벗 팝업, 피벗 설정 다이얼로그, 피벗 만들기, showPivotDialog 메소드 -->
+
 > 피벗 데이터를 확인하기 위한 다이얼로그를 오픈합니다.  
 > 대상 컬럼(일반/숫자)을 아래 4개 영역(필터, 기준 행, 기준 열, 값)에 끌어놓아 설정한 후, 피벗 테이블 생성 버튼을 클릭하면 원본시트 위치에 동적으로 생성된 피벗 시트가 보여집니다.  
 > 해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.  

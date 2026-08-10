@@ -1,4 +1,7 @@
 # selectRange ***(method)***
+
+<!-- synonyms: selectRange, select-range, 범위 선택, 영역 선택, 범위 지정, 범위 선택해제, 사각형 영역 선택, select, range, area, deselect -->
+
 > `row1, col1` 셀부터 `row2, col2` 셀까지 사각형 영역을 선택 혹은 선택해제 합니다.
 >
 > 열을 설정하지 않으면 (`col1, col2`를 설정하지 않으면), `row1` 부터 `row2` 까지 **행**을 선택,선택해제 합니다.
@@ -36,7 +39,7 @@ sheet.selectRange( sheet.getRowById("AR4"), "deptName", sheet.getRowById("AR10")
 - [selectCol method](./select-col)
 - [selectRow method](./select-row)
 - [getSelectedRange method](./get-selected-range)
-- [getSelectedRow method](./cget-selected-row)
+- [getSelectedRows method](./get-selected-rows)
 - [onSelectEnd event](/docs/events/on-select-end)
 ### Since
 

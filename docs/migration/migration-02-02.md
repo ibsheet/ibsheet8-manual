@@ -1,5 +1,7 @@
 # 초기화 구문 변경
 
+<!-- synonyms: IBSheet7, 마이그레이션, sheet7, migration, v7, v8, ibsheet7에서 ibsheet8로, 초기화 구문, SetConfig, InitHeaders, InitColumns, options, Cfg 설정, 시트 옵션, initialization -->
+
 기존 IBSheet7의 각 열 별 타입, 포맷, 기능에 대해서 IBSheet8에서 변경된 내용을 아래에서 확인해 보세요.
 
 **주요 초기화 기능 변경**

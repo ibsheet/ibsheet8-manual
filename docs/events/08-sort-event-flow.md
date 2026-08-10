@@ -1,5 +1,7 @@
 # 컬럼 소팅(정렬) 이벤트 발생 순서 ***(event flow)***
 
+<!-- synonyms: 정렬 이벤트 순서, 소팅 이벤트 흐름, 컬럼 정렬 흐름, 헤더 클릭 정렬, sort event flow, sorting order, doSort sequence -->
+
 > 컬럼 헤더 클릭 또는 doSort() 함수 호출 시 이벤트 발생 순서입니다.
 
 ### 헤더 클릭

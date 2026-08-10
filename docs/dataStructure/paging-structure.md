@@ -1,4 +1,7 @@
 # 페이징 응답 규격 ***(paging response structure)***
+
+<!-- synonyms: 데이터 구조, 시트 구조, data structure, sheet structure, 데이터 스키마, 페이징 데이터, 서버 페이징, page 배열, 페이지 응답, paging response, pagination -->
+
 [SearchMode](/docs/props/cfg/search-mode) 3, 4, 5에서 [doSearchPaging](/docs/funcs/core/do-search-paging) 함수로 데이터 바인딩 시 사용되는 `서버 응답 데이터 구조`를 정의합니다.
 
 ## 기본 응답 규격

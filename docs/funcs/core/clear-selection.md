@@ -1,4 +1,7 @@
 # clearSelection ***(method)***
+
+<!-- synonyms: 선택 취소, 선택 해제, 선택 영역 취소, 드래그 취소, 셀 선택 해제, 범위 선택 해제, clear-selection, clearSelection, clear selection, deselect, unselect -->
+
 > 드래그나 함수등을 통해 선택한 영역에 대해 선택을 취소한다.
 
 ### Syntax

@@ -1,5 +1,7 @@
 # setRangeValue ***(method)***
 
+<!-- synonyms: set range value, bulk set value, range value set, set value range, batch value set, fill range, paste values range, 범위 값 설정, 범위 일괄 값, 범위 값 일괄 변경, 다중 셀 값 설정, 값 일괄 입력, setRangeValue 메소드 -->
+
 > setValue, 혹은 setString를 이용하여 범위 내의 셀 값을 일괄적으로 변경합니다. 
 
 ### Syntax

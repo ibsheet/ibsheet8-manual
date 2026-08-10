@@ -1,5 +1,7 @@
 # TextStyle ***(row)***
 
+<!-- synonyms: text style, font style, bold italic underline, font weight, text decoration, row text style, 글자 스타일, 볼드, 이탤릭, 밑줄, 굵게, 기울임, 취소선, TextStyle 속성 -->
+
 > 지정한 행의 글자에 대한 `font-weight, font-style, font-variant, text-decoration`를 숫자로 설정합니다.
 >
 > 숫자를 서로 더해서 여러 속성을 동시에 적용하 실 수 있습니다.

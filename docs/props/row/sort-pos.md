@@ -1,4 +1,6 @@
 # SortPos ***(row)***
+
+<!-- synonyms: sort pos, sort position, fixed row position, pin row, row anchor position, sort order fixed row, 소팅 위치, 정렬 위치, 행 고정 위치, 고정 행, 소팅 고정, SortPos 속성 -->
 > 소팅시 지정한 행의 위치를 고정합니다.
 
 ### Type

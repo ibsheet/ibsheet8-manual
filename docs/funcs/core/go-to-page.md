@@ -1,4 +1,7 @@
 # goToPage ***(method)***
+
+<!-- synonyms: goToPage, go-to-page, 페이지 이동, 특정 페이지, 페이지 넘김, 지정 이동, 이동, 넘기기, 이동하기, go, page, move, navigate, jump -->
+
 > 특정 페이지로 이동합니다.
 
 

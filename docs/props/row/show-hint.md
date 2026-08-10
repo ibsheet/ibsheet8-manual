@@ -1,5 +1,7 @@
 # ShowHint ***(row)***
 
+<!-- synonyms: show hint, enable hint, row hint enabled, overflow hint on, hover expand hint, 힌트 표시, 힌트 활성화, 힌트 사용, 마우스 오버 힌트, 행 힌트 표시, ShowHint 속성 -->
+
 > 힌트는 열의 너비보다 셀의 내용이 많은 경우, 마우스 커서가 해당 셀 위에 오버시 해당 셀의 너비를 늘려 내용을 보여주는 기능입니다.
 >
 > 행 단위로 힌트기능을 활성화 할지 여부를 설정하며, 체크박스나 라디오 형태의 열에서는 작동하지 않습니다.

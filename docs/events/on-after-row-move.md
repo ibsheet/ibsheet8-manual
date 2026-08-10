@@ -1,4 +1,7 @@
 # onAfterRowMove ***(event)***
+
+<!-- synonyms: 행 이동 후, 로우 이동 완료, 같은 시트 행 이동 후, on-after-row-move, after row move, row moved -->
+
 > 같은 시트 내에 행 이동 시 호출되는 이벤트입니다.
 >
 > 드래그 앤 드랍, [moveRow](/docs/funcs/core/move-row)메소드 사용시 호출됩니다.

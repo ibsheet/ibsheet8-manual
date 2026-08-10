@@ -1,5 +1,7 @@
 # clear ***(method)***
 
+<!-- synonyms: 시트 제거, DOM 제거, 시트 삭제, 메모리 해제, 시트 지우기, 시트 클리어, clear, remove, dispose, cleanup, destroy, unload -->
+
 > DOM 영역에서 시트 부분을 제거합니다.
 >
 > 구형 Internet Explorer 브라우저에서 메모리 누수에 대응하기 위한 기능입니다.

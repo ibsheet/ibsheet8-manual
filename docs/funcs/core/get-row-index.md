@@ -1,4 +1,7 @@
 # getRowIndex ***(method)***
+
+<!-- synonyms: getRowIndex, get-row-index, 행 인덱스, 로우 인덱스, 행 번호, row index -->
+
 > [데이터 로우 객체](/docs/appx/row-object)의 인덱스를 반환합니다.
 >
 > 인덱스는 `1`부터 시작합니다.

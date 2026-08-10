@@ -1,4 +1,7 @@
 # 조회 응답 규격 ***(search response structure)***
+
+<!-- synonyms: 데이터 구조, 시트 구조, data structure, sheet structure, 데이터 스키마, 데이터 형식, row 배열, 조회 데이터, JSON 데이터, 데이터 포맷, Data 속성 -->
+
 [SearchMode](/docs/props/cfg/search-mode) 0, 1, 2에서 [doSearch](/docs/funcs/core/do-search) 또는 [loadSearchData](/docs/funcs/core/load-search-data) 함수로 데이터 바인딩 시 사용되는 `조회 응답 규격`의 형식을 정의합니다.
 
 <!--## doSearch나 loadSearchData Method 데이터 규격-->

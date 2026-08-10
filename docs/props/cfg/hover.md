@@ -1,5 +1,7 @@
 # Hover ***(cfg)***
 
+<!-- synonyms: Hover, mouse hover, row hover, cell hover, hover mode, hover highlight, 호버, 마우스 호버, 행 호버, 셀 호버, 호버 하이라이트, hover 동작 -->
+
 > 시트내의 행 또는 셀에 마우스 커서가 위치 했을때 `Hover` 동작 모드를 설정합니다.
 
 

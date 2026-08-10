@@ -1,4 +1,7 @@
 # moveRow ***(method)***
+
+<!-- synonyms: moveRow, move-row, 행 이동, 로우 이동, 행 위치 이동, 트리 이동, 행 순서 변경, move, row, move row, tree -->
+
 > 지정한 행을 이동합니다. 
 >
 > `row`로 지정한 행을 `next`로 지정한 행의 위로 이동시킵니다.

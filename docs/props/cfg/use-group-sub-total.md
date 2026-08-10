@@ -1,5 +1,7 @@
 # UseGroupSubTotal ***(cfg)***
 
+<!-- synonyms: UseGroupSubTotal, use group sub total, group subtotal, sub total group, group sum, 그룹 소계, 그룹핑 소계, 그룹 소계 행, 그룹 소계 표시, 그룹 sub total, GroupSubTotal -->
+
 > 시트를 그룹핑하여 사용하고 있을 경우, 각 그룹별 소계행을 시트에 추가합니다.  
 > 해당 옵션 설정 시 그룹 기능을 사용하고 있어야 하고, 컬럼 속성의 [GroupSubTotal](/docs/props/col/group-sub-total) 옵션이 설정되어 있어야 사용 가능합니다.
 

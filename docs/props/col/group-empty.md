@@ -1,4 +1,7 @@
 # GroupEmpty ***(col)***
+
+<!-- synonyms: 빈값 그룹핑, 공백 그룹, 0 그룹, 빈 그룹 제외, group empty, empty grouping, blank group, zero group -->
+
 > `0` 또는 `""(공백)` 에 대해서 그룹핑을 할지 여부를 설정합니다.
 >
 > 그룹핑 제외된 행은 상단에 위치하게 됩니다.

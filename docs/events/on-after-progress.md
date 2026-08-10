@@ -1,4 +1,7 @@
 # onAfterChangeProgress ***(event)***
+
+<!-- synonyms: 프로그레스바 변경 후, 진행 표시 변경 완료, showProgress 이후, on-after-change-progress, after change progress, progress bar changed -->
+
 > `progressBar`를 변경하면 발생하는 이벤트입니다.
 >
 > 이미 [showProgress (method)](/docs/funcs/core/show-progress)가 호출되고 메시지가 나타나있는 상태에서 [showProgress (method)](/docs/funcs/core/show-progress)를 계속 호출해서 `progressBar`를 변경하면 발생하는 이벤트입니다.

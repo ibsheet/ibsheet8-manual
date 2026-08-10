@@ -1,4 +1,7 @@
 # FocusCell ***(col)***
+
+<!-- synonyms: 포커스 셀 디자인, 셀 포커스 스타일, 포커스 강조, 포커스 테두리, focus cell style, focused cell design, cell focus border, active cell style -->
+
 > 특정 열에 포커스가 들어갔을때 "포커스 셀"의 디자인을 정의 합니다.
 >
 > 예약된 문자를 구분자 ","연결하여 설정합니다.

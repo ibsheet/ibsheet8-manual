@@ -1,4 +1,7 @@
 # onShowMenu ***(event)***
+
+<!-- synonyms: 메뉴 표시, 컨텍스트 메뉴 표시, 우클릭 메뉴 열림, 팝업 메뉴 표시, 메뉴 열기, on-show-menu, show menu, context menu show, menu open -->
+
 > 셀에서 마우스 오른쪽 클릭 시 시트에 설정된 메뉴가 화면에 보여질 때 호출되는 이벤트 입니다.
 >
 > **[showMenu](/docs/funcs/core/show-menu) 메소드에 의해 호출되지 않습니다.**

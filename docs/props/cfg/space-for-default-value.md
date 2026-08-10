@@ -1,5 +1,7 @@
 # SpaceForDefaultValue ***(cfg)***
 
+<!-- synonyms: SpaceForDefaultValue, space for default value, empty string default value, default value empty, DefaultValue empty string, 빈문자 기본값, 빈 문자열 DefaultValue, DefaultValue 빈값, 기본값 빈문자 표시, 빈값 기본값 -->
+
 > 빈문자("")인 데이터도 [DefaultValue](/docs/props/col/default-value)로 표시되도록 설정합니다. 
 >
 > 해당 속성이 `false`인 경우 [DefaultValue](/docs/props/col/default-value)는 셀에 값이 없는 경우(null, undefined,데이터 없음) 에만 적용됩니다.

@@ -1,4 +1,7 @@
 # EditMask ***(cell)***
+
+<!-- synonyms: 입력 제한, 입력 마스크, 정규식 입력, 입력 정규식, 편집 마스크, 입력 허용 문자, 입력 필터, edit-mask, edit mask, input mask, regex mask, input regex, input restriction, allowed characters -->
+
 > 셀에 입력가능한 문자를 자바스크립트 정규식을 이용하여 설정합니다.
 >
 > 여기서 입력한 글자는 정규식의 `search()`를 사용하여 입력허용 여부가 결정됩니다.

@@ -1,4 +1,7 @@
 # onBeforeFileDown ***(event)***
+
+<!-- synonyms: 파일 다운로드 전, File 타입 셀 클릭, 첨부 다운로드 전, on-before-file-down, before file download, file cell click -->
+
 > [Type](/docs/props/col/type)이 `File` 설정된 열에 위치한 셀을 클릭한 경우 호출되는 이벤트입니다.
 >
 > 파일 다운로드 시 발생하는 이벤트로 저장된 셀에 한에서 발생합니다. 파일이 업로드 된 셀이 저장 전인 경우에는 해당 이벤트가 발생하지 않습니다. 

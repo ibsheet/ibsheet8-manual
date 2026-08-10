@@ -1,4 +1,7 @@
 # renderBody ***(method)***
+
+<!-- synonyms: renderBody, render-body, 바디 렌더링, 데이터 렌더링, 본문 렌더링, 시트 다시 그리기, 화면 반영, render, body, redraw, refresh -->
+
 > Body영역(데이터부분)를 다시 렌더링 합니다.
 >
 > [setAttribute](./set-attribute)함수나 데이터에 대해 직접 접근하여 수정한 내용을 한꺼번에 화면에 반영할 때 사용됩니다.

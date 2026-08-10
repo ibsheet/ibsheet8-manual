@@ -1,4 +1,7 @@
 # UseHeaderSortCancel ***(cfg)***
+
+<!-- synonyms: UseHeaderSortCancel, use header sort cancel, sort cancel, sort tri state, header sort reset, 정렬 취소, 소팅 취소, 헤더 클릭 정렬 취소, 정렬 3단계, 오름차순 내림차순 취소, 소팅 3단계 -->
+
 > 일반적으로 헤더 셀을 클릭하여 소팅하는 경우 오름차순, 내림차순이 번갈아가며 정렬되는데,
 > `UseHeaderSortCancel`을 `1(true)`로 설정하면, 오름차순, 내림차순 후  **정렬취소** 순서로 변경됩니다.
 

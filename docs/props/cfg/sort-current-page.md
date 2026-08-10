@@ -1,5 +1,7 @@
 # SortCurrentPage ***(cfg)***
 
+<!-- synonyms: SortCurrentPage, sort current page, current page sort only, server paging sort, SearchMode 4 5 sort, page only sort, 현재 페이지 정렬, 현재 페이지만 소팅, 서버 페이징 소팅, SearchMode 4 5 정렬, 로컬 페이지 정렬 -->
+
 > 서버 페이징 사용 시([SearchMode](./search-mode): 4, 5) 현재 보여지는 페이지에 대해서만 정렬할지 여부를 설정합니다.
 
 ### Type

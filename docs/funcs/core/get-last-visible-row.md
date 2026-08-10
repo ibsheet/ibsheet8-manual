@@ -1,5 +1,7 @@
 # getLastVisibleRow ***(method)***
 
+<!-- synonyms: getLastVisibleRow, get-last-visible-row, 마지막 보이는 행, 마지막 표시행, 최하단행, 트리, last visible row -->
+
 > 보여지는 최 하단행(`Visible: 1`)인 속성을 확인합니다.
 >
 > 트리 기능 사용시 row 인자를 설정하면 행이 갖고있는 보여지는 마지막 자식행이 리턴됩니다.

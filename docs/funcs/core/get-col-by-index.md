@@ -1,5 +1,7 @@
 # getColByIndex ***(method)***
 
+<!-- synonyms: getColByIndex, get-col-by-index, 열 조회, 열이름 확인, 인덱스로 열, 열 찾기, 컬럼 이름, 인덱스 열, column, index -->
+
 > 좌측부터 열의 `index`를 기준으로 열이름을 확인합니다.
 >
 > `index`는 `1`부터 시작합니다.

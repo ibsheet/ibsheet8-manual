@@ -1,5 +1,7 @@
 # Suggest ***(col)***
 
+<!-- synonyms: 자동완성, 추천 목록, 검색 자동완성, 입력 제안, suggest, autocomplete, suggestion list, typeahead, auto suggest -->
+
 > 포탈 사이트 검색창의 자동완성과 마찬가지로 셀 안에 들어갈 내용 리스트를 정의해 두면, 입력시 리스트 중에 시작글자가 동일한 값이 필터링되어 보여집니다. 
 >
 > 첫번째 글자를 구분자로 하는 문자열로 설정합니다.

@@ -1,5 +1,7 @@
 # NoButtonInFilter ***(col)***
 
+<!-- synonyms: 필터행 버튼 제거, 필터 버튼 숨김, 필터 TimePicker 숨김, 필터 셀 정리, no button filter, filter row button hide, hide filter button -->
+
 > 해당 열의 필터행에 [Button](./button), [TimePicker](./time-picker) 을 통해 생성되는 `Button` 혹은 `TimePicker` 가 생성되지 않도록 합니다.
 
 

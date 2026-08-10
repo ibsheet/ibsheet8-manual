@@ -1,4 +1,7 @@
 # getString ***(method)***
+
+<!-- synonyms: getString, get-string, 문자열 값, 포맷 값, 표출 값, 화면 값, 셀 문자열, 값 조회, string, formatted, value, display -->
+
 > 포맷이 적용된 문자열로 셀의 값을 가져옵니다.  
 > [getValue](/docs/funcs/core/get-value)가 실제 저장값을 반환하는 것과 달리, `getString`은 화면에 표출되는 값을 반환합니다.  
 > Enum 컬럼의 경우 저장된 코드값 대신 화면에 표출되는 텍스트를 반환합니다.  

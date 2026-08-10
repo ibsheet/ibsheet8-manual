@@ -1,5 +1,7 @@
 # FocusedRow ***(cfg)***
 
+<!-- synonyms: FocusedRow, focused row, focus row id, initial focus row, reload focus row, row id focus, 포커스 행, 포커스 로우, 초기 포커스 행, reload 포커스 행, 시트 생성 포커스 행, RowID 포커스, AR1 SR1 GR1 -->
+
 > 시트를 생성하거나 `reload` 할 때 포커스 시킬 행의 `ID`를 설정합니다.
 >
 > 데이터행 : `AR1, AR2 (AutoRow :AR + index)` , 솔리드행 : `SR1, SR2 (SolidRow: SR+index)`, 그룹행 : `GR1, GR2 (GroupRow: GR+index)`...

@@ -1,4 +1,7 @@
 # MaxWidth ***(col)***
+
+<!-- synonyms: 최대 너비, 최대 폭, 리사이즈 최대, 열 최대 크기, max width, maximum width, column max size, resize limit max -->
+
 > 사용자가 마우스 드래그를 이용하여 열의 너비를 조정할 때, 늘릴수 있는 최대 열의 너비를 설정합니다.
 
 ### Type

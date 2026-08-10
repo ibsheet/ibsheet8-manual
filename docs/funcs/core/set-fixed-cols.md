@@ -1,4 +1,7 @@
 # setFixedCols ***(method)***
+
+<!-- synonyms: setFixedCols, set-fixed-cols, 열 고정, 틀고정, 컬럼 고정, 좌우 고정, 좌측 고정, 우측 고정, 열 수 설정, fixed cols, freeze columns, fix cols, set fixed, freeze -->
+
 > 시트의 좌우측 `section`에 포함될 열 수를 설정합니다.
 >
 > 설정시 감춰진 열도 포함하여 고정시킵니다.

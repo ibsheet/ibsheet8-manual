@@ -1,4 +1,7 @@
 # showFilterDialog ***(method)***
+
+<!-- synonyms: showFilterDialog, show-filter-dialog, 필터, 필터 다이얼로그, 필터 아이콘, 헤더, 표시, 열기, filter, dialog, header -->
+
 > 헤더에 필터 다이얼로그 아이콘을 생성합니다.
 
 ### Syntax

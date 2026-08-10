@@ -1,4 +1,7 @@
 # Interval ***(col)***
+
+<!-- synonyms: 분초 증감, 시간 간격, 타임픽커 간격, 분 초 단위, minute second step, time interval, time picker step, minute step -->
+
 > `Date` 타입 컬럼의 달력 호출시 시간의 분 / 초 조절 버튼 클릭 시, [`TimePicker`](/docs/props/col/time-picker) 의 시간 조절 분 / 초의 버튼 클릭 시 증감 단위를 설정합니다.
 >
 > `Minute`, `Second` 를 통하여 분 / 초 를 각각 설정할 수 있습니다.

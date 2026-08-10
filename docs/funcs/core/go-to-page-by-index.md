@@ -1,4 +1,7 @@
 # goToPageByIndex ***(method)***
+
+<!-- synonyms: goToPageByIndex, go-to-page-by-index, 페이지 인덱스, 페이지 번호, 페이지 이동, 인덱스 이동, 지정 이동, 이동, 넘기기, go, page, index, move, navigate -->
+
 > 특정 페이지로 이동합니다.
 >
 > 클라이언트/서버 페이징에서 사용 가능합니다.

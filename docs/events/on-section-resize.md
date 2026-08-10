@@ -1,4 +1,7 @@
 # onSectionResize ***(event)***
+
+<!-- synonyms: 섹션 크기 변경, 섹션 리사이즈, 좌우 영역 크기, 좌우 섹션 조정, 영역 크기 조절, section resize, on-section-resize, area resize, panel resize -->
+
 > 좌우측 섹션의 크기를 변경하는 경우 발생합니다.
 >
 > cfg [SectionCanResize](/docs/props/cfg/section-can-resize)속성 설정시 사용자가 좌우측 영역의 크기를 변경할 수 있는데, 이렇게 크기가 변경되기 직전에 발생합니다.

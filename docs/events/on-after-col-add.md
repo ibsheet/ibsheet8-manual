@@ -1,4 +1,7 @@
 # onAfterColAdd ***(event)***
+
+<!-- synonyms: 열 추가 후, 컬럼 추가 완료, 컬럼 생성 후, addCol 이후, on-after-col-add, after column add, column added -->
+
 > 시트에 새로운 열이 추가되어 렌더링된 후 호출되는 이벤트입니다.
 
 ### Syntax

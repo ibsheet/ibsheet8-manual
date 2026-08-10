@@ -1,5 +1,7 @@
 # SearchCount ***(cfg)***
 
+<!-- synonyms: SearchCount, search count, search result count, search matched rows, mark selected count, 검색 개수, 찾기 결과 개수, Search 행 개수, 마킹된 행 개수, 검색 매칭 행 수, 선택된 행 수 -->
+
 > `Search` 행 사용시 제공되는 읽기 전용 옵션으로, `선택(Select), 마킹(Mark)` 동작에 의해 표시된 행들의 개수를 반환합니다. 
 >
 > `Search` 행에서 `Filter/Find/FindPrev` 동작을 실행하는 경우 `SearchCount` 옵션은 빈 값으로 변경됩니다.

@@ -1,5 +1,7 @@
 # MultiRecordShape ***(cfg)***
 
+<!-- synonyms: MultiRecordShape, multi record shape, multirecord shape excel, down2Excel multirecord, MultiRecord 다운로드 모양, 멀티레코드 다운로드 모양, down2Excel 멀티레코드, 화면 모양 그대로 다운로드 -->
+
 > 멀티레코드([MultiRecord](/docs/props/cfg/multi-record)) 기능을 사용하는 시트에서 엑셀 파일 다운로드를 화면에 보이는 그대로 나타나게 하는 설정입니다.  
 > 서버 모듈 다운로드([down2Excel](/docs/funcs/excel/down-to-excel))에서만 지원됩니다. 클라이언트 모듈 다운로드([exportData](/docs/funcs/core/export-data))는 지원하지 않습니다.  
 > 다이얼로그 다운로드([showDownloadDialog](/docs/funcs/dialog/show-download-dialog))에서는 지원되지 않습니다.

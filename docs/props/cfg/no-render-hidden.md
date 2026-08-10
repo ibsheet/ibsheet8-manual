@@ -1,5 +1,7 @@
 # NoRenderHidden ***(cfg)***
 
+<!-- synonyms: NoRenderHidden, no render hidden, skip render hidden, hidden col not render, Visible 0 render skip, 숨김 컬럼 렌더링 제외, 렌더링 제외, 숨긴 열 DOM 제외, Visible 0 랜더링, 렌더링 최적화, 초기 렌더링 -->
+
 > 시트 생성후 최초 조회할 때 보이지 않는 컬럼은 Dom에 생성하지 않도록 합니다.
 >
 > 해당 기능을 사용하면 보이지 않는 컬럼 (Visible: 0) 은 화면에 랜더링되지 않아 많은 컬럼이 있는 경우 보다 빠르게 랜더링 될 수 있습니다.

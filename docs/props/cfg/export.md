@@ -24,7 +24,7 @@
 |FilePath|`string`|[File](/docs/appx/file-type-upload) 타입 컬럼의 파일 저장 경로. 셀의 [Path](/docs/props/cell/path) 속성이 있으면 그 값이 우선합니다.|
 <!--!
 |Down2HmlUrl|`string`|[down2Hml](/docs/funcs/excel/down-to-hml) 함수 호출시 연결할 `URL`을 강제 지정<br>이 속성이 설정되면 위에 `Url` 속성은 무시되고, 이 속성으로 지정한 `URL`이 호출됩니다.|
-|DirectDown2ExcelUrl|`string`|[directDown2Excel](/docs/funcs/excel/direct-down-to-excel) 함수 호출시 연결할 `URL`을 강제 지정<br>이 속성이 설정되면 위에 `Url` 속성은 무시되고, 이 속성으로 지정한 `URL`이 호출됩니다.|
+|`[비공개 동작안됨]` DirectDown2ExcelUrl|`string`|[directDown2Excel](/docs/funcs/excel/direct-down-to-excel) 함수 호출시 연결할 `URL`을 강제 지정<br>이 속성이 설정되면 위에 `Url` 속성은 무시되고, 이 속성으로 지정한 `URL`이 호출됩니다.|
 |`[비공개 동작안됨]` Relative|`boolean`|주소의 상대경로 유무. `false: 실제주소(절대경로)` / `true: ibsheet.js` 기준 상태경로|
 |`[비공개 동작안됨]` Method|`string`|주소로 접근할때 통신방식을 지정 . `POST/GET(default: "GET")`|
 |`[비공개 동작안됨]` Param|`object`|전송 받거나 보낼 데이터의 파라미터를 설정(`객체형`)|

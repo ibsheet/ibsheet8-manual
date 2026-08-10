@@ -1,4 +1,7 @@
 # showCalendar ***(method)***
+
+<!-- synonyms: showCalendar, show-calendar, 달력, 달력 표시, 캘린더, 날짜 선택, 달력 열기, 표시, calendar, open, date, picker -->
+
 > 메소드를 통해 시트 내부에서 달력 컨트롤을 사용하실 수 있습니다. 
 
 ### Syntax

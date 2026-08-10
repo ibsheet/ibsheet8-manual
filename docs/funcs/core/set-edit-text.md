@@ -1,5 +1,7 @@
 # setEditText ***(method)***
 
+<!-- synonyms: setEditText, set-edit-text, 편집 텍스트, 편집 중 값, 편집 데이터 변경, 편집 값 설정, 편집 모드, 편집 값 변경, edit text, set edit, change edit, edit value, edit mode -->
+
 > 사용자가 셀을 더블 클릭하여 편집모드로 들어갔을 때 편집중인 데이터를 변경 합니다. 
 >
 > 컬럼 타입에 맞게 value 인자를 전달해야 합니다.

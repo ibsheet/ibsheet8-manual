@@ -1,5 +1,7 @@
 # FormulaRowNoFiltered ***(cfg)***
 
+<!-- synonyms: FormulaRowNoFiltered, formula filter exclude, sum filtered exclude, sub total filtered, sum visible only, 합계 필터 제외, 필터링 제외 합계, 보이는 행 합계, 필터된 행 계산 제외, 합계 행 필터, 합계 계산 제외 -->
+
 > 필터링되어 보이지 않는 로우를 합계 행 계산에 제외할 지 여부를 설정합니다.
 
 ### Type

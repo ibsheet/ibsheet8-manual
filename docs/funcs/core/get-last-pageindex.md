@@ -1,5 +1,7 @@
 # getLastPageIndex ***(method)***
 
+<!-- synonyms: getLastPageIndex, get-last-page-index, 마지막 페이지, 페이지 인덱스, 페이징, last page, page index, paging -->
+
 > 페이징 조회 방식에서 마지막 페이지의 인덱스를 반환합니다.
 
 ### Syntax

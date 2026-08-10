@@ -1,5 +1,7 @@
 # HeaderMerge ***(cfg)***
 
+<!-- synonyms: HeaderMerge, header merge, header cell merge, merge header, header auto merge, 헤더 병합, 헤더 머지, 헤더 셀 병합, 헤더 값 병합, 헤더 병합 종류, DataMerge 헤더, setAutoMerge 헤더 -->
+
 > 시트 생성 시 헤더 영역에서 셀 값을 기준으로 병합할지 여부 및 병합 종류를 설정합니다.  
 > 옵션에 대한 설명은 [DataMerge](./data-merge)와 동일합니다.  
 > [ColMerge](/docs/props/col/col-merge) 설정과 관계없이 동작합니다. 헤더에서도 ColMerge를 따르려면 [IgnoreHeaderColMerge](./ignore-header-col-merge)를 `0(false)`으로 설정하세요.  

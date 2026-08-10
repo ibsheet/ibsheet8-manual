@@ -1,5 +1,7 @@
 # getPrevVisibleRow ***(method)***
 
+<!-- synonyms: getPrevVisibleRow, get-prev-visible-row, 이전 보이는 행, 위 표시행, 이동, previous visible row, prev visible row, above row, move -->
+
 > 인자로 받은 행으로부터 위에 보이는 행을 리턴합니다.
 
 

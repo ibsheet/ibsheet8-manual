@@ -1,4 +1,7 @@
 # getPrevRow ***(method)***
+
+<!-- synonyms: getPrevRow, get-prev-row, 이전 행, 위 행, 이전 로우, 이동, previous row, prev row, above row, move -->
+
 > 지정한 행의 바로 위에 위치한 행을 리턴합니다.
 >
 > 지정한 행이 첫번째 행인 경우 `null`이 리턴됩니다.

@@ -1,5 +1,7 @@
 # 드래그 앤 드롭 이벤트 발생 순서 ***(event flow)***
 
+<!-- synonyms: 드래그 이벤트 순서, 드래그 앤 드롭 흐름, 행 드래그 셀 드래그, drag and drop flow, drag drop sequence, dnd event order -->
+
 > 드래그 앤 드롭 시 이벤트 발생 순서입니다.
 > 드래그 단위에 따라 행 드래그(`CanDrag`)와 셀 드래그(`DragCell`)로 나뉩니다.
 

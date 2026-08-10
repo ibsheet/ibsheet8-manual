@@ -1,5 +1,7 @@
 # getCountInfoElement ***(method)***
 
+<!-- synonyms: getCountInfoElement, get-count-info-element, 카운트 엘리먼트, 행수 정보, 데이터 행수, 정보 엘리먼트, Dom 엘리먼트, 카운트 표시, count, element -->
+
 > [setCountInfoElement](./set-count-info-element) 기능 사용하여 데이터 행수 정보를 시트 외부의 Dom Element 에 표시하고 있을 경우 정보 출력되는 Dom Element 를 반환합니다.
 
 ### Syntax

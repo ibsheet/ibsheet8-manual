@@ -1,4 +1,7 @@
 # selectRow ***(method)***
+
+<!-- synonyms: selectRow, select-row, 행 선택, 로우 선택, 행 선택해제, 행 지정, 행 토글, select, row, toggle, deselect -->
+
 > 지정한 행을 선택 합니다.
 
 ### Syntax
@@ -31,7 +34,7 @@ sheet.selectRow( row, 1);
 - [selectCol method](./select-col)
 - [selectRange method](./select-range)
 - [getSelectedRange method](./get-selected-range)
-- [getSelectedRow method](./cget-selected-row)
+- [getSelectedRows method](./get-selected-rows)
 - [onSelectEnd event](/docs/events/on-select-end)
 ### Since
 

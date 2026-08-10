@@ -1,4 +1,7 @@
 # UseFilterDialog ***(cfg)***
+
+<!-- synonyms: UseFilterDialog, use filter dialog, filter dialog, filter popup, header filter dialog, 필터 다이얼로그, 필터 팝업, 필터 대화상자, 헤더 필터 다이얼로그, 필터 아이콘 다이얼로그 -->
+
 > 필터 다이얼로그를 사용할지 여부를 결정합니다. 
 >
 > 설정시 헤더행에 필터 다이얼로그를 띄우는 아이콘이 생성되며, 버튼 클릭시 나오는 필터 다이얼로그를 이용해 필터링을 진행할 수 있습니다. 

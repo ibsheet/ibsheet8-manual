@@ -1,4 +1,7 @@
 # refreshCell ***(method)***
+
+<!-- synonyms: refreshCell, refresh-cell, 셀 갱신, 셀 새로고침, 셀 반영, 셀 다시 그리기, 셀 렌더링, refresh, cell, render, redraw -->
+
 > 특정 셀의 변경된 내용을 화면에 반영합니다.
 >
 > `render` 함수와 달리 화면의 깜빡임이 없습니다.

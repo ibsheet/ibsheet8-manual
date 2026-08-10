@@ -1,4 +1,7 @@
 # goToNextPage ***(method)***
+
+<!-- synonyms: goToNextPage, go-to-next-page, 다음 페이지, 페이지 이동, 다음 이동, 페이지 넘김, 이동, 넘기기, go, next, page, move, navigate, forward -->
+
 > 현재 페이지의 다음 페이지로 이동합니다.
 
 

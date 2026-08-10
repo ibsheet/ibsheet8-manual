@@ -1,4 +1,7 @@
 # findText ***(method)***
+
+<!-- synonyms: 문자열 찾기, 텍스트 찾기, 셀 검색, 문자 검색, 값 찾기, 텍스트 검색, find-text, findText, find text, search text, find string, locate text -->
+
 > 열 내에 특정 문자열을 가지는 첫번 째 [데이터 로우 객체](/docs/appx/row-object)를 반환합니다.
 
 ### Syntax

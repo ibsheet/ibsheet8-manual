@@ -1,4 +1,7 @@
 # EnumNoMatchText ***(col)***
+
+<!-- synonyms: Enum 매칭 실패, 값 없음 텍스트, 매칭 안됨 표시, 콤보 매칭 실패, 대체 텍스트, enum no match, no match text, unmatched enum, invalid enum text -->
+
 > `EnumStrictMode` 를 1 로 설정했을 때 셀에 적용할 대체 텍스트를 설정합니다.
 >
 > 해당 옵션은 `EnumStrictMode` : 1 에서만 사용할 수 있습니다.

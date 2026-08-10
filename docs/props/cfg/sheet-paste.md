@@ -1,5 +1,7 @@
 # SheetPaste ***(cfg)***
 
+<!-- synonyms: SheetPaste, sheet paste, IE paste, internal paste, execCommand copy, IE 붙여넣기, 시트 내부 복사, IE 권한 프롬프트, IE 클립보드, IE 복사 붙여넣기 -->
+
 > `IE` 전용 기능입니다. 설정시 복사기능 이용시 권한프롬프트가 나오지 않습니다.
 >
 > 기본값은 `0(false)`이고 IE에서는 복사기능 사용시 `execCommand('copy')` 기능을 사용하고 있습니다.

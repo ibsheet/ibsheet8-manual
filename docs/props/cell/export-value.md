@@ -1,5 +1,7 @@
 # ExportValue ***(cell)***
 
+<!-- synonyms: ExportValue, export-value, 엑셀 값, 엑셀 다운로드 값, 엑셀 표시 값, 다운로드 값, export value, excel export, excel value, 엑셀 셀 값, 엑셀 출력 값, 다운로드 문자열 -->
+
 > 엑셀 다운로드 시 보여질 글자를 설정합니다.
 >
 > `Link`, `Img` 타입에서는 데이터 포맷을 맞춰줘야 정상적으로 셀 값이 보여집니다.

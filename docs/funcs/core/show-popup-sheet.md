@@ -1,4 +1,7 @@
 # showPopupSheet ***(method)***
+
+<!-- synonyms: showPopupSheet, show-popup-sheet, 팝업 시트, 시트 팝업, 다이얼로그, 서브 시트, 표시, 열기, popup, sheet, dialog -->
+
 > 특정 셀 위치에 시트 객체를 다이얼로그 형태로 띄웁니다.
 
 ###

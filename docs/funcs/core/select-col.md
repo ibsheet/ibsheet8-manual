@@ -1,4 +1,7 @@
 # selectCol ***(method)***
+
+<!-- synonyms: selectCol, select-col, 열 선택, 컬럼 선택, 열 선택해제, 컬럼 지정, 컬럼 활성화, select, col, column, deselect -->
+
 > 지정한 열을 선택 합니다.
 >
 > 시트 `Cfg`의 `SelectingCells`설정이 `0` 일때는 사용 하실 수 없습니다.

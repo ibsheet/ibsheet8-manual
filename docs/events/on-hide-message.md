@@ -1,4 +1,7 @@
 # onHideMessage ***(event)***
+
+<!-- synonyms: 메시지 숨김, 메시지 닫기, 메시지 사라짐, on-hide-message, hide message, message hidden -->
+
 > 시트의 메시지가 없어질때 실행되는 이벤트입니다.
 >
 > 이벤트를 통해서 외부 라이브러리의 메시지를 닫을 수 있습니다.

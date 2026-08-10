@@ -1,4 +1,7 @@
 # onAfterChange ***(event)***
+
+<!-- synonyms: 값 변경 후, 셀 값 변경 완료, 값 변경 이후, 셀 데이터 변경 후, on-after-change, after change, value changed, cell changed -->
+
 > 사용자의 입력에 의해 셀의 값이 수정된 후 호출되는 이벤트입니다.
 >
 > `method`를 통한 수정에는 호출되지 않습니다.

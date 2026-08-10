@@ -1,5 +1,7 @@
 # removeHTMLTag ***(static)***
 
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, removeHtmlTag, HTML 제거, 태그 제거, strip html -->
+
 > 인자로 들어온 문자열에서 HTML Tag형식의 문자열을 제거해서 문자열을 리턴합니다.
 
 ### Syntax

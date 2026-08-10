@@ -1,4 +1,7 @@
 # SpinnerMin ***(cell)***
+
+<!-- synonyms: 스피너 최솟값, 스피너 최소값, 최솟값, 최소값, 하한값, 증감 최소, 화살표 최소, 숫자 스피너 최소, spinner min, spinner minimum, min value, lower bound, input min -->
+
 > [SpinnerVisible](./spinner-visible)을 사용하는 셀에서 화살표를 통한 입력 시 최솟값을 설정할 수 있습니다.
 >
 > 

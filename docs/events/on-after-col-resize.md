@@ -1,4 +1,7 @@
 # onAfterColResize ***(event)***
+
+<!-- synonyms: 열 크기 조절 후, 컬럼 리사이즈 완료, 컬럼 너비 변경 후, on-after-col-resize, after column resize, column width changed -->
+
 > 열의 너비가 사용자에 의해 변경 시 호출되는 이벤트입니다.
 >
 > [setColWidth](/docs/funcs/core/set-col-width) 메소드 사용 시 호출되지 않습니다.

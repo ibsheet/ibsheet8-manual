@@ -1,5 +1,7 @@
 # getNextSiblingRow ***(method)***
 
+<!-- synonyms: getNextSiblingRow, get-next-sibling-row, 다음 형제 행, 동일 레벨, 트리, 그룹, 자식행, next sibling row, tree, group -->
+
 > 트리나 그룹사용시 같은 부모를 갖는 동일 레벨의 아래 행을 리턴합니다.
 >
 > 같은 부모 내에서 더 이상 동일레벨이 없는 경우 `null`이 리턴됩니다.

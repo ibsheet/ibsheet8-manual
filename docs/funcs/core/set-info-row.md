@@ -1,4 +1,7 @@
 # setInfoRow ***(method)***
+
+<!-- synonyms: setInfoRow, set-info-row, 정보 행, 건수 정보, 페이지 네비게이션, 정보 영역, 상단 정보, 하단 정보, 정보 표시, info row, page navigation, count info, set info, display info -->
+
 > 시트 상단 혹은 하단에 건수정보 와 페이지 네비게이션, 사용자 정의 영역을 표시합니다.
 
 

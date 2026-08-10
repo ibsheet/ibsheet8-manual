@@ -1,4 +1,7 @@
 # tree(트리) 응답 규격 ***(tree response structure)***
+
+<!-- synonyms: 데이터 구조, 시트 구조, data structure, sheet structure, 데이터 스키마, 트리 데이터, tree, 부모 자식, Level, TreeCol, 계층 구조, hierarchical data -->
+
 doSearch 또는 loadSearchData 함수로 바인딩되는 `tree(트리) 데이터 구조`를 정의합니다.
 
 

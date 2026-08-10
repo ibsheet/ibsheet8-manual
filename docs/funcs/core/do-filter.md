@@ -1,5 +1,7 @@
 # doFilter ***(method)***
 
+<!-- synonyms: 필터 실행, 필터링, 필터 적용, 데이터 걸러내기, 필터 수행, 필터행 적용, do-filter, doFilter, do filter, apply filter, filter data, execute filter -->
+
 > 주어진 값을 필터행에 반영하여 시트를 필터링합니다.  
 > 이 함수는 반드시 `Cfg.ShowFilter` 설정으로 **필터행이 표시된 상태에서만 사용할 수 있습니다.**
 >

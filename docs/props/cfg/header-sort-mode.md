@@ -1,5 +1,7 @@
 # HeaderSortMode ***(cfg)***
 
+<!-- synonyms: HeaderSortMode, header sort mode, sort order priority, latest sort priority, sort major minor, 헤더 정렬 모드, 정렬 우선순위, 대분류 중분류 소분류, 마지막 클릭 우선, MaxSort 정렬, Shift 클릭 정렬 해제, 헤더 소팅 순서 -->
+
 > 헤더를 클릭시 소팅하는 순서를 변경합니다.  
 > 별다른 설정이 없는 경우 시트는 [MaxSort](/docs/props/cfg/max-sort) 설정에 따라 클릭하는 헤더의 순서대로, 대분류, 중분류, 소분류로 소팅을 합니다.  
 > 가령 `MaxSort:3` 이고 A, B, C 컬럼의 헤더를 순서대로 클릭하였다면 **대분류:A, 중분류:B, 소분류:C**의 순서대로 소팅이 이루어지고 이렇게 3개 컬럼이 결정되고 난 이후에는 다른 컬럼은 클릭하여도 소팅이 되지 않습니다.  

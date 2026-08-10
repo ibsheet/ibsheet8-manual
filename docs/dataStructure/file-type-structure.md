@@ -1,4 +1,7 @@
 # File Type(파일) 응답 규격 ***(file-type response structure)***
+
+<!-- synonyms: 데이터 구조, 시트 구조, data structure, sheet structure, 데이터 스키마, 파일 타입, File 타입, 업로드 데이터, 파일 데이터 구조, file upload data -->
+
 `File Type` 컬럼은 시트에서 파일 업로드 및 다운로드를 지원합니다.<br/>
 서버와 통신 시 `조회/저장/응답 데이터`의 구조가 일정해야 하며, 아래와 같이 정리할 수 있습니다.
 

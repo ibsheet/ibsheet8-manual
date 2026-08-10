@@ -1,4 +1,7 @@
 # onKeyPress ***(event)***
+
+<!-- synonyms: 키 프레스, 키 누름, 키 입력, on-key-press, key press, keypress, character input -->
+
 > 포커스된 시트에서 사용자가 키를 눌렀을 때 호출되는 이벤트입니다.
 >
 > [onKeyDown](./on-key-down) 이벤트가 호출된 뒤 호출되는 이벤트로, 문자, 숫자키를 누를 때만 호출됩니다.

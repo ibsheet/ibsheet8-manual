@@ -1,4 +1,7 @@
 # onStartEdit ***(event)***
+
+<!-- synonyms: 편집 시작, 셀 편집 진입, 편집 모드 시작, 편집 가능 여부, 편집 취소, on-start-edit, start edit, begin edit, edit start -->
+
 > 셀 편집 시 호출되는 이벤트입니다.
 >
 > 타입([Type](/docs/props/col/type))이 `Enum`인 경우도 호출되며, 타입이 `Radio, Bool`인 경우 해당 이벤트가 호출되지 않습니다.

@@ -1,5 +1,7 @@
 # showChartDialog ***(method)***
 
+<!-- synonyms: show chart dialog, chart dialog, open chart, chart popup, IBChart dialog, chart type dialog, graph dialog, 차트 다이얼로그, 차트 팝업, 차트 창 열기, 그래프 다이얼로그, 차트 종류 선택, showChartDialog 메소드 -->
+
 > 시트의 선택된 영역을 기준으로 차트를 보여주는 다이얼로그 창을 보여줍니다.  
 > 해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일과 `IBChart` 가 포함되어 있어야 사용하실 수 있습니다.  
 > 다이얼로그 커스터마이징은 [Dialog Templates appendix](/docs/appx/dialog-templates)를 참고하세요.

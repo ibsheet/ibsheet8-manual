@@ -1,4 +1,7 @@
 # onBeforeChange ***(event)***
+
+<!-- synonyms: 값 변경 전, 셀 값 수정 전, 값 변경 취소, 값 유효성 검사, on-before-change, before change, value change cancel -->
+
 > 사용자의 입력에 의해 셀의 값이 수정되기 전에 호출되는 이벤트입니다.
 >
 > `method`를 통한 수정에는 호출되지 않습니다.

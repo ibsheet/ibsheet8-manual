@@ -1,4 +1,7 @@
 # removeCol ***(method)***
+
+<!-- synonyms: removeCol, remove-col, 컬럼 제거, 열 삭제, 열 제거, 컬럼 삭제, 컬럼 지우기, remove, col, column, delete -->
+
 > 지정한 열의 데이터와 영역을 삭제합니다. 
 >
 > 여러 컬럼을 `remove` 할 시 `render` 인자를 `false` 로 하여 작업 후에는 `rerender` 를 무조건 호출하셔야 합니다.

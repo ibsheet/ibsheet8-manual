@@ -1,5 +1,7 @@
 # TextFont ***(row)***
 
+<!-- synonyms: text font, font family, row font, custom font, per-row font, typography font, 글자체, 폰트, 서체, 글꼴, 행 폰트, font-family, TextFont 속성 -->
+
 > 특정행의 `font-family`를 설정합니다.
 >
 > 여러개 폰트를 지정하거나 폰트에 띄어씌기가 들어가는 경우에는 `single(')/double quotation("")`으로 지정합니다.

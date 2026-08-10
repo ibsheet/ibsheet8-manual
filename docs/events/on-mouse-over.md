@@ -1,4 +1,7 @@
 # onMouseOver ***(event)***
+
+<!-- synonyms: 마우스 오버, 셀 진입, 힌트 표시, 마우스 호버, on-mouse-over, mouse over, hover, mouseover -->
+
 > 마우스가 시트 내 다른 셀에 들어갈 때마다 호출되는 이벤트이며, 힌트를 화면에 노출하거나 편집모드로 들어갈 때도 호출됩니다.
 >
 > 인자 `row, col, x, y`는 셀이 아닌 곳을 누를 경우 `undefined` 또는 `null`이 될 수 있습니다(ex 셀 테두리).

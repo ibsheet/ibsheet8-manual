@@ -1,4 +1,7 @@
 # Size ***(cell)***
+
+<!-- synonyms: 사이즈, 크기, 글자수 제한, 입력 길이, 최대 길이, 최대 글자수, 문자 수 제한, 바이트 제한, 유니코드 바이트, maxlength, max length, size, byte length, character limit, input length -->
+
 > 셀에 입력가능한 글자수를 설정합니다. 
 >
 > [cfg.UnicodeByteMode](/docs/props/cfg/unicode-byte-mode)를 설정할 경우 한글의 바이트 수를 계산하여 입력을 제한합니다.

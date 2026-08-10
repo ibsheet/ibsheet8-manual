@@ -1,4 +1,7 @@
 # getMessage ***(method)***
+
+<!-- synonyms: getMessage, get-message, 메시지, 알림, 표시, message, alert -->
+
 > 시트에서 메시지를 가져옵니다.
 
 ### Syntax

@@ -1,5 +1,7 @@
 # StorageKeyPrefix ***(cfg)***
 
+<!-- synonyms: StorageKeyPrefix, storage key prefix, local storage prefix, session storage prefix, document url key, 스토리지 프리픽스, 로컬 스토리지 prefix, 세션 스토리지 prefix, 저장 키 접두사, URL 키 유실 방지 -->
+
 > 로컬 스토리지 혹은 세션 스토리지에 현재 시트의 정보가 저장될 때 사용되는 Key값의 `prefix`를 설정하는 옵션입니다.  
 > 실제 저장 Key는 `StorageKeyPrefix + "^" + 시트id` 형식으로 구성됩니다.  
 > 값을 설정하지 않으면 `document.URL`이 기본값으로 사용됩니다.  

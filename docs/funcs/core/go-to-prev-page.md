@@ -1,4 +1,7 @@
 # goToPrevPage ***(method)***
+
+<!-- synonyms: goToPrevPage, go-to-prev-page, 이전 페이지, 페이지 이동, 이전 이동, 페이지 넘김, 뒤로 이동, 이동, 넘기기, go, previous, prev, page, move, back -->
+
 > 현재 페이지의 이전 페이지로 이동합니다.
 
 

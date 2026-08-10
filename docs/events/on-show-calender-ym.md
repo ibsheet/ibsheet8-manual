@@ -1,4 +1,7 @@
 # onShowCalendarYm ***(event)***
+
+<!-- synonyms: 달력 년월, 달력 년/월 표시, 캘린더 년월, 년월 선택 가능 여부, 달력 표시, 달력 년월 취소선, on-show-calendar-ym, show calendar ym, calendar year month, calendar ym -->
+
 > 달력창을 보여줄 때, 년/월 달력창 내에 생성되는 모든 년/월들에 대해 호출되는 이벤트입니다.
 >
 > 모든 년/월에 대해 호출되기에 많은 작업을 실행 시 느려질 수 있습니다.

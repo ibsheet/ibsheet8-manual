@@ -1,4 +1,7 @@
 # GroupDeleted ***(col)***
+
+<!-- synonyms: 삭제 행 그룹핑, Deleted 그룹핑, 삭제 예정 그룹, 그룹 삭제 포함, group deleted, deleted row group, exclude deleted from group -->
+
 > 삭제예정인 행([Deleted](/docs/props/row/deleted))을 그룹핑에 포함시킬지 여부를 설정합니다.
 
 ### Type

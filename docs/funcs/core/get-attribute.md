@@ -1,5 +1,7 @@
 # getAttribute ***(method)***
 
+<!-- synonyms: getAttribute, get-attribute, 속성 조회, 속성값 확인, 속성 가져오기, 셀 속성, 행 속성, 열 속성, attribute -->
+
 > 특정 행,열,셀에 설정된 속성값을 확인합니다.  
 > `row`를 `null`로 설정시 열에 설정한 속성값이 리턴됩니다.  
 > `col`을 `null`로 설정시 행에 설정한 속성값이 리턴됩니다.  

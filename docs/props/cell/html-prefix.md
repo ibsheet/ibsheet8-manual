@@ -1,5 +1,7 @@
 # HtmlPrefix ***(cell)***
 
+<!-- synonyms: HtmlPrefix, html-prefix, 접두 HTML, 앞 HTML, HTML 태그 삽입, html prefix, prefix html, 셀 앞 태그, prefix, 전위 HTML, 셀 앞 HTML, 접두사 태그 -->
+
 > 셀의 문자열 앞에 원하는 HTML 태그를 삽입합니다.
 
 

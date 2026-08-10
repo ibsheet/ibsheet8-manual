@@ -1,4 +1,7 @@
 # showCalendar ***(static)***
+
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, showCalendar, 달력 표시, calendar popup, 캘린더 팝업 -->
+
 > 열의 타입을 `Date`로 설정시 사용할 수 있는 달력 컨트롤을 시트 외부에 input객체 주변에서도 사용하실 수 있습니다.<br/>
 > 달력 컨트롤이 제공하는 `API`와 `event`를 통해 다양한 기능을 사용하실 수 있습니다.<br/>
 

@@ -1,4 +1,7 @@
 # Required ***(col)***
+
+<!-- synonyms: 필수 입력, 필수값, 필수 항목, 필수 표시, required, mandatory, required field, must input -->
+
 > 데이터의 필수 입력 항목 여부를 설정합니다.
 >
 > `1`인 경우 저장 함수 호출 시 셀에 데이터가 없는 경우 경고 메시지를 표시하고, 편집하도록 유도합니다.

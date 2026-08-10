@@ -1,5 +1,7 @@
 # ColMerge ***(Cell)***
 
+<!-- synonyms: 컬럼 병합, 셀 병합, 데이터 병합, 병합 제외, 병합 포함, 셀 머지, DataMerge 대상, col-merge, cell merge, column merge, data merge, merge cell, exclude merge -->
+
 > 특정 셀을 병합 대상에서 제외하거나 포함할지 설정합니다.  
 > 데이터에서는 `{컬럼Name}ColMerge:0` 형식으로 설정합니다.
 

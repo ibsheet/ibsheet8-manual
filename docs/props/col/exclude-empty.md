@@ -1,4 +1,7 @@
 # ExcludeEmpty ***(col)***
+
+<!-- synonyms: 빈 값 제외, 0 제외, 합계 제외, 평균 계산 제외, 소계 빈값 제외, exclude empty, ignore zero, exclude zero, empty exclude sum, avg exclude -->
+
 > 합계, 소계/누계행의 평균 또는 건수 등의 계산시 0 또는 빈 값을 포함할지 여부를 설정합니다.
 
 ### 적용되는 기능

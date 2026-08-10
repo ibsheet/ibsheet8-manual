@@ -1,5 +1,7 @@
 # FocusedCol ***(cfg)***
 
+<!-- synonyms: FocusedCol, focused col, focus column, initial focus col, reload focus col, focused column name, 포커스 컬럼, 포커스 열, 초기 포커스 컬럼, reload 포커스 열, 시트 생성 포커스 열, ColName 포커스, 열 포커스 -->
+
 > 시트를 생성하거나 `reload` 할 때 포커스를 줄 열이름(`ColName`)을 설정합니다.
 
 

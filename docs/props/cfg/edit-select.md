@@ -1,4 +1,7 @@
 # EditSelect ***(cfg)***
+
+<!-- synonyms: EditSelect, edit select, select on edit, auto select input, select input value, 편집 시 선택, 편집 진입 선택, input 전체 선택, 편집 값 선택, 편집모드 선택, 편집 자동 선택, 편집 시 값 선택 -->
+
 > 편집 될 때 `input` 의 값이 선택될지 여부를 설정할 수 있습니다.
 
 ### Type

@@ -1,5 +1,7 @@
 # getCell ***(method)***
 
+<!-- synonyms: getCell, get-cell, 셀 조회, 셀 가져오기, 셀 태그, td 태그, 셀 엘리먼트, DOM 셀, cell, element -->
+
 > 특정 셀의 Html 태그(td)를 가져옵니다.
 >
 > `javascript`의 `getBoundingClientRect()` 메서드를 이용하여 셀의 크기와 현재 뷰포트에서의 상대적인 위치 정보를 제공하는 `DOMRect` 객체를 반환 받을 수 있습니다.

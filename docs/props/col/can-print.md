@@ -1,5 +1,7 @@
 # CanPrint ***(col)***
 
+<!-- synonyms: 프린트 가능, 인쇄 가능, 프린트 제외, 인쇄 여부, PDF 프린트, print enable, printable, print exclude, do print, pdf print -->
+
 > 열의 프린트 가능 여부.
 >
 > [doPrint](/docs/funcs/core/do-print) 또는 [down2Pdf](/docs/funcs/excel/down-to-pdf)를 이용하여 프린트 할 경우 해당 열을 프린트 할지 여부를 설정할 수 있습니다.

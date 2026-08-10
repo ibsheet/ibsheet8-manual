@@ -1,4 +1,7 @@
 # event 사용법 기초
+
+<!-- synonyms: 이벤트 사용법, 이벤트 설정 방법, Events 옵션, 이벤트 바인딩, addEventListener 시트, event usage, event setup, event binding -->
+
 > 시트의 이벤트는 아래와 같이 두 가지 방법으로 설정할 수 있습니다.
 
 ## 1. 객체 생성시점에서 이벤트 설정하기

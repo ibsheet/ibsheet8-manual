@@ -1,4 +1,7 @@
 # onAfterPivot ***(event)***
+
+<!-- synonyms: 피벗 후, 피벗 처리 완료, 피벗 적용 후, on-after-pivot, after pivot, pivot done -->
+
 > 'UsePivot: 1'로 피벗 시트를 생성 할 때, 피벗 시트가 생성 된 후 호출되는 이벤트 입니다.
 >
 > 피벗 시트가 생성 후 onRenderFirstFinish 시점에 발생합니다.

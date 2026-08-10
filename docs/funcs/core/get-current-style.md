@@ -1,4 +1,7 @@
 # getCurrentStyle ***(method)***
+
+<!-- synonyms: getCurrentStyle, get-current-style, 현재 스타일, 테마 조회, 시트 스타일, 배경색 조회, 글자색 조회, 스타일 정보, current, style, theme -->
+
 > 현재 시트의 Def에 설정된 테마, 배경색, 글자색 및 Alternate 색상, 글자크기 정보를 문자열로 가져오는 메소드입니다.
 >
 > 테마를 제외한 속성의 default 값은 추가되지 않습니다.

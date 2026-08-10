@@ -1,4 +1,7 @@
 # getPrevSiblingRow ***(method)***
+
+<!-- synonyms: getPrevSiblingRow, get-prev-sibling-row, 이전 형제 행, 동일 레벨, 트리, 그룹, 위 행, previous sibling row, prev sibling, tree, group -->
+
 > 트리나 그룹사용시 같은 부모를 갖는 동일 레벨의 위에 위치한 행을 리턴합니다.
 >
 > 같은 부모 내에서 더 이상 동일레벨이 없는 경우 `null`이 리턴됩니다.

@@ -1,5 +1,7 @@
 # showSortDialog ***(method)***
 
+<!-- synonyms: show sort dialog, sort dialog, sort settings dialog, multi sort dialog, sort popup, order dialog, 정렬 다이얼로그, 소팅 다이얼로그, 정렬 창, 정렬 팝업, 다중 정렬 창, showSortDialog 메소드 -->
+
 > 시트의 정렬을 설정할 수 있는 다이얼로그 창을 오픈합니다.  
 > 확인 버튼 클릭시 다이얼로그에서 설정한 순서대로 정렬이 실행됩니다.  
 > 해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.  

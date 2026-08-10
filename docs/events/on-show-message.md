@@ -1,4 +1,7 @@
 # onShowMessage ***(event)***
+
+<!-- synonyms: 메시지 표시, 메세지 표시, 알림 표시, showMessage 호출, 시트 메시지, 다이얼로그 대체, on-show-message, show message, custom message, message dialog -->
+
 > 시트의 메시지가 발생할 때 실행되는 이벤트입니다.
 >
 > showMessage(), showMessageTime() 메서드를 통한 메세지나 doSave()와 같은 함수 호출시 시트 내부에서 발생하는 메세지가 표시되기 전에 이벤트가 발생합니다.

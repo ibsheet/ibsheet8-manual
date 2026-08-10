@@ -1,5 +1,7 @@
 # MarkupTagDelimiter ***(cfg)***
 
+<!-- synonyms: MarkupTagDelimiter, markup tag delimiter, xml tag delimiter, custom delimiter, server communication delimiter, excel export delimiter, 마크업 구분자, 태그 구분자, XML 구분자, 전문 구분자, 서버 전송 구분자, HTML 태그 필터링 -->
+
 > [down2Excel](/docs/funcs/excel/down-to-excel)이나 [loadExcel](/docs/funcs/excel/load-excel) 처럼 `import/export` 함수 사용시 서버로 전송되는 전문의 구분자를 변경합니다. 
 >
 > 서버로 전송되는 전문은 `xml 과 유사한 구조`로 < 나 > 같은 기호를 이용하여 전문을 구성하게 되는데, 일부 서버에서 이러한 `html tag`를 필터링하여 다른 문자로 치환하는 경우 `ibsheet`의 서버 모듈에서 해석하지 못해 오류가 발생하곤 합니다.

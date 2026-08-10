@@ -1,5 +1,7 @@
 # getNextCol ***(method)***
 
+<!-- synonyms: getNextCol, get-next-col, 다음 열, 다음 컬럼, 열이름, 이동, next column, move -->
+
 > 지정한 컬럼의 다음 컬럼명을 리턴합니다. 
 >
 > 해당 함수는 기본적으로 보여지는 열을 기준으로 확인합니다. 

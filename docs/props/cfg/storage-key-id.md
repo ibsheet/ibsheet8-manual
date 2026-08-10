@@ -1,5 +1,7 @@
 # StorageKeyId ***(cfg)***
 
+<!-- synonyms: StorageKeyId, storage key id, storage custom id, local storage id, session storage id, postFix id, 스토리지 커스텀 ID, 스토리지 키 ID, 로컬 스토리지 키, 세션 스토리지 키, 스토리지 postFix, 커스텀 저장 ID -->
+
 > 로컬 스토리지 혹은 세션 스토리지에 현재 시트의 정보가 저장될 때 시트의 Id를 대신해 Key 값의 `postFix`로 설정할 커스텀 Id를 설정하는 옵션입니다.
 > <br/> 해당 옵션을 설정하시면 Key값이 `StorageKeyPrefix+"^시트id"`와 같이 설정되지 않으며, 그 대신 `StorageKeyPrefix+"^설정값"`으로 설정됩니다.
 > <br/> [StorageSession](./storage-session) 값이 없으면 동작하지 않습니다.

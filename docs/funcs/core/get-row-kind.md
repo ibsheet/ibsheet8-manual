@@ -1,4 +1,7 @@
 # getRowKind ***(method)***
+
+<!-- synonyms: getRowKind, get-row-kind, 행 유형, 로우 종류, 행 종류, Data, Header, row kind, row type -->
+
 > 행의 유형을 확인합니다.
 >
 > 행이 유형은 `Data(데이터영역), Header(헤더영역), Head(상단고정), Foot(합계행 혹은 하단고정), Filter(필터행), Group(그룹행), Space(건수정보표시행 혹은 솔리드행)` 등이 있습니다.

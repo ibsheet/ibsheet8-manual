@@ -1,4 +1,7 @@
 # onVScrollEndPoint ***(event)***
+
+<!-- synonyms: 세로 스크롤 끝점, 스크롤 끝, 스크롤 최상단, 스크롤 최하단, 무한 스크롤, 스크롤 끝 도달, on-v-scroll-end-point, vertical scroll end, scroll end point, scroll edge -->
+
 > 시트의 세로 스크롤이 가장 처음과 가장 마지막일때 발생하는 이벤트입니다.
 >
 > `vpos` 인자가 0이면 가장 상단을 의미하고 `vpos`가 0이 아닐때는 가장 하단을 의미합니다.

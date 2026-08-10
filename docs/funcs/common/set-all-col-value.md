@@ -1,5 +1,7 @@
 # setAllColValue ***(method)***
 
+<!-- synonyms: set all col value, bulk set column value, set entire column, fill column value, set column all rows, batch column value, 컬럼 전체 값 변경, 열 일괄 값, 컬럼 값 일괄 설정, 전체 데이터 값 변경, 열 전체 채우기, setAllColValue 메소드 -->
+
 > setValue를 이용하여 하나 컬럼의 전체 데이터행 값을 일괄적으로 변경합니다. 
 
 ### Syntax

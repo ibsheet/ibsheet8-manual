@@ -1,4 +1,7 @@
 # onBeforeGoToPage ***(event)***
+
+<!-- synonyms: 페이지 이동 전, 페이지 전환 전, 페이징 취소, on-before-go-to-page, before goto page, page change cancel -->
+
 > 다른 페이지로 이동 시 호출되는 이벤트입니다.
 >
 > 리턴 값이 `1(true)`인 경우 페이지를 이동하지 않습니다.

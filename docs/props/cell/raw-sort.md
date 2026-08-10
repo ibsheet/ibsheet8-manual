@@ -1,5 +1,7 @@
 # RawSort ***(cell)***
 
+<!-- synonyms: RawSort, raw-sort, 원본 정렬, 순수 데이터 정렬, 포맷 무시 정렬, Enum 정렬, 정렬 기준, 정렬 방식, 포맷 미적용 소팅, raw sort, sort by raw value, unformatted sort, enum sort -->
+
 > 소팅시 [Format](/docs/props/cell/format) 이 적용된 데이터를 기준으로 소팅할지 여부를 설정합니다.
 
 ### Type

@@ -1,6 +1,6 @@
 # loadExcelBuffer ***(method)***
 
-<!-- synonyms: 여러 시트 엑셀 업로드, 다중 워크시트 엑셀 업로드, excel buffer load -->
+<!-- synonyms: loadExcelBuffer, load-excel-buffer, 여러 시트 엑셀 업로드, 다중 워크시트 엑셀 업로드, 엑셀 다중 로드, 워크시트 여러개, 엑셀 버퍼, excel buffer load, load excel multi, multi workbook load -->
 
 > 하나의 엑셀 파일에서 여러 시트로 한 번에 로드할 때 사용합니다.  
 > `loadExcelBuffer(true)`로 시작하면 각 시트의 [loadExcel](./load-excel) 호출이 즉시 동작하지 않고 버퍼링되며, `loadExcelBuffer(false)`로 종료하면 파일 선택 창이 열리고 선택한 엑셀의 각 워크시트 내용이 시트들에 로드됩니다.

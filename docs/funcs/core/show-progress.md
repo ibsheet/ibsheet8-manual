@@ -1,4 +1,7 @@
 # showProgress ***(method)***
+
+<!-- synonyms: showProgress, show-progress, 진행, 진행률, 진행 상태, 프로그레스, 로딩, 표시, 열기, progress, dialog, loading -->
+
 > 시트 영역 가운데에 진행상태를 표시하는 `Dialog`를 띄웁니다.
 >
 > 다이얼로그를 제거하기 전까지 시트는 비활성화 됩니다.

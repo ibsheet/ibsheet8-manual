@@ -1,4 +1,7 @@
 # onResultMask ***(event)***
+
+<!-- synonyms: 결과 마스크, 유효성 검사 실패, 유효성 검증 실패, 값 검증 실패, 입력 유효성, 편집 값 검증, on-result-mask, result mask, validation fail, invalid input -->
+
 > 셀에 입력한 데이터가 [ResultMask](/docs/props/col/result-mask)에서 설정된 유효성 검사를 통과하지 못하는 경우 발생하는 이벤트입니다.
 >
 > 리턴 결과에 따라 시트 내 동작이 달라집니다. 아무 값도 리턴하지 않을시 기본값은 `0` 입니다.

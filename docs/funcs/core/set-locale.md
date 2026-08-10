@@ -1,4 +1,7 @@
 # setLocale ***(method)***
+
+<!-- synonyms: setLocale, set-locale, 로케일, 언어 설정, 언어 변경, 언어 코드, 다국어, 언어팩, 메시지 언어, locale, language, set language, change locale, apply locale -->
+
 > 시트에 설정된 언어의 종류를 변경하는 메소드입니다. 
 
 ### Syntax

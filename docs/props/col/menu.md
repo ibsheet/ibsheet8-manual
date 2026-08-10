@@ -1,4 +1,7 @@
 # Menu ***(col)***
+
+<!-- synonyms: 컨텍스트 메뉴, 우클릭 메뉴, 마우스 오른쪽 메뉴, 팝업 메뉴, menu, context menu, right click menu, popup menu -->
+
 > 마우스 우측 버튼 클릭시 보여질 컨텍스트 메뉴를 설정합니다.
 
 

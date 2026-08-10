@@ -1,5 +1,7 @@
 # NoDataMiddle ***(cfg)***
 
+<!-- synonyms: NoDataMiddle, no data middle, no data center, empty middle, empty row center, 데이터 없음 중앙, NoData 가운데, 빈 데이터 화면 중앙, No Data 가운데 표시, 빈 시트 가운데 -->
+
 > 조회된 데이터가 없는 경우 표시되는 NoData행을 화면 가운데에 표시합니다.
 
 ### Type

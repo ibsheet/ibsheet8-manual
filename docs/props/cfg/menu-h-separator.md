@@ -1,4 +1,7 @@
 # MenuHSeparator ***(cfg)***
+
+<!-- synonyms: MenuHSeparator, menu h separator, menu item separator, enum separator, EnumKeys separator, dash reserved word, 메뉴 구분자, 메뉴 아이템 구분자, Enum 구분자, EnumKeys 구분자, 대시 예약어, 메뉴 세퍼레이터 -->
+
 > [Menu](/docs/props/col/menu) 사용시 아이템 구분자를 지정할 수 있습니다. 
 >
 > 더불어 `-`와 `-*`는 기본적으로 [EnumKeys](/docs/props/col/enum-keys) 옵션에 설정했을 때 구분자가 생성되는 예약어로 작동하는데, 만약 `-`, 혹은 `-*` 예약어를 [EnumKeys](/docs/props/col/enum-keys)에 직접 데이터로 넣고 싶으시다면 해당 옵션을 이용해 `-`, `-*` 이외의 문자열을 지정해주시면 됩니다.

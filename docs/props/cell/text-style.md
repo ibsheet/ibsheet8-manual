@@ -1,5 +1,7 @@
 # TextStyle ***(cell)***
 
+<!-- synonyms: 글자 스타일, 텍스트 스타일, 폰트 스타일, 굵게, 기울임, 밑줄, 취소선, 윗줄, 작은 대문자, Bold, Italic, Underline, Strike, Overline, Small Caps, text style, font weight, font-style, text-decoration -->
+
 > 지정한 셀의 글자에 대한 `font-weight, font-style, font-variant, text-decoration`를 숫자로 설정합니다.
 >
 > 숫자를 서로 더해서 여러 속성을 동시에 적용하 실 수 있습니다.

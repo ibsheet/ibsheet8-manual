@@ -1,5 +1,7 @@
 # SuggestDelay ***(col)***
 
+<!-- synonyms: 자동완성 지연, Suggest 딜레이, 디바운스, 서버 호출 지연, suggest delay, autocomplete delay, debounce, input delay -->
+
 > `Suggest`가 설정된 컬럼에서 글자를 입력시 `Suggest`가 나타나기 전까지 딜레이를  ms 단위로 설정합니다. 
 >
 > `debounce`와 유사한 개념으로 딜레이를 설정한 시간 중에 다른 키가 입력되는 경우, 다시 설정한 시간만큼을 기다린 후 `Suggest`를 표시합니다.

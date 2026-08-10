@@ -1,4 +1,7 @@
 # Header ***(col)***
+
+<!-- synonyms: 헤더 텍스트, 헤더 정의, 컬럼 제목, 헤더 다중 행, 헤더 배열, header text, column title, multi row header, header definition -->
+
 > 열의 헤더 셀을 정의합니다.  
 > 헤더 셀에는 단순 문자열을 넣거나, 배경색과 정렬(alignment) 등 속성을 함께 설정할 수 있습니다.  
 > 여러 개의 헤더 행을 만들려면 배열로 설정하며, **컬럼별 배열 길이는 동일**해야 합니다.  

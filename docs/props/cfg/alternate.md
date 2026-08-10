@@ -1,4 +1,7 @@
 # Alternate ***(cfg)***
+
+<!-- synonyms: Alternate, 얼터네이트, 홀짝 배경색, 홀수 짝수 색, 줄무늬 색, 지브라, 얼룩말 무늬, 행 배경 교차, 배경색 교차, 스트라이프, banded rows, striped rows, zebra rows, alternate rows -->
+
 > 홀수, 짝수 행에 대해 번갈아 배경색을 설정하여 가독성을 높이는 기능입니다.
 > 기본 배경색은 CSS 파일의 `.IBColorAlternate` 색상을 사용합니다.  
 > (Row)[AlternateColor](/docs/props/row/alternate-color)를 설정하면 해당 색상이 적용됩니다.

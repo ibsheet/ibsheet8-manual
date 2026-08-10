@@ -1,4 +1,7 @@
 # hideMessage ***(method)***
+
+<!-- synonyms: hideMessage, hide-message, 메시지 감춤, 메시지 숨김, 메시지 제거, 다이얼로그 닫기, 메시지 닫기, hide, message, dialog, close -->
+
 > [showMessage](./show-message)로 띄운 메세지 다이얼로그를 제거합니다.
 
 ###

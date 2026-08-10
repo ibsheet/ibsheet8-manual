@@ -1,6 +1,6 @@
 # onBeforeSave ***(event)***
 
-<!-- synonyms: 저장 직전, 데이터 수집 후, before save -->
+<!-- synonyms: onBeforeSave, on-before-save, 저장 직전, 저장 전 이벤트, 데이터 수집 후, doSave 전, 서버 전송 전, 저장 검증, before save, save event, before submit -->
 
 > [doSave](/docs/funcs/core/do-save) 호출 후 전송할 데이터를 수집한 시점에 발생하는 이벤트입니다.  
 > [onValidation](./on-validation) 이후, 서버 호출 직전에 발생합니다.  

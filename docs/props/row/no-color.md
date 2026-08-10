@@ -1,5 +1,7 @@
 # NoColor ***(row)***
 
+<!-- synonyms: no color, ignore background color, disable color, no background, transparent bg override, state color override, 배경색 무시, 배경색 없음, 색상 무시, 색상 제거, 상태 색상 무시, NoColor 속성 -->
+
 > 행의 기본 적용된 배경색이 무시됩니다.  
 > 홀수, 짝수행에 대한 배경색상([AlternateColor](./alternate-color))나 상태(입력, 수정, 삭제) 및 선택에 대한 색상이 무시되고, `Color` 속성을 통한 배경색도 적용되지 않게 할 수 있습니다.  
 > [FormulaRow](/docs/props/col/formula-row)에 `NoColor`를 설정하여 해당 행의 배경색을 무시할 수 있습니다.  

@@ -1,5 +1,7 @@
 # HintValue ***(row)***
 
+<!-- synonyms: hint value, row hint text, hint content, tooltip value, overflow hint, hover hint, 힌트 값, 힌트 내용, 힌트 텍스트, 마우스 오버 안내, 셀 힌트, 감춘 내용 표시, HintValue 속성 -->
+
 > 힌트는 열의 너비보다 셀의 내용이 많은 경우, 마우스 커서가 해당 셀 위에 오버시 해당 셀의 너비를 늘려 가려진 내용을 보여주는 기능입니다.
 >
 > 이 기능은 행단위로 힌트 기능 활성화시 보여질 내용을 변경/설정합니다.

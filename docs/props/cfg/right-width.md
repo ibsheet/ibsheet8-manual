@@ -1,5 +1,7 @@
 # RightWidth ***(cfg)***
 
+<!-- synonyms: RightWidth, right width, right section width, frozen right width, right fixed column, 오른쪽 너비, 우측 섹션 너비, 고정 열 너비 우측, RightCols 너비, 오른쪽 고정 컬럼 너비, 우측 고정 영역 -->
+
 > 오른쪽 고정 열 섹션의 최대 너비를 설정합니다. 
 >
 > 오른쪽 열 섹션의 열들이 설정된 너비보다 큰 경우 스크롤바가 생성됩니다.

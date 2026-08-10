@@ -1,4 +1,7 @@
 # getMouseRow ***(method)***
+
+<!-- synonyms: getMouseRow, get-mouse-row, 마우스 행, 마우스 로우, 행 객체, 마우스 위치, mouse row -->
+
 > 현재 마우스 아래에 있는 행 객체를 반환합니다.
 
 ### Syntax

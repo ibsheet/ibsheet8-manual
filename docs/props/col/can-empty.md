@@ -1,4 +1,7 @@
 # CanEmpty ***(col)***
+
+<!-- synonyms: 빈 값 허용, null 허용, 공백 허용, 빈값 표시, undefined 허용, 빈 셀 허용, empty value, allow null, allow empty, nullable, blank allowed -->
+
 > `Int`, `Float`, `Bool`, `Date` 타입에서 데이터의 값이 없을 경우, 빈값으로 표시될 수 있도록 하는 설정입니다.<br/> `CanEmpty: 0`으로 설정된 열에 대해서는 값을 지우거나 빈 값으로 설정할 수 없습니다.
 >
 > 해당 속성에 영향을 받는 데이터는 아래와 같습니다.

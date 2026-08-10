@@ -1,5 +1,7 @@
 # InitPivotData ***(cfg)***
 
+<!-- synonyms: InitPivotData, init pivot data, pivot value column, pivot data columns, pivot measure, 피벗 값 컬럼, 피벗 데이터, 피벗 측정값, 피벗 값 열, 피벗 값 초기값, 초기 피벗 데이터 -->
+
 > 피벗 시트에서 데이터의 값으로 사용할 열(들)을 설정합니다.
 >
 > `","`로 연결하여 복수 개의 열 이름을 지정할 수 있습니다.

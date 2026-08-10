@@ -1,5 +1,7 @@
 # getRowsByDup ***(method)***
 
+<!-- synonyms: getRowsByDup, get-rows-by-dup, 중복 행, 중복 데이터, 중복 조회, 중복 찾기, 중복 검색, duplicate, rows -->
+
 > 열 내에 중복된 데이터를 가진 [데이터 로우 객체](/docs/appx/row-object)들을 리턴합니다.
 >
 > 여러 개의 열이름을 설정 시 열이름에 해당하는 열들의 셀 값이 모두 같은 경우에만 [데이터 로우 객체](/docs/appx/row-object)를 반환합니다.

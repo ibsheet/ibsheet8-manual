@@ -1,5 +1,7 @@
 # getLastCol ***(method)***
 
+<!-- synonyms: getLastCol, get-last-col, 마지막 열, 끝 열, 최우측 열, 마지막 컬럼, 끝 열이름, 우측 끝 열, last, column, rightmost -->
+
 > 최 우측 열이름을 확인합니다.
 >
 > section을 통해 특정 영역의 최 우측 열을 확인할 수도 있습니다.

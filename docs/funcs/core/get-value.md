@@ -1,4 +1,7 @@
 # getValue ***(method)***
+
+<!-- synonyms: getValue, get-value, 셀 값, 값 조회, 원본 값, 저장 값, 값 확인, 값 가져오기, value, cell, raw -->
+
 > 특정 셀의 값을 가져오는 함수입니다.
 > 포맷과 구분자가 제거된 값을 반환합니다.
 > `Type`이 `Enum`인 경우 화면 표출 텍스트가 아닌 `Enum` 속성에 설정된 코드값을 반환합니다.

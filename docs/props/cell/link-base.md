@@ -1,5 +1,7 @@
 # LinkBase ***(cell)***
 
+<!-- synonyms: LinkBase, link-base, 링크 베이스, 링크 기본경로, 링크 base, link base, base URL, 링크 상대경로, 기본 URL, 링크 기준 경로, base path -->
+
 > 셀에 [Link](./link)속성이 있는 경우, Base 경로를 설정합니다.
 >
 > 현재 페이지가 **/abc/test.html**이라고 가정했을때, `LinkBase` 설정에 따른 연결 URL은 다음과 같습니다.

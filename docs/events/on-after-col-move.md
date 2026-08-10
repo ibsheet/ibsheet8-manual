@@ -1,4 +1,7 @@
 # onAfterColMove ***(event)***
+
+<!-- synonyms: 열 이동 후, 컬럼 이동 완료, 컬럼 순서 변경 후, moveCol 이후, on-after-col-move, after column move, column moved -->
+
 > 열을 드래그를 통해 다른 위치로 움직인 후 호출되는 이벤트입니다.
 
 ### Syntax

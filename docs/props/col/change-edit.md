@@ -1,5 +1,7 @@
 # ChangeEdit ***(col)***
 
+<!-- synonyms: 수정 행 편집, Changed 편집, 조회 행 편집, 상태별 편집, 수정 상태 편집 가능, changed edit, edit changed row, status edit, modify edit -->
+
 > 행의 상태가 수정([Changed](/docs/props/row/changed)) 또는 조회인 상태인 행의 컬럼의 편집([CanEdit](/docs/props/row/can-edit)) 가능 여부를 설정합니다.
 >
 > 조회시에는 편집 불가, 행 추가 후 데이터 편집 가능, 저장 후 편집 불가를 설정하고 싶다면 [AddEdit](/docs/props/col/add-edit) 를 함께 설정해주어야 합니다. 

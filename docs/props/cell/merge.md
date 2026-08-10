@@ -1,4 +1,7 @@
 # Merge ***(cell)***
+
+<!-- synonyms: Merge, 셀 병합, 병합, 여러 열 병합, 컬럼 결합, 셀 결합, 표시 병합, 열 값 모으기, cell merge, merge cells, combine columns, column merge -->
+
 > 여러 컬럼의 값을 한 셀에 모아서 표시합니다.  
 > 표시만 할 뿐 실제 셀의 값은 각 컬럼에 별도로 관리됩니다.  
 > `row`에 [Spanned](/docs/props/row/spanned) 속성이 `1`로 설정되어야 동작합니다.

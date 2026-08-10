@@ -1,4 +1,7 @@
 # CanFocus ***(col)***
+
+<!-- synonyms: 포커스 가능, 포커스 진입, Tab 이동, 포커스 스킵, 포커스 제외, focus enable, tab skip, focusable, prevent focus, tab navigation -->
+
 > 열에 클릭이나 키보드를 통한 이동시 포커스 가능 여부를 설정합니다.
 >
 > `CanFocus: 0`으로 설정된 열에 대해서는 클릭을 통한 포커스 진입이 불가능하고, 키보드의 Tab 키를 이용한 이동시 열을 건너뛰게 됩니다.

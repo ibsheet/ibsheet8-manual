@@ -1,5 +1,7 @@
 # setAutoMerge ***(method)***
 
+<!-- synonyms: setAutoMerge, set-auto-merge, 자동 병합, 병합 설정, 셀 병합, 데이터 병합, 헤더 병합, 병합 옵션 변경, merge, auto merge, set merge, apply merge, dynamic merge -->
+
 > 시트 생성 후 [DataMerge](/docs/props/cfg/data-merge), [HeaderMerge](/docs/props/cfg/header-merge) 등 Cfg에 설정한 병합 옵션을 동적으로 변경합니다.  
 > 호출 시 Cfg의 병합 관련 설정값이 초기화되며, 전달한 파라미터만 적용됩니다. 전달하지 않은 옵션은 기본값으로 초기화됩니다.  
 > [setFixedTop](./set-fixed-top)/[setFixedBottom](./set-fixed-bottom)으로 고정한 행은 `Head`/`Foot` 영역으로 바뀌어 병합이 적용되지 않으므로, `headMerge`/`footMerge`를 별도로 설정해야 합니다.  

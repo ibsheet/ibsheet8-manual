@@ -1,4 +1,7 @@
 # Menu ***(Cfg)***
+
+<!-- synonyms: Menu, cfg menu, context menu, right click menu, sheet menu, contextmenu, 컨텍스트 메뉴, 우클릭 메뉴, 오른쪽 클릭 메뉴, 시트 메뉴, 컨텍스트, 마우스 우측 메뉴, 우측 버튼 메뉴 -->
+
 > 마우스 우측 버튼 클릭 시 보여질 컨텍스트 메뉴를 설정합니다.
 >
 > `InfoRow`를 제외한 시트의 다른행들에서 표시됩니다.

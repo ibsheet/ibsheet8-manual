@@ -1,5 +1,7 @@
 # fitSize ***(method)***
 
+<!-- synonyms: 자동 너비, 자동 크기 조정, 열 너비 자동, autofit, 글자 맞춤, 셀 자동 맞춤, fit-size, fitSize, fit size, auto size, adjust column width -->
+
 > 특정 열의 너비를 해당 열에 있는 글자 중 가장 긴 글자에 맞게 조정합니다.<br/>(엑셀의 autofit)
 > 전체 데이터가 아닌 1~100행 사이의 글자열을 기준으로 너비를 조정합니다.
 >

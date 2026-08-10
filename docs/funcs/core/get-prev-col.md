@@ -1,4 +1,7 @@
 # getPrevCol ***(method)***
+
+<!-- synonyms: getPrevCol, get-prev-col, 이전 열, 이전 컬럼, 앞 열, 이동, previous column, prev column, move -->
+
 > 지정한 열의 바로 앞에 위치한 열을 리턴합니다.
 >
 > 지정한 열이 첫번째 열인 경우 `null`이 리턴됩니다. 

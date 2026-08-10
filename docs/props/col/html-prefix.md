@@ -1,5 +1,7 @@
 # HtmlPrefix ***(col)***
 
+<!-- synonyms: HTML 접두사, 셀 앞 태그, 앞문자 HTML, 값 앞 HTML, 전위 HTML, html prefix, cell prepend html, leading html -->
+
 > 열의 각 셀의 문자열 앞에 원하는 `HTML 태그`를 삽입합니다.
 
 

@@ -1,4 +1,7 @@
 # getLocale ***(method)***
+
+<!-- synonyms: getLocale, get-locale, 언어 코드, 로케일, 시트 언어, locale, language -->
+
 > 시트에 설정된 언어 코드를 가져오는 메소드입니다. 
 
 ### Syntax

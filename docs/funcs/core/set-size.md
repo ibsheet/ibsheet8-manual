@@ -1,4 +1,7 @@
 # setSize ***(method)***
+
+<!-- synonyms: setSize, set-size, 크기 설정, 사이즈 변경, Size 속성, 시트 크기, 크기 변경, 사이즈 설정, size 적용, size, set size, change size, apply size, resize -->
+
 > [(Cfg) Size](/docs/props/cfg/size) 설정을 동적으로 변경합니다 
 
 ### Syntax

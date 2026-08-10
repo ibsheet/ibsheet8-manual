@@ -1,5 +1,7 @@
 # Status 타입 마이그레이션
 
+<!-- synonyms: IBSheet7, 마이그레이션, sheet7, migration, v7, v8, ibsheet7에서 ibsheet8로, Status 타입, Status 컬럼, Status column, 상태 컬럼, DelCheck, Deleted, Added -->
+
 ibsheet7의 `Status` 타입은 ibsheet8에 없고, 행 추가/삭제/수정 시 자동으로 관리됩니다 (행 객체에 `Added`, `Deleted`, `Changed` 속성 추가).  
 상태에 따라 행 색상도 자동 변경됩니다 (파랑: 신규, 분홍: 삭제, 노랑: 수정).
 

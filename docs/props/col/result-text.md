@@ -1,5 +1,7 @@
 # ResultText ***(col)***
 
+<!-- synonyms: 검증 실패 알림, alert 메시지, 오류 알림, ResultMask alert, result text, validation alert, error alert, warning alert -->
+
 > [ResultMask](./result-mask)에 위배되는 내용이 입력시 `alert`으로 보여줄 내용을 설정합니다.
 
 

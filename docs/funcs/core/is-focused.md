@@ -1,4 +1,7 @@
 # isFocused ***(method)***
+
+<!-- synonyms: isFocused, is-focused, 포커스 확인, 포커스 여부, 셀 포커스 확인, 행 포커스 확인, 포커스 검사, is, focused, focus -->
+
 > 특정 행이나 셀에 포커스가 있는지 확인합니다.
 
 

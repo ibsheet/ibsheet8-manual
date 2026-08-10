@@ -1,4 +1,7 @@
 # setFilter ***(method)***
+
+<!-- synonyms: setFilter, set-filter, 필터, 필터링, 필터 설정, 필터 적용, 데이터 필터, 값 필터, 필터 조건, filter, set filter, apply filter, filtering, filter data -->
+
 > 필터행과 무관하게 현재 시트가 갖고 있는 값을 기준으로 필터링을 합니다.
 >
 > 설정한 내용은 필터행에 보여지지 않습니다.

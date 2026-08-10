@@ -1,5 +1,7 @@
 # 행의 유형에 따른 class 적용
 
+<!-- synonyms: 스타일, 디자인, 테마, style, theme, 커스터마이징, 외관, 시트 스타일, 행 타입 스타일, row type style, 행별 디자인 -->
+
 ## 소계, 합계 행
 
 합계 행은 `options.Def.FormulaRow`를 통해 제어가 가능합니다.

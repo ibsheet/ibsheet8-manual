@@ -1,4 +1,7 @@
 # setTheme ***(method)***
+
+<!-- synonyms: setTheme, set-theme, 테마, 테마 변경, CSS, css 변경, 스타일, 스킨, 설정, theme, style, skin, change -->
+
 > 시트가 사용하는 css 파일을 변경합니다.
 >
 > 기본 사용 css 파일(`/default/main.css`)파일 대신해 사용할 css 파일의 경로와 css 내에 `prefix(접두어)`를 설정합니다.

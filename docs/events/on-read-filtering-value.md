@@ -1,4 +1,7 @@
 # onReadFilteringValue ***(event)***
+
+<!-- synonyms: 필터링 값 읽기, 필터 대상 셀 조회, 필터 셀별 호출, on-read-filtering-value, read filtering value, filter value -->
+
 > 필터링 진행 시 필터링 대상이 되는 열(들)의 각 셀마다 호출되는 이벤트.
 >
 > 리턴된 값으로 필터링을 진행합니다(실제 셀 값은 유지).

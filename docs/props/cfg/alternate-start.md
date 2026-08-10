@@ -1,4 +1,7 @@
 # AlternateStart ***(cfg)***
+
+<!-- synonyms: AlternateStart, alternate-start, 대체 색 시작, 얼터네이트 시작, 시작 행 위치, 반복 시작 위치, 스트라이프 시작, 얼터네이트 스타트, 배경색 시작, alternate start, stripe start, banded rows start, alternate offset -->
+
 > `Alternate`로 지정된 반복 구간 내에서 배경색이 적용될 **첫 번째 행 위치**를 지정하는 옵션입니다. 
 > - 값 `0`은 간격의 **첫 번째 행**부터 시작함을 의미합니다.  
 

@@ -1,5 +1,7 @@
 # ResultMessageTime ***(col)***
 
+<!-- synonyms: 메시지 표시 시간, 알림 표시 시간, 자동 사라짐, ResultMessage 시간, result message time, message duration, alert timeout, message ms -->
+
 > [ResultMessage](./result-message)가 보여질 시간을 설정합니다.(ms단위)
 >
 > 설정한 시간만큼 메세지가 보여지고 자동으로 사라집니다.

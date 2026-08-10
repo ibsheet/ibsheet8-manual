@@ -1,5 +1,7 @@
 # getNextVisibleRow ***(method)***
 
+<!-- synonyms: getNextVisibleRow, get-next-visible-row, 다음 보이는 행, 아래 표시행, 이동, next visible row, below row, move -->
+
 > 인자로 받은 행으로부터 아래에 보이는 행을 리턴합니다.
 
 

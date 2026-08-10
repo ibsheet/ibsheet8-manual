@@ -1,5 +1,7 @@
 # 자주 사용되는 이벤트
 
+<!-- synonyms: IBSheet7, 마이그레이션, sheet7, migration, v7, v8, ibsheet7에서 ibsheet8로, 자주 사용되는 이벤트, 이벤트 매핑, 이벤트 대응표, common events, OnClick, OnAfterEdit, OnLoadData -->
+
 IBSheet7에서 자주 사용되는 이벤트에 대해 IBSheet8에서 변경된 부분을 확인합니다.<br/>
 이벤트의 발생 시점은 조금씩 차이가 있을 수 있습니다.<br/>
 이벤트 명칭이 기존에 `파스칼케이스(PascalCase)`에서 `카멜케이스(camelCase)`로 변경된 점을 주의해 주세요.
@@ -20,7 +22,7 @@ IBSheet7에서 자주 사용되는 이벤트에 대해 IBSheet8에서 변경된 
 |OnLoadData|[onBeforeDataLoad (event)](/docs/events/on-before-data-load)|명칭변경|
 |OnLoadExcel, OnLoadText|[onImportFinish (event)](/docs/events/on-import-finish)|단일 이벤트에서 공통처리|
 |OnMouseDown, OnMouseUp, OnMouseMove|[onMouseDown (event)](/docs/events/on-mouse-down), [onMouseUp (event)](/docs/events/on-mouse-up), [onMouseMove (event)](/docs/events/on-mouse-move)||
-|OnMovePage|[onBeforeGoToPage (event)](/docs/events/on--before-go-to-page)|명칭변경|
+|OnMovePage|[onBeforeGoToPage (event)](/docs/events/on-before-go-to-page)|명칭변경|
 |OnRowSearchEnd|[onRowLoad (event)](/docs/events/on-row-load)|명칭변경|
 |OnSaveEnd|[onAfterSave (event)](/docs/events/on-after-save)|IBSheet7의 OnSaveEnd는 저장 후 데이터 반영 및 렌더링 처리까지 끝난 상태에서 발생하나, [onAfterSave (event)](/docs/events/on-after-save)는 저장데이터를 서버에서 전송받은 직후 발생합니다.|
 |OnSearchEnd|[onSearchFinish (event)](/docs/events/on-search-finish)|명칭변경|

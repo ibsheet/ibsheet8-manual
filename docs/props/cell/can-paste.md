@@ -1,4 +1,7 @@
 # CanPaste ***(cell)***
+
+<!-- synonyms: CanPaste, can-paste, 붙여넣기, 붙여넣기 제한, 붙여넣기 허용, paste 제한, 클립보드 붙여넣기, Ctrl+V, pasteable, paste permission, allow paste, clipboard paste -->
+
 > 행에서 특정 열에 대한 붙여넣기를 제한합니다.
 >
 > `ctrl+c` 를 통해 복사시 클립보드에 저장되지만 `ctrl+v` 를 통해 붙여넣기는 되지 않습니다.

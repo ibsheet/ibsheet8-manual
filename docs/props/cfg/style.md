@@ -1,5 +1,7 @@
 # Style ***(cfg)***
 
+<!-- synonyms: Style, sheet theme, sheet style prefix, css theme, 테마, 시트 테마, 시트 스타일, CSS 테마 prefix, 스타일 prefix, 커스텀 테마, 테마 지정 -->
+
 > `기본 테마(/css/default/main.css)`외에 다른 테마를 적용하고자 할때, 사용할 테마에 정의한 `Prefix` 값을 설정합니다.
 >
 > 해당 기능을 사용하기 위해서는 사용하고자 하는 css 파일이 화면에 `include` 되어 있어야 합니다.

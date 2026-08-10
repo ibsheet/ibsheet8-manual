@@ -1,5 +1,7 @@
 # SuggestDelay ***(cell)***
 
+<!-- synonyms: 서제스트 딜레이, 자동완성 딜레이, 자동완성 지연, 지연 시간, 대기 시간, debounce, 디바운스, 입력 딜레이, 검색 지연, suggest delay, autocomplete delay, ms delay, debounce time, throttle -->
+
 > [Suggest](/docs/props/cell/suggest)가 설정된 셀에서 글자를 입력시 [Suggest](/docs/props/cell/suggest)가 나타나기 전까지 딜레이를 ms단위로 설정합니다. 
 >
 > debounce와 유사한 개념으로 딜레이를 설정한 시간 중에 다른 키가 입력되는 경우, 다시 설정한 시간만큼을 기다린 후 [Suggest](/docs/props/cell/suggest)를 표시합니다.

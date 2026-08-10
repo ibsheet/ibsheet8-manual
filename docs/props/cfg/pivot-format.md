@@ -1,5 +1,7 @@
 # PivotFormat ***(cfg)***
 
+<!-- synonyms: PivotFormat, pivot format, pivot cell format, pivot number format, pivot value format, 피벗 포맷, 피벗 셀 형식, 피벗 값 형식, 피벗 숫자 포맷, 피벗 표시 형식 -->
+
 > 피벗 시트에 있는 셀들에 적용될 포맷을 설정합니다.
 
 

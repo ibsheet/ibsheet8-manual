@@ -1,5 +1,7 @@
 # showEditDialog ***(method)***
 
+<!-- synonyms: show edit dialog, edit dialog, row edit dialog, row detail dialog, edit popup, form dialog, 편집 다이얼로그, 행 편집 창, 행 상세 다이얼로그, 행 편집 팝업, 상세 편집 창, showEditDialog 메소드 -->
+
 > 한 행의 내용을 다이얼로그로 열어 보여줍니다.  
 > 다이얼로그 안에서는 한 행의 내용을 IBSheet(그리드) 형태로 표현합니다.  
 > 다이얼로그 내에서 값을 수정하실 수도 있으나, `Formula`, `Related`(관계형 Enum)는 동작하지 않습니다.  

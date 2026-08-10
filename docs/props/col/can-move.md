@@ -1,4 +1,7 @@
 # CanMove ***(col)***
+
+<!-- synonyms: 열 이동, 컬럼 이동, 열 순서 변경, 드래그 이동, 헤더 이동, column move, reorder column, drag column, move column, column order -->
+
 > 해당 컬럼의 사용자 열 이동 가능 여부를 설정합니다.   
 > 사용자가 헤더 셀을 드래그하여 열의 위치를 변경할 수 있는지 여부를 제어합니다.  
 > `Cfg.CanColMove`가 `0`이면 `CanMove` 설정과 관계없이 열 이동은 불가능합니다.

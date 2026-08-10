@@ -1,4 +1,7 @@
 # DataFormat ***(col)***
+
+<!-- synonyms: 날짜 데이터 형식, 서버 날짜 포맷, yyyyMMdd, 조회 날짜 형식, 저장 날짜 형식, 원본 날짜 포맷, data format, date format server, raw date, save date format -->
+
 > `Date` 타입 컬럼에서 **서버에서 조회되는 날짜 데이터의 형식(format)** 을 지정합니다.  
 > 예를 들어 조회 데이터가 `"25012017"` (25일 01월 2017년)이라면 `DataFormat: "ddMMyyyy"`로,  
 > 조회 데이터가 `"20171225"` (25일 01월 2017년)라면 `DataFormat: "yyyyMMdd"`로 설정해야 합니다.  

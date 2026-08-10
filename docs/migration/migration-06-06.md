@@ -1,5 +1,7 @@
 # Popup 타입 마이그레이션
 
+<!-- synonyms: IBSheet7, 마이그레이션, sheet7, migration, v7, v8, ibsheet7에서 ibsheet8로, Popup, Popup 타입, Popup 컬럼, 팝업 컬럼, popup column, 클릭 팝업 -->
+
 ibsheet7의 `Popup` 타입은 ibsheet8에는 별도 타입으로 존재하지 않습니다. 셀 우측에 버튼을 두고 클릭하면 사용자가 정의한 팝업을 띄우는 형태로 구현합니다.
 
 #### 1) 단순 형태 — `Button` 속성 직접 사용

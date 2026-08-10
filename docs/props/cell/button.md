@@ -1,4 +1,7 @@
 # Button ***(cell)***
+
+<!-- synonyms: Button, 버튼, 셀 버튼, 아이콘 버튼, 체크박스, 드롭다운 버튼, 달력 버튼, HTML 버튼, 이미지 버튼, cell button, icon button, checkbox, dropdown button, calendar button -->
+
 > 셀의 우측에 원하는 아이콘이미지, 체크박스 혹은 버튼을 표시하는 기능입니다. 
 >
 > 열의 [Type](/docs/appx/type)이 `Date`거나 `Enum`인 경우에는 설정과 상관없이 달력이나 드롭다운 모양의 버튼이 표시됩니다.

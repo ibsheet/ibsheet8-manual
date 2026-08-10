@@ -1,5 +1,7 @@
 # DefaultDate ***(col)***
 
+<!-- synonyms: 기본 날짜, 초기 날짜, 빈값 날짜 기본값, Date 기본값, 달력 기본 날짜, default date, initial date, date fallback, blank date default -->
+
 > `Date` 타입 컬럼에서 데이터 값이 빈값일 때 특정 날짜를 선택할 수 있도록 설정합니다. <br/>
 > 구분자는 지원하지 않고, [DataFormat](../col/data-format) 의 형태를 따라가도록 지원합니다. 
 

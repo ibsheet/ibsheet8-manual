@@ -1,4 +1,7 @@
 # FocusCell ***(cell)***
+
+<!-- synonyms: FocusCell, focus-cell, 포커스 셀, 셀 포커스, 포커스 스타일, focus cell, focused cell, 셀 하이라이트, 포커스 디자인, 포커스 셀 디자인, 포커스 테두리 -->
+
 > 특정 셀에 포커스가 들어갔을때 포커스 셀의 디자인을 정의 합니다.
 >
 > 예약된 문자를 구분자 ","연결하여 설정합니다.

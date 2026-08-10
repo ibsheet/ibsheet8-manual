@@ -1,4 +1,7 @@
 # Radio ***(cell)***
+
+<!-- synonyms: Radio, 라디오, 라디오 버튼, 라디오 그룹, 단일 선택, 그룹 선택, Bool 라디오, 체크 그룹, radio button, radio group, single select, boolean radio -->
+
 > [Type](/docs/appx/type)이 `Bool`인 셀들 간에 같은 값을 부여한 값을 갖고 있는 셀들을 하나의 그룹으로 묶여서 한 행에서 같은 그룹 내에 한 셀만 체크 가능하게 합니다.
 
 ###

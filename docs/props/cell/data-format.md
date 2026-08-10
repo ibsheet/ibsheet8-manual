@@ -1,5 +1,7 @@
 # DataFormat ***(cell)***
 
+<!-- synonyms: 날짜 포맷, 데이터 포맷, 서버 날짜 형식, 날짜 형식, 저장 포맷, 조회 날짜 형식, yyyyMMdd, ddMMyyyy, data-format, data format, date format, date pattern, server format, date data format -->
+
 > [Type](/docs/appx/type)이 `Date`인 셀에 **서버에서 조회되는 날짜 데이터의 형식(format)** 을 지정합니다.  
 > 예를 들어 조회 데이터가 `"25012017"` (25일 01월 2017년)이라면 `DataFormat: "ddMMyyyy"`로,  
 > 조회 데이터가 `"20171225"` (2017년 12월 25일)이라면 `DataFormat: "yyyyMMdd"`로 설정해야 합니다.  

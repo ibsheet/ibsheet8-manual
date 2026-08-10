@@ -1,5 +1,7 @@
 # hasSheet ***(static)***
 
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, hasSheet, 시트 존재 여부, 시트 확인 -->
+
 > 특정 아이디를 가진 시트가 있는지 여부를 체크합니다.
 > 해당 아이디의 시트가 있다면 true를 반환하고, 그렇지 않을 경우에는 false를 반환합니다.
 

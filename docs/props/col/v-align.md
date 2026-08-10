@@ -1,5 +1,7 @@
 # VAlign ***(col)***
 
+<!-- synonyms: 수직 정렬, 상하 정렬, 세로 정렬, VAlign, Top Middle Bottom, v align, vertical align -->
+
 > 셀 안에 문자열 상하 정렬을 설정합니다.
 >
 > 좌우 정렬과 관련해서는 [Align](./align)속성을 참고하세요.

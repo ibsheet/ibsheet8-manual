@@ -1,5 +1,7 @@
 # InitPivotCols ***(cfg)***
 
+<!-- synonyms: InitPivotCols, init pivot cols, pivot columns, pivot column axis, pivot init columns, 피벗 컬럼, 피벗 열, 피벗 가로 기준, 피벗 컬럼 초기값, 초기 피벗 컬럼, 가로 축 컬럼 -->
+
 > 피벗 시트에서 기준 열의 값으로 사용할 열(들)을 설정합니다.
 >
 > `","`로 연결하여 복수 개의 열 이름을 지정할 수 있습니다.

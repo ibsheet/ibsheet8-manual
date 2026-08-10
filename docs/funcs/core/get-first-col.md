@@ -1,5 +1,7 @@
 # getFirstCol ***(method)***
 
+<!-- synonyms: getFirstCol, get-first-col, 첫 열, 첫번째 열, 최좌측 열, 시작 열, 첫 컬럼, 첫 열이름, first, column, leftmost -->
+
 > 최 좌측 열이름을 확인합니다.
 >
 > section을 통해 특정 영역의 최 좌측 열을 확인할 수도 있습니다.

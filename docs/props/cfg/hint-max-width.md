@@ -1,5 +1,7 @@
 # HintMaxWidth ***(cfg)***
 
+<!-- synonyms: HintMaxWidth, hint max width, tooltip max width, hint width limit, hint size, 힌트 최대 너비, 힌트 너비, 툴팁 너비 제한, Hint MaxWidth, 힌트 크기 -->
+
 > 힌트의 최대 너비(`MaxWidth`)을 설정합니다. 
 
 ### Type

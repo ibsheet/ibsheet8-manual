@@ -1,5 +1,7 @@
 # SortValue ***(cell)***
 
+<!-- synonyms: 정렬 값, 소팅 값, 정렬 기준, 소팅 기준, 정렬 기준값, 그룹 기준, 그룹핑 기준, HTML 셀 정렬, 버튼 셀 정렬, sort value, sort key, sortkey, sortable, ordering value -->
+
 > 셀의 원래 값 대신 소팅시 사용할 값을 설정합니다.
 >
 > 특히 타입이 Html이나 버튼 같이 편집이 불가능한 셀에 유용하게 사용하실 수 있습니다.

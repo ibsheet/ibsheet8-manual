@@ -1,4 +1,7 @@
 # getMergeRange ***(method)***
+
+<!-- synonyms: getMergeRange, get-merge-range, 머지 영역, 병합 범위, RowSpan, Span, merge range -->
+
 > 특정 셀을 기준으로 머지된 영역(RowSpan, Span)을 확인합니다.  
 > 지정한 셀을 기준으로 머지 시작셀(좌측 상단)과 종료셀(우측 하단)을 배열로 리턴합니다.
 

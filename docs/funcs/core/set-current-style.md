@@ -1,4 +1,7 @@
 # setCurrentStyle ***(method)***
+
+<!-- synonyms: setCurrentStyle, set-current-style, 현재 스타일, 스타일 변경, 테마 변경, 헤더 스타일, 로우 스타일, 스타일 설정, style, current style, change style, apply theme, set style -->
+
 > 문자열을 통해 현재 시트의 테마 및 Def의 `Header`, `Row`에 설정된 스타일 관련 정보를 변경하는 메소드입니다.
 
 ### Syntax

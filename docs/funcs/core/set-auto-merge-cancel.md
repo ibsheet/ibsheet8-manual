@@ -1,5 +1,7 @@
 # setAutoMergeCancel ***(method)***
 
+<!-- synonyms: setAutoMergeCancel, set-auto-merge-cancel, 셀 병합 해제, 자동 병합 취소, 병합 해제, 영역 병합 해제, 병합 취소, set, auto, merge, cancel -->
+
 > 영역 단위로 셀 병합을 해제합니다.  
 > 인자에 따라 병합 해제될 영역을 선택할 수 있습니다.
 

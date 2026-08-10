@@ -1,5 +1,7 @@
 # getBodyWidth ***(method)***
 
+<!-- synonyms: getBodyWidth, get-body-width, 바디 너비, 섹션 너비, 시트 너비, 너비 조회, 너비 확인, 틀고정 너비, width, section -->
+
 > 특정 [Section](/docs/props/col/section)의 너비(틀고정 기준 좌/우측)를 확인합니다.
 
 ### Syntax

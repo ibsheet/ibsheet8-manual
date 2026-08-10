@@ -1,6 +1,6 @@
 # doSearch ***(method)***
 
-<!-- synonyms: 조회, 데이터 조회, 대기이미지, 로딩, 검색, search, data load, loading, ajax -->
+<!-- synonyms: 데이터 조회, 대기이미지, 로딩, 검색, search, data load, loading, ajax -->
 
 > `doSearch`는 AJAX 통신을 통해 JSON 형식의 데이터를 시트에 로드합니다.  
 > [SearchMode](/docs/props/cfg/search-mode) 0, 1, 2에서 사용합니다. (SearchMode 3, 4, 5는 [doSearchPaging](/docs/funcs/core/do-search-paging)을 사용)  

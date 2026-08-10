@@ -1,4 +1,7 @@
 # ScrollOverSheet ***(cfg)***
+
+<!-- synonyms: ScrollOverSheet, scroll over sheet, scroll parent after sheet, propagate scroll, parent scroll, 시트 스크롤 부모 이동, 부모 스크롤 연동, 스크롤 상위 전달, 시트 끝 스크롤, 브라우저 스크롤 연동 -->
+
 > 시트와 브라우저에서 세로 스크롤이 있을 때 시트에서 스크롤이 끝난 후, 상위 부모의 스크롤이 동작하도록 하는 기능 
 
 ### Type

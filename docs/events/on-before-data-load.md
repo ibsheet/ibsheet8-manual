@@ -1,4 +1,7 @@
 # onBeforeDataLoad ***(event)***
+
+<!-- synonyms: 데이터 로드 전, 데이터 적재 전, 데이터 표시 전, on-before-data-load, before data load, before load data -->
+
 > 데이터가 시트에 로드되기 전에 발생하는 이벤트입니다.
 >
 > 데이터가 시트 내부에서 파싱되기 전 단계이므로 **row 객체가 생성되지 않아** row 객체를 인자로 사용하는 함수는 사용할 수 없습니다.  

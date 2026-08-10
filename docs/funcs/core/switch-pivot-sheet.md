@@ -1,5 +1,7 @@
 # switchPivotSheet ***(method)***
 
+<!-- synonyms: switchPivotSheet, switch-pivot-sheet, 피벗, 피벗 전환, 스위치, 원본 시트, 피벗 테이블, 전환, 보기, pivot, switch, sheet, toggle -->
+
 > 피벗 테이블 결과 시트와 원본 데이터 시트를 pivot 인자에 따라 스위치하여 보여줍니다.
 
 

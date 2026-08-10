@@ -1,4 +1,7 @@
 # CustomFormat ***(col)***
+
+<!-- synonyms: 사용자 정의 포맷, 마스킹, 주민번호 마스킹, 카드번호 마스킹, 사업자번호 표시, 우편번호 형식, custom format, mask format, phone format, ssn mask, card mask -->
+
 > 원본 데이터를 **마스킹(masking)하거나 특정 형식으로 표시하기 위한 사용자 정의 포맷**을 설정합니다.  
 > `CustomFormat`은 [Type](/docs/appx/type)이 `Text` 또는 `Lines`인 열에서 사용할 수 있습니다.  
 > 여러 개의 포맷을 `|` 구분자로 지정할 수 있으며, 사용자가 정의한 커스텀 포맷 함수도 지정할 수 있습니다.

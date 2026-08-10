@@ -1,4 +1,7 @@
 # CanSearch ***(col)***
+
+<!-- synonyms: 검색 대상, 검색 포함, 검색 제외, findRows 대상, 찾기 대상, search target, searchable, search include, find include -->
+
 > findRows, 찾기 다이얼로그 등을 통해 검색할 때 해당 컬럼을 검색 대상에 포함시킬지 여부를 결정합니다. 
 
 ### Type

@@ -1,5 +1,7 @@
 # SuppressExportMessage ***(cfg)***
 
+<!-- synonyms: SuppressExportMessage, suppress export message, hide export message, hide download waiting, suppress upload message, 다운로드 대기 메시지 숨김, 업로드 대기 메시지 숨김, 파일 대기 메시지 제거, export 메시지 숨김 -->
+
 > 서버 모듈, 클라이언트 모듈을 이용해 파일을 다운로드하거나 업로드할 때 대기 메시지를 띄울지 여부를 결정합니다.
 
 ### Type

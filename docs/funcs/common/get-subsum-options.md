@@ -1,5 +1,7 @@
 # getSubSumOptions ***(method)***
 
+<!-- synonyms: get subsum options, subtotal options, subsum settings, makeSubTotal options, get subtotal config, subsum configuration, 소계 옵션, 소계 설정 조회, 소계 옵션 확인, makeSubTotal 옵션, 서브합 옵션, getSubSumOptions 메소드 -->
+
 > [makeSubTotal()](../core/make-sub-total)로 시트에 소계 기능을 사용시, 설정된 옵션을 확인합니다. 
 
 ### Syntax

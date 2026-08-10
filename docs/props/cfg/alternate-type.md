@@ -1,5 +1,7 @@
 # AlternateType ***(cfg)***
 
+<!-- synonyms: AlternateType, alternate-type, 얼터네이트 타입, 트리 자식행 포함, 트리 얼터네이트, 자식행 배경색, 트리 하이라이트, 자식행 색상 적용, tree alternate, tree child alternate, alternate type, tree row highlight -->
+
 > 트리로 구성된 시트에서 자식행들도 [Alternate](./alternate) 계산에 포함될지 여부를 설정합니다.
 
 

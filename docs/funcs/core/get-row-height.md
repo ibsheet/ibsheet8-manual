@@ -1,4 +1,7 @@
 # getRowHeight ***(method)***
+
+<!-- synonyms: getRowHeight, get-row-height, 행 높이, 로우 높이, 픽셀, 크기, row height, pixel -->
+
 > 특정행의 높이를 pixel 단위로 확인합니다.
 
 ### Syntax

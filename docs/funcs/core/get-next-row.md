@@ -1,5 +1,7 @@
 # getNextRow ***(method)***
 
+<!-- synonyms: getNextRow, get-next-row, 다음 행, 아래 행, 다음 로우, 이동, next row, below row, move -->
+
 > 지정한 행의 바로 아래 행을 리턴합니다.
 >
 > 마지막 행인 경우 `null`이 리턴됩니다.

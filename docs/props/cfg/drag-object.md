@@ -1,5 +1,7 @@
 # DragObject ***(cfg)***
 
+<!-- synonyms: DragObject, drag object, drag preview, drag ghost, drag image, drag indicator, 드래그 대상, 드래그 표시, 드래그 미리보기, 드래그 이미지, 드래그 고스트, 드래그 시 표시, 마우스 드래그 이미지, 행 드래그 표시 -->
+
 > 행을 드래그할 때 마우스에 보여질 대상을 선택합니다.
 
 ### Type

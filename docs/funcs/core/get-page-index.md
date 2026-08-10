@@ -1,4 +1,7 @@
 # getPageIndex ***(method)***
+
+<!-- synonyms: getPageIndex, get-page-index, 페이지 인덱스, 페이지 번호, 페이징, page index -->
+
 > 페이지의 `index`를 확인합니다.
 >
 > `index`는 `0`부터 시작합니다.

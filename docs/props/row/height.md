@@ -1,4 +1,6 @@
 # Height ***(row)***
+
+<!-- synonyms: row height, row pixel height, set row height, per-row height, 행 높이, 행 픽셀 높이, 행 사이즈, 셀 높이, 높이 설정, Height row, 행 크기 -->
 > 행의 높이를 설정합니다.
 >
 > `Height` 속성에 설정된 값보다 셀 높이가 커져야하는 경우(셀의 내용이 많아서) 셀 내용에 맞춰 행의 높이가 설정됩니다.

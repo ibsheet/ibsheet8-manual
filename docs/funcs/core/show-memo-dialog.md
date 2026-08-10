@@ -1,5 +1,7 @@
 # showMemoDialog ***(method)***
 
+<!-- synonyms: showMemoDialog, show-memo-dialog, 메모, 메모 다이얼로그, 메모 입력, 헤더 메모, 팝업, 열기, 표시, memo, dialog, open, note -->
+
 > 특정 헤더 셀에 메모를 입력할 수 있는 다이얼로그 창을 띄웁니다.
 >
 > 메모기능은 시트의 헤더 셀에만 설정 가능합니다.

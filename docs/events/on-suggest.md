@@ -1,4 +1,7 @@
 # onSuggest ***(event)***
+
+<!-- synonyms: 자동 완성 제안, 서제스트, 셀 값 추천, 입력 추천, 편집 중 추천, Suggest 값, on-suggest, suggest, autocomplete, value suggestion -->
+
 > 셀 편집 도중 호출되는 이벤트로, 사용자에게 셀 값을 제안하는 기능인 [Suggest](/docs/props/col/suggest)의 값을 확인할 수 있습니다.
 >
 > 사용자는 Suggest의 형식을 지닌 새로운 값을 리턴하여 Suggest에 설정된 값이 아닌 다른 값을 사용자에게 셀 값이 변경될 때마다 추천할 수 있습니다.

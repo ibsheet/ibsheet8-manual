@@ -1,5 +1,7 @@
 # HtmlPostfix ***(col)***
 
+<!-- synonyms: HTML 접미사, 셀 뒤 태그, 뒷문자 HTML, 값 뒤 HTML, 후위 HTML, html postfix, html suffix, cell append html, trailing html -->
+
 > 열의 각 셀의 문자열 뒤에 원하는 `HTML 태그`를 삽입합니다.
 
 ### Type

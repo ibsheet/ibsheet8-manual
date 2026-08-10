@@ -1,4 +1,7 @@
 # setRowValue ***(method)***
+
+<!-- synonyms: setRowValue, set-row-value, 행 값 설정, 로우 값, 행 데이터, 행 단위 데이터, 데이터 설정, 행 값 변경, 데이터 입력, row value, set row, apply row, change row, row data -->
+
 > 행 단위별 데이터를 설정합니다.  
 > [getRowValue](/docs/funcs/core/get-row-value)로 추출한 데이터를 행 단위별로 set 할 수 있습니다.
 

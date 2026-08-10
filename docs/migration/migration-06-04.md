@@ -1,5 +1,7 @@
 # AcceptKeys/ExceptKeys 마이그레이션
 
+<!-- synonyms: IBSheet7, 마이그레이션, sheet7, migration, v7, v8, ibsheet7에서 ibsheet8로, AcceptKeys, ExceptKeys, 입력 허용 키, 입력 제외 키, key filter, input filter, InputCharacter -->
+
 `AcceptKeys`와 `ExceptKeys`는 둘다 특정 문자에 대한 입력만 허용하거나 불허하는 기능입니다.
 IBSheet7에서는 `E(영문)`, `N(숫자)`, `K(한글)` 와 같은 예약어와 함께 특정 원하는 문자를 다음과 같이 설정하였습니다.
 

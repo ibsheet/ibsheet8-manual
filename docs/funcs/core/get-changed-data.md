@@ -1,5 +1,7 @@
 # getChangedData ***(method)***
 
+<!-- synonyms: getChangedData, get-changed-data, 변경 데이터, 수정 데이터, 변경 내역, 변경 조회, 저장 데이터, JSON 추출, changed, data -->
+
 > 시트 내에 변경된 내용(입력,수정,삭제)을 json형식의 **문자열**로 추출합니다.
 >
 > 인자없이 호출시에는 전체 수정한 데이터를 모두 추출하고, row인자에 [데이터 로우 객체](/docs/appx/row-object)를 설정시 해당 행의 수정된 내용이 추출됩니다.

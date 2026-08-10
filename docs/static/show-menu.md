@@ -1,5 +1,7 @@
 # showMenu ***(static)***
 
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, showMenu, 메뉴 표시, menu popup, context menu -->
+
 > 원하는 위치에 컨텍스트 메뉴를 띄웁니다. <br/>
 > 생성된 메뉴 객체를 리턴합니다.
 

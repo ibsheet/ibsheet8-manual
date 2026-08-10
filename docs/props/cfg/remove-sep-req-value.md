@@ -1,5 +1,7 @@
 # RemoveSepReqValue ***(cfg)***
 
+<!-- synonyms: RemoveSepReqValue, remove sep req value, save strip delimiter, CustomFormat save strip, IdNo PhoneNo strip, 저장 구분자 제거, 서버 전송 구분자 제거, 저장 시 하이픈 제거, CustomFormat 저장 구분자, doSave 구분자 제거, 주민번호 구분자 제거 -->
+
 > `getSaveJson, getSaveString, doSave` 와 같은 서버로 데이터를 보내는 경우, 데이터와 `CustomFormat` 의 형태가 일치할시 `CustomFormat` 의 구분자를 제거해서 서버로 보내는 기능입니다. 
 >
 > 해당 기능의 경우, 사용자가 직접 커스터마이징한 포멧은 사용할 수 없고 시트에서 제공하는 6가지 포멧의 형태만 지원합니다. `["IdNo", "IdNoMask", "PostNo", "SaupNo", "CardNo", "PhoneNo"]`

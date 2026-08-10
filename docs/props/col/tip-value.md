@@ -1,5 +1,7 @@
 # Tip+Value ***(col)***
 
+<!-- synonyms: 값별 툴팁, TipY TipN, 조건부 풍선도움말, 값 툴팁, tip value, value tooltip, conditional tooltip -->
+
 > 열의 내용이 특정값일때 풍선도움말로 보여줄 문자를 설정합니다.
 >
 > 가령 TipY:"선택하셨습니다", TipN:"취소하셨습니다." 식으로 `Tip` 과 뒤에 `Value`를 결합한 속성명으로 보여질 문자를 설정합니다.

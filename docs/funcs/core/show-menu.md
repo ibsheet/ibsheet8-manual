@@ -1,4 +1,7 @@
 # showMenu ***(method)***
+
+<!-- synonyms: showMenu, show-menu, 메뉴, 컨텍스트 메뉴, 팝업 메뉴, 표시, 보이기, 열기, menu, context, popup -->
+
 > 특정 셀 위치에 컨텍스트 메뉴을 보여 줍니다.
 
 ###

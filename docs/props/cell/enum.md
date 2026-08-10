@@ -1,4 +1,7 @@
 # Enum ***(cell)***
+
+<!-- synonyms: 콤보, 드롭다운, Enum 아이템, Radio 항목, 선택 항목, 콤보 아이템, 드랍리스트 아이템, 콤보박스, enum, combo, dropdown, radio, enum items, selection list, combobox -->
+
 > 셀의 [Type](/docs/appx/type)이 `Enum`이나 `Radio`일 때 보여질 item을 설정합니다.
 >
 > 첫번째 글자를 구분자로 설정하게 됩니다.

@@ -1,5 +1,7 @@
 # NumberStrictMode ***(cell)***
 
+<!-- synonyms: NumberStrictMode, number-strict-mode, 숫자 엄격 모드, 숫자 검사 모드, NaN 처리, 숫자 타입 검사, 빈 값 0 처리, 천단위 구분자 처리, number strict mode, numeric validation, NaN handling, strict number check -->
+
 > 0(false)으로 설정 시 조회 시 숫자 타입(Int, Float)에 빈 값이나 숫자 형태가 아닌 경우 0으로 처리합니다.
 >
 > 천단위 구분자 ","가 포함된 문자열 형태의 숫자를 입력하는 경우 숫자로 표시됩니다.

@@ -1,4 +1,7 @@
 # onBeforeFocus ***(event)***
+
+<!-- synonyms: 포커스 전, 셀 포커스 이동 전, 커서 이동 전, on-before-focus, before focus, before cell focus -->
+
 > 시트 내 셀이 포커스 되기 전에 호출되는 이벤트입니다.
 >
 > `1(true)`를 리턴 시 포커스를 이동하지 않습니다.

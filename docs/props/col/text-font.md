@@ -1,5 +1,7 @@
 # TextFont ***(col)***
 
+<!-- synonyms: 폰트, 글꼴, font-family, 서체, text font, font family, typeface -->
+
 > 특정 열의 `font-family`를 설정합니다.
 >
 > 여러개 폰트를 지정하거나 폰트에 띄어씌기가 들어가는 경우에는 `single(')/double quotation(")`으로 지정합니다.

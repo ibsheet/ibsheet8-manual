@@ -1,5 +1,7 @@
 # MultiRecord ***(cfg)***
 
+<!-- synonyms: MultiRecord, multi record, multi row per record, one record multiple rows, RecordRowSpan, RecordColSpan, 멀티레코드, 다중 행 레코드, 한 레코드 여러 행, 레코드 여러 줄, 다행 레코드 -->
+
 > 시트에서 한 건의 데이터(레코드)를 여러 줄로 표시하는 기능입니다.  
 > 일반적인 시트는 헤더가 여러 줄이더라도 데이터는 조회된 데이터(레코드)마다 하나의 행으로 표현되는데 이를 여러 행으로 표시되도록 하는 기능입니다.  
 > 컬럼 정의(`Col`)에 지정한 셀 병합(`RecordRowSpan` / `RecordColSpan`)이 헤더와 데이터에 함께 적용되어, 헤더와 데이터가 같은 형태로 병합됩니다.  

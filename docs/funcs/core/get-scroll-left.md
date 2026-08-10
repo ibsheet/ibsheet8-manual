@@ -1,4 +1,7 @@
 # getScrollLeft ***(method)***
+
+<!-- synonyms: getScrollLeft, get-scroll-left, 가로 스크롤, 스크롤 위치, 좌우 스크롤, 스크롤 확인, 위치 조회, scroll, horizontal, position, pixel -->
+
 > 가로스크롤 바의 위치를 pixel단위로 확인합니다.
 
 ### Syntax

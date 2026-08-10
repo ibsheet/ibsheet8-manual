@@ -1,5 +1,7 @@
 # ResultMask ***(cell)***
 
+<!-- synonyms: ResultMask, result-mask, 결과 마스크, 편집 종료 검사, 정규식 검사, 유효성 정규식, 편집 완료 정규식, 입력 검증, 결과 검사, result mask, validation regex, edit complete regex, input validation -->
+
 > 셀 편집 종료시 입력된 글자를 검사할 자바스크립트 정규식을 설정합니다.
 >
 > 정규식 검사에 대한 로직은 [EditMask](/docs/props/cell/edit-mask)와 동일합니다.

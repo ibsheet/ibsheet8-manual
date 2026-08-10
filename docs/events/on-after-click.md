@@ -1,4 +1,7 @@
 # onAfterClick ***(event)***
+
+<!-- synonyms: 클릭 후, 클릭 최종 처리, 클릭 이후 마지막 이벤트, on-after-click, after click, click final, post click -->
+
 > 마우스로 셀 내부를 클릭했을 때 맨 마지막에 호출되는 이벤트입니다.
 >
 > 특정 셀을 클릭 시 포커스에 대한 이동 및 값 변경(`Bool 타입`)이나 편집 시작(`Text 타입`) 등에 대한 이벤트가 모두 발생한 뒤에 발생합니다. 

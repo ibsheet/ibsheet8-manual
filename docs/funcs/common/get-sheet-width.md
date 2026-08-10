@@ -1,5 +1,7 @@
 # getSheetWidth ***(method)***
 
+<!-- synonyms: get sheet width, sheet width, container width, sheet size width, current sheet width, 시트 너비, 시트 폭 조회, 시트 크기 너비, 컨테이너 너비, sheet div 너비, getSheetWidth 메소드 -->
+
 > 시트의 너비를 반환합니다. 
 
 ### Syntax

@@ -1,4 +1,7 @@
 # onAfterExpand ***(event)***
+
+<!-- synonyms: 트리 확장 후, 노드 확장 접기 완료, expand 완료, on-after-expand, after expand, tree expand done, node expanded -->
+
 > 트리 사용시 트리가 접히거나 펼쳐진 후 호출됩니다.
 
 ### Syntax

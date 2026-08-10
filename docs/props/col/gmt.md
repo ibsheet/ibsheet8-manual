@@ -1,4 +1,7 @@
 # GMT ***(col)***
+
+<!-- synonyms: 시간대, UTC 변환, 타임존, GMT 설정, 시차 변환, timezone, utc convert, time offset, gmt shift -->
+
 > 열의 [Type](/docs/appx/type)이 `Date`일 때 기준 시간대를 설정합니다.
 >
 > 조회된 시간을 기준으로 UTC시간으로 변경하여 보여줍니다.

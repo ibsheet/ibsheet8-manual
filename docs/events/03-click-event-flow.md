@@ -1,5 +1,7 @@
 # 마우스 클릭 이벤트 발생 순서 ***(event flow)***
 
+<!-- synonyms: 마우스 클릭 이벤트 순서, 클릭 이벤트 흐름, 셀 클릭 흐름, 클릭 이벤트 시퀀스, click event flow, mouse click order, click sequence, onClick 순서 -->
+
 > 데이터 셀 마우스 클릭 시 이벤트 발생 순서입니다.
 
 ### 발생 순서

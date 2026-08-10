@@ -1,4 +1,7 @@
 # onClick ***(event)***
+
+<!-- synonyms: 클릭, 마우스 클릭, 셀 클릭, 클릭 이벤트, on-click, click, mouse click, cell click -->
+
 > 마우스로 셀 내부를 클릭했을 때 호출되는 이벤트입니다.
 >
 > 마우스 클릭시 호출되는 [onMouseDown](./on-mouse-down), [onMouseUp](./on-mouse-up) 이벤트 뒤에 발생합니다.

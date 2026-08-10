@@ -1,5 +1,7 @@
 # Wrap ***(col)***
 
+<!-- synonyms: 줄넘김, 자동 줄바꿈, 워드랩, 줄바꿈, wrap, word wrap, line wrap, text wrap, auto newline -->
+
 > 셀에 내용이 많아 뒷부분이 안보여질 때, 줄넘김 기능 사용 여부를 설정합니다.
 >
 > 줄넘김이 이루어지는 경우 행의 높이가 증가하게 됩니다.

@@ -1,5 +1,7 @@
 # showFixedRows ***(method)***
 
+<!-- synonyms: showFixedRows, show-fixed-rows, 고정행, 헤드, 푸터, Head, Foot, 고정, 생성, 표시, fixed, rows, header, footer -->
+
 > `Head` 행, `Foot` 행을 생성합니다.  
 > 인자로 전달하는 `Head`/`Foot` 행 객체의 구조는 [Head / Foot appendix](/docs/appx/head-foot) 를 참고해주세요.  
 > 각 행 객체의 `Kind`(행의 **종류**)에 `"Head"` 또는 `"Foot"`을 지정해 어떤 고정행을 만들지 정합니다. → [Kind appendix](/docs/appx/kind)

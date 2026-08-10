@@ -1,4 +1,7 @@
 # getType ***(method)***
+
+<!-- synonyms: getType, get-type, 셀 타입, 셀 유형, 타입 조회, 유형 확인, 데이터 타입, type, cell -->
+
 > 특정 셀에 설정된 Type 값을 확인합니다.
 
 ### Syntax

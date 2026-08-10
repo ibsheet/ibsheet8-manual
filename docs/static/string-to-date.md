@@ -1,5 +1,7 @@
 # stringToDate ***(static)***
 
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, stringToDate, 문자열 날짜 변환, parse date, 날짜 파싱 -->
+
 > 문자열을 지정한 포맷으로 파싱하여 javascript `Date객체`로 리턴합니다.
 
 ### Syntax

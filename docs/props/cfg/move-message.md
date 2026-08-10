@@ -1,5 +1,7 @@
 # MoveMessage ***(cfg)***
 
+<!-- synonyms: MoveMessage, move message, message drag, draggable message, drag message dialog, 메시지 드래그, 메시지 이동, 메시지 창 드래그, 메세지 이동 가능, 메시지 드래그 이동 -->
+
 > 시트 메시지 창의 드래그 여부를 설정합니다.  
 >
 > `1(true)`로 설정시 사용자가 메세지 장을 드래그를 통해 옮길 수 있습니다.

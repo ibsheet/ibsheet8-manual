@@ -1,5 +1,7 @@
 # ShiftHint ***(cfg)***
 
+<!-- synonyms: ShiftHint, shift hint, hint position shift, hint left align, tooltip shift, 힌트 위치 이동, 힌트 좌측 이동, Hint 우측 잘림, 힌트 표시 위치, 툴팁 위치 조정, 힌트 자동 이동 -->
+
 > 셀 크기보다 셀 내용이 많을 때 마우스 호버시 셀 데이터를 `Hint` 로 보여줍니다.
 >
 > 최우측 열의 셀들이 `Hint`로 나타날 때, `Hint` 위치를 왼쪽으로 이동하여 셀 데이터를 모두 표시하게 됩니다. 

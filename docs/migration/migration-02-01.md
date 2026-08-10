@@ -1,5 +1,7 @@
 # 객체 생성
 
+<!-- synonyms: IBSheet7, 마이그레이션, sheet7, migration, v7, v8, ibsheet7에서 ibsheet8로, 객체 생성, createIBSheet, IBS_InitSheet, create, 시트 초기화, 시트 생성, sheet creation -->
+
 IBSheet7의 객체 생성 단계는 다음과 같습니다.
 1. `createIBSheet`(혹은 `createIBSheet2`)함수를 이용하여 기본 시트 객체 생성
 2. `SetConfig`(환경 설정), `InitHeaders`(헤더 설정), `InitColumns`(열 설정) 세 함수를 호출하여 시트를 초기화. `IBS_InitSheet`(`ibsheetinfo.js`에서 제공) 함수를 이용했을 때는 내부에서 이 세 함수를 한 번에 호출합니다.

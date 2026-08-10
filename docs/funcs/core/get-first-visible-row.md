@@ -1,5 +1,7 @@
 # getFirstVisibleRow ***(method)***
 
+<!-- synonyms: getFirstVisibleRow, get-first-visible-row, 첫 보이는 행, 첫 노출 행, 최상단 표시 행, 보이는 첫 행, 표시 첫 로우, 노출 첫 행, first, visible, row -->
+
 > `Visible`이 `1`인 최 상단행을 확인합니다.
 >
 > 트리 기능 사용시 row 인자를 설정하면 행이 갖고있는 자식행 중 보여지는 첫번째 자식행이 리턴됩니다.

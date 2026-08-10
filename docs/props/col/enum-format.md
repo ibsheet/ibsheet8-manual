@@ -1,4 +1,7 @@
 # EnumFormat ***(col)***
+
+<!-- synonyms: Enum 마스킹, 콤보 포맷, Enum 표시 형식, 드롭다운 포맷, enum format, dropdown format, combo mask, enum display format -->
+
 > Enum 컬럼 데이터에 대한 마스킹을 정의합니다.
 
 

@@ -1,5 +1,7 @@
 # ColLeft 대체 (getColLeft7 커스텀 함수)
 
+<!-- synonyms: IBSheet7, 마이그레이션, sheet7, migration, v7, v8, ibsheet7에서 ibsheet8로, 이외 유의사항, 부가 팁, additional notes, misc -->
+
 IBSheet7의 `ColLeft`(열의 왼쪽 끝 절대 위치 px)에 직접 대응하는 IBSheet8 함수는 없습니다.  
 IBSheet8의 [getColLeft (method)](/docs/funcs/core/get-col-left)은 **틀고정 섹션(왼쪽/가운데/우측) 기준 상대 위치**를 반환하므로, 앞쪽 섹션 너비([getBodyWidth (method)](/docs/funcs/core/get-body-width))를 더해 절대 위치를 구하는 헬퍼를 아래처럼 정의해 사용합니다.
 

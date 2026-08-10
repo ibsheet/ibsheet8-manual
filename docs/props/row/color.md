@@ -1,5 +1,7 @@
 # Color ***(row)***
 
+<!-- synonyms: row color, row background color, row bg, background color, hex color, rgb color, 행 색상, 행 배경색, 배경색, 바탕색, 색상, HEX 색상, RGB 색상, Color row, 투명색 -->
+
 > 행의 배경색상을 설정합니다.
 >
 > 행의 색상은 상태에 따른 배경색상의 영향을 받습니다.

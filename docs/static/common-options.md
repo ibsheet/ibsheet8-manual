@@ -1,5 +1,7 @@
 # CommonOptions ***(static)***
 
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, 공통 옵션, common options, 전역 옵션 -->
+
 > 모든 시트에 공통으로 설정할 초기 속성값을 설정합니다.<br>
 > 여기서 설정한 값이 각 화면에서 설정한 시트 초기값과 머지되어 시트가 생성됩니다.<br>
 > `CommonOptions`에서 설정한 값과 각 화면에서 정의한 시트 초기 값이 서로 다른 경우에는, 화면에서 설정한 시트 초기값이 최종 적용됩니다.

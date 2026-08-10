@@ -1,4 +1,7 @@
 # EnumDisabled ***(col)***
+
+<!-- synonyms: Enum 비활성, 콤보 아이템 비활성, 드롭다운 항목 비활성, 선택 불가 항목, enum disabled, disable enum item, dropdown disabled, combo item disabled -->
+
 > [Enum](./enum) 속성을 통해 설정한 아이템들의 선택 불가능 여부를 설정합니다.
 >
 > 첫번째 글자를 구분자로 설정하게 됩니다. 

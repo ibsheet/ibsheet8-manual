@@ -1,5 +1,7 @@
 # setAttribute ***(method)***
 
+<!-- synonyms: setAttribute, set-attribute, 속성 설정, 속성 지정, 셀 속성 설정, 행 속성 설정, 열 속성 설정, set, attribute, property, assign -->
+
 > 특정 `행(Row)`, `열(Col)`, `셀(Cell)`에 속성을 설정합니다.  
 > `row`를 `null`로 설정시 `열`에 대한 속성으로 설정됩니다.  
 > `col`을 `null`로 설정시 `행`에 대한 속성으로 설정됩니다.  

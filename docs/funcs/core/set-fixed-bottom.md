@@ -1,4 +1,7 @@
 # setFixedBottom ***(method)***
+
+<!-- synonyms: setFixedBottom, set-fixed-bottom, 하단 고정, 행 고정, 아래 고정, Foot 영역, 데이터 고정, 고정 행, 하단 틀고정, fixed bottom, fix row, freeze bottom, freeze row, set fixed -->
+
 > 맨 아래 데이터행부터 `count`만큼 하단 `Foot` 영역에 고정시킵니다.  
 > [DataMerge](/docs/props/cfg/data-merge)가 적용된 상태에서는 사용할 수 없으며, 머지 해제 후 고정하고 다시 머지를 적용해야 합니다.  
 > 고정행의 갯수가 시트 높이를 초과하면 기능이 제한됩니다.  

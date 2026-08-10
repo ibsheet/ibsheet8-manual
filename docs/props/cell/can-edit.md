@@ -1,5 +1,7 @@
 # CanEdit ***(cell)***
 
+<!-- synonyms: CanEdit, can-edit, 편집 가능, 셀 편집, 편집 여부, 읽기 전용, 편집 제한, 편집 불가, editable, read only, cell edit, edit permission -->
+
 > 해당 셀의 편집 가능 여부를 설정합니다.  
 > 기본값은 `1`이며, 우선순위는 `Cell` > `Row` > `Col` 순으로 적용됩니다.  
 > `Cell`에 설정된 `CanEdit` 값은 `Row` 및 `Col` 설정보다 우선 적용됩니다.   

@@ -1,4 +1,7 @@
 # getEditRow ***(method)***
+
+<!-- synonyms: getEditRow, get-edit-row, 편집 중 행, 편집 행 조회, 편집 중인 로우, 편집 행 객체, 편집 대상 행, 활성 행, edit, row, current -->
+
 > 현재 편집 중인 행 객체를 반환합니다.
 
 ### Syntax

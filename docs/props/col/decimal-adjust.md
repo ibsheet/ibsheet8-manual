@@ -1,5 +1,7 @@
 # DecimalAdjust ***(col)***
 
+<!-- synonyms: 반올림, 올림, 내림, 소수점 처리, 근사값, 소수 자릿수 처리, round, floor, ceil, decimal round, rounding mode -->
+
 > `Int`, `Float` 타입 컬럼의 근사값 처리 방식을 설정합니다.  
 > `Int` 타입은 소수점이 포함된 값이 조회되는 경우 적용됩니다.  
 > `Float` 타입은 `Format`에 지정한 자릿수를 초과하는 값이 조회되는 경우 적용됩니다.  

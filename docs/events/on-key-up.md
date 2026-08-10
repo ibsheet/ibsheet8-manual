@@ -1,4 +1,7 @@
 # onKeyUp ***(event)***
+
+<!-- synonyms: 키 업, 키 뗌, 키보드 키 올라옴, on-key-up, key up, keyup, key release -->
+
 > 포커스된 시트에서 키보드의 눌린 키가 올라왔을때 호출되는 이벤트입니다.
 >
 > 모든 기능 키에 대해 호출되며 [onKeyPress](./on-key-press) 이벤트가 발생한 뒤 호출됩니다.

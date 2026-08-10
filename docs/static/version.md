@@ -1,4 +1,7 @@
 # version ***(method)***
+
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, version, 버전 확인, IBSheet version -->
+
 > 시트의 제품 버전을 확인합니다.
 
 ### Syntax

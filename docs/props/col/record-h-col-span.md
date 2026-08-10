@@ -1,4 +1,7 @@
 # RecordHColSpan ***(col)***
+
+<!-- synonyms: 헤더 그룹 병합, 상위 헤더, 가로 헤더 병합, 헤더 ColSpan, record h col span, header group span, header column merge -->
+
 > 멀티레코드([MultiRecord](/docs/props/cfg/multi-record)) 시트에서 헤더에 상위 그룹 헤더를 만들어 여러 열을 가로로 묶는 기능입니다.  
 > 기준 열에서 오른쪽으로 묶을 열 개수를 지정하고, 그룹 제목은 [RecordHColTitle](/docs/props/col/record-h-col-title)로 붙입니다.   
 > 헤더에만 그룹 단계가 추가되며, 각 열의 데이터는 그대로 표시됩니다([RecordRowSpan](/docs/props/col/record-row-span)으로 세로 병합된 열은 레코드당 한 셀로 보임).  

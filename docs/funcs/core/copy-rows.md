@@ -47,7 +47,7 @@ function work(){
 ### Read More
 - [copyRow method](./copy-row)
 - [addRow method](./add-row)
-- [moveRow method](./move-rows)
+- [moveRow method](./move-row)
 - [onRowAdd event](../../events/on-row-add)
 - [onAfterRowCopy event](../../events/on-after-row-copy)
 - [onAfterRowAdd event](../../events/on-after-row-add)

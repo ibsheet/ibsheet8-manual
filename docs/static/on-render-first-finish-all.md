@@ -1,5 +1,7 @@
 # onRenderFirstFinishAll ***(static)***
 
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, onRenderFirstFinishAll, 렌더링 완료, first render finish, 초기 렌더 이벤트 -->
+
 > `IBSheet` 객체에 선언된 시트가 모두 생성된 이후 발생하는 일종의 이벤트 입니다.<br/>
 > 해당 함수에 시트가 모두 생성된 후 처리할 작업을 작성합니다. <br/>
 

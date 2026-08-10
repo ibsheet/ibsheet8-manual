@@ -1,4 +1,7 @@
 # getRowValue ***(method)***
+
+<!-- synonyms: getRowValue, get-row-value, 행 값, 로우 값, 행 데이터, 값 조회, 값 가져오기, JSON 변환, value, row-data, fetch -->
+
 > 특정 [데이터 로우 객체](/docs/appx/row-object)에 해당하는 값을 json 형식의 객체로 반환합니다.
 
 

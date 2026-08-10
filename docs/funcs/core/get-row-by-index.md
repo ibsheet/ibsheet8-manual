@@ -1,4 +1,7 @@
 # getRowByIndex ***(method)***
+
+<!-- synonyms: getRowByIndex, get-row-by-index, 행 인덱스, 로우 인덱스, 인덱스로 조회, 찾기, row by index -->
+
 > 인덱스를 기준으로 [데이터 로우 객체](/docs/appx/row-object)를 확인합니다.
 >
 > 인덱스는 `1`부터 시작

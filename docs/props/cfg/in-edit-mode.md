@@ -1,5 +1,7 @@
 # InEditMode ***(cfg)***
 
+<!-- synonyms: InEditMode, in edit mode, edit trigger, edit start timing, edit begin mode, F2 edit, double click edit, 편집 진입 시점, 편집 시작 시점, 편집 트리거, 더블클릭 편집, F2 편집, Enter 편집, 편집 시작 조건 -->
+
 > 시트의 편집 시점을 설정합니다.
 >
 > 일반적으로 편집하고자 하는 셀을 더블클릭하거나, 해당 셀에 포커스가 있는 상태에서 F2 혹은 Enter 키 입력시 편집이 시작됩니다. 

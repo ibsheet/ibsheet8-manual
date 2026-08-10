@@ -1,4 +1,7 @@
 # onLongClick ***(event)***
+
+<!-- synonyms: 롱 클릭, 길게 클릭, 마우스 롱프레스, on-long-click, long click, long press, mouse long click -->
+
 > 사용자가 셀을 마우스로 [LongClick](/docs/props/cfg/long-click)에 설정된 시간보다 더 길게 클릭했을 때 호출되는 이벤트입니다.
 >
 > `1(true)`를 리턴 시 클릭에 의한 기본 동작을 막습니다.

@@ -1,4 +1,7 @@
 # GroupSole ***(col)***
+
+<!-- synonyms: 단일 자식 그룹, 한 행 그룹 제외, 자식 하나 그룹, group sole, single child group, exclude sole group -->
+
 > 해당 열을 기준으로 그룹행 생성시, 하위 노드가 한행인 경우 그룹에서 제외 시킬지 여부를 설정합니다. .
 
 ### Type

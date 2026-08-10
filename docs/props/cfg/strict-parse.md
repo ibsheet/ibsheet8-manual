@@ -1,5 +1,7 @@
 # StrictParse ***(cfg)***
 
+<!-- synonyms: StrictParse, strict parse, json parse strict, native json parse, flexible json parse, JSON.parse, 엄격 파싱, JSON 엄격 파싱, JSON.parse 사용, 유연한 파서, JSON 파서 선택, doSearch 파싱 -->
+
 > 조회 함수에서 JSON 데이터를 파싱할 때 파서를 선택합니다.
 >
 > 설정을 안하거나 false로 설정시 유연한 파서를 통해 파싱되고, true로 설정시 브라우져가 제공하는 JSON.parse()를 통해 파싱됩니다.

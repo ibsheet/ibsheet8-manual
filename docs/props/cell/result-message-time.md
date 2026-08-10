@@ -1,5 +1,7 @@
 # ResultMessageTime ***(cell)***
 
+<!-- synonyms: ResultMessageTime, result-message-time, 결과 메시지 시간, 경고 메시지 표시 시간, 메세지 노출 시간, ResultMessage 시간, 자동 사라짐 시간, 팝업 유지 시간, result message time, message display duration, alert timeout, warning display time -->
+
 > [ResultMessage](./result-message)가 보여질 시간(term)을 설정합니다.(ms단위)
 >
 > 설정한 시간만큼 메세지가 보여지고 자동으로 사라집니다.

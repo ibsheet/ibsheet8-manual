@@ -1,5 +1,7 @@
 # MenuItems ***(cell>Filter)***
 
+<!-- synonyms: MenuItems, menu-items, 필터 메뉴 항목, 필터 메뉴 아이템, 필터 아이콘 메뉴, 셀 필터 메뉴, 필터 옵션, 필터 조건 목록, filter menu items, filter icons, cell filter menu, filter options -->
+
 > Filter 셀의 보여질 필터 아이콘 메뉴를 셀 별로 설정 할 수 있습니다.
 
 

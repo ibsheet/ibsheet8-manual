@@ -1,5 +1,7 @@
 # 자주 사용되는 함수 대응
 
+<!-- synonyms: IBSheet7, 마이그레이션, sheet7, migration, v7, v8, ibsheet7에서 ibsheet8로, 함수 대응, 메소드 매핑, API 대응표, method mapping, LoadSearchData, DoSave, 함수 이름 변경 -->
+
 IBSheet7에서 비교적 자주 사용되었다고 생각되는 함수에 대해 지원 여부와 변경된 내용입니다.
 
 |IBSheet7 함수명|기능 설명|IBSheet8 지원 여부|

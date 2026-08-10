@@ -1,4 +1,7 @@
 # getScale ***(method)***
+
+<!-- synonyms: getScale, get-scale, 배율, 확대 비율, 축소 비율, 줌 배율, 배율 조회, 배율 확인, zoom, scale, factor -->
+
 > 시트의 배율(zoom factor)정보를 확인합니다.
 
 ### Syntax

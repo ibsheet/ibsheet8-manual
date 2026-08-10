@@ -1,4 +1,7 @@
 # doSort ***(method)***
+
+<!-- synonyms: 정렬, 소팅, 열 정렬, 데이터 정렬, 정렬 실행, 오름차순 정렬, 내림차순 정렬, do-sort, doSort, do sort, sort, sort by, order by -->
+
 > 지정한 열들을 함수를 통해 소팅 합니다. 
 >
 > `doSort`는 비동기로 동작합니다. 

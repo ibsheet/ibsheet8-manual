@@ -1,5 +1,7 @@
 # updatePageLength ***(method)***
 
+<!-- synonyms: updatePageLength, update-page-length, 페이지 크기, 페이지 길이, 행수, 페이징, 변경, 갱신, update, page, length, paging -->
+
 > [SearchMode](/docs/props/cfg/search-mode): 5 일 때 한 페이지에 표시할 행의 수를 동적으로 변경할 수 있습니다.
 
 ### Syntax

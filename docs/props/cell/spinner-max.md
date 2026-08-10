@@ -1,4 +1,7 @@
 # SpinnerMax ***(cell)***
+
+<!-- synonyms: 스피너 최댓값, 스피너 최대값, 최댓값, 최대값, 상한값, 증감 최대, 화살표 최대, 숫자 스피너 최대, spinner max, spinner maximum, max value, upper bound, input max -->
+
 > [SpinnerVisible](./spinner-visible)을 사용하는 셀에서 화살표를 통한 입력 시 최댓값을 설정할 수 있습니다.
 >
 > 

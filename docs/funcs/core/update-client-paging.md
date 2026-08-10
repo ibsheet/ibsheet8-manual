@@ -1,5 +1,7 @@
 # updateClientPaging ***(method)***
 
+<!-- synonyms: updateClientPaging, update-client-paging, 클라이언트 페이징, 페이징, 페이지 크기, 행수, 변경, 갱신, paging, client, update, page -->
+
 > [SearchMode](/docs/props/cfg/search-mode): 1 일 때 한 페이지에 표시할 행의 수를 동적으로 변경할 수 있습니다.
 
 ### Syntax

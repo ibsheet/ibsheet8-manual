@@ -1,5 +1,7 @@
 # TextSize ***(row)***
 
+<!-- synonyms: text size, font size, row text size, px pt em, per-row font size, 글자 크기, 텍스트 크기, 폰트 사이즈, 글씨 크기, 문자 크기, TextSize 속성 -->
+
 > 지정한 행의 글자 크기를 설정합니다.
 >
 > `px, pt, em` 단위를 사용할 수 있으며, 단위를 지정하지 않으면 px기준으로 설정됩니다.

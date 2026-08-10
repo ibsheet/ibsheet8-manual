@@ -1,5 +1,7 @@
 # GroupMain ***(cfg)***
 
+<!-- synonyms: GroupMain, group main, group tree column, group display column, main group col, 그룹 표시 열, 그룹 트리 열, 그룹 메인 컬럼, 그룹 표시 컬럼, GroupMain 지정, 그룹핑 기준 컬럼 -->
+
 > 그룹핑이 되었을때 그룹 트리를 보여줄 열을 설정합니다. 
 >
 > `GroupMain` 을 설정하지 않는 경우, 자동으로 그룹핑이 표시될 기준 열이 지정됩니다. 

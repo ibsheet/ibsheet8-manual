@@ -1,4 +1,7 @@
 # showHint ***(method)***
+
+<!-- synonyms: showHint, show-hint, 힌트, 힌트 표시, 툴팁, 활성화, 셀 힌트, 보이기, hint, tooltip, enable -->
+
 > 셀의 힌트를 활성화 합니다.
 
 ###

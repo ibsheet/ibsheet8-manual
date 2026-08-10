@@ -1,4 +1,7 @@
 # Spanned ***(col)***
+
+<!-- synonyms: 셀 병합 허용, 세로 병합 허용, RowSpan 허용, 수동 병합, spanned, allow rowspan, cell merge enable, manual merge -->
+
 > 특정 열에 속한 셀들에 대해서 위/아래로 병합할지 여부를 설정합니다.  
 > 실제 병합은 [RowSpan](/docs/props/cell/row-span) 속성을 사용합니다.  
 > 자동 머지([DataMerge](/docs/props/cfg/data-merge))와는 별도로 동작하므로 자동 머지를 꺼야 합니다.

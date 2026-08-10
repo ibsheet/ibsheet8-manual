@@ -1,5 +1,7 @@
 # EnterMode ***(cfg)***
 
+<!-- synonyms: EnterMode, enter mode, enter key behavior, enter key move, tab like enter, enter navigation, 엔터 모드, Enter 키 동작, Enter 이동, Enter 편집, 엔터 방향, Enter 다음 셀, 엔터 포커스 이동, Enter 편집 후 이동, ForceEnterEdit -->
+
 > `Enter` 키를 눌렀을때 셀 편집을 동작시키거나, 아래 방향키(down)나 우측 방향키(또는 Tab 키)와 같이 포커스가 이동하도록 설정할 수 있습니다.  
 > 기본적으로 `Enter`는 편집을 거친 뒤 `mode`에 따라 이동합니다. 편집 없이 바로 이동하려면 [ForceEnterEdit](/docs/props/cfg/force-enter-edit)를 `false`로 설정합니다.  
 > 편집이 불가능한 셀에서는 포커스만 이동합니다.  

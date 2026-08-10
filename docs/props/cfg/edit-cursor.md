@@ -1,4 +1,7 @@
 # EditCursor ***(cfg)***
+
+<!-- synonyms: EditCursor, edit cursor, cursor position on edit, cursor on edit mode, caret position, 편집 커서, 편집 시 커서 위치, 커서 위치, 편집 모드 커서, 커서 이동, 편집 진입 커서, 전체 선택 편집, 커서 좌측 우측 -->
+
 > 편집모드로 진입 시 커서 위치를 지정하는 속성입니다.
 
 ### Type

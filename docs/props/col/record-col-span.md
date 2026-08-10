@@ -1,4 +1,7 @@
 # RecordColSpan ***(col)***
+
+<!-- synonyms: 컬럼 병합, 열 병합, 가로 병합, 멀티레코드 병합, ColSpan, record col span, column merge, horizontal merge, multi record span -->
+
 > 멀티레코드([MultiRecord](/docs/props/cfg/multi-record)) 기능을 사용하는 시트에서 특정 컬럼을 기준으로 오른쪽으로 합쳐질 열의 개수를 설정합니다.  
 > Html Table 객체의 `ColSpan`과 유사합니다.  
 > 헤더만 데이터와 다르게 병합하려면 [Header](/docs/props/col/header)를 `object` 형태로 지정하고 `Header.RecordColSpan`으로 오른쪽으로 합쳐질 열 개수를 설정합니다.  

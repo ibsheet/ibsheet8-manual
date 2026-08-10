@@ -1,4 +1,7 @@
 # IconWidth ***(col)***
+
+<!-- synonyms: 아이콘 너비, 아이콘 폭, 아이콘 크기, 셀 아이콘 사이즈, icon width, icon size, icon area width, custom icon width -->
+
 > 셀 좌측에 버튼을 표시하는 [Icon](./icon) 속성 사용 시, 커스텀 이미지를 사용하는 경우 버튼의 영역 너비를 설정합니다. 
 >
 > 너비는 pixel 단위로 설정됩니다.

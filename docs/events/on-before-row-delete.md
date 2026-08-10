@@ -1,4 +1,7 @@
 # onBeforeRowDelete ***(event)***
+
+<!-- synonyms: 행 삭제 전, 로우 삭제 상태 변경 전, 삭제 취소, on-before-row-delete, before row delete, row delete cancel -->
+
 > [deleteRow](/docs/funcs/core/delete-row), [deleteRows](/docs/funcs/core/delete-rows) 호출 시 행의 삭제 상태 변경 전 호출되는 이벤트입니다.  
 > 리턴을 통해 삭제 상태 변경을 취소할지 또는 유지할지 여부를 결정할 수 있습니다(type파라미터 결과에 따라 다른 동작).  
 > type 파라미터가 `0`일 때, `1(true)`를 리턴시 삭제 상태로 변경하고, `0(false)`를 리턴시 변경을 취소합니다.  

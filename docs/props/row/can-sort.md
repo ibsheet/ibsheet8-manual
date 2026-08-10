@@ -1,5 +1,7 @@
 # CanSort ***(row)***
 
+<!-- synonyms: row can sort, sortable row, tree child sort, row sort enabled, sort exclude, per-row sort, 행 소팅, 정렬 가능, 소팅 허용, 트리 자식 정렬, 정렬 제외, 소팅 여부, CanSort row -->
+
 > 트리사용시 자식행들에 대한 소팅 가능 불가능 여부를 설정합니다.
 
 ### Type

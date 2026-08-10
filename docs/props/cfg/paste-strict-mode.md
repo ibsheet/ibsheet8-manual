@@ -1,5 +1,7 @@
 # PasteStrictMode ***(cfg)***
 
+<!-- synonyms: PasteStrictMode, paste strict mode, strict paste, paste type check, number paste validation, Ctrl V strict, 붙여넣기 엄격, 붙여넣기 타입 검사, 숫자 붙여넣기 검증, 붙여넣기 유효성, 붙여넣기 검사 -->
+
 > `ctrl+v` 를 통해 클립보드의 내용을 시트에 붙여넣을 때, 타입에 맞는 데이터만 붙여넣기 하는 것을 허용할 지 여부를 설정합니다.
 >
 > `Int`, `Float` 타입의 컬럼에 대해서 붙여넣기 할때, 숫자인지 엄격하게 검사합니다.

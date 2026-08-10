@@ -1,5 +1,7 @@
 # getFirstRow ***(method)***
 
+<!-- synonyms: getFirstRow, get-first-row, 첫 행, 첫번째 행, 최상단 행, 시작 행, 첫 로우, 첫 자식 행, first, row, top -->
+
 > 최 상단행을 확인합니다.
 >
 > 트리 기능 사용시 row 인자를 설정하면 행이 갖고있는 첫번째 자식행이 리턴됩니다.
@@ -25,7 +27,7 @@ var frow = sheet.getFirstRow();
 ```
 
 ### Read More
-- [getFirstVisibleRow method](./get-first-visisble-row)
+- [getFirstVisibleRow method](./get-first-visible-row)
 
 ### Since
 

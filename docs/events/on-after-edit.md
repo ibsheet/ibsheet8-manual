@@ -1,4 +1,7 @@
 # onAfterEdit ***(event)***
+
+<!-- synonyms: 편집 후, 셀 편집 완료, 편집 종료 후, 값 확정 후, on-after-edit, after edit, edit complete, post edit -->
+
 > 셀 편집이 완료되기 전 편집모드의 문자열을 셀값으로 변환할 때 호출되는 이벤트입니다.
 >
 > [onEndEdit](./on-end-edit) 이벤트 이후와 [onBeforeChange](./on-before-change) 이벤트 이전 시점에 호출되며, 셀 값에 적용될 편집모드의 최종 값을 수정해서 리턴가능합니다.

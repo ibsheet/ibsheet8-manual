@@ -1,4 +1,7 @@
 # showMessage ***(method)***
+
+<!-- synonyms: showMessage, show-message, 메세지, 메시지, 다이얼로그, 알림, 표시, 보이기, 열기, message, dialog, alert, popup -->
+
 > 시트 영역 가운데에 메세지 `Dialog`를 띄웁니다. 
 >
 > 메세지를 제거하기 전까지는 시트는 비활성화 됩니다 

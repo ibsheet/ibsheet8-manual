@@ -1,4 +1,7 @@
 # onCancelFile ***(event)***
+
+<!-- synonyms: 파일 선택 취소, 파일 업로드 취소, 파일 선택창 닫기, on-cancel-file, cancel file, file upload cancel -->
+
 > `Type:File`에서 셀에서 파일 업로드 할 때, 파일 선택 창의 파일 선택 취소 혹은 닫기 후 발생합니다. 
 
 ### Syntax

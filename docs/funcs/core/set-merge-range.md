@@ -1,4 +1,7 @@
 # setMergeRange ***(method)***
+
+<!-- synonyms: setMergeRange, set-merge-range, 영역 병합, 셀 병합, 범위 병합, 사각형 병합, span 병합, 셀 합치기, 범위 지정 병합, merge range, merge cells, span, set merge, apply merge -->
+
 > 특정 영역을 하나의 셀로 병합(`span`)합니다.  
 > 시작셀(`row1, col1`)부터 종료셀(`row2, col2`)까지를 사각형 형태로 병합합니다.  
 > `row2`는 반드시 `row1`보다 아래, `col2`는 반드시 `col1`보다 우측에 위치해야 합니다.  

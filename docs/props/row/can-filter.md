@@ -1,4 +1,6 @@
 # CanFilter ***(row)***
+
+<!-- synonyms: row can filter, filterable row, filter apply exclude, exclude from filter, per-row filter, 행 필터, 필터 적용, 필터 제외, 필터 무시, 필터링 여부, 행 필터 여부, CanFilter row -->
 > 특정행에 대한 필터 적용 여부를 설정합니다.
 >
 > `0(false)`로 설정시 해당 행은 필터설정과 무관한게 보여지게 됩니다.

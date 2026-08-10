@@ -1,4 +1,7 @@
 # EnumStrictMode ***(col)***
+
+<!-- synonyms: Enum 엄격 모드, 콤보 엄격 모드, 매칭 없는 값 표시, Enum 정밀 검사, enum strict mode, strict enum, unmatched enum value, enum validation -->
+
 > `Enum, EnumKeys`에 설정되지 않은 값은 조회 시 무시되고 `EnumStrictMode`를 `1`로 설정하게 되면 
 >
 > 설정되지 않은 값을 셀에 적용 할 수 있습니다.

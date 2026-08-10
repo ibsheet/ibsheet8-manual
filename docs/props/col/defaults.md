@@ -1,4 +1,7 @@
 # Defaults ***(col)***
+
+<!-- synonyms: 기본 선택값, 입력 도우미, 값 목록, 후보값, 선택지 리스트, 아이콘 선택, defaults options, preset values, quick select, input helper -->
+
 > 사용자가 설정할 수 있는 값을 첫글자를 구분자로 연결한 문자열 형식으로 정의하여 입력 편의를 돕습니다.
 >
 > 열에 [Button](./button) 속성이나 [Icon](./icon) 속성값이 `Defaults`인 경우에만 사용하실 수 있습니다.

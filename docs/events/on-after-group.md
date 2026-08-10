@@ -1,4 +1,7 @@
 # onAfterGroup ***(event)***
+
+<!-- synonyms: 그룹 후, 그룹핑 완료, 그룹 적용 후, on-after-group, after group, grouping done, group applied -->
+
 > 시트를 특정 열(들)을 기준으로 그룹 실행/해제된 후(렌더링 전) 호출되는 이벤트입니다.
 
 ### Syntax

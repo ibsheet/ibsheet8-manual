@@ -1,5 +1,7 @@
 # MenuButtons ***(cfg)***
 
+<!-- synonyms: MenuButtons, menu buttons, enum menu buttons, defaults menu buttons, ok clear order, button order, Enum 메뉴 버튼, 메뉴 버튼 순서, Ok Clear 순서, Enum 하단 버튼, Defaults 버튼, 메뉴 하단 버튼 -->
+
 > 기존의 아무설정 없이 [Enum](/docs/props/col/enum) 타입의 셀([Defaults](/docs/props/col/defaults) 포함)에서 `Menu.Buttons`의 순서는 `Clear, Ok` 순서로만 만들어지고 있다. 
 >
 > [Enum](/docs/props/col/enum) 타입의 셀([Defaults](/docs/props/col/defaults) 포함)에서 [Menu](/docs/appx/menu) 하단의 `Buttons`의 순서를 변경할 수 있다. 

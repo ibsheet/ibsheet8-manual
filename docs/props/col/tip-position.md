@@ -1,5 +1,7 @@
 # TipPosition ***(col)***
 
+<!-- synonyms: 툴팁 위치, 풍선도움말 위치, Tip 좌표, XY 오프셋, tip position, tooltip position, tooltip offset, balloon position -->
+
 > 풍선도움말 객체의 위치나 크기, 정렬을 설정합니다.
 
 ### Type

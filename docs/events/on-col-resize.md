@@ -1,4 +1,7 @@
 # onColResize ***(event)***
+
+<!-- synonyms: 열 크기 변경, 컬럼 리사이즈, 컬럼 너비 변경, on-col-resize, column resize, col width change -->
+
 > 열의 크기가 변경될 때 호출되는 이벤트입니다.
 >
 > 사용자의 클릭 또는 [setColWidth](/docs/funcs/core/set-col-width) 메소드 사용으로 인한 열 사이즈 변경 시 호출됩니다.

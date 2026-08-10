@@ -1,5 +1,7 @@
 # AcceptEnters ***(cell)***
 
+<!-- synonyms: AcceptEnters, accept-enters, 엔터 허용, 엔터키 처리, Enter 키 동작, 줄넘김, 개행, 여러 줄 편집, Lines 타입 엔터, multi-line edit, newline, enter key behavior, line break -->
+
 > 타입이 `Lines`인 셀에서 편집중 `Enter키` 입력시 동작에 대해 설정합니다. 
 
 

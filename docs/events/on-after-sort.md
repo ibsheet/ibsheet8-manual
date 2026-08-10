@@ -1,4 +1,7 @@
 # onAfterSort ***(event)***
+
+<!-- synonyms: 정렬 후, 소팅 완료, 정렬 이후 처리, on-after-sort, after sort, sorted, sorting done -->
+
 > 소팅이 이루어진 후 호출되는 이벤트입니다.
 
 ### Syntax

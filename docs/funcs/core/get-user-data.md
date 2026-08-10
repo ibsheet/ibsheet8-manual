@@ -1,5 +1,7 @@
 # getUserData ***(method)***
 
+<!-- synonyms: getUserData, get-user-data, 사용자 데이터, 초기 데이터, 원본 데이터, 조회 데이터, 데이터 조회, user, data, original -->
+
 > IBSheet.create 함수 호출시 설정한 데이터를 리턴 합니다.
 >
 > data의 값이 없으면 조회한 데이터를 리턴 합니다.

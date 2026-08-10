@@ -1,5 +1,7 @@
 # Color ***(cell)***
 
+<!-- synonyms: 셀 색상, 배경색, 셀 배경, 셀 컬러, HEX 색상, RGB 색상, 셀 배경색, 셀 컬러 지정, color, background color, cell-color, hex color, rgb color, cell background -->
+
 > 셀의 배경 색상을 설정합니다.
 >
 > 색상은 상태에 따른 배경 색상의 영향을 받습니다.

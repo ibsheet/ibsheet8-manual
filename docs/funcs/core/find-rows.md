@@ -1,4 +1,7 @@
 # findRows ***(method)***
+
+<!-- synonyms: 행 찾기, 행 검색, 데이터 찾기, 로우 검색, 검색식 찾기, 조건 검색, find-rows, findRows, find rows, search rows, search, query rows -->
+
 > 시트에서 검색 식([SearchExpression](/docs/props/cfg/search-expression))에 알맞은 데이터를 찾아 선택, 마킹, 포커스 등 처리할 수 있습니다.
 
 ### Syntax

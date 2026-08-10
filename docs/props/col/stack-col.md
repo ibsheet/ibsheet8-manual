@@ -1,4 +1,7 @@
 # Stack ***(col)***
+
+<!-- synonyms: 행 고정, 스택 고정, 체크 행 고정, 상하단 고정, 스틱키 행, stack, pin row, sticky row, freeze row, checkbox stack -->
+
 > [Type](/docs/appx/type)이 `Bool` 인 열에서 체크를 통해 화면의 상/하단에 행을 고정시키는 기능 입니다. 
 >
 > 해당 속성을 설정하면 클릭을 통해 행을 고정 / 고정 해제 할 수 있습니다.

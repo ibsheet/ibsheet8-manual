@@ -1,4 +1,7 @@
 # showCol ***(method)***
+
+<!-- synonyms: showCol, show-col, 열 보이기, 열 표시, 컬럼 보이기, 감춘 열, 표시, 보이기, column, visible, col -->
+
 > 감췄던 열을 보이게 합니다.
 >
 > 시트 생성시 `options.Cols = [{Visible:0}];`으로 생성된 열은 최초로 보여질 때 시간이 걸릴 수 있습니다. 

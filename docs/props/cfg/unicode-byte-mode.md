@@ -1,5 +1,7 @@
 # UnicodeByteMode ***(cfg)***
 
+<!-- synonyms: UnicodeByteMode, unicode byte mode, korean byte, utf 8 byte, byte length, DB byte length, 한글 바이트, 한글 바이트 계산, DB 바이트, utf-8 바이트, 한글 2바이트, 한글 3바이트, 바이트 수 계산 -->
+
 > 한글 1자리의 바이트 수를 설정합니다. 
 >
 > 자바스크립트에서는 모든 글자를 1바이트로 인식합니다. 그러나 한글은 DB의 언어 설정에 따라 2바이트 이상으로 인식되어야 하는 경우가 있습니다. 이런 경우 이 속성을 사용하여 한글의 바이트 수를 설정할 수 있습니다. 

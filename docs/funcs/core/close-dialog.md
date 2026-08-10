@@ -1,4 +1,7 @@
 # closeDialog ***(method)***
+
+<!-- synonyms: 다이얼로그 닫기, 메뉴 닫기, 대화상자 닫기, 팝업 닫기, 창 닫기, close-dialog, closeDialog, close dialog, close menu, close popup, hide dialog -->
+
 > 시트가 제공하는 다이얼로그나 `Menu`를 닫습니다.
 
 ### Syntax

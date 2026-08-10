@@ -1,4 +1,7 @@
 # TextSize ***(cell)***
+
+<!-- synonyms: 글자 크기, 글씨 크기, 텍스트 크기, 폰트 크기, 폰트 사이즈, 글자 사이즈, 문자 크기, px 크기, pt 크기, text size, font size, font-size, character size -->
+
 > 지정한 셀의 글자 크기를 설정합니다.
 >
 > `px, pt, em` 단위를 사용할 수 있으며, 단위를 지정하지 않으면 px기준으로 설정됩니다.

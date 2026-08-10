@@ -1,5 +1,7 @@
 # ChangeEdit ***(cell)***
 
+<!-- synonyms: ChangeEdit, change-edit, 수정 행 편집, 조회 상태 편집, Changed 편집, 조회 편집, 수정 후 편집, editable on change, changed row edit, edit after save -->
+
 > 행의 상태가 수정([Changed](/docs/props/row/changed)) 또는 조회인 상태인 행의 셀 편집([CanEdit](/docs/props/cell/can-edit)) 가능 여부를 설정합니다.
 >
 > 조회 시에는 편집 불가, 행 추가 후 데이터 편집 가능, 저장 후 편집 불가를 설정하고 싶다면 [AddEdit](/docs/props/cell/add-edit) 를 함께 설정해주어야 합니다. 

@@ -1,4 +1,6 @@
 # MaxHeight ***(row)***
+
+<!-- synonyms: max height, maximum row height, wrap max height, upper bound row height, row height limit, 최대 높이, 행 최대 높이, 최대 크기, 높이 상한, 줄넘김 최대 높이, MaxHeight 속성 -->
 > 행의 최대 높이를 설정합니다.
 >
 > Wrap 설정시 데이터의 양에 따라 행의 높이가 늘어나게 되는데, 이때 최대 증가할 수 있는 높이를 설정합니다.

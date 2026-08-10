@@ -1,4 +1,7 @@
 # hideCol ***(method)***
+
+<!-- synonyms: hideCol, hide-col, 열 숨김, 컬럼 숨기기, 열 감추기, 숨김 처리, 표시 안함, 숨기기, 감추기, hide, column, col, invisible, conceal -->
+
 > 특정 열을 감춥니다. 
 >
 > 여러 컬럼을 `hide` 할시 `render` 인자를 `false` 로 하여 작업 후에는 `rerender` 를 무조건 호출하셔야 합니다.
@@ -40,7 +43,7 @@ sheet.rerender();
 - [getCurrentInfo method](./get-current-info)
 - [saveCurrentInfo method](./save-current-info)
 - [showCol method](./show-col)
-- [onShowColumn event](/docs/events/on-show-column)
+- [onShowCol event](/docs/events/on-show-col)
 
 
 ### Since

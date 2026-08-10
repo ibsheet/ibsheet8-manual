@@ -1,4 +1,7 @@
 # onReadSuggest ***(event)***
+
+<!-- synonyms: 셀 값 제안, Suggest 값 조회, 편집 자동완성 후보, on-read-suggest, read suggest, autocomplete -->
+
 > 셀이 편집모드로 들어갈 때 호출되는 이벤트로, 편집 시 사용자에게 셀 값을 제안하는 기능인 [Suggest](/docs/props/col/suggest)의 값을 확인할 수 있습니다.
 >
 > 사용자는 [Suggest](/docs/props/col/suggest)의 형식을 지닌 새로운 값을 리턴하여 [Suggest](/docs/props/col/suggest)에 설정된 값이 아닌 다른 값을 사용자에게 추천할 수 있습니다.

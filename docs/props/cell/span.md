@@ -1,4 +1,7 @@
 # Span ***(cell)***
+
+<!-- synonyms: 스팬, 셀 병합, 셀 합치기, 셀 합침, 가로 병합, 열 병합, 컬럼 병합, colspan, cell merge, cell span, merge cells, horizontal merge, spanned -->
+
 > 특정 셀을 기준으로 오른쪽으로 합쳐질 셀의 개수를 설정합니다.  
 > `row`에 [Spanned](/docs/props/row/spanned):`1`이 설정되어 있어야 사용할 수 있습니다.  
 > [DataMerge](/docs/props/cfg/data-merge), [HeaderMerge](/docs/props/cfg/header-merge) 설정 시 적용되지 않습니다.  

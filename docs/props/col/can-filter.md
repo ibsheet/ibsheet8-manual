@@ -1,5 +1,7 @@
 # CanFilter ***(col)***
 
+<!-- synonyms: 필터 가능, 필터 사용, 필터 제한, 필터 잠금, 열 필터, filter enable, column filter, disable filter, filter lock, filterable -->
+
 > 특정 열에 대해 필터기능을 사용하지 못하게 설정합니다.
 >
 > 이 속성을 사용하면 해당 열은 필터셀이 입력불가가 됩니다.

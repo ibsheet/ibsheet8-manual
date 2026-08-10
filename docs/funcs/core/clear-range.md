@@ -1,5 +1,7 @@
 # clearRange ***(method)***
 
+<!-- synonyms: 영역 지우기, 범위 값 삭제, 범위 초기화, 셀 값 지우기, 셀 범위 삭제, 특정 영역 삭제, clear-range, clearRange, clear range, clear cells, erase range, delete range -->
+
 > 시트 내에 특정 영역의 값을 지웁니다.
 >
 > `range` 인자에 설정된 row1, col1 셀부터 row2, col2 셀까지 영역의 값을 지웁니다.

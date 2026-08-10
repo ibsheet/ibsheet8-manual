@@ -1,4 +1,7 @@
 # ResultText ***(cell)***
+
+<!-- synonyms: ResultText, result-text, 결과 알림, alert 메시지, 경고문 텍스트, ResultMask 알림, 유효성 알림, 검증 실패 문구, alert 문구, result text, alert text, validation alert, warning text -->
+
 > [ResultMask](./result-mask)에 위배되는 내용이 입력시 alert으로 보여줄 내용을 설정합니다.
 
 ### Type

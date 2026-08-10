@@ -1,4 +1,7 @@
 # setFormulaRow ***(method)***
+
+<!-- synonyms: setFormulaRow, set-formula-row, 합계행, 합계 설정, 합계 변경, 평균 행, 최대 최소, FormulaRow 설정, 합계행 감춤, formula row, sum row, avg row, set formula, change formula -->
+
 > `FormulaRow`(합계행)에 계산을 변경(`Sum,Avg,Min,Max`)하거나 행을 감출 수 있습니다.  
 > 컬럼에 `FormulaRow` 설정이 없어도 이 함수를 호출하면 동적으로 합계행이 생성됩니다.  
 > 이 함수는 호출할 때마다 지정한 내용으로 `FormulaRow` 설정 전체를 다시 지정합니다. 그래서 일부 열만 지정하거나 감추기용으로 `visible`만 지정해 호출하면, 열에 설정했던 기존 합계 설정이 사라집니다. 기존 합계를 유지하려면 호출 시 기존 열 설정까지 함께 지정하거나 `noclear` 인자를 `true`로 사용하세요.

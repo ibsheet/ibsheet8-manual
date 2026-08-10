@@ -1,5 +1,7 @@
 # AutoFitColWidth ***(cfg)***
 
+<!-- synonyms: AutoFitColWidth, auto fit column width, auto fit col width, fit column width, column width auto, resize column, 자동 컬럼 너비, 자동 열 너비, 컬럼 너비 자동 조정, 열 너비 자동 맞춤, 자동 너비, FitColWidth 자동 호출, 컬럼 크기 자동 -->
+
 > 특정 시점에서 컬럼의 너비를 자동으로 조정하는 `FitColWidth()` 함수를 호출합니다. <br/>  
 > 적용하고자 하는 시점을 구분자 `|` 로 연결하여 설정합니다.
 

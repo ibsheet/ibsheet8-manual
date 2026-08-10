@@ -1,4 +1,7 @@
 # onKeyDown ***(event)***
+
+<!-- synonyms: 키 다운, 키 누름, 키보드 입력, 키 눌림, on-key-down, key down, keydown, key press -->
+
 > 포커스된 시트에서 사용자가 키를 눌렀을 때 호출되는 이벤트입니다.
 >
 > 모든 기능 키에 대해 호출되며, `1(true)`를 리턴 시 눌린 키의 기본 동작이 무시됩니다(ex: Insert키를 통한 행 추가, Enter키를 통한 편집모드로 변경 등).

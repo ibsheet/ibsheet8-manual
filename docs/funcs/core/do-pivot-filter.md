@@ -1,5 +1,7 @@
 # doPivotFilter ***(method)***
 
+<!-- synonyms: 피벗 필터, 피벗 필터링, 피벗 시트 필터, 피벗 데이터 필터, 피벗 필터 적용, do-pivot-filter, doPivotFilter, do pivot filter, apply pivot filter, pivot filtering -->
+
 > 주어진 값을 필터행에 반영하여, 원본 시트에서 필터된 데이터 결과에 따라 피벗 시트를 생성합니다.
 >
 > ;를 통해 필터링 하고 싶은 값들에 대해 or연산을 실행할 수 있습니다(ex |떡볶이;오뎅|...).<br/>

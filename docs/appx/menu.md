@@ -178,7 +178,6 @@ this.Owner를 통해 해당 아이템을 가지고 있는 전체 메뉴 객체�
 - [Menu row](/docs/props/row/menu)
 - [EnumMenu col](/docs/props/col/enum-menu)
 - [Menu col](/docs/props/col/menu)
-- [EnumMenu row](/docs/props/row/enum-menu)
 - [Menu cell](/docs/props/cell/menu)
 - [onSelectMenu event](/docs/events/on-select-menu)
 - [onShowMenu event](/docs/events/on-show-menu)

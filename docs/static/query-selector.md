@@ -1,5 +1,7 @@
 # QuerySelector ***(static)***
 
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, querySelector, 시트 선택, 시트 조회, 선택자 -->
+
 > CSS 선택자에 따라 HTML 태그를 반환하는 함수를 설정합니다. <br>
 > 
 > 시트가 `ShadowDOM` 내부에 들어가 있으면 시트가 `document.getElementById`를 통해 시트 내부의 태그에 접근할 수가 없습니다. <br/>

@@ -1,4 +1,7 @@
 # FloatCalcMode ***(cfg)***
+
+<!-- synonyms: FloatCalcMode, float calc mode, float calculation, floating point, precision correction, decimal calc, 부동 소수점, 소수점 계산, 소수점 보정, Float 계산, 부동소수점 보정, Format 소수점, 소수 자릿수 계산, 부동소수점 오차 -->
+
 > `Float` Type 인 컬럼에서 계산 시 (col)[Format](/docs/props/col/format)과 설정한 소수점 길이보다 짧게 출력되거나 예상했던 결과값보다 소수점 자릿수가 길게 출력되는 경우 보정치 값을 변경하도록 설정합니다.
 소수점 계산의 보정치는 JavaScript의 `부동 소수점` 연산 문제로 인하여 `1e5` 즉, 1 * 10의 5승인 `100000`을 기본 값으로 설정하여 계산합니다.
 

@@ -1,5 +1,7 @@
 # showDownloadDialog ***(method)***
 
+<!-- synonyms: show download dialog, download dialog, excel download dialog, save as dialog, export dialog, download popup, 다운로드 다이얼로그, 엑셀 다운로드 창, 다운로드 팝업, 내려받기 다이얼로그, 저장 창, showDownloadDialog 메소드 -->
+
 > 시트의 내용을 엑셀이나 Text형식으로 다운로드 받기 위한 다이얼로그 창을 오픈합니다.  
 > 해당 함수는 `/plugins/ibsheet-dialog.js` 파일이 포함되어 있어야 사용하실 수 있습니다.  
 > 이 함수는 내부적으로 `down2Excel`을 호출하므로 [AutoExcelMode](/docs/props/cfg/auto-excel-mode) 값에 따라 필요 조건이 달라집니다.  

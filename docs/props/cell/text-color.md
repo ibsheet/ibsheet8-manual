@@ -1,4 +1,7 @@
 # TextColor ***(cell)***
+
+<!-- synonyms: 글자색, 글자 색상, 텍스트 색, 텍스트 색상, 폰트 색, 폰트 컬러, 글씨 색, 셀 글자색, HEX 색상, RGB 색상, text color, font color, foreground color, color -->
+
 > 지정한 셀에 글자색을 설정합니다.
 
 ### Type

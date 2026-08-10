@@ -1,5 +1,7 @@
 # 기본 CSS 적용
 
+<!-- synonyms: 스타일, 디자인, 테마, style, theme, 커스터마이징, 외관, 시트 스타일, CSS, 스타일시트, css 커스터마이징, css override -->
+
 ## CSS 파일 링크
 html파일에서 link tag로 사용하시려는 css파일을 호출하셔야 합니다.
 아래 예제코드에서는 demo사이트에서 사용되는 기본 테마의 css를 경로를 설정한 사항입니다.

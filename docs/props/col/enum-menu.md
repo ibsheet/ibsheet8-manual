@@ -1,4 +1,7 @@
 # EnumMenu ***(col)***
+
+<!-- synonyms: Enum 메뉴, 콤보 메뉴, 드롭다운 대신 메뉴, 컨텍스트 메뉴 콤보, 트리 메뉴 콤보, enum menu, combo menu, dropdown menu, tree combo -->
+
 > [Type](/docs/appx/type)이 `Enum`인 열에서 드랍리스트 대신 메뉴가 보여지게 끔 설정하고자 할때 사용합니다.
 >
 > `Menu`에 대한 자세한 내용은 [Menu appendix](/docs/appx/menu)속성을 참고해 주세요.

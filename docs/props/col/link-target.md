@@ -1,5 +1,7 @@
 # LinkTarget ***(col)***
 
+<!-- synonyms: 링크 타겟, 새창 열기, target 창, _blank, _self, link target, open window, target window, new tab -->
+
 > 셀에 [Link](/docs/props/col/link)속성이 있는 경우, 클릭시 이동할 target Window를 설정합니다..
 
 ### Type

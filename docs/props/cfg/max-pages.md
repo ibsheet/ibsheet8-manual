@@ -1,5 +1,7 @@
 # MaxPages ***(cfg)***
 
+<!-- synonyms: MaxPages, max pages, page buffer count, page cache count, page count in memory, SearchMode 2 pages, 최대 페이지 수, 페이지 개수, 페이지 버퍼, 페이지 캐시, 시트 페이지 수, SearchMode 2 페이지 -->
+
 > `SearchMode: 2` 인 경우, 시트가 한 번에 갖고 있는 페이지 수를 설정합니다.
 >
 > 페이지 수가 클수록 많은 DOM을 갖게 됨으로 무거워 질 수 있습니다.

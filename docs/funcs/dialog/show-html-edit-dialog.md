@@ -1,5 +1,7 @@
 # showHtmlEditDialog ***(method)***
 
+<!-- synonyms: show html edit dialog, html edit dialog, row html edit, html row form, edit popup html, html detail dialog, HTML 편집 다이얼로그, HTML 행 편집 창, HTML 편집 팝업, HTML 폼 다이얼로그, showHtmlEditDialog 메소드 -->
+
 > 한 행의 내용을 다이얼로그로 열어 보여줍니다.  
 > [showEditDialog](/docs/funcs/dialog/show-edit-dialog)와 용도는 같지만, 행 내용을 IBSheet(그리드)가 아닌 순수 HTML 태그로 표현합니다.  
 > 해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.  

@@ -1,4 +1,7 @@
 # InfoRowConfig ***(cfg)***
+
+<!-- synonyms: InfoRowConfig, info row config, information row, paging row, count row, status row, InfoRow, 정보 행, 건수 표시 행, 페이지 네비게이션, 페이징 표시, InfoRow 설정, Paging Count, StatusLabel, SummaryLabel -->
+
 > 시트 상단 혹은 하단에 별도의 행을 통해 조회된 데이터의 개수나 페이지 네비게이션을 설정합니다.  
 > 건수정보표시행에 임의의 문자나 숫자를 추가적으로 설정 하는 것도 가능합니다.  
 > `Layout`에 셀에 대한 속성 및 타입을 설정 할 수 있습니다.  

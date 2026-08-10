@@ -1,5 +1,7 @@
 # getSubTotalRows ***(method)***
 
+<!-- synonyms: getSubTotalRows, get-sub-total-rows, 소계 행, 누계 행, 소계 조회, 합계 행, 서브토탈, subtotal, total, rows -->
+
 > 생성된 소계/누계 행들을 반환합니다.
 
 ### Syntax

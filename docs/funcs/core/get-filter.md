@@ -1,4 +1,7 @@
 # getFilter ***(method)***
+
+<!-- synonyms: getFilter, get-filter, 필터 조회, 필터 확인, 필터 값, 필터 설정 조회, 필터행, 필터 상태, filter -->
+
 > 필터행에 설정한 내용을 확인합니다.
 
 ### Syntax

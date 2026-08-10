@@ -1,5 +1,7 @@
 # HighlightAfterSort ***(cfg)***
 
+<!-- synonyms: HighlightAfterSort, highlight after sort, focus after sort, sort focus, sort scroll behavior, keep focus after sort, 정렬 후 포커스, 정렬 후 하이라이트, 소팅 후 포커스, 정렬 후 스크롤, 소팅 후 스크롤, 정렬 포커스 유지 -->
+
 > 정렬 동작 이후 포커스 처리 동작을 설정합니다. 
 
 ### Type

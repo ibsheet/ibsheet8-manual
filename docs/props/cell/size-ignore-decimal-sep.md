@@ -1,4 +1,7 @@
 # SizeIgnoreDecimalSep ***(cell)***
+
+<!-- synonyms: SizeIgnoreDecimalSep, size-ignore-decimal-sep, 자릿수 구분자 제외, 소수점 구분자 제외, Size 속성 자릿수, 글자 수 계산 제외, 숫자 구분자 무시, 입력 길이 구분자 제외, size ignore decimal separator, group separator ignore, char count exclude, size limit separator -->
+
 > 입력된 문자열이 숫자형인 경우, 설정된 열에 입력 가능한 글자 수에서 자릿수 구분자와 소수점 구분자의 값들을 글자 수에서 제외하는 기능입니다.
 >
 > Locale메세지 파일(ko.js,en.js등)에서 자릿수 구분자는 `Format.GroupSeparator`, 소수점 구분자는 `Format.DecimalSeparator`로 설정되어 있습니다.

@@ -1,4 +1,7 @@
 # onSetFile ***(event)***
+
+<!-- synonyms: 파일 설정, 파일 선택, 파일 업로드 전, 파일 첨부, 파일 셀 값 설정, 파일 입력, on-set-file, set file, file select, before file upload -->
+
 > `Type:File`에서 셀에 파일 업로드 직전, 파일 선택 창의 파일 선택 완료 직후 발생합니다. 
 >
 > `files`인자로 선택한 파일 정보를 확인할 수 있습니다.

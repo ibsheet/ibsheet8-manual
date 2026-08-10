@@ -1,4 +1,7 @@
 # getRowById ***(method)***
+
+<!-- synonyms: getRowById, get-row-by-id, 행 ID, 로우 ID, ID로 조회, 찾기, row by id, search -->
+
 > ID를 기준으로 [데이터 로우 객체](/docs/appx/row-object)를 반환합니다.
 
 

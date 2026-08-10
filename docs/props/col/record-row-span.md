@@ -1,4 +1,7 @@
 # RecordRowSpan ***(col)***
+
+<!-- synonyms: 행 병합, 세로 병합, 멀티레코드 병합, RowSpan, record row span, row merge, vertical merge, multi record row -->
+
 > 멀티레코드([MultiRecord](/docs/props/cfg/multi-record)) 기능을 사용하는 시트에서 특정 행을 기준으로 아래쪽으로 합쳐질 행의 개수를 설정합니다.  
 > Html Table 객체의 `RowSpan`과 유사합니다.  
 > 헤더만 데이터와 다르게 병합하려면 [Header](/docs/props/col/header)를 `object` 형태로 지정하고 `Header.RecordRowSpan`으로 아래쪽으로 합쳐질 행 개수를 설정합니다.  

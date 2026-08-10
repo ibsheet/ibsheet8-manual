@@ -1,4 +1,7 @@
 # setFixedLeft ***(method)***
+
+<!-- synonyms: setFixedLeft, set-fixed-left, 좌측 고정, 왼쪽 고정, 열 고정, 틀고정, 좌측 열 고정, 좌측 섹션, 컬럼 고정, fixed left, freeze left, fix left, set fixed, freeze columns -->
+
 > 지정한 숫자만큼의 열을 시트의 좌측 (`Section:0`)에 위치시킵니다.(틀고정)
 >
 > 지정한 열 수에는 `Hidden` 열도 포함하여 고정시킵니다.

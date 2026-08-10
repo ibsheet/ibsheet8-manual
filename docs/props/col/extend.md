@@ -1,4 +1,7 @@
 # Extend ***(col)***
+
+<!-- synonyms: 열 상속, 컬럼 설정 재사용, 공통 열 규격, 열 템플릿, 컬럼 확장, extend column, column inherit, common column config, template column -->
+
 > 시트 생성시 Cols에 들어가는 열 설정([Type (col)](/docs/props/col/type), [Format (col)](/docs/props/col/format) 등)을 다른 변수로부터 가져와 적용합니다.
 >
 > 가령 프로젝트에서 달러를 표시하는 열에 대한 공통 규격을 아래와 같이 정했다고 가정합니다.

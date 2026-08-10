@@ -1,5 +1,7 @@
 # Indent ***(row)***
 
+<!-- synonyms: row indent, text indent, row-level indent, indentation, left right indent, per-row indent, 들여쓰기, 행 들여쓰기, 문자열 들여쓰기, 좌측 들여쓰기, 우측 들여쓰기, Indent 속성 -->
+
 > 행 전체의 문자열 들여쓰기를 설정합니다.
 >
 > 좌측정렬을 하는 셀은 좌측 끝부터, 우측정렬을 하는 셀은 우측 끝부터 들여쓰기가 적용됩니다.

@@ -1,5 +1,7 @@
 # DragCopy ***(cfg)***
 
+<!-- synonyms: DragCopy, drag copy, drag move sheet, cross sheet drag, drag between sheets, 시트 간 드래그, 시트 간 행 이동, 드래그 복사, 드래그 이동, 원본 시트 상태, Deleted 유지, 시트 간 행 복사, 두 시트 드래그 -->
+
 > 두 개의 시트 사이에서 행 이동시 원본 시트의 행 상태를 변경할지 여부를 설정합니다.
 
 ### Type

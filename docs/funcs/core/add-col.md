@@ -1,5 +1,7 @@
 # addCol ***(method)***
 
+<!-- synonyms: 열 추가, 컬럼 추가, 동적 열 추가, 열 삽입, 컬럼 생성, 열 만들기, add-col, addCol, add column, insert column, dynamic column, create column -->
+
 > 이미 생성된 시트에 동적으로 열을 추가합니다.
 
 ### Syntax

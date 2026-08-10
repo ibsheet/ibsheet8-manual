@@ -1,5 +1,7 @@
 # Scale ***(cfg)***
 
+<!-- synonyms: Scale, zoom factor, sheet zoom, sheet scale, resize sheet, 시트 배율, 시트 확대, 시트 축소, 줌 배율, 시트 zoom, 시트 크기 배율, 확대 축소 -->
+
 > 주어진 배율(zoom factor)에 따라 시트 전체를 확대하거나 축소합니다. 
 >
 > 1.0보다 작은 값은 시트를 축소합니다. (0.1 미만으로 사용하실 수 없습니다.) 

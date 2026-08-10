@@ -1,4 +1,7 @@
 # onLinkClick ***(event)***
+
+<!-- synonyms: 링크 클릭, Link 컬럼 클릭, Img 컬럼 클릭, 이미지 클릭, on-link-click, link click, image click -->
+
 > [Type](/docs/props/col/type)이 `Link` 또는 `Img`로 설정된 열에 위치한 셀을 클릭한 경우 호출되는 이벤트입니다.
 >
 > [Link](/docs/props/col/link) 속성에 의해 정의된 링크는 클릭해도 해당 이벤트가 호출되지 않습니다.

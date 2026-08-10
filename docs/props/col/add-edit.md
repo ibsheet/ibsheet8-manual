@@ -1,5 +1,7 @@
 # AddEdit ***(col)***
 
+<!-- synonyms: 추가 행 편집, Added 편집, 신규 행 편집, 추가된 행 편집 가능, 신규 상태 편집, added row edit, new row editable, insert edit, added editable -->
+
 > 행의 상태가 추가([Added](/docs/props/row/added))인 행의 컬럼의 편집([CanEdit](/docs/props/row/can-edit)) 가능 여부를 설정합니다.
 >
 > 조회시에는 편집 불가, 행 추가 후 데이터 편집 가능, 저장 후 편집 불가를 설정하고 싶다면 [ChangeEdit](/docs/props/col/change-edit) 를 함께 설정해주어야 합니다. 

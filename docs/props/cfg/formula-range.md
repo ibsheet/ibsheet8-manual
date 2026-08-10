@@ -1,5 +1,7 @@
 # FormulaRange ***(cfg)***
 
+<!-- synonyms: FormulaRange, formula range, header formula, footer formula, calc range, formula scope, 포뮬러 영역, 포뮬러 범위, 헤더 포뮬러, 풋 포뮬러, CalcOrder, CanFormula 범위, 계산식 영역, 헤더까지 계산 -->
+
 > 컬럼의 포뮬러 동작시 영역을 헤더에서 풋까지 보도록 하는 기능입니다. 
 >
 > 기능 사용시 `CanFormula` 의 유무를 확인함. 

@@ -1,4 +1,7 @@
 # getShownCols ***(method)***
+
+<!-- synonyms: getShownCols, get-shown-cols, 보이는 열, 표시된 컬럼, 화면 열, 열 이름 조회, 열 목록, shown, visible, columns, list -->
+
 > 현재 화면에 보여지는 열 이름을 배열로 리턴합니다.
 >
 > section인자를 설정하지 않으면 가운데 영역에서 보여지는 열 이름을 배열로 리턴합니다.

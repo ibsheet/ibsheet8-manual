@@ -1,5 +1,7 @@
 # static 객체 란
 
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, static 개요, 정적 함수 목록 -->
+
 > `ibsheet.js` 파일을 화면에 추가하면 전역변수로 `IBSheet`객체가 생성됩니다. <br/>
 > 이 객체를 통해 시트가 제공하는 달력을 사용하거나, 컨텍스트 메뉴 등을 시트 외부 영역에서 사용하실 수 있습니다.<br/>
 > 그리고 이 객체에는 시트가 생성될 때 마다 해당 객체에 배열 형태로 시트가 담기게 됩니다.<br/>

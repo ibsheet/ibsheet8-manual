@@ -1,4 +1,7 @@
 # Alias ***(cell)***
+
+<!-- synonyms: Alias, 별칭, 파일 별칭, 파일명 별칭, 대체 파일명, 표시 이름, 가명, 파일 표시명, file alias, display name, file display name -->
+
 > 열의 [Type](/docs/props/cell/type)이 `File`인 경우 실제 파일명 대신 보여질 셀 값을 설정합니다.
 >
 > 지정하지 않을 경우 실제 파일명이 셀 값에 보여지게 됩니다.

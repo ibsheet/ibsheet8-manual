@@ -1,4 +1,7 @@
 # doGroup ***(method)***
+
+<!-- synonyms: 그룹화, 그룹핑, 열 그룹, 그룹 실행, 그룹 만들기, 데이터 그룹화, do-group, doGroup, do group, group by, grouping, apply group -->
+
 > 지정한 열들을 함수를 통해 그룹핑 합니다.
 ### Syntax
 ```javascript

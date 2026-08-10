@@ -1,5 +1,7 @@
 # UseRandomId ***(cfg)***
 
+<!-- synonyms: UseRandomId, use random id, random sheet id, unique id, no global object, 랜덤 아이디, 임의 시트 ID, 유니크 시트 ID, 글로벌 객체 방지, 시트 ID 자동 생성, id 자동 부여 -->
+
 > 시트 생성시 임의의 id로 생성하고, 글로벌 객체를 생성하지 않습니다.
 >
 > IBSheet.create()를 통해 생성시 부여한 id의 유/무 무관하게 임의의 값으로 id가 생성됩니다. 

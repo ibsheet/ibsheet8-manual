@@ -1,5 +1,7 @@
 # setSelectionSummaryInfoElement ***(method)***
 
+<!-- synonyms: setSelectionSummaryInfoElement, set-selection-summary-info-element, 선택 영역 요약, 합계 평균, 선택 정보, 요약 표시, 셀 개수, 외부 표시, 정보 요소, selection summary, summary info, selection info, display summary, set summary -->
+
 > 선택한 영역의 셀 개수 및 합계/평균 값 정보를 시트 외부의 Dom Element 에 표시합니다.
 
 ### Syntax

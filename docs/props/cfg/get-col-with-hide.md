@@ -1,4 +1,7 @@
 # GetColWithHide ***(cfg)***
+
+<!-- synonyms: GetColWithHide, get col with hide, col api include hidden, hidden col api, getColIndex hidden, includeHideCol, 숨긴 열 포함, 숨김 열 API, 열 API 숨김 포함, getColIndex 숨김, Col.Visible 무시, 숨김 컬럼 조회 -->
+
 > `getColIndex, getColByIndex, getFirstCol, getLastCol, getNextCol, getPrevCol` 해당 API들은 기본 기능이 보여지는 열을 기준으로 동작합니다. 
 >
 > 해당 기능을 `true`로 설정시, 위의 `API`들은 `Col.Visible` 관계없이 동작합니다. 

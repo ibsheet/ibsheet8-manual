@@ -1,5 +1,7 @@
 # SortIcons ***(cfg)***
 
+<!-- synonyms: SortIcons, sort icons, sort icon display, sort arrow, header sort icon, sort trigger position, 정렬 아이콘, 소팅 아이콘, 정렬 표시, 헤더 정렬 아이콘, 정렬 화살표, 정렬 아이콘 클릭, 정렬 아이콘 위치 -->
+
 > 정렬 아이콘의 화면에 표시여부 와 정렬 기능 동작 위치를 설정합니다. 
 >
 > 아이콘에 대한 추가 설정 및 정렬 가능 여부는 [SortIcons(Header)](/docs/props/row/sort-icons) 에서 설정할 수 있습니다. 

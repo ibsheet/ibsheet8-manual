@@ -1,5 +1,7 @@
 # NoFormatEscape ***(cfg)***
 
+<!-- synonyms: NoFormatEscape, no format escape, html tag in format, format html, escape html, format as html, Format HTML 태그, Format 이스케이프, HTML 그대로 출력, Format 원본, & < 그대로 출력, HTML 태그 사용 -->
+
 > 열 ([Col](/docs/props/col/format), [Cell](/docs/props/cell/format)) [Format](/docs/appx/format) 에 Html 태그로 사용되는 &, < 문자를 그대로 출력할지 여부를 설정합니다. 
 >
 > 해당 속성을 설정하지 않는 경우 text 열은 `0(false)`를, lines / number / date 타입은 `1(true)`를 기본값으로 가지게 됩니다.  

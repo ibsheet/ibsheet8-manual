@@ -1,4 +1,7 @@
 # onShowEdit ***(event)***
+
+<!-- synonyms: 편집 값 표시, 편집 시작 값, 편집 모드 값 변경, 편집 초기값, 편집 진입 값, on-show-edit, show edit, edit value, edit initial value -->
+
 > 셀 편집 시작 시 편집모드에 보일 값을 가져오기 위해 호출되는 이벤트입니다.
 >
 > 편집모드를 시작할 때 보일 값 대신 사용될 값을 리턴 할 수 있습니다.

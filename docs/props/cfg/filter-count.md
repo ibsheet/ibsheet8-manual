@@ -1,5 +1,7 @@
 # FilterCount ***(cfg)***
 
+<!-- synonyms: FilterCount, filter count, filtered row count, visible row count, filter total, 필터 개수, 필터링 행 개수, 필터 결과 개수, 화면 보이는 행 개수, 필터 카운트, 검색 결과 개수, 필터된 행 수 -->
+
 > 필터 기능 사용시 제공되는 읽기 전용 옵션으로, 시트에서 필터링되어 화면에 보이는 데이터행의 개수를 반환합니다.
 >
 > `Search`행에서 `Filter` 옵션 사용시에도 적용됩니다.

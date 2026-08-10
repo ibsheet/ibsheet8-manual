@@ -1,5 +1,7 @@
 # ShowHint ***(cell)***
 
+<!-- synonyms: ShowHint, show-hint, 힌트 표시, 셀 힌트, 툴팁, 셀 미리보기, 감춰진 텍스트, 잘린 내용 힌트, 확장 표시, show hint, cell tooltip, cell hint, hover preview, tooltip -->
+
 > 해당 셀에서 힌트기능을 사용할지 여부를 설정합니다.
 >
 > 힌트는 셀의 너비가 좁아 내용의 일부가 안 보일 때, 마우스 커서가 올라간 셀에 한해 일시적으로 셀의 너비를 늘려 안보이던 뒷 내용을 보여주는 기능입니다.

@@ -1,5 +1,7 @@
 # TextColor ***(row)***
 
+<!-- synonyms: text color, row text color, font color, foreground color, hex color, rgb color, 글자색, 텍스트 색상, 문자색, 폰트 색상, 글씨 색, HEX 글자색, TextColor 속성 -->
+
 > 지정한 행의 글자색을 설정합니다.
 
 ### Type

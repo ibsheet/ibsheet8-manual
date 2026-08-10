@@ -1,4 +1,7 @@
 # SortIconsNum ***(cfg)***
+
+<!-- synonyms: SortIconsNum, sort icons num, sort priority number, multi sort number, sort order number, 정렬 순서 숫자, 소팅 순위 숫자, 다중 정렬 번호, 정렬 우선순위 표시, 소팅 아이콘 숫자 -->
+
 > 다중 컬럼 소팅시 소팅 적용 순위를 소팅 아이콘 우측에 숫자로 표시합니다. 
 
 ### Type

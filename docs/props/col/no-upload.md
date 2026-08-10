@@ -1,5 +1,7 @@
 # NoUpload ***(col))***
 
+<!-- synonyms: 서버 전송 제외, 저장 제외, 열 저장 안함, 전송 스킵, no upload, skip save, exclude save, no server send -->
+
 > 지정한 열의 저장 여부를 설정합니다.
 >
 > `1(true)` 로 설정한 열의 경우 저장 함수(`doSave, getSaveString 등`) 호출시 상태와 무관한게 서버로 전송되지 않습니다.

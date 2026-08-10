@@ -1,5 +1,7 @@
 # NoUpload ***(row)***
 
+<!-- synonyms: no upload, exclude from save, save exclude, upload exclude, server transfer exclude, doSave exclude, 저장 제외, 저장 무시, 업로드 제외, 서버 전송 제외, 저장 대상 제외, NoUpload 속성 -->
+
 > 지정한 행의 저장 여부를 설정합니다.
 >
 > `1(true)`로 설정한 행의 경우 저장 함수([doSave](/docs/funcs/core/do-save), [getSaveString](/docs/funcs/core/get-save-string) 등) 호출시 상태와 무관하게 무시됩니다.

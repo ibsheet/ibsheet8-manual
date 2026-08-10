@@ -1,4 +1,7 @@
 # version ***(method)***
+
+<!-- synonyms: version, ver, 버전, 버전 확인, 시트 버전, 플러그인 버전, 정보, info -->
+
 > 인스턴스화된 시트 객체의 버전을 확인합니다.
 
 ### Syntax

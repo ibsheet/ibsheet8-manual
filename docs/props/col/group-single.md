@@ -1,4 +1,7 @@
 # GroupSingle ***(col)***
+
+<!-- synonyms: 동일값 그룹, 단일 그룹, 값이 같은 그룹, 그룹 열 생성 여부, group single, single value group, same value group -->
+
 > 해당 열을 기준으로 그룹행 생성시, 하위노드의 값이 모두 동일한 경우(그룹 기준이 되는 열의 모든 값이 동일한 경우) 그룹열을 생성할지 여부를 설정합니다.
 
 ### Type

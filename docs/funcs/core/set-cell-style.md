@@ -1,4 +1,7 @@
 # setCellStyle ***(method)***
+
+<!-- synonyms: setCellStyle, set-cell-style, 셀 스타일, 셀 스타일 설정, 스타일 변경, style 속성, 셀 서식, 스타일 적용, style, set style, cell style, apply style, change style -->
+
 > 특정 셀의 style속성 값을 변경합니다.
 >
 > `row`를 `null`로 설정시 열에 대한 속성으로 설정됩니다.

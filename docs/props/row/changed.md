@@ -1,5 +1,7 @@
 # Changed ***(row)***
 
+<!-- synonyms: changed row, modified row, edited row, dirty row, row changed state, IBColorChanged, change flag, 변경 여부, 수정 여부, 변경된 행, 수정된 행, 변경 상태, 수정 상태, Changed 속성, 수정 표시 -->
+
 > 행의 변경 여부를 나타냅니다.
 >
 > 행의 값을 수정시 자동으로 `1(true)`로 수정되고, 값을 원래 값으로 복원하면 자동으로 속성이 제거됩니다.

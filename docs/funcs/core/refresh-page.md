@@ -1,4 +1,7 @@
 # refreshPage ***(method)***
+
+<!-- synonyms: refreshPage, refresh-page, 페이지 갱신, 페이지 렌더링, 페이지 새로고침, 페이지 다시 그리기, 페이지 반영, refresh, page, render, redraw -->
+
 > 지정한 페이지를 렌더링 합니다.
 >
 > [setAttribute](./set-attribute)함수나 데이터에 대해 직접 접근하여 수정한 내용을 한꺼번에 화면에 반영할 때 사용됩니다.

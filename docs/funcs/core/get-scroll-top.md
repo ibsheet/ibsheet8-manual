@@ -1,4 +1,7 @@
 # getScrollTop ***(method)***
+
+<!-- synonyms: getScrollTop, get-scroll-top, 세로 스크롤, 스크롤 위치, 상하 스크롤, 스크롤 확인, 위치 조회, scroll, vertical, position, top -->
+
 > 세로스크롤바의 위치를 확인합니다.
 
 ### Syntax

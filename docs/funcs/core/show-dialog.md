@@ -1,5 +1,7 @@
 # showDialog ***(method)***
 
+<!-- synonyms: showDialog, show-dialog, 다이얼로그, 다이얼로그 표시, 다이어로그, 팝업, 레이어, 열기, 표시, dialog, open, popup, layer -->
+
 > 시트의 특정 셀 위에 layer팝업 형태의 다이어로그를 생성합니다.
 > 다이얼로그에 자세한 설정방법은 [appendix Dialog참고](/docs/appx/dialog)를 참고해 주세요.
 

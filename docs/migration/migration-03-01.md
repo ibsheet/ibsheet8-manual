@@ -1,5 +1,7 @@
 # 이벤트 사용 방법 변경
 
+<!-- synonyms: IBSheet7, 마이그레이션, sheet7, migration, v7, v8, ibsheet7에서 ibsheet8로, 이벤트 사용법, 이벤트 등록, addEventListener, 이벤트 콜백, event handler, event binding -->
+
 IBSheet7에서 이벤트는 global window객체 안에 `시트id_이벤트명` 형식의 함수를 만드는 형태였습니다.<br/>
 IBSheet8에서는 다른 속성과 마찬가지로 [Events](/docs/start/basic-structure)라는 속성명안에서 필요한 이벤트를 정의하는 형태로 변경되었습니다.<br/>
 또한 각 이벤트별로 달랐던 argument의 개수도 IBSheet8에서는 모든 이벤트가 동일하게 `evtParam` 객체 하나를 받고, `evtParam` 객체안에 각 이벤트에 따라 다른 인자를 갖는 형태로 바뀌었습니다.

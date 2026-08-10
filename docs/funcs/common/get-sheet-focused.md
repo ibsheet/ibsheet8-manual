@@ -1,5 +1,7 @@
 # getSheetFocused ***(method)***
 
+<!-- synonyms: get sheet focused, focused sheet, active sheet, current focused sheet, sheet in focus, get active sheet, 포커스된 시트, 활성 시트, 현재 시트, 포커스 시트 조회, 활성화된 시트, getSheetFocused 메소드 -->
+
 > 현재 포커스된 시트 객체를 반환합니다.  
 > 호출한 시트 인스턴스와 상관없이, 현재 화면에서 포커스를 가진 시트를 반환합니다. 
 

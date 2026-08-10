@@ -1,4 +1,7 @@
 # onMouseMove ***(event)***
+
+<!-- synonyms: 마우스 이동, 마우스 무브, 마우스 움직임, on-mouse-move, mouse move, mousemove, cursor move -->
+
 > 시트에서 마우스를 움직일 때 호출되는 이벤트입니다.
 >
 > `1(true)`를 리턴 시 `onMouseMove`의 기본 동작을 막습니다.

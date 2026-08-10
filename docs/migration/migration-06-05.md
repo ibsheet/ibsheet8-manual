@@ -1,5 +1,7 @@
 # MaximumValue/MinimumValue 마이그레이션
 
+<!-- synonyms: IBSheet7, 마이그레이션, sheet7, migration, v7, v8, ibsheet7에서 ibsheet8로, MaximumValue, MinimumValue, 최대값, 최소값, max value, min value, 값 제한, value limit -->
+
 [IBSheet.onBeforeCreate](../static/on-before-create) 이벤트에서 [onEndEdit](../events/on-end-edit) 이벤트를 공통 정의 함으로써 구현 가능합니다. 
 
 아래 내용을 참고해 주세요.

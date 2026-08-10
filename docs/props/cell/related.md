@@ -1,4 +1,7 @@
 # Related ***(cell)***
+
+<!-- synonyms: Related, 관계형 콤보, 대분류 중분류 소분류, 상위 콤보, 콤보 연관, 계층 콤보, 부모 콤보, Enum 연관, related combo, dependent combo, cascading combo, parent combo -->
+
 > [Type](./type)이 [Enum](/docs/props/cell/enum)이나 [Radio](/docs/props/cell/radio) 인 열들 간에 연관성을 통해, 대분류/중분류/소분류와 같은 **관계형 콤보**를 설정합니다.
 >
 > 자세한 사용 방법은 col [Related](/docs/props/col/related)속성을 확인해 주세요.

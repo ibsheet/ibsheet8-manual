@@ -1,5 +1,7 @@
 # MemoId ***(cfg)***
 
+<!-- synonyms: MemoId, memo id, memo function, header memo, memo storage, showMemoDialog, memo comment, 메모 아이디, 메모 기능, 헤더 메모, 메모 저장, 메모 툴팁, localStorage 메모, 시트 메모 -->
+
 > 시트에 메모기능을 사용하기 위해 필요한 고유한 id 값을 설정합니다.
 >
 > 메모기능은 시트의 헤더 셀에 설정 가능합니다.

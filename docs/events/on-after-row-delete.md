@@ -1,4 +1,7 @@
 # onAfterRowDelete ***(event)***
+
+<!-- synonyms: 행 삭제 후, 로우 삭제 상태 변경 후, deleteRow 이후, deleteRows 이후, on-after-row-delete, after row delete, row deleted -->
+
 > [deleteRow](/docs/funcs/core/delete-row), [deleteRows](/docs/funcs/core/delete-rows) 호출 시 행의 삭제 상태 변경 후(렌더링되기 전) 호출되는 이벤트입니다.  
 > 시트가 트리구조이고 부모와 자식 행이 모두 삭제 상태로 변경될 경우 자식 행에 대해 먼저 호출됩니다.
 

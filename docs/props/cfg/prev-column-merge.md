@@ -1,5 +1,7 @@
 # PrevColumnMerge ***(cfg)***
 
+<!-- synonyms: PrevColumnMerge, prev column merge, previous column merge, merge by prev col, column merge range, 이전 컬럼 병합, 앞 컬럼 병합 기준, 이전 열 병합, 열 병합 이전 기준, DataMerge 앞 컬럼, setAutoMerge 이전 컬럼 -->
+
 > 열 기준 병합 시 앞 열의 병합 범위를 기준으로 병합합니다.  
 > [DataMerge](/docs/props/cfg/data-merge)와 [HeaderMerge](/docs/props/cfg/header-merge) 옵션이 설정되어 있어야 정상적으로 동작합니다.  
 > 시트 생성 후 [setAutoMerge](/docs/funcs/core/set-auto-merge) 메소드를 이용하여 병합을 동적으로 변경할 수 있습니다.  

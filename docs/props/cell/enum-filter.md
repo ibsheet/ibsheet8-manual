@@ -1,4 +1,7 @@
 # EnumFilter ***(cell)***
+
+<!-- synonyms: 콤보 필터, 드롭다운 검색, Enum 필터링, 드롭다운 필터, 항목 검색, 콤보 검색, 드랍리스트 필터, enum-filter, enum filter, dropdown filter, combo filter, enum search, filter enum -->
+
 > [Enum](/docs/appx/type.md) 타입 셀을 편집 시, 드롭다운 리스트를 필터링 할 수 있는 입력란을 표시합니다.
 >
 > 해당 칸에 입력된 문자열을 포함하는 [Enum](/enum.md)들만 드롭다운 리스트로 표시됩니다.

@@ -1,5 +1,7 @@
 # FilterValueList ***(cfg)***
 
+<!-- synonyms: FilterValueList, filter value list, filter empty label, filter blank text, filter empty display, 필터 빈값 표시, 필터 값 목록, 필터 빈값 문자열, FilterEmptyValue, 필터 빈값 라벨, Enum 필터 빈값 -->
+
 > 필터행의 특정셀에 값 목록이 있을때 처리하는 방법을 설정합니다.
 
 

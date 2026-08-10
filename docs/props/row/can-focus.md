@@ -1,4 +1,6 @@
 # CanFocus ***(row)***
+
+<!-- synonyms: row can focus, focusable row, row focus enabled, row focus permission, mouse only focus, per-row focus, 행 포커스, 포커스 가능, 포커스 허용, 마우스 클릭 포커스, 포커스 제한, 행 포커스 여부, CanFocus row -->
 > 행에 대한 포커스 가능 여부를 설정합니다.
 
 ### Type

@@ -1,5 +1,7 @@
 # Undo ***(cfg)***
 
+<!-- synonyms: Undo, redo, ctrl z, ctrl y, undo redo enable, sheet undo, 실행 취소, 다시 실행, 되돌리기, 취소, 시트 undo, 값 취소 -->
+
 > 사용자가 수정한 값이나 [setValue](/docs/funcs/core/set-value)를 통해 수정된 값을 `ctrl+z`를 통해 실행 취소하거나, `ctrl+y`를 통해 다시 실행하는 기능 허용 여부를 설정합니다.
 >
 > 셀의 값을 수정하거나, 상태를 삭제로 변경하거나, 신규로 추가한 행에 대해서 취소 처리하는 등의 작업을 수행합니다. 

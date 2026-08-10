@@ -1,4 +1,7 @@
 # getPageByRow ***(method)***
+
+<!-- synonyms: getPageByRow, get-page-by-row, 행 페이지, 로우 페이지, 페이지 객체, 페이징, page by row, paging -->
+
 > 특정 [데이터 로우 객체](/docs/appx/row-object)가 위치한 [페이지 객체](/docs/appx/page-object)를 리턴합니다.
 
 

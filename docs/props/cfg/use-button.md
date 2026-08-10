@@ -1,5 +1,7 @@
 # UseButton ***(cfg)***
 
+<!-- synonyms: UseButton, use button, button tag, u tag button, native button, semantic button, 버튼 태그, button 태그 사용, u 태그 버튼, 셀 버튼 태그, 시맨틱 버튼 -->
+
 > [Type](/docs/appx/type)이 `Button`이고, [Button](/docs/props/col/button)의 속성값이 `Button`인 경우, 셀 안에 버튼이 생성됩니다.
 >
 > 그런데 이 생성되는 버튼은 \<u\>태그를 이용하게 되는데 이를 \<button\>를 사용할지 여부를 선택합니다.

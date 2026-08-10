@@ -1,5 +1,7 @@
 # Class ***(row)***
 
+<!-- synonyms: row class, row css class, custom css, row style class, per-row css, cell css class, 행 CSS, 사용자 CSS, CSS 클래스, 행 클래스, 셀 클래스, 사용자 정의 스타일, Class row -->
+
 > 행에 포함된 각 셀에 `사용자 정의 CSS`를 설정합니다.
 
 ### Type

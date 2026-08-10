@@ -1,4 +1,7 @@
 # CaseSensitive ***(cell)***
+
+<!-- synonyms: CaseSensitive, case-sensitive, 대소문자 구분, 대소문자 구별, 소팅 대소문자, 필터 대소문자, 정렬 대소문자, case sensitivity, sort case, filter case, uppercase lowercase -->
+
 > 소팅시(혹은 필터 기능 사용시) 대소문자 구분 여부를 설정합니다.
 
 ### Type

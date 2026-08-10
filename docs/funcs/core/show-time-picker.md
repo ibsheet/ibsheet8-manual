@@ -1,5 +1,7 @@
 # showTimePicker ***(method)***
 
+<!-- synonyms: showTimePicker, show-time-picker, 시간 선택, 시분초, 타임 피커, 시각, 시간, 표시, 열기, time, picker, dialog -->
+
 > 특정 셀에 시분초 다이얼로그를 띄웁니다.
 >
 > [Type](/docs/appx/type)이 `Date` / `Text` 일 경우에만 다이얼로그가 표시됩니다.

@@ -1,4 +1,7 @@
 # Clear ***(col)***
+
+<!-- synonyms: 관계형 콤보, 콤보 초기화, 하위 콤보 리셋, 상위 변경 시 초기화, 종속 콤보, 콤보 클리어, related combo clear, dependent combo, cascade combo, reset child -->
+
 > 열간에 관계형 콤보를 사용할때, 상위 콤보에 값이 바뀌었을때 클리어 되어야 하는 하위 열을 정의 합니다.
 >
 > 관계형 콤보 구성과 관련해서는 [Related](./related) 속성을 참고해 주세요.
@@ -42,7 +45,7 @@ options.Cols = [
 - [Related col](./related)
 - [Enum col](./enum)
 - [EnumKeys col](./enum-keys)
-- [CanEmpty](./can-empty)
+- [CanEmpty col](./can-empty)
 
 ### Since
 

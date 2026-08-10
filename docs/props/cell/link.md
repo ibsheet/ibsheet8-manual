@@ -1,5 +1,7 @@
 # Link ***(cell)***
 
+<!-- synonyms: Link, 링크, URL, href, 셀 링크, hyperlink, 하이퍼링크, cell link, 이동, a태그, 앵커, 링크 URL -->
+
 > 셀에 데이터를 \<a> 태그로 감싸고 href 속성에 들어갈 URL을 설정합니다.
 >
 > [LinkBase](./link-base)와 [LinkTarget](./link-target) 속성을 같이 사용하여 상대경로나 클릭시에 target window를 설정할 수 있습니다.

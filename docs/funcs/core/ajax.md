@@ -1,5 +1,7 @@
 # ajax ***(method)***
 
+<!-- synonyms: 서버 통신, 데이터 요청, ajax 통신, http 요청, 비동기 요청, 서버 호출, 데이터 가져오기, ajax, xhr, request, http, fetch, async -->
+
 > ajax 통신을 통해 서버로부터 데이터를 받아옵니다.
 >
 > 서버 통신이 완료되었을때 실행되는 callback 함수를 이용해서 서버로부터 받은 데이터를 사용할 수 있습니다.

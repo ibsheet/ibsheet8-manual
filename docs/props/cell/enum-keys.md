@@ -1,4 +1,7 @@
 # EnumKeys ***(cell)***
+
+<!-- synonyms: Enum 키, 콤보 키, 저장 값, 실제 값, 코드 값, 콤보 코드, 드롭다운 코드, 서버 전송 값, enum-keys, enum keys, combo keys, actual values, code values, enum code -->
+
 > [Enum](./enum) 속성을 통해 설정한 아이템들의 값을 설정합니다.
 >
 > 첫번째 글자를 구분자로 설정하게 됩니다.

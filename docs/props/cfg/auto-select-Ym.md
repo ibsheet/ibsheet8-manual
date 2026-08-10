@@ -1,4 +1,7 @@
 # AutoSelectYm ***(cfg)***
+
+<!-- synonyms: AutoSelectYm, auto select year month, calendar year month auto, date picker year month, month year picker, 년월 자동 선택, 연월 선택, 달력 년월, 달력 자동 전환, 월 선택 후 일 선택, 년월 즉시 전환, 달력 확인 버튼, Date 달력 -->
+
 > 기본 `Date` 달력에서 사용자가 년/월 영역을 클릭하여
 > 연/월 선택 화면으로 이동했을 때,  
 > 월 선택 후 일(日) 선택 달력 화면으로 전환되는 방식을 설정합니다.

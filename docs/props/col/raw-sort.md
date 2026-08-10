@@ -1,5 +1,7 @@
 # RawSort ***(col)***
 
+<!-- synonyms: 원본 정렬, Format 무시 정렬, 순수 데이터 정렬, Enum 키 정렬, raw sort, sort raw data, ignore format sort, enum key sort -->
+
 > 열 소팅시 Format 적용 여부를 설정합니다.
 >
 > [CustomFormat](./custom-format) 에는 적용되지 않습니다.

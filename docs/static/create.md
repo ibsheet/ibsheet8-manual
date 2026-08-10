@@ -1,5 +1,7 @@
 # create ***(static)***
 
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, create, 시트 생성, IBSheet.create, 시트 인스턴스 생성 -->
+
 > 지정한 위치에 시트객체를 생성합니다.<br/>
 > 시트객체가 생성되면 `IBSheet`객체에 배열형식으로 추가(push)됩니다.<br/>
 

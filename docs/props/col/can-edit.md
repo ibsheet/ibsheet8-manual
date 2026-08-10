@@ -1,5 +1,7 @@
 # CanEdit ***(col)***
 
+<!-- synonyms: 편집 가능, 읽기 전용, 열 편집, 편집 불가, 편집 잠금, readonly, editable, column edit, read only column, edit lock, disable edit -->
+
 > 해당 열의 편집 가능 여부를 설정합니다.  
 > 기본값은 `1`이며, 우선순위는 `Cell` > `Row` > `Col` 순으로 적용됩니다.  
 > `Cell`에서 `CanEdit: 0`으로 설정된 경우 `Row` 또는 `Col`에서 `1`로 설정해도 해당 셀은 편집할 수 없습니다.  

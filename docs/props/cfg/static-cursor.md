@@ -1,5 +1,7 @@
 # StaticCursor ***(cfg)***
 
+<!-- synonyms: StaticCursor, static cursor, keep focus outside click, focus outline persist, 커서 유지, 포커스 유지, 시트 밖 클릭 포커스, 포커스 윤곽선 유지, 커서 유지 외부 클릭, 선택 유지 -->
+
 > 시트 이외의 요소를 클릭했을 때 포커스 커서의 유지여부를 설정합니다.
 >
 > 만약 다른 시트나 시트 이외의 요소를 클릭할 때 현재시트의 선택 색상 및 윤곽선을 없애고자 하는 경우 `0(false)` 으로 설정하면 됩니다. 

@@ -1,4 +1,7 @@
 # setFormulaRowPosition ***(method)***
+
+<!-- synonyms: setFormulaRowPosition, set-formula-row-position, 합계행 위치, 합계행 이동, 상단 이동, 하단 이동, 합계 위치 변경, FormulaRow 위치, 합계행 배치, formula row position, move formula row, set position, change position, formula row -->
+
 > `FormulaRow`(합계행)의 위치(하단(기본값), 상단)를 변경할 수 있습니다.
 
 ### Syntax

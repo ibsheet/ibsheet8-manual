@@ -1,4 +1,7 @@
 # Related ***(col)***
+
+<!-- synonyms: 관계형 콤보, 종속 콤보, 대분류 중분류, 계층 콤보, 상위 콤보, related combo, cascading combo, dependent combo, parent combo, hierarchy dropdown -->
+
 > [Type](/docs/appx/type)이 `Enum`이나 `Radio` 인 열들 간에 연관성을 통해, 대분류/중분류/소분류와 같은 **관계형 콤보**를 설정합니다.
 >
 > 대분류(혹은 최상위)에 해당하는 열은 `Related`를 설정할 필요가 없고, 중분류 열에서 대분류 열이름을, 소분류 열에서 중분류 열이름을 설정합니다.

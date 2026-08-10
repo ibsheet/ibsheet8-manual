@@ -1,5 +1,7 @@
 # RequiredImage ***(cfg)***
 
+<!-- synonyms: RequiredImage, required image, required icon, required mark image, custom required image, 필수 입력 이미지, 필수 항목 이미지, Required 아이콘, 필수 표시 이미지, Required 마크 이미지 -->
+
 > 필수 입력 항목 이미지를 기본 이미지와 다르게 바꾸고 싶은 경우, 필수 입력 항목에 대한 표시 이미지 경로를 설정 합니다. 
 
 ### Type

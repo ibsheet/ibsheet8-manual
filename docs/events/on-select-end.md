@@ -1,4 +1,7 @@
 # onSelectEnd ***(event)***
+
+<!-- synonyms: 선택 완료, 셀 선택 종료, 드래그 선택 완료, 범위 선택 종료, 다중 선택 완료, 마우스 드래그 선택, on-select-end, select end, selection end, drag select end -->
+
 > 마우스 드래그로 선택 완료 시점에 발생하는 이벤트입니다.
 >
 > API로 선택 시 해당 API의 `ignoreEvent` 인자를 통해 `onSelectEnd` 이벤트 발생을 제어할 수 있습니다.

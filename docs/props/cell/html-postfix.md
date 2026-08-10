@@ -1,5 +1,7 @@
 # HtmlPostfix ***(cell)***
 
+<!-- synonyms: HtmlPostfix, html-postfix, 접미 HTML, 뒤 HTML, HTML 태그 삽입, html postfix, suffix html, 셀 뒤 태그, postfix, 후위 HTML, 셀 뒤 HTML, 접미사 태그 -->
+
 > 셀의 문자열 뒤에 원하는 HTML 태그를 삽입합니다.
 
 ### Type

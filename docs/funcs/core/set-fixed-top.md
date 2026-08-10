@@ -1,4 +1,7 @@
 # setFixedTop ***(method)***
+
+<!-- synonyms: setFixedTop, set-fixed-top, 상단 고정, 행 고정, 위쪽 고정, Head 영역, 데이터 행 고정, 고정 행, 상단 틀고정, fixed top, fix row, freeze top, freeze row, set fixed -->
+
 > 데이터행을 상단에 고정시킵니다. 고정된 행은 `Head` 영역으로 이동합니다.  
 > [DataMerge](/docs/props/cfg/data-merge)가 적용된 상태에서는 사용할 수 없으며, 머지 해제 후 고정하고 다시 머지를 적용해야 합니다.  
 > [SearchMode](/docs/props/cfg/search-mode): 0, 1, 2에서만 사용할 수 있으며, 데이터행이 4행 이상이어야 합니다.

@@ -1,4 +1,7 @@
 # Width ***(col)***
+
+<!-- synonyms: 열 너비, 컬럼 폭, 컬럼 크기, 초기 너비, width, column width, cell width, initial width -->
+
 > 열의 너비를 pixel단위로 설정합니다.
 >
 > 시트객체의 최초 생성시 열의 너비를 의미합니다.

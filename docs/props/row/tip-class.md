@@ -1,5 +1,7 @@
 # TipClass ***(row)***
 
+<!-- synonyms: tip class, tooltip class, tooltip css, tip css, tooltip style, custom tooltip design, 툴팁 클래스, 풍선도움말 클래스, 풍선도움말 CSS, 툴팁 디자인, 툴팁 스타일, TipClass 속성 -->
+
 > 풍선도움말 객체에 원하는 `css클래스`를 적용하여 디자인을 설정 합니다.
 >
 > [Tip](./tip) 기능이 활성화된 경우에만 적용됩니다.  

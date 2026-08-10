@@ -1,4 +1,7 @@
 # ButtonText ***(col)***
+
+<!-- synonyms: 버튼 텍스트, 버튼 라벨, 버튼 문구, 셀 버튼 글자, 버튼 캡션, button text, button label, button caption, cell button text -->
+
 > [Button](./button)속성의 값이 `Button`이거나 `Html`인 경우, 셀 버튼에 표시할 문자를 설정합니다.
 >
 > [Button](./button)속성의 값이 `Button`인 경우에는 설정한 문자가 \<u>나 \<button>태그로 표시되며, <br/>`Html`인 경우에는 <span>입력</span>식의 Html 문자가 해석되어 셀에 표시됩니다.

@@ -1,5 +1,7 @@
 # BorderCursors ***(cfg)***
 
+<!-- synonyms: BorderCursors, border cursor, hover border, row border, cursor border, hover row border, 호버 테두리, 호버 보더, 행 테두리 표시, 호버 시 테두리, 커서 테두리, hover 시 border, 마우스 오버 테두리 -->
+
 >  (cfg)[Hover](./hover) : 2가 설정된 시트에서, 호버된 행의 `Border` 표시 여부를 설정합니다.
 
 ### 옵션별 동작 이미지

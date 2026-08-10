@@ -1,5 +1,7 @@
 # BreakPoint ***(col)***
 
+<!-- synonyms: 반응형, 브레이크포인트, 화면 크기별 표시, 반응형 컬럼, 반응형 숨김, 모바일 대응, responsive, breakpoint, responsive column, viewport hide, screen size hide -->
+
 > 언어팩에 있는 `BreakPoints` 수치 기준보다 더 작을시 hide 할지 말지 정하는 기능입니다. 
 >
 > 설정한 `BreakPoint` 와 시트 태그 사이즈를 비교하여 태그 사이즈 보다 작을시 `hide`, 클시 `show` 되는 기능입니다. 

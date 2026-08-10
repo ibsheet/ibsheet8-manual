@@ -1,5 +1,7 @@
 # Type ***(cell)***
 
+<!-- synonyms: 타입, 셀 타입, 데이터 유형, 데이터 타입, 셀 유형, Text, Int, Float, Date, Bool, Enum, 체크박스, 드랍다운, 드롭다운, 콤보박스, cell type, data type, column type, field type -->
+
 > 셀이 갖고있는 데이터 유형을 의미합니다.
 >
 > 일반적인 텍스트나 숫자(정수,실수) 체크박스, 드랍다운리스트 와 같은 타입이 존재합니다.

@@ -1,5 +1,7 @@
 # onExcalendar ***(event)***
 
+<!-- synonyms: 외부 달력, 외부 캘린더 제어, 외부 달력 표시 제거, on-ex-calendar, external calendar, ex-calendar -->
+
 > 외부 달력을 제어할 수 있는 시트 이벤트를 발생시키도록 합니다.</br> 
 > 시트의 `onScroll`, `onKeyDown`, `onAfterFilter`, `onClick` 이벤트 발생 시점에 해당 이벤트가 발생됩니다.</br>
 > `onClickSide` 이벤트에서 외부 달력을 시트 셀 영역에 표시하고, 해당 이벤트에서 외부 달력을 제거할 수 있습니다.

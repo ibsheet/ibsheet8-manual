@@ -1,5 +1,7 @@
 # Sync ***(cfg)***
 
+<!-- synonyms: Sync, scroll sync, sheet scroll sync, sync scroll multiple sheets, sync scrollbar, 스크롤 동기화, 시트 스크롤 동기화, 다중 시트 스크롤, 동시 스크롤, 시트 간 스크롤 -->
+
 > 시트의 스크롤을 동기화 하는 기능입니다. 
 >
 > 화면에 여러개의 시트가 존재하는 경우 `Sync` 설정 시 동시에 스크롤이 동작합니다. 

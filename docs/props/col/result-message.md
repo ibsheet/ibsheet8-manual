@@ -1,5 +1,7 @@
 # ResultMessage ***(col)***
 
+<!-- synonyms: 검증 실패 메시지, 오류 메시지, 팝업 경고, ResultMask 메시지, result message, validation message, error popup, warning text -->
+
 > [ResultMask](./result-mask)에 위배되는 내용이 입력시 DIV 레이어 팝업으로 보여질 내용을 설정합니다.
 
 

@@ -1,5 +1,7 @@
 # 파일 구성
 
+<!-- synonyms: 소개, introduction, 개요, ibsheet8 소개, ibsheet 소개, 파일 구성, 파일 목록, 배포 파일, 필수 파일, script files, ibsheet.js, ibsheet-common.js -->
+
 ## ibsheet8 제품은 다음과 같은 파일,폴더로 구성되어 있습니다.
 
 

@@ -1,5 +1,7 @@
 # FilterIgnoreEmpty ***(cfg)***
 
+<!-- synonyms: FilterIgnoreEmpty, filter ignore empty, filter empty value, filter blank exclude, ignore empty filter, 빈 값 무시, 빈 셀 필터, 필터 빈값 제외, 필터 빈 값 무시, 빈 값 필터링 제외, Int Float 필터 -->
+
 > 필터 연산자에 의해 빈 값을 가지는 셀이 무시될지 여부를 설정합니다.
 >
 > 이 설정은 빈 문자열 찾거나 비교할 때는 적용되지 않습니다.

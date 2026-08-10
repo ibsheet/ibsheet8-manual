@@ -1,4 +1,7 @@
 # SelectionSummary ***(cfg)***
+
+<!-- synonyms: SelectionSummary, selection summary, sum count average, selection stats, selection info, SummaryLabel, 선택 영역 합계, 선택 영역 평균, 선택 영역 개수, 선택 합계, 선택 평균, 드래그 합계, 선택 셀 통계 -->
+
 > 드레그(혹은 키보드)를 통해 선택한 영역의 셀 개수 및 합계/평균 값을 보여주는 기준을 설정합니다.
 >
 > 합계 정보가 표시될 위치는 [InfoRowConfig](/docs/props/cfg/info-row-config) 속성에 `Layout:["SummaryLabel"]`를 설정하셔야 합니다.

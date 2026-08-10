@@ -1,5 +1,7 @@
 # ShowFilter ***(cfg)***
 
+<!-- synonyms: ShowFilter, show filter, filter row, header filter, filter enable, showFilterRow, 필터행, 필터 표시, 필터 행 추가, 헤더 필터, 필터 활성화, 필터 조건 입력, 필터 사용 -->
+
 > 시트 생성 시 **헤더행 바로 아래에 필터행(Filter Row)을 추가할지 여부**를 설정합니다.  
 > 필터행이 생성되면 각 열에 조건을 입력하여 데이터를 필터링할 수 있습니다.  
 >
@@ -78,7 +80,7 @@ options = {
 - [hasFilter method](/docs/funcs/core/has-filter)
 - [HeaderCheckMode cfg](./header-check-mode)
 - [exportData method](/docs/funcs/core/export-data)
-- [down2Excel method](/docs/funcs/core/down-to-excel)
+- [down2Excel method](/docs/funcs/excel/down-to-excel)
 
 
 ### Since

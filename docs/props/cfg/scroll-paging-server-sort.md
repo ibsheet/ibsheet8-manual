@@ -1,5 +1,7 @@
 # ScrollPagingServerSort ***(cfg)***
 
+<!-- synonyms: ScrollPagingServerSort, scroll paging server sort, server side sort, SearchMode 3 sort, scroll paging sort, 서버 정렬, 서버 소팅, 스크롤 페이징 서버 소팅, 서버 사이드 소팅, SearchMode 3 정렬 -->
+
 > 스크롤 페이징 사용 시([SearchMode](./search-mode): 3)을 사용하며 서버 소팅을 사용하고 싶은 경우 설정하는 옵션입니다. 설정시, 소팅할 때 소팅 정보를 서버에 보내고, 결과를 조회합니다.
 
 ### Type

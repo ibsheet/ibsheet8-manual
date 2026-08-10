@@ -1,5 +1,7 @@
 # GroupFormat ***(cfg)***
 
+<!-- synonyms: GroupFormat, group format, group label, group count format, group display, group text template, 그룹 형식, 그룹 표시 형식, 그룹 개수 표시, 그룹 라벨, 그룹 count, 그룹 데이터 개수, 그룹 템플릿 -->
+
 > 그룹핑 시 생성된 그룹 트리가 있는 열에 그룹에 속하는 데이터 행의 개수 와 그 표시 형식을 설정합니다. 
 >
 > `{%s}` 는 그룹이 되는 기준 값, `{%c}` 는 그룹핑 된 데이터의 개수를 설정합니다. 

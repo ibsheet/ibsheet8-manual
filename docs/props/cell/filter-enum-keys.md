@@ -1,5 +1,7 @@
 # FilterEnumKeys ***(filter cell)***
 
+<!-- synonyms: FilterEnumKeys, filter-enum-keys, Enum 필터, EnumKeys 필터, 코드값 필터, 이넘 키, 이넘 필터, filter enum, enum keys filter, filter by code, Enum 필터링, EnumKeys 필터링 -->
+
 > Enum 타입의 컬럼에서 필터링시 Enum(문자열)이 아닌 EnumKeys(코드값)를 기준으로 필터링 하게 합니다.
 >
 > 이 속성은 시트 생성 시점에서 Def.Filter를 통해 설정하실 수 있습니다.

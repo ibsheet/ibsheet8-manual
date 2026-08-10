@@ -1,4 +1,7 @@
 # Disabled ***(col)***
+
+<!-- synonyms: 비활성화, 버튼 비활성, 파일 비활성, 사용 불가, 클릭 방지, 회색 처리, disabled button, disable file, gray out, inactive -->
+
 > [Type](/docs/appx/type)이 `Button`, `File`인 컬럼에 대해 버튼 사용 가능 여부를 설정합니다.
 >
 > `Type:"Button", Disabled:1` : 버튼 컬럼이 비활성화 색으로 변경되며, click 이벤트 발생하지 않는다 

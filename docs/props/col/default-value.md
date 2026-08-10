@@ -1,4 +1,7 @@
 # DefaultValue ***(col)***
+
+<!-- synonyms: 기본값, 컬럼 초기값, 신규행 기본값, 빈값 기본값, 기본 데이터, default value, initial value, column default, new row default, fallback value -->
+
 > 컬럼에 기본 값을 설정합니다.
 >
 > 신규행을 추가하거나 조회데이터 안에 해당 열에 대한 데이터가 없는 경우, 지정한 값이 자동으로 표시됩니다.

@@ -1,4 +1,7 @@
 # onBeforeExpand ***(event)***
+
+<!-- synonyms: 트리 확장 전, 노드 펼치기 접기 전, expand 취소, on-before-expand, before expand, tree expand cancel -->
+
 > 트리 사용시 트리가 접히거나 펼쳐질때 호출됩니다.
 >
 > 해당 이벤트에서 `1(true)`를 리턴하면 접거나 펼쳐지는 작업을 중단할 수 있습니다.

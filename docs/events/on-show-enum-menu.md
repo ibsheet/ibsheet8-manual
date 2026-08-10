@@ -1,4 +1,7 @@
 # onShowEnumMenu ***(event)***
+
+<!-- synonyms: Enum 메뉴 표시, 열거 메뉴 열림, Enum 드롭다운, EnumMenu 표시, Enum 리스트 열림, on-show-enum-menu, show enum menu, enum dropdown, enum list -->
+
 > Enum 타입 열에서 리스트를 열 때 호출되는 이벤트입니다.
 >
 > 새로운 리스트를 만들고 리턴하여 [EnumMenu](/docs/props/col/enum-menu)을 대체해서 사용할 수 있습니다(기존에 [EnumMenu](/docs/props/col/enum-menu)가 설정되어 있지 않아도 사용가능 합니다).

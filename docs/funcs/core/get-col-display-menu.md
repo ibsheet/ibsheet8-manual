@@ -1,5 +1,7 @@
 # getColDisplayMenu ***(method)***
 
+<!-- synonyms: getColDisplayMenu, get-col-display-menu, 열 표시 메뉴, 컬럼 메뉴, 열 표시 설정, 메뉴 객체, 열 숨김 메뉴, 표시 메뉴, column, menu, display -->
+
 > 현재 시트에 표시되는 열들의 표시 여부를 설정할 수 있는 메뉴 객체를 리턴합니다.
 >
 > 이 메뉴는 [showMenu](/docs/static/show-menu)를 사용하여 특정 위치에 표시할 수 있습니다.

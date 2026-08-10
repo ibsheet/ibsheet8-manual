@@ -1,5 +1,7 @@
 # 붙여넣기 이벤트 발생 순서 ***(event flow)***
 
+<!-- synonyms: 붙여넣기 이벤트 순서, 붙여넣기 흐름, Ctrl+V 이벤트, 클립보드 붙여넣기, paste event flow, paste sequence, clipboard paste order -->
+
 > 클립보드 붙여넣기(Ctrl+V) 시 이벤트 발생 순서입니다.
 
 ### 발생 순서

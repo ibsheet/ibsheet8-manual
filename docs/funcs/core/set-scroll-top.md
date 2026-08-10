@@ -1,4 +1,7 @@
 # setScrollTop ***(method)***
+
+<!-- synonyms: setScrollTop, set-scroll-top, 세로 스크롤, 상하 스크롤, 스크롤 이동, 수직 스크롤, y축 이동, 스크롤 위치, 상단 이동, scroll top, vertical scroll, set scroll, scroll y, move scroll -->
+
 > 세로 스크롤 바를 pixel단위로 이동시킵니다.
 
 ### Syntax

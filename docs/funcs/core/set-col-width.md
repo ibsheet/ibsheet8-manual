@@ -1,4 +1,7 @@
 # setColWidth ***(method)***
+
+<!-- synonyms: setColWidth, set-col-width, 열 너비, 컬럼 너비, 너비 변경, 열 크기, 너비 조정, 너비 설정, column width, width, resize column, change width, set width -->
+
 > 열의 너비를 가감으로 변경합니다.
 >
 > `dx` 인자의 값에 따라 열의 너비를 늘리거나 줄입니다. 

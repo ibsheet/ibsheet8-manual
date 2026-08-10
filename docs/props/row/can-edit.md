@@ -1,5 +1,7 @@
 # CanEdit ***(row)***
 
+<!-- synonyms: row can edit, editable row, row edit enabled, edit permission, readonly row, per-row editable, row-level edit, 행 편집, 편집 가능, 편집 허용, 읽기 전용 행, 행 편집 여부, 편집 권한, CanEdit row -->
+
 > 해당 행의 편집 가능 여부를 설정합니다.  
 > 기본값은 `1`이며, 우선순위는 `Cell` > `Row` > `Col` 순으로 적용됩니다.  
 > `Cell`에서 `CanEdit: 0`으로 설정된 경우 `Row` 또는 `Col`에서 `1`로 설정해도 해당 셀은 편집할 수 없습니다.  

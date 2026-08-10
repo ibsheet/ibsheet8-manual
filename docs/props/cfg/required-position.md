@@ -1,4 +1,7 @@
 # RequiredPosition ***(cfg)***
+
+<!-- synonyms: RequiredPosition, required position, required mark position, required left right, required none, 필수 표시 위치, Required 위치, 필수 마크 위치, 필수 아이콘 좌우, 필수 표시 없음, Required Left Right None -->
+
 > [Required](/docs/props/col/required)가 보여질 위치를 설정합니다.
 
 ### Type

@@ -1,5 +1,7 @@
 # SyncCalcOnAfterChange ***(cfg)***
 
+<!-- synonyms: SyncCalcOnAfterChange, sync calc on after change, onAfterChange sub total, sync formula, immediate recalc, 즉시 재계산, onAfterChange 소계, 합계 실시간 재계산, 소계 재계산, onAfterChange 즉시 계산 -->
+
 > [onAfterChange](/docs/events/on-after-change) 이벤트에서 설정된 합계, 소계 값을 즉시 재계산하여 반환하는 설정입니다.<br/>
 > 기본적으로 여러 셀을 한번에 수정하는 경우 `onAfterChange`에서 합계, 소계가 아직 재계산되지 않은 값이 반환됩니다.<br/>
 > `true`로 설정하면 매 셀 `onAfterChange`마다 합계, 소계를 재계산하여 변경된 소계값을 확인할 수 있습니다.<br/>

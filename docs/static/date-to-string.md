@@ -1,5 +1,7 @@
 # dateToString ***(static)***
 
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, dateToString, 날짜 문자열 변환, 날짜 포맷팅, format date -->
+
 > 날짜 객체(`new Date()`)나 유닉스 시간(1970/1/1 부터 지정한 일자까지 밀리초 단위)를 지정한 날짜형식의 포맷으로 리턴합니다.
 
 ### Syntax

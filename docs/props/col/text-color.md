@@ -1,5 +1,7 @@
 # TextColor ***(col)***
 
+<!-- synonyms: 글자색, 텍스트 색상, 폰트 컬러, 글씨색, text color, font color, text colour, character color -->
+
 > 지정한 열에 글자색을 설정합니다.
 
 ### Type

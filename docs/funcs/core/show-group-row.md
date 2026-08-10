@@ -1,4 +1,7 @@
 # showGroupRow ***(method)***
+
+<!-- synonyms: showGroupRow, show-group-row, 그룹, 그룹행, 그룹 행, 그룹핑, 그룹화, 생성, 표시, group, row, create -->
+
 > 그룹행을 생성합니다.
 
 ### Syntax

@@ -1,5 +1,7 @@
 # Deleted ***(row)***
 
+<!-- synonyms: deleted row, removed row, row deleted state, delete flag, IBColorDeleted, deleteRow flag, 삭제 여부, 삭제된 행, 삭제 상태, 행 삭제, 삭제 표시, Deleted 속성, 삭제 대상 -->
+
 > [DeleteRow](/docs/funcs/core/delete-row) 함수 호출시 해당 행에 속성값이 `1(true)`로 설정됩니다.
 >
 > `Deleted` 값을 `1(true)`로 설정되면 향후 삭제할 행의 의미로 배경색상이 .`IBColorDeleted 클래스`에서 정의한 색상으로 변경됩니다.

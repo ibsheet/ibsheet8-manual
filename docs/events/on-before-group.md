@@ -1,4 +1,7 @@
 # onBeforeGroup ***(event)***
+
+<!-- synonyms: 그룹 전, 그룹 실행 해제 전, 그룹핑 취소, on-before-group, before group, before grouping -->
+
 > 시트를 특정 열(들)을 기준으로 그룹 실행/해제전에 호출되는 이벤트입니다.
 >
 > `1(true)`를 리턴 시 그룹을 실행/해제하지 않습니다.

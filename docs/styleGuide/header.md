@@ -1,5 +1,7 @@
 # 헤더 영역
 
+<!-- synonyms: 스타일, 디자인, 테마, style, theme, 커스터마이징, 외관, 시트 스타일, 헤더 스타일, header style, 헤더 디자인 -->
+
 ## 헤더 셀 배경색
 
 ### **.IBCellHeader**

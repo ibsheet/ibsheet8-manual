@@ -1,4 +1,7 @@
 # setString ***(method)***
+
+<!-- synonyms: setString, set-string, 문자열 설정, 포맷 값 설정, 표출 값, 셀 값 설정, 문자열 값, 포맷 문자열, 화면 값 설정, set string, string value, format value, set format, apply string -->
+
 > 포맷이 적용된 문자열로 셀의 값을 설정합니다.  
 > [setValue](/docs/funcs/core/set-value)가 원본값(코드값, 구분자 없는 값)을 직접 설정하는 것과 달리, `setString`은 화면에 표출되는 형태의 값으로 설정합니다.  
 > 기본적으로 이 함수를 호출해도 편집 관련 이벤트(`onAfterChange`, `onEndEdit` 등)는 발생하지 않습니다.  

@@ -1,4 +1,7 @@
 # onSheetFocus ***(event)***
+
+<!-- synonyms: 시트 포커스, 시트 활성화, 시트 클릭, 시트 선택, 포커스 이동, on-sheet-focus, sheet focus, focus sheet, activate sheet -->
+
 > 시트에 포커스 되었을때 호출되는 이벤트입니다.
 
 ### Syntax

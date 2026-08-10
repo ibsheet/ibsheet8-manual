@@ -1,5 +1,7 @@
 # Accept ***(col)***
 
+<!-- synonyms: 파일 형식, 업로드 허용 형식, 확장자 제한, 파일 타입 제한, MIME 타입, 파일 필터, file accept, upload filter, file extension, mime type, allowed files -->
+
 > [File Type](/docs/appx/file-type-upload) 컬럼에 업로드를 허용할 파일 형식을 지정하는 속성입니다.
 >
 > `input type="file"` 의 accept 속성과 동일하게 동작합니다.

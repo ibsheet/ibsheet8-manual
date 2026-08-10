@@ -1,5 +1,7 @@
 # TimePicker ***(col)***
 
+<!-- synonyms: 시간 선택, 시분초 선택, 타임픽커, 시간 다이얼로그, time picker, time selector, HH mm ss, time dialog -->
+
 > 시분초 컬럼에 아이콘이 생성됩니다. 아이콘 클릭시, 달력이 아닌 시분초 다이얼로그를 사용합니다.
 
 ### 아이콘 표시 조건

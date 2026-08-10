@@ -1,5 +1,7 @@
 # MessageWidth ***(cfg)***
 
+<!-- synonyms: MessageWidth, message width, message min width, showMessage width, message layer width, 메시지 창 너비, 메시지 최소 너비, 메세지 창 크기, showMessage 너비, showMessageTime 너비, 팝업 메시지 너비 -->
+
 > 시트 메시지 창의 최소 너비(`pixel`) 를 설정합니다.  
 >
 > [showMessage()](/docs/funcs/core/show-message)나 [showMessageTime()](/docs/funcs/core/show-message-time)과 같은 메소드를 통해 `Layer팝업` 형태로 시트 중앙에 표시되는 메세지 창의 너비를 설정합니다.

@@ -1,5 +1,7 @@
 # SuggestType ***(col)***
 
+<!-- synonyms: 자동완성 타입, Suggest 모드, Suggest 옵션, Replace Start StartAll, suggest type, autocomplete mode, suggest option -->
+
 > [Suggest](./suggest)속성 사용과 관련한 다양한 추가기능을 설정합니다. 
 >
 > 여러 기능을  `","` 를 구분자로 하여 설정하실 수 있습니다.

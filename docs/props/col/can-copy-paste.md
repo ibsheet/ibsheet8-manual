@@ -1,4 +1,7 @@
 # CanCopyPaste ***(col)***
+
+<!-- synonyms: 복사 붙여넣기, 복붙 제한, 클립보드 제한, 복사 방지, 붙여넣기 방지, Ctrl C V, copy paste, clipboard control, prevent copy paste, disable copy -->
+
 > 해당 열의 `Ctrl + C` 복사와 `Ctrl + V` 붙여넣기 동작을 제한합니다.  
 
 ### Type

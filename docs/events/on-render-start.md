@@ -1,5 +1,7 @@
 # onRenderStart ***(event)*** 
 
+<!-- synonyms: 렌더링 시작, 렌더 시작 전, 렌더링 취소, on-render-start, render start, render begin, render cancel -->
+
 > 시트를 렌더링하기 전에 호출되는 이벤트입니다.
 >
 > `1(true)` 값을 리턴 시 시트의 렌더링이 취소가 됩니다.
@@ -43,7 +45,7 @@ options.Events = {
 ### Read More
 
 - [onRenderFinish event](./on-render-finish)
-- [render method](/docs/funcs/core/render)
+- [rerender method](/docs/funcs/core/rerender)
 
 ### Since
 

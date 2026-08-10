@@ -1,5 +1,7 @@
 # getColLeft ***(method)***
 
+<!-- synonyms: getColLeft, get-col-left, 열 위치, 열 좌표, 왼쪽 위치, 컬럼 좌측, 섹션 위치, 열 오프셋, column, left, position -->
+
 > 특정 열의 위치를 각 섹션의 시작을 기준으로 확인합니다.
 
 ### Syntax

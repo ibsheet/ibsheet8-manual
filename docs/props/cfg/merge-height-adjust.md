@@ -1,5 +1,7 @@
 # MergeHeightAdjust ***(cfg)***
 
+<!-- synonyms: MergeHeightAdjust, merge height adjust, merge row height, adjust merged height, HtmlPrefix merge, merge layout fix, 병합 높이 보정, 머지 높이 조정, 병합 셀 높이, 머지 레이아웃, HtmlPrefix 병합, 병합 레이아웃 깨짐 -->
+
 > [HtmlPrefix](/docs/props/col/html-prefix)나 [HtmlPostfix](/docs/props/col/html-postfix)와 같이 셀의 높이에 영향을 주는 기능 사용 시, 병합 영역의 레이아웃 깨짐이 발생하면 높이를 보정합니다.  
 > `true`로 설정 시 병합 정보를 확인하여 수행되므로, 병합이 많은 경우 성능이 저하될 수 있습니다.
 

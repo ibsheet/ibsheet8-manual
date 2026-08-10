@@ -1,5 +1,7 @@
 # Spanned ***(row)***
 
+<!-- synonyms: spanned row, horizontal span, row cell span, colspan allow, span enable, cell merge horizontal, 좌우 병합, 가로 병합, 셀 병합 허용, colspan 허용, 셀 결합, Spanned 속성 -->
+
 > 행 내에서 좌우 열간에 병합을 허용할지 여부를 설정합니다.  
 > `Def.Row`나 `Def.Header`에서 설정하면 헤더 영역이나 데이터 영역에서 [Span](/docs/props/cell/span) 속성을 통해 좌우 셀을 병합할 수 있습니다.  
 > 자동 머지([DataMerge](/docs/props/cfg/data-merge))와는 별도로 동작하므로 자동 머지를 꺼야 합니다.

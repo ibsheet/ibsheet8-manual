@@ -1,4 +1,7 @@
 # onShowHint ***(event)***
+
+<!-- synonyms: 힌트 표시, 힌트 값 변경, 커스텀 힌트, hint 표시, 셀 힌트, on-show-hint, show hint, custom hint, hint display -->
+
 > 힌트가 화면에 보여질 때 호출되는 이벤트입니다.
 >
 > 힌트 값을 변경하고 싶은 경우, 사용자가 원하는 커스텀 `hint` 값(기본은 셀 값)을 리턴합니다.

@@ -1,5 +1,7 @@
 # getColIndex ***(method)***
 
+<!-- synonyms: getColIndex, get-col-index, 열 인덱스, 컬럼 인덱스, 인덱스 조회, 열 위치, 열 순번, 인덱스 확인, column, index -->
+
 > 열이름에 대한 `index`를 확인합니다.
 >
 > `index`는 `1`부터 시작합니다.

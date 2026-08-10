@@ -1,5 +1,7 @@
 # removeMemo ***(method)***
 
+<!-- synonyms: removeMemo, remove-memo, 메모 제거, 메모 삭제, 메모 지우기, 헤더 메모 제거, 메모 초기화, remove, memo, delete, clear -->
+
 > 특정 헤더 셀에 저장된 메모를 삭제합니다.
 >
 > [메모 기능](/docs/props/cfg/memo-id)을 통하여 설정된 메모를 삭제합니다.

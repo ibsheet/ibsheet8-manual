@@ -1,5 +1,7 @@
 # 제품 파일 변경
 
+<!-- synonyms: IBSheet7, 마이그레이션, sheet7, migration, v7, v8, ibsheet7에서 ibsheet8로, 제품 파일 변경, 파일 대응, ibsheet.js, ibsheet-common.js, ibsheet-dialog.js, 파일 구성, files, 라이선스 파일 -->
+
 ## 각 파일의 기능 비교
 
 |IBSheet7 파일|기능|IBSheet8 파일|

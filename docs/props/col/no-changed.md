@@ -1,5 +1,7 @@
 # NoChanged ***(col)***
 
+<!-- synonyms: 수정 상태 제외, Changed 방지, 상태 변경 안함, 편집 표시 제외, no changed, prevent changed status, skip changed state, keep row state -->
+
 > 열의 값이 변경되었을때 수정 상태를 변경 하지 않도록 설정합니다.
 >
 > 값이 `1(true)`로 설정되어 있다면 열의 값이 변경되어도 수정 상태를 변경하지 않습니다.

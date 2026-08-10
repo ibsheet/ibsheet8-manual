@@ -1,5 +1,7 @@
 # getFormat ***(method)***
 
+<!-- synonyms: getFormat, get-format, 포맷 조회, 포맷 확인, 서식 조회, 셀 포맷, EditFormat, 포맷 값, format, cell -->
+
 > 특정 셀에 설정된 **Format 값을 확인합니다.**  
 > 세 번째 인자 `edit` 값을 `true(1)`로 설정하면 **EditFormat 값**을 확인할 수 있습니다.
 

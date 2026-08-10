@@ -1,4 +1,7 @@
 # GroupChar ***(col)***
+
+<!-- synonyms: 그룹 구분자, 문자열 분리 그룹, split 그룹, 하위 그룹 생성, 계층 그룹핑, group char, group split, delimiter group, subgroup by char -->
+
 > 그룹 기준 열 내에서 특정 문자를 기준으로 Split하여 하위 노드로 만들어주는 기능입니다.
 >
 > 가령 열에 "ABCD-EF12","ABCD-EF22"와 같은 값이 있고, `GroupChar: "-"` 로 선언하면 실제 값은 다음과 같이 보여지게 됩니다.

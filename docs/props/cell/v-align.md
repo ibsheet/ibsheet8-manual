@@ -1,5 +1,7 @@
 # VAlign ***(cell)***
 
+<!-- synonyms: 세로 정렬, 수직 정렬, 상하 정렬, 위아래 정렬, 상단 정렬, 중앙 정렬, 하단 정렬, Top, Middle, Bottom, valign, vertical align, vertical alignment, v-align -->
+
 > 셀 안에 문자열 상하 정렬을 설정합니다.
 >
 > 좌우 정렬과 관련해서는 [Align](./align)속성을 참고하세요.

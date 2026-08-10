@@ -1,4 +1,7 @@
 # onRightClick ***(event)***
+
+<!-- synonyms: 우클릭, 마우스 우클릭, 오른쪽 클릭, 오른쪽 버튼 클릭, 컨텍스트 메뉴, 셀 우클릭, on-right-click, right click, right button, context menu -->
+
 > 사용자가 셀을 마우스로 우클릭했을 때 호출되는 이벤트입니다.
 >
 > `1(true)`를 리턴 시 우클릭에 의한 기본 동작을 막습니다.

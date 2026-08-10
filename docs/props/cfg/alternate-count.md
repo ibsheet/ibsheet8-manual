@@ -1,4 +1,7 @@
 # AlternateCount ***(cfg)***
+
+<!-- synonyms: AlternateCount, alternate-count, 대체 색 개수, 얼터네이트 개수, 반복 구간 행 수, 스트라이프 개수, 짝수행 개수, 얼터네이트 카운트, 반복 개수, alternate count, stripe count, banded rows count, alternate row count -->
+
 > `Alternate`로 지정된 반복 구간 내에서 **배경색이 적용될 마지막 행의 개수**를 지정하는 옵션입니다.  
 > 행 단위로 반복되는 배경색 패턴을 만들 때 사용됩니다.
 

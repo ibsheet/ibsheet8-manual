@@ -1,5 +1,7 @@
 # 컬럼 유형에 따른 class 적용
 
+<!-- synonyms: 스타일, 디자인, 테마, style, theme, 커스터마이징, 외관, 시트 스타일, 컬럼 타입 스타일, col type style, 셀 타입별 디자인 -->
+
 ## Bool/Radio 아이콘
 Bool type에서는 [BoolIcon col](/docs/props/col/bool-icon)속성을 통해 **체크/체크해제 checkbox 아이콘을 다른 이미지나 Html 객체로 설정**하실 수 있습니다.
 

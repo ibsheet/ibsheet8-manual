@@ -1,5 +1,7 @@
 # CanExport ***(col)***
 
+<!-- synonyms: 내보내기, 엑셀 다운로드 여부, 다운로드 가능, 엑셀 제외, 내보내기 제외, export column, excel export, download column, exportable, export exclude -->
+
 > 열의 다운로드 가능 여부.
 >
 > 사용자가 엑셀/텍스트 다운로드 시 해당 열을 다운로드 할지 여부를 설정할 수 있습니다.

@@ -1,4 +1,7 @@
 # setEnterMode ***(method)***
+
+<!-- synonyms: setEnterMode, set-enter-mode, 엔터 모드, Enter 동작, Enter 설정, 엔터키 이동, 엔터 방향, 엔터키 동작 변경, enter mode, set enter, change enter, enter key, apply enter mode -->
+
 > (Cfg) [EnterMode](/docs/props/cfg/enter-mode)설정을 동적으로 변경합니다.
 
 ### Syntax

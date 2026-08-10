@@ -1,5 +1,7 @@
 # PasteFocused ***(cfg)***
 
+<!-- synonyms: PasteFocused, paste focused, paste row mode, paste behavior, insert or overwrite paste, paste selection, 붙여넣기 행 동작, 붙여넣기 방식, 붙여넣기 덮어쓰기, 붙여넣기 삽입, 붙여넣기 반복 채우기, 붙여넣기 선택 영역 -->
+
 > `Ctrl + V`로 붙여넣을 때 **데이터가 적용되는 행 기준 동작 방식**을 설정합니다.  
 > 붙여넣기 시작 열은 [PasteCols](./paste-cols) 설정에 의해 결정됩니다.  
 > 붙여넣기 시 반드시 해당 시트에 Focus(현재 활성 셀 또는 행)가 존재해야 합니다.

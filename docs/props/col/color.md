@@ -1,5 +1,7 @@
 # Color ***(col)***
 
+<!-- synonyms: 배경색, 컬럼 색상, 열 배경, 셀 배경, 배경 색상, background color, column color, cell bg, hex color, rgb color -->
+
 > 열의 배경색상을 설정합니다.
 >
 > 열의 색상은 상태에 따른 배경 색상의 영향을 받습니다.

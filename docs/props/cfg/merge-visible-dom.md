@@ -1,5 +1,7 @@
 # MergeVisibleDom ***(cfg)***
 
+<!-- synonyms: MergeVisibleDom, merge visible dom, visible only merge edit, merge edit scope, off screen merge, 보이는 영역 병합, 화면 밖 병합 편집, 머지 화면 밖 편집, 병합 영역 편집 범위, MergeCellsMatch 편집 -->
+
 > [SearchMode](/docs/props/cfg/search-mode):0, [MergeCellsMatch](/docs/props/cfg/merge-cells-match):1 환경에서 머지 영역이 화면 밖까지 이어지는 경우, 값을 편집하면 보이는 영역만 변경됩니다.  
 > `0(false)`로 설정하면 보이지 않는 영역까지 값이 변경됩니다.
 <!-- 해당 기능은 자동 머지([DataMerge](/docs/props/cfg/data-merge))를 이용한 머지 영역에서만 동작됩니다. <br> -->

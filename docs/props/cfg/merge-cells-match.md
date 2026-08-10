@@ -1,5 +1,7 @@
 # MergeCellsMatch ***(cfg)***
 
+<!-- synonyms: MergeCellsMatch, merge cells match, merge sync value, merged edit sync, merge whole area edit, 머지 셀 값 동기화, 병합 셀 편집 동기화, 병합 영역 값 변경, 머지 편집 동일 값, 머지 편집 동시 변경, 병합 값 동시 편집 -->
+
 > 머지된 셀을 편집할 때, 머지 영역 전체의 값을 동시에 변경할지 여부를 설정하는 옵션입니다.  
 > 머지 영역의 값이 동시에 변경되면 [onBeforeChange](/docs/events/on-before-change), [onAfterChange](/docs/events/on-after-change)는 **값이 변경된 각 셀마다** 발생합니다.
 

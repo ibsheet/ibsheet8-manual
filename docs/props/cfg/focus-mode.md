@@ -1,4 +1,7 @@
 # EditTabMode ***(cfg)***
+
+<!-- synonyms: EditTabMode, FocusMode, edit tab mode, tab in edit, tab shift tab edit, edit tab navigation, 편집 탭 이동, Tab 편집 이동, 편집 상태 Tab, CanEdit Tab, CanFocus Tab, Tab 편집 유지, Shift Tab 편집 -->
+
 > 편집 상태인 셀에서 `tab / shift + tab` 키 이동시 동작을 설정한다.
 
 

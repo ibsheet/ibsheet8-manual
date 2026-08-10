@@ -1,4 +1,7 @@
 # WidthPad ***(col)***
+
+<!-- synonyms: 우측 버튼 너비, 버튼 패드 너비, 셀 버튼 폭, width pad, button pad width, right button width, cell button pad -->
+
 > [Button](./button)속성을 이용하여 셀 우측에 작은 버튼을 표시할때 버튼의 너비를 설정합니다.
 >
 > 너비는 pixel단위로 설정됩니다.

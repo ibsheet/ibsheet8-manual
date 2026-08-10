@@ -1,5 +1,7 @@
 # StorageCompressMode ***(cfg)***
 
+<!-- synonyms: StorageCompressMode, storage compress mode, local storage compress, session storage compress, base64 utf16 compression, 스토리지 압축, 로컬 스토리지 압축, 세션 스토리지 압축, base64 압축, UTF16 압축, 저장 크기 최적화 -->
+
 > 로컬 스토리지 혹은 세션 스토리지에 저장되는 시트 정보의 압축 방식을 설정하는 옵션입니다.  
 > 저장 데이터의 크기를 줄여 브라우저 스토리지 용량 제한에 대응할 수 있습니다.  
 > 대부분의 경우 기본값(`1`, Base64)으로 충분합니다.  

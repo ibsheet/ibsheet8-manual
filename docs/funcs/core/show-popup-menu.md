@@ -1,4 +1,7 @@
 # showPopupMenu ***(method)***
+
+<!-- synonyms: showPopupMenu, show-popup-menu, 팝업 메뉴, 컨텍스트 메뉴, 우클릭 메뉴, 마우스, 표시, 열기, popup, menu, context -->
+
 > 마우스 커서가 있는 위치에 컨텍스트 메뉴을 보여 줍니다.
 >
 > static [showMenu](/docs/static/show-menu)와 기능은 동일하나, `callback` 이벤트에서 this를 통해 호출한 시트객체를 얻을 수 있다는 점이 다릅니다.

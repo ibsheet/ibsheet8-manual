@@ -1,5 +1,7 @@
 # LinkBase ***(col)***
 
+<!-- synonyms: 링크 기본 경로, base URL, 링크 베이스, 상대 경로 기준, link base, base path, url base, link prefix path -->
+
 > 셀에 [Link](/docs/props/col/link)속성이 있는 경우, Base 경로를 설정합니다.
 >
 > 현재 페이지가 **/abc/test.html**이라고 가정했을때, `LinkBase` 설정에 따른 연결 `URL`은 다음과 같습니다.

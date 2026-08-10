@@ -1,4 +1,7 @@
 # onRightLongClick ***(event)***
+
+<!-- synonyms: 롱 우클릭, 길게 우클릭, 오른쪽 길게 클릭, 우클릭 유지, 우클릭 길게 누름, 롱프레스 우클릭, on-right-long-click, right long click, long right click, long press right -->
+
 > 사용자가 셀을 마우스로 [LongClick](/docs/props/cfg/long-click)에 설정된 시간보다 더 길게 우클릭했을 때 호출되는 이벤트입니다.
 >
 > `1(true)`를 리턴 시 우클릭에 의한 기본 동작을 막습니다.

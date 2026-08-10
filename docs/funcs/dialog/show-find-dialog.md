@@ -1,5 +1,7 @@
 # showFindDialog ***(method)***
 
+<!-- synonyms: show find dialog, find dialog, search dialog, find and replace, replace dialog, find popup, search popup, 찾기 다이얼로그, 검색 다이얼로그, 찾기 팝업, 바꾸기 다이얼로그, 텍스트 찾기 창, showFindDialog 메소드 -->
+
 > 시트 내에 데이터(텍스트 기준)를 찾기 위한 다이얼로그를 오픈합니다.  
 > 바꾸기 기능을 통해 검색 데이터를 변경할 수 있습니다.  
 > 해당 함수는 `"/plugins/ibsheet-dialog.js"` 파일이 포함되어 있어야 사용하실 수 있습니다.  

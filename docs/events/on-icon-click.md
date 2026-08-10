@@ -1,4 +1,7 @@
 # onIconClick ***(event)***
+
+<!-- synonyms: 아이콘 클릭, 셀 아이콘 클릭, 이미지 아이콘 클릭, on-icon-click, icon click, cell icon click -->
+
 > [Icon](/docs/props/col/icon)속성 값이 이미지 URL로 설정되어 있을때 셀 내 아이콘을 클릭하는 경우 호출되는 이벤트입니다.
 >
 > [Icon](/docs/props/col/icon)이 설정된 셀이 편집 불가능한 경우 버튼 클릭 뿐만 아니라 셀 내부를 클릭 시 이 이벤트가 호출됩니다.

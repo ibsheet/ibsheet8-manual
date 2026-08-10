@@ -1,4 +1,7 @@
 # setValue ***(method)***
+
+<!-- synonyms: setValue, set-value, 셀 값, 값 설정, 값 변경, 셀 값 변경, 데이터, 설정, value, set, change, cell -->
+
 > 셀의 값을 지정한 값으로 변경합니다.   
 > 기본적으로 이 함수를 호출해도 편집 관련 이벤트(`onAfterChange`, `onEndEdit` 등)는 발생하지 않습니다.  
 > 단, 데이터가 편집 상태일 때 `setValue`를 호출하면 `onEndEdit` 이벤트가 발생합니다.   

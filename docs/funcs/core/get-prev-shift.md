@@ -1,4 +1,7 @@
 # getPrevShift ***(method)***
+
+<!-- synonyms: getPrevShift, get-prev-shift, 이전 행 탐색, 이전 시프트, 이동, 탐색, previous shift, prev shift, move -->
+
 > [데이터 로우 객체](/docs/appx/row-object)를 대상으로 사용가능한 탐색 메소드입니다.
 >
 > 기준이 되는 [데이터 로우 객체](/docs/appx/row-object)에서 2번째 인자의 수만큼 이전에 위치한 [데이터 로우 객체](/docs/appx/row-object)를 탐색해서 리턴합니다.

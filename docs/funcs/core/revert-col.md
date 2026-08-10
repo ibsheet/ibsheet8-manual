@@ -4,7 +4,7 @@
 
 > 시트 생성 시점의 컬럼 정보(너비, 순서, 숨김 여부, 정렬)로 되돌리는 메소드입니다.
 >
-> 시트 생성이 완료되는 시점([onRenderFirstFinish](/docs/props/event/on-render-first-finish))에 자동으로 컬럼 상태를 스냅샷으로 저장하며, `revertCol` 호출 시 이 스냅샷을 기준으로 복원합니다.
+> 시트 생성이 완료되는 시점([onRenderFirstFinish](/docs/events/on-render-first-finish))에 자동으로 컬럼 상태를 스냅샷으로 저장하며, `revertCol` 호출 시 이 스냅샷을 기준으로 복원합니다.
 >
 > 사용자가 컬럼을 숨기거나, 너비를 조절하거나, 순서를 변경하거나, 동적으로 삭제/추가한 컬럼 상태 모두 create 시점으로 돌아갑니다.
 > 컬럼너비, 순서, 숨김 여부, 정렬 이외의 변경과 행/셀 데이터에는 영향을 주지 않습니다.

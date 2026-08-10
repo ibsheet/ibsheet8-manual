@@ -1,5 +1,7 @@
 # DragCell ***(cfg)***
 
+<!-- synonyms: DragCell, drag cell, cell drag, drag single cell, move cell, 셀 드래그, 셀 이동, 셀 단위 드래그, 단일 셀 드래그, 셀 드래그 이동, CanDrag 셀, 드래그 앤 드롭 셀 -->
+
 > 드래그 동작 시 셀 단위 드래그 여부를 설정합니다.  
 > `cfg.CanDrag`가 `true`인 경우에만 적용됩니다.
 

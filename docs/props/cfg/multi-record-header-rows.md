@@ -1,5 +1,7 @@
 # MultiRecordHeaderRows ***(cfg)***
 
+<!-- synonyms: MultiRecordHeaderRows, multi record header rows, multirecord header rows, record header rows, 멀티레코드 헤더행, 멀티레코드 헤더 행 개수, MultiRecord 헤더 행, 헤더 행 개수 조절, 멀티레코드 헤더 수 -->
+
 > 멀티레코드([MultiRecord](/docs/props/cfg/multi-record)) 기능을 사용하는 시트에서 헤더행의 행 개수를 조절하는 기능입니다.  
 > 생성된 행 개수보다 많게 설정할 수 없습니다. (단위데이터행 개수가 3개인데 헤더행의 개수는 4개로 설정 할 수 없음)  
 > 멀티레코드 레이아웃은 엑셀 다운로드/업로드, `doPrint`, `down2Pdf` 등 출력 시에는 기본적으로 유지되지 않습니다. (`down2Excel`은 [MultiRecordShape](/docs/props/cfg/multi-record-shape):`1`로 화면 모양 그대로 받을 수 있으나 머지가 많으면 느립니다.)

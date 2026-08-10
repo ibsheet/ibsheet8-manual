@@ -1,4 +1,7 @@
 # SpinnerMin ***(col)***
+
+<!-- synonyms: 스피너 최솟값, 스피너 최소값, 숫자 최소, 증감 최소, spinner min, min value, number min, spinner lower limit -->
+
 > [SpinnerVisible](./spinner-visible)을 사용하는 열에서 화살표를 통한 입력 시 최솟값을 설정할 수 있습니다.
 >
 > 

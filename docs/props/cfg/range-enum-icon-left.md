@@ -1,6 +1,6 @@
 # RangeEnumIconLeft ***(cfg)***
 
-<!-- synonyms: Enum 체크박스 위치, Range 체크박스 왼쪽, 드랍리스트 체크 위치 -->
+<!-- synonyms: RangeEnumIconLeft, range-enum-icon-left, Enum 체크박스 위치, Range 체크박스 위치, Range 체크박스 왼쪽, 드랍리스트 체크 위치, Enum Range 체크박스, 다중 선택 체크박스 위치, range enum icon, checkbox position, dropdown check position -->
 
 > `Enum` 타입에 [Range](/docs/props/col/range)`:1` 사용 시 드랍리스트 항목 옆에 표시되는 체크박스의 위치(좌/우)를 설정합니다.
 

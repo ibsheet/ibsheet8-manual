@@ -1,4 +1,7 @@
 # setScrollLeft ***(method)***
+
+<!-- synonyms: setScrollLeft, set-scroll-left, 가로 스크롤, 좌우 스크롤, 스크롤 이동, 수평 스크롤, x축 이동, 스크롤 위치, 좌측 이동, scroll left, horizontal scroll, set scroll, scroll x, move scroll -->
+
 > 가로스크롤 바를 pixel단위로 이동시킵니다.
 
 ### Syntax

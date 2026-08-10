@@ -1,5 +1,7 @@
 # MsgLocale ***(cfg)***
 
+<!-- synonyms: MsgLocale, msg locale, language prefix, sheet language, i18n locale, message language, 언어 설정, 메시지 언어, 다국어, 로케일, 언어 로케일, IBSMSG, ko en 메시지 -->
+
 > 시트에서 사용할 언어(메세지 파일) Language Prefix를 설정합니다.
 >
 > 

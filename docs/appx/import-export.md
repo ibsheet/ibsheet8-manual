@@ -1,7 +1,7 @@
 # 엑셀파일 업로드/다운로드  ***(appendix)***
 > 시트의 내용을 엑셀이나,텍스트 파일로 다운로드 하거나, 반대로 파일의 내용을 읽어 시트에 업로드하는 방법에 대해 알아봅니다.<br>
 > **이 내용은 서버 기반 파일 다운로드/업로드 방법을 설명합니다.**<br> 
-> **클라이언트 기반 다운로드/업로드는 [exportData](/docs/funcs/export-data)/[importData](/docs/funcs/import-data) 함수를 참고해 주세요.**
+> **클라이언트 기반 다운로드/업로드는 [exportData](/docs/funcs/core/export-data)/[importData](/docs/funcs/core/import-data) 함수를 참고해 주세요.**
 
 ## 필수 파일 요소
 업로드/다운로드 작업을 위해서 다음과 같은 파일이 필요합니다.

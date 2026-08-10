@@ -1,5 +1,7 @@
 # StandardFilter ***(cfg)***
 
+<!-- synonyms: StandardFilter, standard filter, tree filter, tree child filter, tree parent filter, 트리 필터, 트리 하위 노드 필터, 트리 부모 자식 필터링, 트리 필터 결과 표시, 트리 필터 모드 -->
+
 > 트리에서 필터 기능 사용시 하위 노드에 대한 보임 감춤 여부를 설정합니다..
 
 ### Type

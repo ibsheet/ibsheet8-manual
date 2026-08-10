@@ -1,4 +1,7 @@
 # clearCurrentStyle ***(method)***
+
+<!-- synonyms: 스타일 초기화, 스타일 제거, 현재 스타일 삭제, 스타일 정보 지우기, 스타일 행 초기화, 스토리지 스타일 제거, clear-current-style, clearCurrentStyle, clear style, reset style, remove style -->
+
 > 스타일 행으로 저장된 현재 시트의 스타일 관련 정보를 제거하는 메소드입니다. 
 >
 > [StyleRowConfig](/docs/props/cfg/style-row-config)의 `StorageType`이 1인 경우, 로컬 스토리지에 저장된 스타일 정보를 제거합니다. ([StorageSession](/docs/props/cfg/storage-session) 값이 0인 경우에는 제거 동작을 하지 않습니다.)

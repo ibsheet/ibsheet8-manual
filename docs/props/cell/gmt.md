@@ -1,4 +1,7 @@
 # GMT ***(cell)***
+
+<!-- synonyms: GMT, UTC, 시간대, 타임존, timezone, GMT 시간, UTC 시간, 기준 시간대, gmt utc, 시간 변환, 세계 표준시, Date 시간대 -->
+
 > 셀의 [Type](/docs/appx/type)이 `Date` 일 때 기준 시간대를 설정합니다.
 >
 > 조회된 시간을 기준으로 UTC시간으로 변경하여 보여줍니다.

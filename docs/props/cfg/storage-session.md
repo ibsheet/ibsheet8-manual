@@ -1,5 +1,7 @@
 # StorageSession ***(cfg)***
 
+<!-- synonyms: StorageSession, storage session, save layout, local session storage, column state save, saveCurrentInfo, 컬럼 상태 저장, 시트 레이아웃 저장, 로컬 스토리지 저장, 세션 스토리지 저장, 시트 상태 복원, 컬럼 저장 -->
+
 > 사용자가 컬럼을 숨기거나, 이동하거나, 사이즈를 조절한 상태를 로컬/세션 스토리지에 저장할 수 있도록 설정합니다.  
 > [saveCurrentInfo](/docs/funcs/core/save-current-info)로 저장된 정보가 있으면 시트 로드 시 자동으로 이전 레이아웃이 복원됩니다.
 

@@ -1,4 +1,7 @@
 # ButtonWidth ***(cell)***
+
+<!-- synonyms: ButtonWidth, button-width, 버튼 너비, 버튼 폭, 버튼 크기, 셀 버튼 너비, button size, button width, cell button width -->
+
 > [Type](/docs/appx/type)이 `Button`이고, [Button](/docs/props/cell/button)속성의 값이 `Button`인 경우, 셀에 생성되는 버튼 객체의 너비를 설정합니다.
 
 

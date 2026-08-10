@@ -1,5 +1,7 @@
 # SuggestMin ***(cell)***
 
+<!-- synonyms: 서제스트 최소, 자동완성 최소 글자수, 최소 입력 글자수, 자동완성 최소 길이, 검색 최소 길이, 최소 글자, 최소 문자, suggest min, autocomplete min length, min characters, minimum length, trigger length -->
+
 > [Suggest](/docs/props/cell/suggest)을 통해 설정한 메뉴를 보여주기 위한 최소 글자수를 입력합니다. 
 >
 > 설정을 하지 않으면 한글자라도 입력시 바로 `Suggest`목록이 보여지게 됩니다.

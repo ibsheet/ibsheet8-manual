@@ -1,5 +1,7 @@
 # SectionCanResize ***(cfg)***
 
+<!-- synonyms: SectionCanResize, section can resize, splitter resize, LeftCols resize, RightCols resize, section drag width, 섹션 리사이즈, 섹션 크기 조정, Splitter, 섹션 스플리터, 좌우 섹션 너비 조절, LeftWidth MidWidth RightWidth 조정 -->
+
 > 사용자가 섹션 사이를 드래그하여 섹션 너비를 조정할 수 있게 할 것인지 여부를 설정합니다. 
 >
 > 해당 옵션을 설정하면 섹션과 섹션 사이에 Splitter 영역이 생성됩니다.

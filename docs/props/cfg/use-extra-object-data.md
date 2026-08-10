@@ -1,5 +1,7 @@
 # UseExtraObjectData ***(cfg)***
 
+<!-- synonyms: UseExtraObjectData, use extra object data, keep extra data, non column data, row object data, extra fields, 추가 객체 데이터, 추가 필드 유지, 시트 외 데이터 유지, 행 객체 추가 데이터, 컬럼 외 데이터 -->
+
 > 조회 된 데이터에 시트에 설정한 열이 아닌 추가적인 `object` 형태의 정보가 있을 때 행 객체에 `object` 형태 그대로 저장합니다. 
 >
 > **object의 `key`가 시트의 설정된 열의 [Name](../col/name)과 동일한 경우에는 적용되지 않습니다.** 

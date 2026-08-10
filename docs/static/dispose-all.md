@@ -1,5 +1,7 @@
 # disposeAll ***(static)***
 
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, disposeAll, 모든 시트 제거, 시트 정리, 시트 파괴, dispose -->
+
 > 생성된 모든 `시트 객체`를 제거합니다.  
 > 시트는 생성 시 전역 `IBSheet` 객체에 배열 형태로 등록되는데, SPA(Single Page Application) 형식의 화면에서는 페이지 이동(컴포넌트 로드) 시 DOM의 element만 제거되고 이 시트 객체는 그대로 남습니다.  
 > 따라서 SPA 형식의 시스템에서는 페이지 이동(컴포넌트 로드) 중에 이 함수를 호출하여 등록된 시트 객체를 정리해야 합니다.

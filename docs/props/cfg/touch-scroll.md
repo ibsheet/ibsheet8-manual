@@ -1,5 +1,7 @@
 # TouchScroll ***(cfg)***
 
+<!-- synonyms: TouchScroll, touch scroll, mobile scrollbar, tablet scrollbar, scrollbar style, 터치 스크롤바, 모바일 스크롤바, 태블릿 스크롤바, 스크롤바 스타일, 시트 스크롤바 모양 -->
+
 > 태블릿이나 모바일 기기에서 시트 내 스크롤바의 모양을 설정합니다. 
 >
 > 시트 섹션별 생성되는 가로 스크롤이나 전체 시트에 생성되는 가로/세로 스크롤바에 해당합니다.

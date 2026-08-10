@@ -1,5 +1,7 @@
 # Cursor ***(col)***
 
+<!-- synonyms: 마우스 커서, 커서 모양, 포인터 모양, 호버 커서, mouse cursor, pointer, hover cursor, cursor style, css cursor -->
+
 > 열 위에 마우스 커서가 호버시 커서의 모양을 설정합니다.
 >
 > 설정가능한 커서의 모양은 css를 따릅니다.

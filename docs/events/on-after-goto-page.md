@@ -1,4 +1,7 @@
 # onAfterGotoPage ***(event)***
+
+<!-- synonyms: 페이지 이동 후, 페이지 전환 완료, 페이징 이후, on-after-goto-page, after goto page, page changed, paging done -->
+
 > 다른 페이지로 이동 후 호출되는 이벤트입니다.
 >
 > 새로운 페이지로 스크롤을 내려서 이동하고 [SearchMode](/docs/props/cfg/search-mode): 2, 3 에서 포커스를 이동시에는 호출되지 않습니다.

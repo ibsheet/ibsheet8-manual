@@ -1,4 +1,7 @@
 # getSelectedRanges ***(method)***
+
+<!-- synonyms: getSelectedRanges, get-selected-ranges, 선택 영역, 선택 범위, 셀 선택 영역, 선택 조회, 영역 확인, selected, range, area -->
+
 > 현재 선택된 영역을 이중 배열로 리턴합니다.
 >
 > 가령 다음과 같이 선택 후 `default` 형태로 값을 얻을시 리턴되는 값은 다음과 같습니다.

@@ -1,4 +1,7 @@
 # Name ***(col)***
+
+<!-- synonyms: 열 이름, 컬럼 이름, 필드명, 데이터 키, SEQ, 컬럼 name, column name, field name, data key, column id -->
+
 > 열에 이름을 부여합니다.
 >
 > 여기서 부여한 데이터 조회시 `json` 데이터와 매핑하거나, 저장시 서버로 전송됩니다.

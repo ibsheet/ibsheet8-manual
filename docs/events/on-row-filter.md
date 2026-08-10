@@ -1,4 +1,7 @@
 # onRowFilter ***(event)***
+
+<!-- synonyms: 행 필터, 행 필터링, 로우 필터링, 행 표시 여부, 필터 조건 검사, 화면 표시 결정, on-row-filter, row filter, row filtering, filter row -->
+
 > 필터링 진행 시 각 행에 대해 호출되는 이벤트입니다.
 >
 > 행이 화면에 보일지 여부를 `boolean` 값으로 반드시 리턴해야합니다.

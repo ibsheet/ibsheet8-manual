@@ -1,4 +1,7 @@
 # onBeforeFilter ***(event)***
+
+<!-- synonyms: 필터링 전, 필터 적용 전, 필터 취소, doFilter 이전, on-before-filter, before filter, filter cancel -->
+
 > 시트에서 필터링하기 전에 호출되는 이벤트입니다.  
 > `1(true)`를 리턴시 필터링을 진행하지 않습니다.
 

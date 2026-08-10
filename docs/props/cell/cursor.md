@@ -1,5 +1,7 @@
 # Cursor ***(cell)***
 
+<!-- synonyms: 커서 모양, 마우스 커서, 셀 커서, 호버 커서, pointer 커서, css 커서, 커서 스타일, cursor, mouse cursor, cell cursor, hover cursor, css cursor, pointer, crosshair -->
+
 > 셀 위에 마우스 커서가 호버시 커서의 모양을 설정합니다.
 >
 > 설정가능한 커서의 모양은 css를 따릅니다.

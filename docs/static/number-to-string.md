@@ -1,5 +1,7 @@
 # numberToString ***(static)***
 
+<!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, numberToString, 숫자 문자열 변환, format number, 숫자 포맷팅 -->
+
 > 숫자를 주어진 포맷에 맞게 마스킹된 문자로 변경하여 리턴합니다
 
 ### Syntax

@@ -1,5 +1,7 @@
 # 열(Col) 구조에 대한 이해
 
+<!-- synonyms: 시작하기, getting started, 빠른 시작, 시작, ibsheet 시작, 열 구조, 컬럼 구조, col 구조, 컬럼 정의, Cols 배열 -->
+
 > 시트를 세로로 나누면 `Left`, `Center`, `Right` 영역(Section)으로 나누어 집니다.<br/>
 > 각각의 영역은 고유하게 스크롤을 갖을 수 있고 각 영역 간에 이동도 가능합니다.
 

@@ -1,4 +1,7 @@
 # onStartDragCell ***(event)***
+
+<!-- synonyms: 셀 드래그 시작, 셀 드래그 전, 드래그 시작, 셀 잡기, 드래그 시작 취소, on-start-drag-cell, start drag cell, cell drag start, before drag cell -->
+
 > 시트 내 셀이 드래그되기 전에 호출되는 이벤트입니다.
 >
 > `1(true)`를 리턴 시 행 드래그가 취소되고 선택(`Select`)이 실행됩니다.

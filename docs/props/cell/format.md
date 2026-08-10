@@ -1,4 +1,7 @@
 # Format ***(cell)***
+
+<!-- synonyms: Format, 포맷, 표시 포맷, 셀 포맷, display format, 데이터 포맷, cell format, 포맷 설정, 형식, 표시 형식, 포맷팅 -->
+
 > 데이터를 IBSheet에 표시할 때 적용되는 **표시 포맷(display format)** 을 설정합니다.  
 > 원본 데이터 값은 변경되지 않으며 화면에 표시되는 값에만 적용됩니다.  
 > `Format`은 셀의 [Type](/docs/appx/type)에 따라 다양한 방식으로 정의할 수 있습니다.  

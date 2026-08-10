@@ -1,5 +1,7 @@
 # FitWidth ***(cfg)***
 
+<!-- synonyms: FitWidth, fit width, dummy column, scroll bar right, full width, fill width, 너비 맞춤, 더미 컬럼, 스크롤바 우측, 시트 폭 맞춤, 가로 여백 채움, 세로 스크롤바 위치, 마지막 컬럼 여백 -->
+
 > 마지막 컬럼 뒤에 더미 컬럼을 두어 세로 스크롤바를 우측 끝에 붙게 합니다. <br/>
 > **주의 :`(Col)RelWidth`와 함께 설정 시 해당 속성은 무시되고 `RelWidth`가 우선 적용됩니다.**
 

@@ -1,5 +1,7 @@
 # Added ***(row)***
 
+<!-- synonyms: added row, newly added row, new row status, row added state, insert row status, IBColorAdded, added flag, 신규행, 추가된 행, 행 추가 여부, 신규 상태, 새 행, 입력 행, Added 속성, 신규 행 배경색 -->
+
 > [addRow](/docs/funcs/core/add-row) 함수를 통해 추가된 행은  내부적으로 해당 속성 값을 1로 갖게 됩니다.
 >
 > 별도로 [NoColor](./no-color) 속성을 설정하지 않으면, 신규로 추가된 행의 배경색상은 css/default(테마)/main.css파일에 `.IBColorAdded`로 설정한 색상 (`기본값:#eee6fa` 연한파랑색)으로 변경됩니다.

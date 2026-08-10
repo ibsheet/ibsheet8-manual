@@ -1,5 +1,7 @@
 # Kind ***(row)***
 
+<!-- synonyms: row kind, row type, row role, header data filter group, row category, kind attribute, 행 종류, 행 유형, 행 역할, 헤더 데이터 필터 그룹, 행 구분, Kind 속성 -->
+
 > 각 행이 갖고 있는 기능을 의미합니다.
 >
 > 행 마다의 기능(헤더, 데이터, 필터, 그룹 등)을 확인할 때 사용됩니다.

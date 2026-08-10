@@ -1,4 +1,7 @@
 # removePage ***(method)***
+
+<!-- synonyms: removePage, remove-page, 페이지 제거, 페이지 삭제, 페이지 지우기, 페이지 닫기, 페이지 없애기, remove, page, delete, close -->
+
 > 특정 페이지를 삭제합니다.
 >
 > 현재 포커스가 위치한 페이지는 삭제하실 수 없습니다.

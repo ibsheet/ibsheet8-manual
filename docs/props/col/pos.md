@@ -1,5 +1,7 @@
 # Pos ***(col)***
 
+<!-- synonyms: 열 위치, 컬럼 인덱스, 섹션 내 위치, 열 순서, position, column index, column position, section position -->
+
 > 섹션 내에서 열의 인덱스를 확인합니다.
 >
 > 시트의 열 생성시, `LeftCols` 배열에 추가한 열은 틀고정을 기준으로 좌측 섹션으로 들어가고, `Cols` 배열에 넣은 열은 가운데, `RightCols` 섹션에 넣은 열은 우측 섹션으로 추가됩니다.

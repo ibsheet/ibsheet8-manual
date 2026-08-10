@@ -1,5 +1,7 @@
 # 테마 적용
 
+<!-- synonyms: 스타일, 디자인, 테마, style, theme, 커스터마이징, 외관, 시트 스타일, default grace mint material krds gray simple, 테마 설정 -->
+
 ## 기본 테마 종류
 현재 배포되고 있는 테마는 다음과 같습니다.
 

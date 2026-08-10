@@ -1,5 +1,7 @@
 # NoDataMessage ***(cfg)***
 
+<!-- synonyms: NoDataMessage, no data message, empty message, empty sheet message, no result message, 데이터 없음 메시지, 빈 데이터 메시지, 조회 데이터 없음, 빈 시트 안내, No Data 안내, 결과 없음 메시지 -->
+
 > 빈 데이터로 시트 생성(IBSheet.create의 data인자), 조회 함수를 이용한 조회시 **"조회된 데이터가 없습니다."** 라는 메세지 표시여부를 설정합니다. 
 
 ### Type

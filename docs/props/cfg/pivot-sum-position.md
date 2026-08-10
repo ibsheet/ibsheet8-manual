@@ -1,5 +1,7 @@
 # PivotSumPosition ***(cfg)***
 
+<!-- synonyms: PivotSumPosition, pivot sum position, pivot total position, pivot subtotal position, pivot header footer, 피벗 합계 위치, 피벗 합계 행, 피벗 합계 상단, 피벗 합계 하단, 피벗 소계 위치, 피벗 총합 위치 -->
+
 > 피벗 시 합계행의 위치를 설정합니다.
 
 ### Type

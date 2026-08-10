@@ -1,4 +1,7 @@
 # onAfterSectionResize ***(event)***
+
+<!-- synonyms: 섹션 크기 변경 후, 좌우 섹션 리사이즈 완료, on-after-section-resize, after section resize, section resized -->
+
 > 좌우측 섹션의 크기를 변경하는 경우 발생합니다.
 >
 > cfg [SectionCanResize](/docs/props/cfg/section-can-resize)속성 설정시 사용자가 좌우측 영역의 크기를 변경할 수 있는데, 이렇게 크기가 변경된 이후에 발생합니다.

@@ -1,4 +1,7 @@
 # getSelectedRows ***(method)***
+
+<!-- synonyms: getSelectedRows, get-selected-rows, 선택 행, 선택된 로우, 행 선택 조회, 선택 목록, selected, rows, list -->
+
 > 선택된 행 객체를 리턴한다.
 >
 > type 인자에 따라 셀단위 선택한 행이나 행전체 선택한 행에 대해 추출할 수 있습니다.
@@ -45,7 +48,7 @@ var rows = sheet.getSelectedRows(0, "CanEdit"); //["AR5" , "AR6" , "AR8" , "AR10
 ```
 
 ### Read More
-- [getSelectedRanges method](./get-selected-ranges)
+- [getSelectedRanges method](./get-selected-range)
 
 ### Since
 

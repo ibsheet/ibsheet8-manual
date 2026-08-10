@@ -1,4 +1,7 @@
 # RelWidth ***(col)***
+
+<!-- synonyms: 상대적 너비, 비율 너비, 퍼센트 너비, 유동 너비, rel width, relative width, proportional width, flexible width -->
+
 > 열의 상대적 너비를 설정합니다.<br/>
 > 열의 너비를 퍼센트로 설정하는 것과 유사하게 열간의 상대적인 너비를 설정합니다.<br/>
 > 가령 시트의 크기가 1000px이고, 각 열의 너비가 100px 으로 설정한 열이 5개 있다고 가정할때 이중 한 열이 `RelWidth: 1`을 갖으면 해당 열의 너비는 600px를 갖게 됩니다.<br/>

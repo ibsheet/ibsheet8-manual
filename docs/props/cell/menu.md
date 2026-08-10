@@ -1,4 +1,7 @@
 # Menu ***(cell)***
+
+<!-- synonyms: Menu, 셀 메뉴, 컨텍스트 메뉴, 우클릭 메뉴, 팝업 메뉴, 오른쪽 클릭 메뉴, 셀 우클릭 메뉴, cell menu, context menu, right-click menu, popup menu -->
+
 > 특정 셀 위에서 마우스 우측 버튼 클릭시 보여질 컨텍스트 메뉴를 설정합니다.
 >
 > 7장의 [Menu appendix](/docs/appx/menu)내용을 참고해 주세요.

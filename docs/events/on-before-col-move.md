@@ -1,4 +1,7 @@
 # onBeforeColMove ***(event)***
+
+<!-- synonyms: 열 이동 전, 컬럼 이동 취소, 열 드래그 이동 전, on-before-col-move, before column move, column move cancel -->
+
 > 열을 드래그를 통해 다른 위치로 움직이기 전 호출되는 이벤트입니다.</br>
 > `return true` 시 컬럼 이동을 취소 할 수 있습니다.
 

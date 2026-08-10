@@ -1,4 +1,7 @@
 # onBlur ***(event)***
+
+<!-- synonyms: 포커스 잃음, 셀 블러, 포커스 해제, on-blur, blur event, focus lost, cell blur -->
+
 > 시트가 셀 포커스를 잃을 때 호출되는 이벤트입니다.
 
 ### Syntax

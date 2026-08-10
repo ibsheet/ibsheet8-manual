@@ -1,4 +1,7 @@
 # setScale ***(method)***
+
+<!-- synonyms: setScale, set-scale, 배율, 확대, 축소, 줌, 배율 설정, 시트 확대, 시트 축소, zoom, scale, set scale, zoom factor, apply scale -->
+
 > 배율(zoom factor)을 설정하여 시트를 축소/확대 합니다.
 >
 > 1.0보다 작은 값은 시트를 축소합니다.

@@ -1,5 +1,7 @@
 # dispose ***(method)***
 
+<!-- synonyms: 시트 제거, 시트 삭제, 메모리 해제, 완전 제거, 시트 파괴, DOM 제거, dispose, destroy, remove sheet, cleanup, unmount, teardown -->
+
 > 시트를 DOM과 메모리에서 완전히 제거합니다.  
 > `dispose`된 시트는 더 이상 사용할 수 없으며, 다시 사용하려면 [IBSheet.create](/docs/static/create)로 처음부터 새로 생성해야 합니다.  
 > `dispose`는 **호출한 시트 하나**만 제거합니다. 한 화면(페이지)의 시트를 모두 제거하려면(특히 SPA 페이지 이동 시) [IBSheet.disposeAll](/docs/static/dispose-all)을 사용합니다.  

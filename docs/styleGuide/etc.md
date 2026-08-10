@@ -1,5 +1,7 @@
 # 기타 스타일 적용
 
+<!-- synonyms: 스타일, 디자인, 테마, style, theme, 커스터마이징, 외관, 시트 스타일, 기타 스타일, 기타 디자인, misc style -->
+
 ## CSS가 아니라 제품 기능으로 적용되는 스타일
 
 [ColorState cfg](/docs/props/cfg/color-state) 설정에 따라, 추가/수정/삭제 된 행에 배경색과, 추가/삭제 된 열에 대한 배경색, 수정된 셀에 대한 배경색, 수정 불가([CanEdit cell](/docs/props/cell/can-edit))의 속성이 `false`인 셀에 대한 배경색, Focus 불가([CanFocus cell](/docs/props/cell/can-focus))의 속성이 `false`인 셀에 글자색 그리고 오류가 있는 셀에 대한 배경색이 적용될 수 있습니다.

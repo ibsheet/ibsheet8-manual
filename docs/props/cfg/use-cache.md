@@ -1,5 +1,7 @@
 # UseCache ***(cfg)***
 
+<!-- synonyms: UseCache, use cache, image cache, browser cache, img cache, 이미지 캐시, 브라우저 캐시, img 캐시 사용, 이미지 캐싱, 캐시 사용 여부 -->
+
 > `img` 파일의 브라우저 캐쉬 사용 여부를 설정합니다.
 
 ### Type

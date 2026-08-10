@@ -1,5 +1,7 @@
 # SuggestType ***(cell)***
 
+<!-- synonyms: 서제스트 타입, 자동완성 옵션, 자동완성 모드, 자동완성 유형, 자동완성 필터, 대소문자 구분, Replace, Start, StartAll, Empty, Case, Begin, Search, suggest type, autocomplete type, autocomplete mode, filter mode -->
+
 > [Suggest](./suggest)속성 사용과 관련한 다양한 추가기능을 설정합니다. 
 >
 > 여러 기능을  `","` 를 구분자로 하여 설정하실 수 있습니다.

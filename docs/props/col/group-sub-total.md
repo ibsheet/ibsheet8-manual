@@ -1,4 +1,7 @@
 # GroupSubTotal ***(col)***
+
+<!-- synonyms: 그룹 소계, 소계 옵션, 합계 평균 개수, 그룹 통계, 그룹 합계, group subtotal, group sum avg count, group aggregate, subtotal option -->
+
 > [UseGroupSubTotal cfg](/docs/props/cfg/use-group-sub-total) 그룹 소계 기능 사용시, 그룹 소계행에 적용될 옵션을 설정합니다.  
 > 소계 계산을 표현할 열에 `Type`, `Color`, `Format`을 설정할 수 있습니다.  
 > 반드시 [UseGroupSubTotal cfg](/docs/props/cfg/use-group-sub-total)을 설정해야 정상적으로 동작합니다.

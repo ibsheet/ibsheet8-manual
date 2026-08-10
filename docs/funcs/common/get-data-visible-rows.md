@@ -1,5 +1,7 @@
 # getDataVisibleRows ***(method)***
 
+<!-- synonyms: get data visible rows, visible data rows, currently visible rows, filtered visible rows, get shown rows, visible row objects, 보이는 데이터 행, 보이는 행 조회, 표시된 행 가져오기, 화면 보이는 로우, 필터 후 보이는 행, getDataVisibleRows 메소드 -->
+
 > 시트에서 보여지고 있는 데이터 로우 객체들을 확인합니다. 
 
 ### Syntax

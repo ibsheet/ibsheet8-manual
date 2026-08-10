@@ -1,5 +1,7 @@
 # getNextSiblingVisibleRow ***(method)***
 
+<!-- synonyms: getNextSiblingVisibleRow, get-next-sibling-visible-row, 다음 형제 보이는 행, 동일 레벨, 트리, 그룹, 표시행, next sibling visible row, tree, group -->
+
 > 트리나 그룹 사용시 같은 부모를 갖는 동일 레벨의 보여지는(`Visible:1`) 아래 행을 리턴합니다.
 >
 > 같은 부모 내에서 더 이상 보여지는 동일레벨이 없는 경우 `null`이 리턴됩니다.

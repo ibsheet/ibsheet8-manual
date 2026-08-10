@@ -1,5 +1,7 @@
 # setRangeAttribute ***(method)***
 
+<!-- synonyms: set range attribute, bulk set attribute, range attribute, set attribute range, batch attribute set, set attribute bulk, 범위 속성 설정, 범위 일괄 속성, 범위 attribute, 범위 속성 일괄 설정, 다중 셀 속성, setRangeAttribute 메소드 -->
+
 > setAttribute를 이용하여 범위 내의 속성 값을 일괄적으로 설정합니다. 
 
 ### Syntax

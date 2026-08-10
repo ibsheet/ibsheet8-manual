@@ -1,4 +1,7 @@
 # onShowCol ***(event)***
+
+<!-- synonyms: 열 표시, 열 숨김, 컬럼 표시, 컬럼 숨김, 열 보이기, 컬럼 보이기, 컬럼 hide, on-show-col, show col, hide col, column visible -->
+
 > 열이 보이거나 숨겨질 때 호출되는 이벤트입니다.
 >
 > `1(true)`를 리턴 시 열에 대한 숨김/보임 동작을 실행하지 않고 현상 유지합니다.

@@ -1,5 +1,7 @@
 # TipMaxWidth ***(cfg)***
 
+<!-- synonyms: TipMaxWidth, tip max width, tooltip max width, tip width limit, 팁 최대 너비, 툴팁 너비 제한, Tip MaxWidth, 팁 크기, 팁 너비 -->
+
 > 팁의 최대 너비(`MaxWidth`)을 설정합니다. 
 
 ### Type

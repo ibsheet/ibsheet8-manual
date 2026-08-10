@@ -1,5 +1,7 @@
 # FilterValue ***(cell)***
 
+<!-- synonyms: FilterValue, filter-value, 필터 값, 필터링 값, 필터 기준값, filter value, filter criteria, 대체 필터값, 셀 필터값, 필터 대체값, 필터용 값 -->
+
 > 셀의 원래 값 대신 필터링시 사용할 값을 설정합니다.
 >
 > 특히 타입이 `Html`이나 `버튼` 같이 편집이 불가능한 셀에 유용하게 사용하실 수 있습니다.

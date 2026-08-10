@@ -1,5 +1,7 @@
 # WithCredentials ***(cfg)***
 
+<!-- synonyms: WithCredentials, with credentials, ajax credentials, xhr withCredentials, CORS credentials, cookie ajax, ajax 쿠키, CORS 인증, 인증 정보 포함 요청, 크로스 도메인 쿠키, 크로스 오리진 인증 -->
+
 > [doSearch](/docs/funcs/core/do-search), [doSearchPaging](/docs/funcs/core/do-search-paging), [doSave](/docs/funcs/core/do-save) 사용시 내부 Ajax 요청에서 [withCredentials](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/withCredentials) 옵션을 설정할 수 있습니다.
 >
 > 쿠키나 인증 정보를 포함해야 하는 요청에 유용합니다.

@@ -1,4 +1,7 @@
 # getRowTop ***(method)***
+
+<!-- synonyms: getRowTop, get-row-top, 행 y좌표, 로우 y좌표, 행 위치, 위치 확인, 좌표 조회, position, top, y-coordinate -->
+
 > 데이터 행 내에서 y좌표값을  확인합니다.
 >
 > 최상단 행은 `0`을 리턴합니다.

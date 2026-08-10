@@ -34,7 +34,7 @@ options.Cols = [
 - [Enum col](./enum)
 - [EnumKeys col](./enum-keys)
 - [RadioIcon col](./radio-icon)
-- [RadioIconWidth col](./radio-icon-width)
+- [RadioIconWidth col](./radion-icon-width)
 - [BoolGroup col](./bool-group)
 - [Type appendix](/docs/appx/type)
 

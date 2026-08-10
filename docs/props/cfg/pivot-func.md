@@ -1,5 +1,7 @@
 # PivotFunc ***(cfg)***
 
+<!-- synonyms: PivotFunc, pivot func, pivot function, pivot aggregation, sum count max min avg, pivot calc, 피벗 함수, 피벗 집계, 피벗 합계, 피벗 카운트, 피벗 최대값, 피벗 최소값, 피벗 평균 -->
+
 > 피벗 시트의 데이터 값을 도출할 때 사용할 함수를 설정합니다. 
 >
 > [AcceptPivotData cfg](./accept-pivot-data) 를 통해 여러 개의 데이터 컬럼을 설정한다면 `PivotFunc` 도 동일한 개수로 맞춰주어야 합니다. 구분자는 `,(쉼표)` 를 이용합니다.

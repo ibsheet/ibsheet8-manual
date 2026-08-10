@@ -1,5 +1,7 @@
 # 트리 확장/접기 이벤트 발생 순서 ***(event flow)***
 
+<!-- synonyms: 트리 이벤트 순서, 트리 확장 접기 흐름, 노드 확장 이벤트, expand collapse 순서, tree event flow, tree expand collapse sequence -->
+
 > 트리 확장/접기 시 이벤트 발생 순서입니다.
 
 ### 마우스 사용

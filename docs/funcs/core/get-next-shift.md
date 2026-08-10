@@ -1,5 +1,7 @@
 # getNextShift ***(method)***
 
+<!-- synonyms: getNextShift, get-next-shift, 다음 행 탐색, 이후 행, 시프트, 이동, next shift, move -->
+
 > [데이터 로우 객체](/docs/appx/row-object)를 대상으로 사용가능한 탐색 메소드입니다.
 >
 > 기준이 되는 [데이터 로우 객체](/docs/appx/row-object)에서 2번째 인자의 수만큼 이후에 위치한 [데이터 로우 객체](/docs/appx/row-object)를 탐색해서 리턴합니다.

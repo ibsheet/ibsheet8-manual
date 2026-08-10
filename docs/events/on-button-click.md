@@ -1,4 +1,7 @@
 # onButtonClick ***(event)***
+
+<!-- synonyms: 버튼 클릭, 사이드 버튼 클릭, Button 컬럼 클릭, on-button-click, button click, side button click -->
+
 > [Button](/docs/props/col/button)속성 값이 `Button, Html`일 때 셀 내 사이드 버튼을 클릭하는 경우 호출되는 이벤트입니다.
 >
 > [Button](/docs/props/col/button)이 설정된 셀이 편집 불가능한 경우 버튼 클릭 뿐만 아니라 셀 내부를 클릭 시 이 이벤트가 호출됩니다.

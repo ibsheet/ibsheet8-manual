@@ -1,5 +1,7 @@
 # CanSelect ***(col)***
 
+<!-- synonyms: 선택 가능, 열 선택, 범위 선택, 선택 제외, 드래그 선택 제외, selectable, column select, range select exclude, drag select -->
+
 > 해당 열의 선택 가능 여부를 설정합니다.  
 > 드래그를 통한 범위 선택 시 `CanSelect: 0`으로 설정된 열은 선택 범위에 포함되지 않습니다.
 

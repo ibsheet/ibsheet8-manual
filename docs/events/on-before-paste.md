@@ -1,4 +1,7 @@
 # onBeforePaste ***(event)***
+
+<!-- synonyms: 붙여넣기 전, Ctrl+V 이전, 클립보드 붙여넣기 취소, on-before-paste, before paste, paste cancel -->
+
 > 시트 내에서 `ctrl+v`를 통해 붙여넣기가 이루지기 전에 발생합니다.
 >
 > `cols, pastedtext`의 내용을 수정하시면 붙여넣어질 내용이나 위치를 수정하실 수 있습니다.

@@ -1,5 +1,7 @@
 # CanResize ***(col)***
 
+<!-- synonyms: 열 너비 조정, 컬럼 리사이즈, 너비 변경, 드래그 리사이즈, 열 크기 변경, column resize, resize column, column width drag, resizable -->
+
 > 해당 컬럼의 열 너비(column width) 변경 가능 여부를 설정합니다.  
 > 사용자가 헤더 영역에서 컬럼 경계선을 드래그하여 열 너비를 조정할 수 있는지 여부를 제어합니다.  
 > `Cfg.CanColResize`가 `false`이면 `CanResize` 설정과 관계없이 열 너비 조정은 불가능합니다.

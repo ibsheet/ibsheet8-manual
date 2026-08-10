@@ -1,4 +1,7 @@
 # onMouseDown ***(event)***
+
+<!-- synonyms: 마우스 다운, 마우스 버튼 누름, 마우스 클릭 시작, on-mouse-down, mouse down, mousedown, button press -->
+
 > 시트에서 마우스가 눌려졌을때 호출되는 이벤트입니다.
 >
 > `1(true)`를 리턴 시 `onMouseDown`의 기본 동작을 막습니다.

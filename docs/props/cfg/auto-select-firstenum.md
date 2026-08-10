@@ -1,5 +1,7 @@
 # AutoSelectFirstEnum ***(cfg)***
 
+<!-- synonyms: AutoSelectFirstEnum, auto select first enum, first enum item, default enum value, enum default, combo default, 첫 번째 Enum 자동 선택, Enum 첫 항목, 콤보 첫 값, 신규 행 Enum 기본값, EnumKeys 자동 선택, 목록 첫 값 자동 선택, 드롭다운 첫 항목 -->
+
 > 신규 행을 추가하거나 [setAttribute](/docs/funcs/core/set-attribute)로 `Enum` / `EnumKeys`를 설정하는 경우, 
 > `Enum` 타입 컬럼의 첫 번째 항목이 자동으로 선택되도록 설정하는 옵션입니다.
 

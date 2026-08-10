@@ -1,4 +1,7 @@
 # onBeforeSort ***(event)***
+
+<!-- synonyms: 정렬 전, 소팅 전, 헤더 클릭 정렬 전, 정렬 취소, on-before-sort, before sort, sort cancel -->
+
 > 사용자가 헤더 셀을 클릭하였을 경우, 소팅이 이루어지기 전에 호출되는 이벤트입니다.
 >
 > [doSort](/docs/funcs/core/do-sort) 메소드를 통한 소팅에는 호출되지 않습니다.

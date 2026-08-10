@@ -1,5 +1,7 @@
 # Section ***(col)***
 
+<!-- synonyms: 열 섹션, 좌측 섹션, 우측 섹션, 틀 고정 섹션, LeftCols RightCols, section, column section, frozen section, fixed section -->
+
 > 열의 섹션을 확인합니다.
 >
 > 시트의 열 생성시, `LeftCols` 배열에 추가한 열은 틀고정을 기준으로 좌측 섹션으로 들어가고, `Cols` 배열에 넣은 열은 가운데, `RightCols` 섹션에 넣은 열은 우측 섹션으로 추가됩니다.

@@ -1,5 +1,7 @@
 # DateStrictMode ***(cell)***
 
+<!-- synonyms: 날짜 정밀 검사, 날짜 엄격 모드, 잘못된 날짜 처리, 날짜 유효성, 날짜 길이 검사, 날짜 검증, 날짜 스트릭트 모드, date-strict-mode, date strict mode, strict date, date validation, invalid date, date length check -->
+
 > 조회시 [Type](/docs/appx/type)이 `Date`인 셀에서 `DataFormat`이 설정된 경우 설정된 포맷과 길이가 일치하지 않거나 잘못된 날짜가 조회되는 경우 공백으로 처리합니다.
 >
 > `DataFormat`을 "yyyyMMdd" 로 설정한 후 "88" 이라는 값이 조회되는 경우 해당 셀 값은 공백으로 처리됩니다.

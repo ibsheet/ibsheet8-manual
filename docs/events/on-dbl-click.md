@@ -1,4 +1,7 @@
 # onDblClick ***(event)***
+
+<!-- synonyms: 더블클릭, 마우스 더블클릭, 셀 더블클릭, on-dbl-click, double click, dblclick, mouse double click -->
+
 > 사용자가 마우스로 더블클릭했을 때 호출되는 이벤트입니다.
 >
 > 웹의 특성상 [onClick](./on-click)이벤트가 먼저 발생하고, 해당 이벤트가 발생합니다.

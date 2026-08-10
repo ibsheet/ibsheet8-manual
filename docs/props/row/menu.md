@@ -1,5 +1,7 @@
 # Menu ***(row)***
 
+<!-- synonyms: row menu, context menu, right click menu, popup menu, row context menu, per-row menu, 컨텍스트 메뉴, 오른쪽 클릭 메뉴, 팝업 메뉴, 우클릭 메뉴, 행 메뉴, Menu 속성 -->
+
 > 마우스 우측 버튼 클릭시 보여질 컨텍스트 메뉴를 설정합니다.
 
 

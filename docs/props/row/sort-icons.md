@@ -1,5 +1,7 @@
 # SortIcons ***(Row>Header)***
 
+<!-- synonyms: sort icons, header sort icons, sort arrow, sort indicator, header sort display, sort icon hide, 정렬 아이콘, 헤더 정렬 아이콘, 소팅 아이콘, 정렬 화살표, 정렬 표시, SortIcons 속성 -->
+
 > 정렬 아이콘의 화면 표시여부와 동작을 설정합니다. 
 >
 > 해당 기능과 [SortIcons cfg](/docs/props/cfg/sort-icons)를 같이 사용하는 경우 옵션 `0`은 해당 옵션이 적용되고, 옵션 `1, 2`는[SortIcons cfg](/docs/props/cfg/sort-icons)이 적용됩니다. 

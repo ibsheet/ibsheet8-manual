@@ -1,4 +1,6 @@
 # NoCalculate ***(row)***
+
+<!-- synonyms: no calculate, exclude from subsum, exclude from sum, calc exclude, aggregation exclude, subtotal exclude, 합계 제외, 소계 제외, 계산 제외, 집계 제외, 합계 미포함, NoCalculate 속성 -->
 > 특정행에 대한 소계 또는 합계 계산 포함 여부를 설정합니다.  
 > `1(true)`로 설정시 해당 행은 소계 또는 합계 계산에 포함되지 않습니다.  
 > 동적으로 속성을 추가한 경우 [calculate](/docs/funcs/core/calculate)를 호출해야 소계가 재계산됩니다.

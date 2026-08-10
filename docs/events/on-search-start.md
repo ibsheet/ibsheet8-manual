@@ -1,4 +1,7 @@
 # onSearchStart ***(event)***
+
+<!-- synonyms: 조회 시작, 검색 시작, 데이터 조회 전, 조회 취소, 대기 이미지 표시, 로딩 시작, on-search-start, search start, before search, search begin -->
+
 > 조회 함수를 통한 데이터 조회가 시작하기 전에 발생합니다.  
 > `1(true)` 값을 리턴 시 조회가 취소됩니다.  
 > 메시지 표시 [(Cfg)SuppressMessage](/docs/props/cfg/suppress-message), 프로그레스바 [(Cfg)SearchProgress](/docs/props/cfg/search-progress)를 참고하세요.  

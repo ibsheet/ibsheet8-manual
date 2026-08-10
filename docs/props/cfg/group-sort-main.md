@@ -1,5 +1,7 @@
 # GroupSortMain ***(cfg)***
 
+<!-- synonyms: GroupSortMain, group sort main, group sort direction, group order, group asc desc, 그룹 정렬 방향, 그룹 오름차순, 그룹 내림차순, 그룹 열 정렬, 그룹핑 정렬 순서, 그룹 정렬 기본 -->
+
 > 그룹핑 사용시 그룹 열에 대해서 오름차순/내림차순 정렬 여부를 설정합니다.
 
 

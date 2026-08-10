@@ -1,5 +1,7 @@
 # LinkTarget ***(cell)***
 
+<!-- synonyms: LinkTarget, link-target, 링크 타겟, 링크 대상, target window, 새 창, _blank, link target, target 창, 타겟, 링크 이동창, target 속성 -->
+
 > 셀에 [Link](./link)속성이 있는 경우, 클릭시 이동할 `target Window`를 설정합니다.
 
 ### Type

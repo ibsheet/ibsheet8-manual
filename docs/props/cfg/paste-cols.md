@@ -1,5 +1,7 @@
 # PasteCols ***(cfg)***
 
+<!-- synonyms: PasteCols, paste cols, paste start column, paste column start, paste columns, Ctrl V column, 붙여넣기 시작 열, 붙여넣기 열, 붙여넣기 컬럼 위치, Ctrl V 열, 붙여넣기 시작 컬럼, 왼쪽부터 붙여넣기 -->
+
 > `Ctrl + V`로 붙여넣을 때 붙여넣기 시작 열(start column)을 설정합니다.  
 > 이 속성은 열 기준 시작 위치만 제어하며,  
 > 행 삽입 및 덮어쓰기 방식은 [PasteFocused](./paste-focused)에 의해 결정됩니다.

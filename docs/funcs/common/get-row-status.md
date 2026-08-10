@@ -1,5 +1,7 @@
 # getRowStatus ***(method)***
 
+<!-- synonyms: get row status, row status, row state, added deleted changed, row change state, row status string, 행 상태, 행 상태값, 행 상태 조회, 상태 확인, getRowStatus 메소드 -->
+
 > 특정 행의 상태값을 반환합니다. 
 >
 > 상태값 반환 우선순위는 아래와 같습니다. 

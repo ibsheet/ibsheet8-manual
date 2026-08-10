@@ -1,4 +1,7 @@
 # selectAllRows ***(method)***
+
+<!-- synonyms: selectAllRows, select-all-rows, 전체 행 선택, 모두 선택, 전체 선택, 행 선택해제, 전체 로우 선택, select, all, rows, toggle -->
+
 > 전체 행을 선택 혹은 선택해제 합니다.
 
 ### Syntax
@@ -29,7 +32,7 @@ sheet.selectAllRows(1);
 - [selectRow method](./select-row)
 - [selectRange method](./select-range)
 - [getSelectedRange method](./get-selected-range)
-- [getSelectedRow method](./cget-selected-row)
+- [getSelectedRows method](./get-selected-rows)
 - [onSelectEnd event](/docs/events/on-select-end)
 ### Since
 

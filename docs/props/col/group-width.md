@@ -1,4 +1,7 @@
 # GroupWidth ***(col)***
+
+<!-- synonyms: 그룹 열 너비, 그룹핑 시 너비, 그룹 트리 너비, 그룹 컬럼 폭, group width, group column width, group tree width, auto group width -->
+
 > 열이 그룹핑 될 때, 그룹 트리가 생성될 열(`GroupMain` 옵션에 지정된 열. `GroupMain` 옵션이 없을 시 `SEQ`를 제외한 첫 번째 열)의 너비를 지정한 크기로 조정합니다.
 값을 1로 설정 시 열의 데이터 양에 따라 자동으로 조절됩니다.
 <br/>

@@ -1,5 +1,7 @@
 # Changed ***(cell)***
 
+<!-- synonyms: Changed, 변경 여부, 수정 여부, 셀 변경, 수정 상태, 변경 표시, 수정된 셀, cell changed, modified, dirty, edited, change flag -->
+
 > 셀의 변경 여부를 나타냅니다.
 >
 > 셀의 값을 수정시 자동으로 `1(true)`로 수정되고, 값을 원래 값으로 복원하면 자동으로 속성이 제거됩니다.

@@ -1,5 +1,7 @@
 # ResultMask ***(col)***
 
+<!-- synonyms: 결과 마스크, 정규식 검사, 편집 종료 검증, 입력 검증, 값 유효성, result mask, regex validation, edit end validation, input regex -->
+
 > 셀 편집 종료시 입력된 글자를 검사할 자바스크립트 정규식을 설정합니다.
 >
 > 정규식 검사에 대한 로직은 [EditMask](./edit-mask)와 동일합니다.

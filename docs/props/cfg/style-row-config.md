@@ -1,4 +1,7 @@
 # StyleRowConfig ***(cfg)***
+
+<!-- synonyms: StyleRowConfig, style row config, style row, style toolbar, style persistence, StyleRow 저장, 스타일 행, 스타일 툴바, 스타일 설정 행, 스타일 저장 서버, 스타일 로드 저장, 스타일 서버 저장 -->
+
 > 시트 상단 혹은 하단에 별도의 행을 통해 시트의 스타일을 설정 할 수 있습니다.
 >
 > `StorageType`을 통해 스타일 정보를 저장할 방법을 설정할 수 있습니다.

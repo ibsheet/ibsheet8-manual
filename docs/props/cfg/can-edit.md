@@ -1,5 +1,7 @@
 # CanEdit ***(cfg)***
 
+<!-- synonyms: CanEdit, editable, read only, sheet edit, global edit lock, edit lock, 편집 가능, 편집 불가, 읽기 전용, 조회 전용, 편집 잠금, 전체 편집 제어, 편집 허용 여부, sheet readonly, 시트 편집 -->
+
 > 전체 시트의 셀 값 편집(edit) 가능 여부를 설정합니다.  
 > 조회 전용 화면 구성 또는 전체 수정 잠금(global edit lock) 처리 시 사용합니다.  
 > `CanEdit`이 `1`이 아닌 경우 `Row`, `Col`, `Cell` 단위의 `CanEdit` 설정은 적용되지 않습니다.  

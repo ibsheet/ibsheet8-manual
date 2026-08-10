@@ -1,4 +1,6 @@
 # showUploadDialog ***(method)***
+
+<!-- synonyms: show upload dialog, upload dialog, excel upload dialog, import dialog, csv upload dialog, upload popup, file upload dialog, 업로드 다이얼로그, 엑셀 업로드 창, 파일 업로드 창, CSV 업로드 창, 업로드 팝업, showUploadDialog 메소드 -->
 > 엑셀 업로드 시 옵션을 선택할 수 있는 다이얼로그입니다.  
 > 엑셀뿐만 아니라 `txt`, `csv` 파일도 업로드할 수 있습니다.  
 > 해당 함수는 `/plugins/ibsheet-dialog.js` 파일이 포함되어 있어야 사용하실 수 있습니다.  

@@ -1,4 +1,7 @@
 # getPageByIndex ***(method)***
+
+<!-- synonyms: getPageByIndex, get-page-by-index, 페이지 객체, 페이지 인덱스, 페이징, page by index, paging -->
+
 > 특정 `index`를 갖는 [페이지 객체](/docs/appx/page-object)를 리턴합니다.
 >
 > `index`는 `0`부터 시작합니다.

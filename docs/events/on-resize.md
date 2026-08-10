@@ -1,4 +1,7 @@
 # onResize ***(event)***
+
+<!-- synonyms: 시트 크기 변경, 리사이즈, 창 크기 변경, on-resize, resize, sheet resize, size changed -->
+
 > 시트의 크기가 변경될 때 발생합니다.
 
 ### Syntax

@@ -1,5 +1,7 @@
 # Class ***(col)***
 
+<!-- synonyms: CSS 클래스, 사용자 정의 CSS, 열 스타일, 클래스 지정, css class, custom class, column class, style class -->
+
 > 열에 적용할 `사용자 정의 CSS`를 설정합니다.
 >
 > `Type : "Button"`은 내부 구조상 `Class` 속성이 적용되지 않으므로, [AddClass](./add-class) 속성을 사용해야 합니다.

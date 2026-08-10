@@ -1,5 +1,7 @@
 # getLastRow ***(method)***
 
+<!-- synonyms: getLastRow, get-last-row, 마지막 행, 최하단행, 마지막 자식행, last row, bottom row -->
+
 > 최 하단행을 확인합니다.
 >
 > 트리 기능 사용시 row 인자를 설정하면 행이 갖고있는 마지막 자식행이 리턴됩니다.

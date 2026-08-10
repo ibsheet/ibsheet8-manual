@@ -1,5 +1,7 @@
 # FormatFix ***(col)***
 
+<!-- synonyms: 포맷 고정, 저장 시 포맷 적용, Format 유지, 포맷 문자열 저장, format fix, save with format, keep format on save, format preserve -->
+
 > 저장 함수([getSaveJson](/docs/funcs/core/get-save-json), [getSaveString](/docs/funcs/core/get-save-string), [doSave](/docs/funcs/core/do-save)) 호출시 `Format` 적용된 문자열로 추출하는 기능. 
 >
 > [getString](/docs/funcs/core/get-string)으로 출력하는 값과 동일함.

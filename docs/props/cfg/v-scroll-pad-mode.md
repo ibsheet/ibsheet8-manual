@@ -1,5 +1,7 @@
 # VScrollPadMode ***(cfg)***
 
+<!-- synonyms: VScrollPadMode, v scroll pad mode, vscroll padding, vertical scroll pad, header scroll pad, 세로 스크롤 여백, 세로 스크롤 상단 여백, 세로 스크롤 패딩, 헤더 여백 스크롤, V 스크롤 여백 -->
+
 > 세로 스크롤의 상단에 여백을 설정하는 옵션입니다.
 
 ### Type

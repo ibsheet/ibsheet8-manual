@@ -1,4 +1,7 @@
 # setSelectingCells ***(method)***
+
+<!-- synonyms: setSelectingCells, set-selecting-cells, 셀 선택, 선택 모드, SelectingCells 값, 선택 설정, 셀 선택 모드, 다중 선택, 선택 방식, selecting cells, cell selection, set selection, change mode, select mode -->
+
 > `SelectingCells`의 값을 동적으로 바꿀 수 있습니다. 
 >
 > 단, 멀티레코드([MultiRecord](/docs/props/cfg/multi-record))는 `SelectingCells` 의 값이 `0`으로 고정됩니다.

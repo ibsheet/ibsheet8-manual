@@ -1,4 +1,7 @@
 # selectCell ***(method)***
+
+<!-- synonyms: selectCell, select-cell, 셀 선택, 셀 선택해제, 셀 지정, 셀 활성화, 셀 토글, select, cell, toggle, deselect -->
+
 > 지정한 셀을 선택 혹은 선택해제 합니다.
 >
 > 시트 `Cfg`의 `SelectingCells`설정이 `0` 일때는 사용 하실 수 없습니다.
@@ -36,7 +39,7 @@ sheet.selectCell( row, col, 1);
 - [selectCol method](./select-col)
 - [selectRange method](./select-range)
 - [getSelectedRange method](./get-selected-range)
-- [getSelectedRow method](./cget-selected-row)
+- [getSelectedRows method](./get-selected-rows)
 - [onSelectEnd event](/docs/events/on-select-end)
 ### Since
 

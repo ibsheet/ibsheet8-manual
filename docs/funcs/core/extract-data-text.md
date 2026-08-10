@@ -1,4 +1,7 @@
 # extractDataText ***(method)***
+
+<!-- synonyms: 데이터 텍스트 추출, 문자열 추출, 시트 데이터 문자열, 텍스트로 변환, 데이터 문자열화, 시트 내보내기, extract-data-text, extractDataText, extract data text, get sheet text, sheet to text, export as text -->
+
 > 시트의 헤더를 포함한 모든 데이터를 문자열로 반환합니다.
 >
 > 컬럼과 컬럼 사이는 탭(`\t`)으로 행과 행사이는 줄바꿈(`\r\n`) 문자열로 구분하여 반환 합니다.

@@ -1,5 +1,7 @@
 # EditMaskFunc ***(cfg)***
 
+<!-- synonyms: EditMaskFunc, edit mask function, input mask, masking library, mask callback, format mask, 편집 마스킹, 마스킹 함수, 입력 마스크, 마스킹 라이브러리 연동, 마스킹 콜백, Resolve 콜백, 셀 마스크 함수, 편집 마스크 -->
+
 > 시트 내 특정 열에 해당하는 셀 편집시 사용될 외부 마스킹 라이브러리를 연동시킵니다.
 >
 > 마스킹을 추가하는 속성과 마스킹을 제거하는 속성(실제 셀에 넣어지는 값은 마스킹이 제거된 값이 필요합니다)을 쌍으로 함께 추가해야합니다.

@@ -1,4 +1,7 @@
 # TextFont ***(cell)***
+
+<!-- synonyms: 폰트, 글꼴, 서체, 글자체, 폰트 패밀리, 폰트 종류, 글꼴 지정, text font, font family, font-family, typeface, font name -->
+
 > 특정 셀의 `font-family`를 설정합니다.
 >
 > 여러개 폰트를 지정하거나 폰트에 띄어쓰기가 들어가는 경우에는 `single(')/double quotation(")`으로 지정합니다.

@@ -1,5 +1,7 @@
 # MaxSort ***(cfg)***
 
+<!-- synonyms: MaxSort, max sort, multi sort limit, multi column sort, max sort columns, header sort limit, 다중 정렬 개수, 다중 소팅 제한, 다중 정렬 최대 개수, 정렬 컬럼 수, 헤더 정렬 제한, 소팅 열 개수 -->
+
 > 용자가 헤더 셀을 클릭하여 다중 열 정렬(Multi Column Sort) 을 수행할 때, 연계하여 정렬할 수 있는 최대 열 개수를 제한하는 속성입니다.
 >
 > 화면에 보이는 열만 사용할 수 있으며, 너무 많은 열을 연계하여 정렬 시에는 성능 저하가 있을 수 있습니다.

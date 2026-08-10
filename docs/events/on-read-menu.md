@@ -1,4 +1,7 @@
 # onReadMenu ***(event)***
+
+<!-- synonyms: 컨텍스트 메뉴 표시, 우클릭 메뉴, 마우스 오른쪽 메뉴, on-read-menu, read menu, context menu, right click menu -->
+
 > 마우스 오른쪽 클릭 시 시트에 설정된 메뉴가 화면에 보여지기전 호출되는 이벤트 입니다.
 >
 > **[showMenu](/docs/funcs/core/show-menu) 메소드에 의해 호출되지 않습니다.**

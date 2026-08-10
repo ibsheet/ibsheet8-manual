@@ -1,5 +1,7 @@
 # UnescapeHTML ***(col)***
 
+<!-- synonyms: HTML 이스케이프 해제, 특수문자 변환, 엔티티 디코드, HTML 디코딩, unescape html, html decode, entity decode, escape convert -->
+
 > 조회 데이터의 HTML 이스케이프 문자(`&gt;`, `&amp;`, `&lt;`)를 원래 문자(<, &, >)로 변환하는 기능
 >
 > 적용 대상 컬럼: `Text`, `Lines`

@@ -1,4 +1,7 @@
 # getCols ***(method)***
+
+<!-- synonyms: getCols, get-cols, 열 목록, 컬럼 목록, 열 배열, 열 조회, 열 이름 목록, 열 개수, columns, list -->
+
 > 시트가 갖고있는 열을 ['colName1','colName2']와 같은 배열형태로 추출합니다. 
 >
 > 두개의 인자를 통해 특정 속성을 모두 갖고있는 열들을 찾을 수도 있습니다.

@@ -1,4 +1,7 @@
 # showMessageTime ***(method)***
+
+<!-- synonyms: showMessageTime, show-message-time, 메세지, 메시지, 메시지 다이얼로그, 자동 닫힘, 시간, 표시, message, dialog, time, alert -->
+
 > 시트 영역 가운데에 특정 시간동안 메세지 `Dialog`를 띄웁니다.
 > <br/>특정 시간 이후에는 자동으로 메세지가 `Dialog` 가 닫힙니다.
 > <br/>**`time` 속성을 설정하지 않으면 메세지 아래 반투명 레이어가 생기고 확인 버튼을 누를때까지 닫히지 않습니다. (alert같이 동작)**

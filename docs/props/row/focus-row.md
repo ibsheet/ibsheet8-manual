@@ -1,4 +1,6 @@
 # FocusRow ***(row)***
+
+<!-- synonyms: focus row, focused row design, focus row style, cursor row style, row focus decoration, focus row border, focus row background, 포커스 행, 커서 행 디자인, 포커스 행 스타일, 행 강조, 포커스 표시, FocusRow 속성 -->
 > 데이터 셀을 클릭시 보여지는 "커서 포커스 행"은 Table 객체 위에 DIV 객체가 떠있는 형태로 구성됩니다.
 >
 > 특정 행에 포커스가 있을 때 보여질 "커서 포커스 행"의 디자인을 설정합니다.

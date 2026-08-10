@@ -1,5 +1,7 @@
 # NoColor ***(col)***
 
+<!-- synonyms: 배경색 무시, 상태색 제거, 배경 없음, 색상 제외, no color, ignore background, remove state color, transparent column -->
+
 > 열의 기본 적용된 배경색이 무시됩니다.
 >
 > 홀수, 짝수행에 대한 배경색상([AlternateColor](/docs/props/row/alternate-color))나 상태(입력, 수정, 삭제)및 선택에 대한 색상이 무시되고, [Color](./color) 속성으로 통한 배경색도 적용되지 않게 할수 있습니다. 

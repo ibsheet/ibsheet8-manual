@@ -1,4 +1,7 @@
 # onAfterFilter ***(event)***
+
+<!-- synonyms: 필터 후, 필터링 완료, 필터 적용 후, doFilter 이후, on-after-filter, after filter, filter applied -->
+
 > 시트에서 필터링이 진행된 후 호출되는 이벤트입니다.
 
 ### Syntax

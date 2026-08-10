@@ -1,4 +1,7 @@
 # onEndDragCell ***(event)***
+
+<!-- synonyms: 셀 드래그 종료, 셀 드롭, 셀 드래그 완료, on-end-drag-cell, end drag cell, drop cell -->
+
 > 드래그 된 셀이 드랍되는 시점에 호출되는 이벤트입니다.
 
 

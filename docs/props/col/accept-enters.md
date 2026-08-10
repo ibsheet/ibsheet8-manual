@@ -1,5 +1,7 @@
 # AcceptEnters ***(col)***
 
+<!-- synonyms: Enter 처리, 엔터 처리, Lines 엔터, 줄넘김 입력, 편집 중 Enter, 여러 줄 입력, 멀티라인, enter behavior, line break, newline input, textarea enter, multi-line -->
+
 > `Lines` 타입에서 편집중 `Enter키` 입력시 동작에 대해 설정합니다. 
 
 

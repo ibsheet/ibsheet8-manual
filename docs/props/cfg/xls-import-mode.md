@@ -1,5 +1,7 @@
 # XlsImportMode ***(cfg)***
 
+<!-- synonyms: XlsImportMode, xls import mode, xls upload server, importData xls, xls server module, xls 업로드 서버, xls 서버 모듈, xls 파일 업로드 방식, xls 파일 클라이언트 서버 -->
+
 > importData() 함수를 사용할 때, 파일선택창에서 xls 파일 선택시 서버모듈로 전환할지 여부를 결정합니다. 
 
 ### Type

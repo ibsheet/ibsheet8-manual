@@ -1,5 +1,7 @@
 # Tip ***(row)***
 
+<!-- synonyms: row tip, tooltip, balloon tooltip, hover tooltip, row tooltip, tooltip text, tooltip content, 툴팁, 풍선도움말, 행 툴팁, 마우스 오버 안내, 툴팁 내용, 도움말 표시, Tip 속성 -->
+
 > 행 위에 마우스 커서 오버 시 풍선도움말을 표시할지 여부와,
 > 풍선도움말에 표시될 내용을 설정합니다.
 > 

@@ -1,4 +1,7 @@
 # CustomFormat ***(cell)***
+
+<!-- synonyms: 사용자 정의 포맷, 마스킹, 주민등록번호 마스킹, 카드번호 마스킹, 전화번호 마스킹, 커스텀 포맷, 사업자 등록번호, 우편번호 포맷, custom-format, custom format, masking, PostNo, IdNo, PhoneNo, CardNo, SaupNo -->
+
 > 원본 데이터에 대한 마스킹을 정의합니다.
 >
 > <mark>[Type](/docs/appx/type)이 `Text`또는 `Lines`인 경우</mark>에 사용가능한 사용자 정의 포맷으로, 사용자가 선언한 커스텀 포맷 함수도 지정가능합니다.

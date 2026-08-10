@@ -1,5 +1,7 @@
 # EmptyValue ***(col)***
 
+<!-- synonyms: 빈값 표시, placeholder, 값 없을 때 표시, 빈 셀 문구, 힌트 텍스트, empty value, placeholder text, blank display, no value text -->
+
 > 셀에 값이 없을때 보여질 글자를 설정합니다.
 >
 > `Html` input 객체의 `placeholder`속성과 비슷한 기능으로, 값을 읽거나(getValue) 저장하거나 엑셀로 다운로드할 때는 값이 없는 상태로 처리됩니다. 
