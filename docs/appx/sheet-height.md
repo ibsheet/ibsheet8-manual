@@ -75,7 +75,26 @@ NoVScroll은 SearchMode:0에서는 동작하지 않습니다.
 
 ## 4. 시트에 최대 높이 설정
 
-조회된 데이터가 적을때는 높이를 작게하여 보여주다가, 조회된 데이터가 일정 건수보다 많아졌을때 시트의 높이를 고정하고 세로스크롤이 보여지게 끔 하기 위해서는 다음과 같은 로직을 조회 종료 이벤트([onSearchFinish](/docs/events/on-search-finish))에서 호출하여 주세요.
+조회된 데이터가 적을 때는 높이를 작게 보여주다가, 데이터가 많아지면 특정 높이까지만 커지고 그 이상은 세로 스크롤로 보여주고 싶은 경우입니다.
+
+### 픽셀(px) 기준 — `NoVScroll` + `MaxVScroll` (권장)
+
+`NoVScroll`은 세로 스크롤을 두지 않고 조회된 데이터 개수만큼 높이를 늘려 전체를 보여줍니다. 여기에 [(Cfg)MaxVScroll](/docs/props/cfg/max-v-scroll)로 **최대 높이(px)** 를 지정하면, 그 높이까지만 커지고 넘으면 세로 스크롤이 생깁니다.
+
+```javascript
+options = {
+    Cfg: {
+        NoVScroll: 1,     //세로 스크롤 없이 데이터 전체 표시 (높이가 데이터에 따라 늘어남)
+        MaxVScroll: 500   //단, 500px를 넘으면 세로 스크롤 생성
+    }
+};
+```
+
+> `NoVScroll`(및 `MaxVScroll`)은 `SearchMode:0`에서는 동작하지 않습니다.
+
+### 행 수 기준 — 조회 종료 이벤트에서 직접 계산
+
+px가 아니라 **행 수**를 기준으로 제어하고 싶다면, 조회 종료 이벤트([onSearchFinish](/docs/events/on-search-finish))에서 다음과 같은 로직을 호출합니다.
 
 ```js
 var options = {
@@ -111,6 +130,7 @@ function resizeSheet(sheet,dataRowCnt, baseRowCnt){
 
 ### Read More
 - [NoVScroll cfg](/docs/props/cfg/no-v-scroll)
+- [MaxVScroll cfg](/docs/props/cfg/max-v-scroll)
 - [onSearchFinish event](/docs/events/on-search-finish) 
 
 

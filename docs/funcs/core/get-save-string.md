@@ -131,6 +131,7 @@ $.ajax({ /* ... */ });
 - [applySaveResult method](./apply-save-result)
 - [doSave method](./do-save)
 - [getSaveJson method](./get-save-json)
+- [ExcludeAddDelStatus cfg](/docs/props/cfg/exclude-add-del-status)
 - [getChangedData method](./get-changed-data)
 - [onValidation event](/docs/events/on-validation)
 - [SuppressMessage cfg](/docs/props/cfg/suppress-message)

@@ -1,6 +1,6 @@
 # PrevColumnMerge ***(cfg)***
 
-<!-- synonyms: PrevColumnMerge, prev column merge, previous column merge, merge by prev col, column merge range, 이전 컬럼 병합, 앞 컬럼 병합 기준, 이전 열 병합, 열 병합 이전 기준, DataMerge 앞 컬럼, setAutoMerge 이전 컬럼 -->
+<!-- synonyms: PrevColumnMerge, prev column merge, previous column merge, merge by prev col, column merge range, 이전 컬럼 병합, 앞 컬럼 병합 기준, 이전 열 병합, 열 병합 이전 기준, DataMerge 앞 컬럼, setAutoMerge 이전 컬럼, 앞 열 병합, 이전 열 기준 병합, 열 병합, 컬럼 병합 -->
 
 > 열 기준 병합 시 앞 열의 병합 범위를 기준으로 병합합니다.  
 > [DataMerge](/docs/props/cfg/data-merge)와 [HeaderMerge](/docs/props/cfg/header-merge) 옵션이 설정되어 있어야 정상적으로 동작합니다.  
@@ -21,10 +21,10 @@
 ### Options
 |Value|Description|
 |-----|-----|
-|`0`| 전체영역에 앞컬럼 머지기능을 사용안함 (`default`)|
-|`1`| 데이터 영역에만 앞컬럼머지기능을 사용|
-|`2`| 헤더 영역에서만 앞컬럼머지기능을 사용|
-|`3`| 데이터 및 헤더 영역에서 앞컬럼머지 기능 사용|
+|`0`|전체 영역에서 앞 열 병합 사용 안 함 (`default`)|
+|`1`|데이터 영역에서만 앞 열 병합 사용|
+|`2`|헤더 영역에서만 앞 열 병합 사용|
+|`3`|데이터와 헤더 영역 모두 앞 열 병합 사용|
 
 ### Example
 ```javascript

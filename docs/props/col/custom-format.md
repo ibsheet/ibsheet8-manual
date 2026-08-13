@@ -1,10 +1,18 @@
 # CustomFormat ***(col)***
 
-<!-- synonyms: 사용자 정의 포맷, 마스킹, 주민번호 마스킹, 카드번호 마스킹, 사업자번호 표시, 우편번호 형식, custom format, mask format, phone format, ssn mask, card mask -->
+<!-- synonyms: 사용자 정의 포맷, 마스킹, 주민번호 마스킹, 카드번호 마스킹, 사업자번호 표시, 우편번호 형식, custom format, mask format, phone format, ssn mask, card mask, 커스텀 포맷, 마스크, mask, 주민등록번호, 카드번호, 전화번호, 휴대폰번호, 안심번호, 사업자등록번호, 우편번호, 별표 마스킹, 자릿수 구분 표시 -->
 
 > 원본 데이터를 **마스킹(masking)하거나 특정 형식으로 표시하기 위한 사용자 정의 포맷**을 설정합니다.  
 > `CustomFormat`은 [Type](/docs/appx/type)이 `Text` 또는 `Lines`인 열에서 사용할 수 있습니다.  
 > 여러 개의 포맷을 `|` 구분자로 지정할 수 있으며, 사용자가 정의한 커스텀 포맷 함수도 지정할 수 있습니다.
+
+### Type
+`mixed`( `string` \| `function` )
+
+### Options
+|Value|Description|
+|-----|-----|
+|`string` \| `function` |예약어 또는 사용자 정의 함수 |
 
 ### 예약어
 |Value|Description|
@@ -18,16 +26,6 @@
 |`CardNo`|카드번호|
 |`PhoneNo`|전화번호(휴대폰번호, 안심번호)|
 
-
-### Type
-`mixed`( `string` \| `function` )
-
-### Options
-|Value|Description|
-|-----|-----|
-|`string` \| `function` |예약어 또는 사용자 정의 함수 |
-
-
 ### Example
 ```javascript
 
@@ -35,31 +33,31 @@ options.Cols = [
     
     //전화번호 포맷
     {Type: "Text", Name: "sPhone", CustomFormat: 'PhoneNo'}, 
-    // 0226212288  → 02-2621-2288
-    // 01073213834 → 010-7321-3834
+    // 02-2621-2288 (0226212288)
+    // 010-7321-3834 (01073213834)
 
-    //임의의 포멧을 정의
+    //임의의 포맷을 정의
     {Type: "Text", Name: "sawonNo", CustomFormat: '###-#####'}, 
-    //12345678 → 123-45678
+    //123-45678 (12345678)
 
     //주민번호 마스킹
     {Type: "Text", Name: "cNo", CustomFormat: 'IdNoMask'}, 
-    //8501242384211 → 850124-2******
+    //850124-2****** (8501242384211)
 
     //카드번호 마스킹
     {"Type": "Text", "Name": "sCard", "CustomFormat": "[General] ####-####-####-####|[ Amex ] ####-######-#####"},
 
     // 데이터 길이에 따라 포맷 자동 적용
     {Type: "Text", Name: "cNo", CustomFormat: 'IdNoMask|SaupNo'}, 
-    //주민번호  → 850124-2******
-    //사업자번호  → 625-84-12458
+    //주민번호: 850124-2******
+    //사업자번호: 625-84-12458
 
     //사용자 정의 함수
     {Type: "Text", Name: "ISDNS", CustomFormat: function(v, sheet, col, row){
         // 조회 데이터에 포함된 '-' 제거(붙여넣기 시에도 동작)
         v = v.replace(/-/g, "");
 
-        // 값의 길이에 따라 다른 포멧 적용
+        // 값의 길이에 따라 다른 포맷 적용
         if (v.length > 10) {
             return v.substr(0,6) + "-" + v.substr(6);
         } else {

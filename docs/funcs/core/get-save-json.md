@@ -133,6 +133,7 @@ $.ajax({ /* ... */ });
 - [applySaveResult method](./apply-save-result)
 - [doSave method](./do-save)
 - [getSaveString method](./get-save-string)
+- [ExcludeAddDelStatus cfg](/docs/props/cfg/exclude-add-del-status)
 - [ValidCheck cfg](/docs/props/cfg/valid-check)
 - [ValidateMessage cfg](/docs/props/cfg/validate-message)
 

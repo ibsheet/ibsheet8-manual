@@ -1,6 +1,6 @@
 # Added ***(row)***
 
-<!-- synonyms: added row, newly added row, new row status, row added state, insert row status, IBColorAdded, added flag, 신규행, 추가된 행, 행 추가 여부, 신규 상태, 새 행, 입력 행, Added 속성, 신규 행 배경색 -->
+<!-- synonyms: added row, newly added row, new row status, row added state, insert row status, IBColorAdded, added flag, 신규행, 추가된 행, 행 추가 여부, 신규 상태, 새 행, 입력 행, Added 속성, 신규 행 배경색, 신규 행 여부, 신규행 판별, 행 상태, 입력 상태, added, new row, row status, addRow, 신규행 삭제 -->
 
 > [addRow](/docs/funcs/core/add-row) 함수를 통해 추가된 행은  내부적으로 해당 속성 값을 1로 갖게 됩니다.
 >

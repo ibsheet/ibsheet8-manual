@@ -1,12 +1,10 @@
 # Deleted ***(row)***
 
-<!-- synonyms: deleted row, removed row, row deleted state, delete flag, IBColorDeleted, deleteRow flag, 삭제 여부, 삭제된 행, 삭제 상태, 행 삭제, 삭제 표시, Deleted 속성, 삭제 대상 -->
+<!-- synonyms: deleted row, removed row, row deleted state, delete flag, IBColorDeleted, deleteRow flag, 삭제 여부, 삭제된 행, 삭제 상태, 행 삭제, 삭제 표시, Deleted 속성, 삭제 대상, 삭제 행, 삭제 예정 행, 행 삭제 상태, deleted, delete status, deleteRow, 삭제 배경색 -->
 
-> [DeleteRow](/docs/funcs/core/delete-row) 함수 호출시 해당 행에 속성값이 `1(true)`로 설정됩니다.
->
-> `Deleted` 값을 `1(true)`로 설정되면 향후 삭제할 행의 의미로 배경색상이 .`IBColorDeleted 클래스`에서 정의한 색상으로 변경됩니다.
->
-> 해당 속성은 직접 설정하기 보다는 설정값을 확인하는 용도로 사용하실 것을 권합니다.
+> [deleteRow](/docs/funcs/core/delete-row) 함수 호출 시 해당 행의 속성값이 `1(true)`로 설정됩니다.  
+> `Deleted`가 `1(true)`이면 삭제 예정 행의 의미로 배경색이 `.IBColorDeleted` 클래스에 정의한 색상으로 변경됩니다.  
+> 이 속성은 직접 설정하기보다는 설정값을 확인하는 용도로 사용하실 것을 권합니다.
 
 
 ### Type
@@ -34,7 +32,8 @@ alert(cnt+"개의 삭제예정인 행이 존재합니다.");
 ### Read More
 - [Added row](./added)
 - [Changed row](./changed)
-- [DeleteRow method](/docs/funcs/core/delete-row)
+- [deleteRow method](/docs/funcs/core/delete-row)
+- [getRowsByStatus method](/docs/funcs/core/get-rows-by-status)
 
 ### Since
 

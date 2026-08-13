@@ -1,4 +1,7 @@
 # DataMerge ***(cfg)***
+
+<!-- synonyms: data merge, auto merge, cell merge, 자동 병합, 값 기준 병합, 열 병합, 행 병합 -->
+
 > 조회된 데이터 영역에서 값이 같은 셀을 기준으로 병합할지 여부 및 병합 종류를 설정합니다.  
 > 동일한 값이 연속으로 존재하는 경우 설정된 방식에 따라 셀이 자동 병합됩니다.  
 > - **열 기준 병합** : 같은 값을 가진 셀이 위/아래 방향으로 병합됩니다.  
@@ -6,8 +9,6 @@
 > 시트 생성 후 [setAutoMerge](/docs/funcs/core/set-auto-merge) 메소드를 이용하여 병합을 동적으로 변경할 수 있습니다.  
 > 소계([makeSubTotal](/docs/funcs/core/make-sub-total)) 사용 시 `usermerge` 설정에 따라 이 옵션이 무시될 수 있습니다. 
 > 자세한 내용은 makeSubTotal의 `usermerge` 파라미터를 참고하세요.
-
-<!-- synonyms: data merge, auto merge, cell merge, 자동 병합, 값 기준 병합, 열 병합, 행 병합 -->
 
 ### 참고
 
@@ -29,7 +30,7 @@
 ### Options
 |Value|Description|
 |-----|-----|
-|`0`|병합 안함 (`default`)<br/>![option0](/assets/imgs/dataMerge0.png "option0")|
+|`0`|병합 안 함 (`default`)<br/>![option0](/assets/imgs/dataMerge0.png "option0")|
 |`1`|열 기준 병합<br/>![option1](/assets/imgs/dataMerge1.png "option1")|
 |`2`|행 기준 병합<br/>![option2](/assets/imgs/dataMerge2.png "option2")|
 |`3`|열 기준 병합 후 행 기준 병합 수행<br/>![option3](/assets/imgs/dataMerge3.png "option3")|

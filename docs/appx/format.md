@@ -1,4 +1,7 @@
 # Format ***(appendix)***
+
+<!-- synonyms: 포맷, 표시 형식, 표시 포맷, display format, 값 표시 형식, 숫자 포맷, number format, 천 단위 콤마, 천단위 구분자, 소수점 자리, 퍼센트 표시, 통화 표시, 금액 표시, 날짜 포맷, 날짜 형식, date format, 요일 표시, 문자열 치환, 값 매핑, 코드값 변환, 코드 표시값, 대소문자 변환 -->
+
 > 셀 값이 IBSheet에 표시될 때 적용되는 **표시 포맷(display format)** 을 정의합니다.  
 > Format은 **데이터 표시 방식만 변경하며 실제 데이터 값은 변경하지 않습니다.**  
 > 값을 읽을 때([getValue](/docs/funcs/core/get-value))나 저장([doSave](/docs/funcs/core/do-save), [getSaveString](/docs/funcs/core/get-save-string)) 시에는 포맷이 적용되지 않은 **실제 값**이 사용됩니다. 
@@ -10,7 +13,7 @@
 다음 링크를 클릭하면 해당 포맷 설명으로 바로 이동합니다.
 
 - <a href="#text-lines-format">Text / Lines 타입 포맷</a>
-- <a href="#date-format">Date 타입 포맷</a>[](#)
+- <a href="#date-format">Date 타입 포맷</a>
 - <a href="#number-format">숫자 타입 포맷(Int / Float)</a>
 - <a href="#html-format">Html 타입 포맷</a>
 - <a href="#link-format">Link 타입 포맷</a>
@@ -32,7 +35,7 @@ Text 타입에서는 **문자열 변환, 문자열 치환, 값 매핑 방식의 
 * 첫 문자를 구분자로 사용하여 구분된 설정 값들의 나열로 정의됩니다.  
 * 구분자로 사용된 문자는 설정할 내용에 포함되면 안됩니다.
 
-##### Syntax
+#### Syntax
 ```javascript
 // 구분자 활용 방식 첫문자 '|'이 구분자
 Format: "|LetterType|Prefix|Postfix|Search|Flags|Replace"
@@ -47,7 +50,7 @@ Format: "|LetterType|Prefix|Postfix|Search|Flags|Replace"
 |Flags|자바스크립트 정규식 Flag (i,g,m 가능)<br/>i : 대소문자 구분 없음<br/>g : 전체 변경<br/>m : 줄넘김 포함 검색|
 |Replace|Search로 찾은 문자열을 대체할 문자열|
 
-##### Example
+#### Example
 
 ```javascript
 //열 설정
@@ -67,16 +70,16 @@ options.Cols = [
     {"sTitle":"붉은 악마=Red Devils"}
 ]}
 ```
-*시트내에 보여지는 데이터*<br>
+*시트내에 보여지는 데이터*<br/>
 ![보여지는 데이터](/assets/imgs/textFormat2.png "보여지는 데이터")
 
-<br><br>
+<br/><br/>
 
 ### 2) 객체 방식
   * JSON 형태로 실제 값과 화면에 표시될 값의 쌍으로 구성됩니다.
   * 표시 문자열에는 HTML을 사용할 수 있습니다.
  
-##### Syntax
+#### Syntax
 ```javascript
 // 객체 방식
 Format: {
@@ -90,7 +93,7 @@ Format: {
 |Key|셀의 실제 값|
 |Value|화면에 표시될 값|
 
-##### Example
+#### Example
 ```javascript
 // 열설정
 options.Cols = [
@@ -113,11 +116,11 @@ options.Cols = [
 ]}
 ```
 
-*시트내에 보여지는 데이터*<br>
+*시트내에 보여지는 데이터*<br/>
 ![보여지는 데이터](/assets/imgs/textFormat4.png "보여지는 데이터")
 
 
-<br><br><br><br>
+<br/><br/><br/><br/>
 
 ---
 <a id="date-format"></a>
@@ -163,28 +166,34 @@ Date 타입에서는 **예약어의 조합을 사용하여 날짜 표시 형식*
 |Format|Description|Example|
 |---|---|---|
 |yyyy|4자리 년도|2018|
-|yy|2자리 년도|2018 → 18|
-|y|1~2자리 년도|2018 → 18, 2008 → 8|
+|yy|2자리 년도|18 (2018)|
+|y|1~2자리 년도|18 (2018), 8 (2008)|
 |MMMM|월 이름(전체)|April / 4월|
 |MMM|월 이름(축약)|Apr / 4월|
 |MM|2자리 월|04|
-|M|1~2자리 월|12 → 12, 04 → 4|
+|M|1~2자리 월|12, 4 (04)|
 |dddd|요일(전체)|Friday / 금요일|
 |ddd|요일(축약)|Fri / 금|
 |dd|2자리 일|05|
-|d|1~2자리 일|12 →12, 04 →4|
+|d|1~2자리 일|12, 4 (04)|
 |HH|24시간 (00~23)|12|
-|H|24시간 (0~23)|12 → 12, 04 → 4|
+|H|24시간 (0~23)|12, 4 (04)|
 |hh|12시간 (01~12)|03|
-|h|12시간 (1~12)|12 → 12, 03 → 3|
+|h|12시간 (1~12)|12, 3 (03)|
 |mm|분 (00~59)|08|
 |m|분 (0~59)|12|
 |ss|초 (00~59)|09|
-|s|초 (0~59)|12 → 12, 03 → 3|
+|s|초 (0~59)|12, 3 (03)|
 |tt|오전 / 오후 표시|AM, PM |
 |t|오전 / 오후 표시(축약)|A, P |
+|f|밀리초(1자리, 100ms 단위)|`.f` → `.7`|
+|ff|밀리초(2자리, 10ms 단위)|`.ff` → `.72`|
+|fff|밀리초(3자리)|`.fff` → `.723`|
+|z|타임존 오프셋 표시자<br/>포맷 문자열의 끝에 위치해야 하며, 파싱 시 `Z`(UTC) / `+HH:mm` / `-HHmm` 등을 인식하여 UTC 기준 시각으로 보정합니다.|`yyyy-MM-dd HH:mm:ss z`|
 
-※ `h`, `hh`는 12시간 형식이므로 `t` / `tt`(오전/오후 표시자)와 함께 사용하는 것이 일반적입니다.
+※ `h`, `hh`는 12시간 형식이므로 `t` / `tt`(오전/오후 표시자)와 함께 사용하는 것이 일반적입니다.  
+※ 밀리초(`f`) 예약어를 사용하려면 앞에 구분 문자(예: `.`, `,`, `_` 등 알파벳/숫자가 아닌 문자)가 필요합니다. 예: `HH:mm:ss.fff`.  
+※ 타임존(`z`) 예약어는 포맷 문자열의 **가장 끝**에 위치해야 하며, 파싱 시 입력 문자열 끝의 오프셋 표기(`Z`, `+09:00`, `-0500` 등)를 인식하여 시간을 UTC 기준으로 보정한 뒤 timestamp로 저장합니다.
 
 
 ### Example
@@ -207,19 +216,41 @@ options.Cols = [
 ]}
 ```
 
-*실제 보여지는 데이터(Format)*<br>
-![보여지는 데이터](/assets/imgs/dateFormat1.png "보여지는 데이터")<br>
+*실제 보여지는 데이터(Format)*<br/>
+![보여지는 데이터](/assets/imgs/dateFormat1.png "보여지는 데이터")<br/>
 
-*편집시 보여지는 데이터(EditFormat)*<br>
+*편집시 보여지는 데이터(EditFormat)*<br/>
 ![편집시 보여지는 데이터](/assets/imgs/dateFormat2.png "편집시 보여지는 데이터")
 
 
-***Date타입과 그에 따른 포맷들(Format,EditFormat,DateFormat)을 [Extend](/docs/props/col/extend) 속성을 통해 한번에 정의할 수 있습니다.***
+### 밀리초/타임존을 포함한 예시
+
+```javascript
+options.Cols = [
+    // 밀리초(3자리) 포함 표시
+    {
+        Type: "Date",
+        Name: "createdAt",
+        Format:     "yyyy-MM-dd HH:mm:ss.fff",   // 화면 표시: 2026-08-07 14:32:05.723
+        EditFormat: "yyyy-MM-dd HH:mm:ss.fff",   // 편집 시 밀리초까지 편집 가능
+        DataFormat: "yyyy-MM-dd HH:mm:ss.fff"    // 서버 전송/조회도 같은 포맷
+    },
+    // 타임존 오프셋 포함
+    // 조회 데이터: "2026-08-07 14:32:05+09:00" → UTC 기준 05:32:05 로 저장
+    {
+        Type: "Date",
+        Name: "utcTime",
+        DataFormat: "yyyy-MM-dd HH:mm:ss z"
+    }
+];
+```
+
+
+***Date타입과 그에 따른 포맷들(Format,EditFormat,DataFormat)을 [Extend](/docs/props/col/extend) 속성을 통해 한번에 정의할 수 있습니다.***
 
 *Extend 사용 설정*
 
-```
-javascript
+```javascript
     options.Cols = [
         {
             "Name" : "startDate",
@@ -232,7 +263,7 @@ javascript
 
 
 
-<br><br><br><br>
+<br/><br/><br/><br/>
 
 ---
 <a id="number-format"></a>
@@ -293,7 +324,7 @@ options.Cols = [
     { "sNum":1000}
 ]}
 ```
-*실제 보여지는 데이터*<br>
+*실제 보여지는 데이터*<br/>
 ![보여지는 데이터](/assets/imgs/intFormat.png "보여지는 데이터")
 
 ### Escape 문자
@@ -316,6 +347,8 @@ options.Cols = [
 |---|---|---|
 |#,###|1234|1,234|
 |#,##0|1234|1,234|
+|#,###|0|(빈 칸)|
+|#,##0|0|0|
 |#,##0.00|1234.5|1,234.50|
 |#,##0.###### \\\\%|0.150|0.15%|
 |#,###원|1234|1,234원|
@@ -324,7 +357,7 @@ options.Cols = [
 천 단위 구분자(`GroupSeparator`)와 소수점 구분자(`DecimalSeparator`)는
 메시지 파일(ko.js, en.js 등) 설정을 통해 변경할 수 있습니다.
 
-<br><br><br><br>
+<br/><br/><br/><br/>
 
 ---
 <a id="html-format"></a>
@@ -386,7 +419,7 @@ options.Cols = [
 |---|---|
 |![조회데이터](/assets/imgs/htmlFormat1.png "조회 된 데이터")|![보여지는 데이터](/assets/imgs/htmlFormat2.png "보여지는 데이터")
 
-<br><br><br><br>
+<br/><br/><br/><br/>
 
 ---
 <a id="link-format"></a>
@@ -440,7 +473,7 @@ Format을 사용하여 **실제 링크 URL과 화면에 표시될 HTML을 설정
 |![보여지는 데이터](/assets/imgs/linkFormat1.png "보여지는 데이터")|![보여지는 데이터](/assets/imgs/linkFormat2.png "보여지는 데이터")|
 
 
-<br><br>
+<br/><br/>
 
 ### 2) 객체 방식
  * 객체(JSON) 형태로 **옵션 이름과 값을 직접 지정하는 방식**입니다.
@@ -490,7 +523,7 @@ Format을 사용하여 **실제 링크 URL과 화면에 표시될 HTML을 설정
 |![보여지는 데이터](/assets/imgs/linkFormat1.png "보여지는 데이터")|![보여지는 데이터](/assets/imgs/linkFormat2.png "보여지는 데이터")|
 
 
-<br><br><br><br>
+<br/><br/><br/><br/>
 
 ---
 
@@ -536,9 +569,9 @@ Format을 사용하여 **이미지 경로, HTML 요소, 클릭 링크 등을 설
         
     ]
 ```
-([Image 타입에 대한 데이터 구조 참고](./type))
+([Img 타입에 대한 데이터 구조 참고](./type))
 
-<br><br>
+<br/><br/>
 
 ### 2) 객체 방식
  * 객체(JSON) 형태로 `옵션 이름과 값을 직접 지정하는 방식`입니다.
@@ -566,7 +599,7 @@ Format을 사용하여 **이미지 경로, HTML 요소, 클릭 링크 등을 설
 |LinkPrefix|이미지 클릭 시 이동할 링크 앞에 추가될 URL|
 |LinkPostfix|이미지 클릭 시 이동할 링크 뒤에 추가될 URL|
 
-### Example
+#### Example
 ```javascript
     options.Cols = [
        {
@@ -584,7 +617,7 @@ Format을 사용하여 **이미지 경로, HTML 요소, 클릭 링크 등을 설
        
     ]
 ```
-<br><br><br><br>
+<br/><br/><br/><br/>
 
 ---
 
@@ -614,7 +647,7 @@ options.Cols = [
         Name: "attach",
         Type: "File",
         Accept: "image/*", //업로드를 허용할 파일 형식을 지정
-        Format: "*Name* <br> <img src='*Url*' height='200' width='200'>"
+        Format: "*Name* <br/> <img src='*Url*' height='200' width='200'>"
     }
 ]
 

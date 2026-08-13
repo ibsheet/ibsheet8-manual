@@ -1,10 +1,9 @@
 # AutoRowHeight ***(cfg)***
 
-> [SearchMode](/docs/props/cfg/search-mode): 0, 3 시트에서, 데이터 행의 높이가 서로 달라도 **세로 스크롤과 화면 렌더링이 정확**하도록 지원하는 옵션입니다.  
-> 이미지나 여러 줄 텍스트로 인해 행 높이가 달라지는 경우에도,  
-> 각 행의 높이에 맞춰 스크롤과 화면 표시를 정확히 처리합니다.
-
 <!-- synonyms: auto row height, dynamic row height, variable row height, row height auto adjust, 가변 행 높이, 행 높이 자동, 줄바꿈 행 높이 -->
+
+> [SearchMode](/docs/props/cfg/search-mode): 0, 3 시트에서, 데이터 행의 높이가 서로 달라도 **세로 스크롤과 화면 렌더링이 정확**하도록 지원하는 옵션입니다.  
+> 이미지나 여러 줄 텍스트로 인해 행 높이가 달라지는 경우에도, 각 행의 높이에 맞춰 스크롤과 화면 표시를 정확히 처리합니다.
 
 
 ### 적용 가능한 컬럼 조건
@@ -34,7 +33,7 @@
 ### Options
 |Value|Description|
 |-----|-----|
-|`0` (`false`)|행 높이 자동 맞춤 사용 안함 (`default`)|
+|`0` (`false`)|행 높이 자동 맞춤 사용 안 함 (`default`)|
 |`1` (`true`)|행 높이 자동 맞춤 사용|
 
 ### Example

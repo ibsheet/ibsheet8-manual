@@ -67,6 +67,7 @@ sheet.doSave({
 - [onAfterSave event](/docs/events/on-after-save)
 - [getSaveJson method](./get-save-json)
 - [getSaveString method](./get-save-string)
+- [ExcludeAddDelStatus cfg](/docs/props/cfg/exclude-add-del-status)
 - [Timeout cfg](/docs/props/cfg/timeout)
 - [SuppressMessage cfg](/docs/props/cfg/suppress-message)
 - [ValidCheck cfg](/docs/props/cfg/valid-check)

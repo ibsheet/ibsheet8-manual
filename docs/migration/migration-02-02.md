@@ -80,7 +80,7 @@ IBSheet8은 **열의 `Type`(`Date`/`Int`/`Text` 등)을 먼저 정하고 거기�
 |IdNo(주민), SaupNo(사업자), PostNo(우편), CardNo(카드), PhoneNo(전화)|`Type:"Text"` + [CustomFormat (col)](/docs/props/col/custom-format) (숫자+구분자 마스크)|
 |Number|`Type:"Text"` + [EditMask (col)](/docs/props/col/edit-mask)로 숫자만 입력|
 
-날짜의 경우, 자주 쓰는 포맷 묶음(`Format`/`DataFormat`/`EditFormat`)을 `IB_Preset` 변수에 정의해 두고  
+날짜의 경우, 자주 쓰는 포맷 묶음(`Format`/`DataFormat`/`EditFormat`)이 `IB_Preset`에 이미 정의되어 제공되므로  
 [Extend (col)](/docs/props/col/extend)로 한 번에 설정할 수 있습니다.
 ```javascript
 //AS-IS
@@ -96,7 +96,23 @@ opt.Cols = [
     {Name:"eDate",Extend:IB_Preset.YMD},
 ];
 ```
-IB_Preset 변수는 `ibsheet-common.js` 파일 내에 있습니다.
+IB_Preset 변수는 `ibsheet-common.js` 파일 내에 있습니다.  
+IBSheet8은 아래 날짜 프리셋을 `ibsheet-common.js`의 `window.IB_Preset`에 **기본 제공**합니다.  
+직접 정의하지 않아도 `Extend`로 바로 사용할 수 있으며, IBSheet7에서 쓰던 이름 형식과 아래처럼 대응됩니다.
+
+|IBSheet7 Format|IBSheet8 프리셋|Format(표시)|EditFormat|DataFormat|
+|---|---|---|---|---|
+|`Ymd`|`IB_Preset.YMD`|`yyyy/MM/dd`|`yyyyMMdd`|`yyyyMMdd`|
+|`Ym`|`IB_Preset.YM`|`yyyy/MM`|`yyyyMM`|`yyyyMM`|
+|`Md`|`IB_Preset.MD`|`MM/dd`|`MMdd`|`MMdd`|
+|`Hms`|`IB_Preset.HMS`|`HH:mm:ss`|`HHmmss`|`HHmmss`|
+|`Hm`|`IB_Preset.HM`|`HH:mm`|`HHmm`|`HHmm`|
+|`YmdHms`|`IB_Preset.YMDHMS`|`yyyy/MM/dd HH:mm:ss`|`yyyyMMddHHmmss`|`yyyyMMddHHmmss`|
+|`YmdHm`|`IB_Preset.YMDHM`|`yyyy/MM/dd HH:mm`|`yyyyMMddHHmm`|`yyyyMMddHHmm`|
+
+이 외에 `IB_Preset.MDY`(`MM-dd-yyyy`), `IB_Preset.DMY`(`dd-MM-yyyy`)도 제공합니다.
+
+> **프리셋 키는 대소문자를 구분합니다.** IBSheet7의 `Ym`을 `IB_Preset.Ym`으로 쓰면 동작하지 않으며, 반드시 `IB_Preset.YM`(대문자)로 참조해야 합니다.
 
 
 ### 그외에 속성
@@ -110,6 +126,7 @@ IB_Preset 변수는 `ibsheet-common.js` 파일 내에 있습니다.
 |BackColor|[Color (col)](/docs/props/col/color)로 속성명 변경. 사용법은 동일합니다.|
 |CalcLogic|[Formula (col)](/docs/props/col/formula) 속성으로 변경. 셀 값 외에 셀/행 속성(색상·편집 가능 여부 등)도 [attribute+Formula (col)](/docs/props/col/attribute-formula)과 [attribute+Formula (row)](/docs/props/row/attribute-formula)로 동적 계산할 수 있게 확장되었습니다.|
 |CaseSensitive|[CaseSensitive (col)](/docs/props/col/case-sensitive)로 동일 (필터/정렬 시 대소문자 구분, `0`:구분 안 함 / 기본 `1`)<br/>ex) `{Type:"Text", Name:"sName", CaseSensitive:0}`|
+|ClearHeaderCheck|헤더 전체 체크박스만 언체크로 초기화하던 메소드. IB8은 [setAttribute (method)](/docs/funcs/core/set-attribute)로 헤더 셀의 `Checked` 속성을 `0`으로 설정합니다(헤더만 바뀌고 데이터 행은 영향 없음).<br/>ex) `sheet.setAttribute(sheet.Header, "chk", "Checked", 0)`|
 |ColMerge|[ColMerge (col)](/docs/props/col/col-merge)속성으로 동일합니다.|
 |ComboCode,ComboText|위에 `Combo`, `ComboEdit` 타입에 대한 마이그레이션에서 언급한 것과 같이 [Enum (col)](/docs/props/col/enum), [EnumKeys (col)](/docs/props/col/enum-keys)로 변경되었습니다.<br/>마이그레이션시 IBSheet8에서는 첫번째 글자를 구분자로 사용하는 것을 주의해 주세요.|
 |ComboDisabled|[EnumDisabled (col)](/docs/props/col/enum-disabled)로 변경 (Enum 아이템별 선택 불가 설정, 첫 글자 구분자)<br/>ex) `{Type:"Enum", Name:"rel", Enum:"|A|B|C", EnumDisabled:"#0#1#0"}`|

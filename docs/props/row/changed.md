@@ -1,14 +1,11 @@
 # Changed ***(row)***
 
-<!-- synonyms: changed row, modified row, edited row, dirty row, row changed state, IBColorChanged, change flag, 변경 여부, 수정 여부, 변경된 행, 수정된 행, 변경 상태, 수정 상태, Changed 속성, 수정 표시 -->
+<!-- synonyms: changed row, modified row, edited row, dirty row, row changed state, IBColorChanged, change flag, 변경 여부, 수정 여부, 변경된 행, 수정된 행, 변경 상태, 수정 상태, Changed 속성, 수정 표시, 수정 행, 행 수정 상태, changed, change status, 수정 배경색 -->
 
-> 행의 변경 여부를 나타냅니다.
->
-> 행의 값을 수정시 자동으로 `1(true)`로 수정되고, 값을 원래 값으로 복원하면 자동으로 속성이 제거됩니다.
->
-> 별도로 [NoColor](./no-color) 속성을 설정하지 않으면, 수정시 배경색상은 css/default(테마)/main.css파일에 `.IBColorChanged`로 설정한 색상 (`기본값:#FFFFD6` 연한노란색)으로 변경됩니다.
->
-> 이 속성은 직접 값을 변경하기 보다는 수정 여부를 확인하는 용도로 사용할 것을 권합니다.
+> 행의 변경 여부를 나타냅니다.  
+> 행의 값을 수정하면 자동으로 `1(true)`가 되고, 원래 값으로 복원하면 자동으로 속성이 제거됩니다.  
+> 별도로 [NoColor](./no-color) 속성을 설정하지 않으면, 수정 시 배경색은 `css/default(테마)/main.css` 파일에 `.IBColorChanged`로 설정한 색상(`기본값:#FFFFD6` 연한 노란색)으로 변경됩니다.  
+> 이 속성은 직접 값을 변경하기보다는 수정 여부를 확인하는 용도로 사용할 것을 권합니다.
 
 ### Type
 `boolean`
@@ -35,6 +32,7 @@ alert(cnt+"개의 수정된 행이 존재합니다.");
 ### Read More
 - [Added row](./added)
 - [Deleted row](./deleted)
+- [getRowsByStatus method](/docs/funcs/core/get-rows-by-status)
 
 
 ### Since

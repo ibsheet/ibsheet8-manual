@@ -1,6 +1,6 @@
 # Size ***(cfg)***
 
-<!-- synonyms: Size, sheet size, row height, font size, Tiny Small Medium Large, sheet density, 시트 크기, 시트 사이즈, 행 높이, 폰트 크기, 기본 행 높이, Tiny Small Medium, 시트 밀도, 최소 행 높이 -->
+<!-- synonyms: Size, sheet size, row height, font size, Tiny Small Medium Large, sheet density, 시트 크기, 시트 사이즈, 행 높이, 폰트 크기, 기본 행 높이, Tiny Small Medium, 시트 밀도, 최소 행 높이, 글자 크기, 아이콘 크기, 셀 크기 -->
 
 > 각 행의 최소 높이와 폰트 크기, 그리고 달력이나 드롭다운 같은 기본 컨트롤 아이콘 크기를 함께 설정합니다.  
 > 시트 생성 시 기본 행 높이는 `30px` 이며, 이보다 줄이려면 `Size` 속성을 통해 더 작게 설정해야 합니다.  

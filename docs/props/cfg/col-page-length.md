@@ -1,10 +1,9 @@
 # ColPageLength ***(cfg)***
 
-> `ColPage` 사용 시 한 번에 렌더링할 열(Col)의 개수를 설정합니다.  
-> `ColPage`는 컬럼 가상 렌더링 방식으로 동작하며,  
-> 설정한 개수만큼 컬럼을 묶어서 렌더링합니다.
-
 <!-- synonyms: col page length, column page size, virtual column size, 컬럼 렌더링 개수 -->
+
+> `ColPage` 사용 시 한 번에 렌더링할 열(Col)의 개수를 설정합니다.  
+> `ColPage`는 컬럼 가상 렌더링 방식으로 동작하며, 설정한 개수만큼 컬럼을 묶어서 렌더링합니다.
 
 ### Type
 `number`

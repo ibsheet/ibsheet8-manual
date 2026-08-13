@@ -2,9 +2,11 @@
 
 <!-- synonyms: 행 삭제, 로우 삭제, 삭제 상태, delete status, 삭제 플래그 -->
 
-> 지정한 행의 <mark>상태를 삭제로 변경</mark>합니다.  
+> 지정한 행의 상태를 삭제로 변경합니다.  
 > 행이 시트에서 실제로 제거되는 것이 아니라, [Deleted](/docs/props/row/deleted) 속성값이 `1`로 세팅됩니다.  
 > 행을 시트에서 즉시 제거하려면 [removeRow](./remove-row)를 사용하세요.  
+> [addRow](./add-row)로 추가한 신규(`Added`) 행에 `deleteRow`를 쓰면 `Deleted`만 세팅되어 `Added`+`Deleted` 상태가 되고, 저장 시 함께 추출됩니다.  
+> 신규 행은 [removeRow](./remove-row)로 제거하거나 [ExcludeAddDelStatus (cfg)](/docs/props/cfg/exclude-add-del-status)로 저장 추출에서 제외하세요.  
 > 트리의 경우 자식 행들도 함께 삭제 상태로 변경됩니다.
 
 ### Syntax
@@ -30,9 +32,21 @@ boolean deleteRow( row , del , valid, visible);
 sheet.deleteRow({row:sheet.getRowById("AR5"), del:1});
 ```
 
+```javascript
+// 삭제 버튼: 신규행은 즉시 제거, 그 외는 삭제 상태로 변경
+var frow = sheet.getFocusedRow();
+if (frow.Added) {
+    sheet.removeRow(frow);     // 신규행은 서버에 없던 행이므로 즉시 제거
+} else {
+    sheet.deleteRow(frow, 1);  // 그 외는 삭제 상태(Deleted=1)
+}
+```
+
 ### Read More
 - [deleteRows method](./delete-rows)
 - [removeRow method](./remove-row)
+- [Added row](/docs/props/row/added)
+- [ExcludeAddDelStatus cfg](/docs/props/cfg/exclude-add-del-status)
 - [onBeforeRowDelete event](../../events/on-before-row-delete)
 - [onAfterRowDelete event](../../events/on-after-row-delete)
 

@@ -51,7 +51,9 @@
   - `4` **ServerPaging** — **페이지 번호**로 이동(조회한 페이지는 캐싱).
   - `5` **ServerPaging2** — 페이지 이동 시 **항상 서버를 재조회**(최신 데이터 반영이 중요할 때).
 
-> 정확한 데이터 건수 기준선은 컬럼 수, 셀 내용, 서버 환경에 따라 달라지므로 단정하기 어렵습니다. 전체를 한 번에 받았을 때 부담이 없으면 `0`~`2`, 그렇지 않으면 `3`~`5`를 기준으로 삼고, 필요한 기능은 위 **비교표**에서 확인하세요. 예를 들어 `Pivot`, `Tree`, `makeSubTotal`, `(Col) FormulaRow`는 서버 페이징(`3`/`4`/`5`)에서 제약이 있습니다.
+> 정확한 데이터 건수 기준선은 컬럼 수, 셀 내용, 서버 환경에 따라 달라지므로 단정하기 어렵습니다.  
+> 전체를 한 번에 받았을 때 부담이 없으면 `0`~`2`, 그렇지 않으면 `3`~`5`를 기준으로 삼고, 필요한 기능은 위 **비교표**에서 확인하세요.  
+> 예를 들어 `Pivot`, `Tree`, `makeSubTotal`, `(Col) FormulaRow`는 서버 페이징(`3`/`4`/`5`)에서 제약이 있습니다.
 
 ### SearchMode: 0 (FastLoad)
 
@@ -60,6 +62,9 @@
 
 > 각 행의 높이는 모두 동일해야 하며, [(Appendix)기능에 제약사항](/docs/appx/fastload-constraints)이 있습니다.  
 > 데이터행의 높이가 일정하지 않다면 [(Cfg)AutoRowHeight](./auto-row-height)를 설정하시기 바랍니다.
+
+> FastLoad는 화면에 보이는 셀(보이는 행 × 열)만큼 렌더하므로, 시트 높이가 크거나 컬럼이 많으면 한 번에 그리는 셀이 많아져 렌더 부담이 커질 수 있습니다.  
+> 컬럼이 많은 경우 [(Cfg)ColPage](./col-page)(보이는 컬럼만 렌더), [(Cfg)NoRenderHidden](./no-render-hidden)(숨긴 컬럼 미렌더)으로 완화할 수 있습니다.
 
 ```javascript
 options.Cfg = { SearchMode: 0 };
@@ -78,7 +83,7 @@ sheet.loadSearchData({ data: jsonData });
 - [(Method)updateClientPaging](/docs/funcs/core/update-client-paging) 함수를 이용해서 동적으로 페이지의 개수를 변경하고 재계산할 수 있습니다.
 - [InfoRowConfig](./info-row-config)를 사용해 페이지 번호를 표시해야 페이지를 클릭하여 이동할 수 있습니다.
 
-> **<mark>주의</mark>** : `(Method) makeSubTotal` 지원하지 않습니다.
+> **주의** : `(Method) makeSubTotal` 지원하지 않습니다.
 
 ```javascript
 // 기본 페이지 번호
@@ -138,7 +143,7 @@ sheet.loadSearchData({ data: jsonData });
 - `(Col) FormulaRow`는 사용할 수 없습니다. 전체 합계가 필요한 경우 서버에서 계산하여 [Foot](/docs/start/row) 또는 [showFixedRows](/docs/funcs/core/show-fixed-rows)로 Footer에 표시합니다.
 - `(Method) makeSubTotal`은 지원하지 않습니다.
 
-> **<mark>주의</mark>**
+> **주의**
 > - `Type:Lines, Img`나 `Wrap:1` 과 같이 데이터 행의 높이가 일정하지 않은 속성을 사용하려면 [(Cfg)AutoRowHeight](./auto-row-height)를 설정해야 합니다.
 
 ```javascript

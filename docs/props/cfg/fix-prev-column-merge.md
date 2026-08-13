@@ -1,6 +1,6 @@
 # FixPrevColumnMerge ***(cfg)***
 
-<!-- synonyms: FixPrevColumnMerge, fix prev column merge, fix reference column merge, anchor column merge, base column merge, 기준 열 병합, 기준 컬럼 병합, 앞 컬럼 무시 병합, 병합 기준 열, 열 병합 기준, DataMerge 기준, setAutoMerge -->
+<!-- synonyms: FixPrevColumnMerge, fix prev column merge, fix reference column merge, anchor column merge, base column merge, 기준 열 병합, 기준 컬럼 병합, 앞 컬럼 무시 병합, 병합 기준 열, 열 병합 기준, DataMerge 기준, setAutoMerge, 행 병합, 고정 열 병합, 위아래 병합 -->
 
 > 행 병합(위아래로 병합) 시 지정한 기준 열의 병합 범위를 기준으로 병합하는 기능입니다.  
 > 기준 열보다 `Index`가 큰 열에 대해서만 적용됩니다.  

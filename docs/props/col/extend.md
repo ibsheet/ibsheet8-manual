@@ -14,9 +14,11 @@
 > 이 경우 모든 프로젝트의 개발자가 위 내용을 숙지하여 달러가 표현되야 하는 모든 열에 대해서 [Type (col)](/docs/props/col/type), [Format (col)](/docs/props/col/format), [Width (col)](/docs/props/col/width) 등을 설정하는 것보다, 이러한 설정 정보를 미리 변수에 담아두고 해당 열을 만들때 변수의 내용을 적용하게 끔 한다면 훨신 쉽게 동일한 형태의 열을 만들 수 있습니다.
 >
 > 이렇게 `Extend` 속성은 공통 변수에 담긴 열 설정 정보를, 해당열에 적용시키는 기능을 합니다.
+> 이런 공통 열 설정은 화면에서 접근할 수 있는 변수에 미리 정의해 두기만 하면 되고, `Extend`는 그 값을 읽어와 적용할 뿐입니다. 정의 위치는 자유입니다.  
+> 배포 파일에 함께 들어 있는 `ibsheet-common.js`에는 `IB_Preset`으로 날짜 형식 프리셋(`YMD`, `YMDHMS` 등)이 예시로 정의돼 있으며, `USD`처럼 프로젝트에서 필요한 설정은 여기에 직접 추가해 함께 사용합니다.
 > `Extend` 속성은 시트 생성시(create)에만 설정 가능하며, 이미 생성된 시트에는 적용되지 않습니다.
 >
-> **<mark>주의</mark> : `Extend`을 통해 설정하는 속성과 동일한 속성을 시트 생성시 설정했을 경우에는, 어느 속성을 앞에 설정하느냐에 따라 우선순위가 결정됩니다(헤더 설정은 제외됩니다. 헤더의 경우 Cols 속성이 우선 순위가 더 높습니다).**
+> **주의 : 같은 속성을 직접설정과 `Extend`에 모두 주면 `Cols` 항목에서 뒤에 쓴 값이 이깁니다. 단, 헤더(`Header`)는 순서와 무관하게 직접 지정한 값이 우선합니다.**
 
 ```javascript
 var defaultWidth = {Width: 100, MinWidth: 70};
@@ -48,8 +50,6 @@ var IB_Preset = {
     ... 여러가지 열 형식을 미리 정의해 둔다 ...
 };
 
-
-
 //시트 생성시 Extend를 이용하여 열 생성
 //(Name속성만 설정하고 나머지 설정은 Extend로 반영받는다.)
 options.Cols = [
@@ -65,7 +65,11 @@ options.Cols = [
 - [Demo of Extend](https://jsfiddle.net/gh/get/library/pure/ibsheet/ibsheet8-manual-sample/tree/master/samples/properties/Col/Extend/)
 
 ### Read More
-
+- [Type col](/docs/props/col/type)
+- [Format col](/docs/props/col/format)
+- [DataFormat col](/docs/props/col/data-format)
+- [EditFormat col](/docs/props/col/edit-format)
+- [Width col](/docs/props/col/width)
 
 ### Since
 
