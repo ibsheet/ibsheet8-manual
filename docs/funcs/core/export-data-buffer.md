@@ -1,6 +1,6 @@
 # exportDataBuffer ***(method)***
 
-<!-- synonyms: 엑셀 버퍼링, 다중 시트 엑셀 다운로드, 여러 시트 엑셀, 워크시트 분리, export data buffer -->
+<!-- synonyms: 엑셀 버퍼링, 다중 시트 엑셀 다운로드, 여러 시트 엑셀, 여러 시트를 한 파일로, 시트 합치기, 워크시트 합치기, 워크시트 분리, 컬럼별 워크시트 분리, exportDataBuffer, export data buffer, combine sheets excel -->
 
 > 여러 시트의 내용을 하나의 엑셀 파일에 다운로드할 때 사용합니다.  
 > `exportDataBuffer(true)`로 시작하면 이후 각 시트의 [exportData](./export-data) 호출이 즉시 다운로드되지 않고 버퍼에 누적되며,   

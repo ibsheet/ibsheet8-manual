@@ -1,6 +1,6 @@
 # 엑셀 서버 모듈 트러블슈팅 ***(appendix)***
 
-<!-- synonyms: 엑셀 다운로드 안됨, 엑셀 업로드 안됨, XssFilter 엑셀, HtmlFilter 엑셀, MarkupTagDelimiter, csrf 엑셀, X-Frame-Options 엑셀, Spring Security 엑셀, jsp 없이 엑셀, 서블릿 엑셀, 엑셀 필터 인코딩, iframe 엑셀 차단 -->
+<!-- synonyms: 엑셀 다운로드 안됨, 엑셀 업로드 안됨, XssFilter 엑셀, HtmlFilter 엑셀, MarkupTagDelimiter, csrf 엑셀, X-Frame-Options 엑셀, Spring Security 엑셀, jsp 없이 엑셀, 서블릿 엑셀, 엑셀 필터 인코딩, iframe 엑셀 차단, getDownError, getLoadError, directDown2Excel 오류 메시지, directLoadExcel 오류 처리, 중계 페이지 오류 메시지, 조회 건수 초과 안내, 다운로드 막기, onExportFinish 오류, onImportFinish 오류 -->
 
 > 서버 모듈([down2Excel](/docs/funcs/excel/down-to-excel) / [loadExcel](/docs/funcs/excel/load-excel)) 사용 시 자주 겪는 환경 문제와 해결 방법입니다.
 
@@ -34,24 +34,23 @@ sheet.loadExcel({
 
 ## directDown2Excel 중계 페이지에서 오류 메시지 보내기 (getDownError)
 
-`directDown2Excel` 함수를 호출하면 요청이 **개발자가 직접 작성하는 중계 페이지**로 전달됩니다. 이 페이지에서 데이터를 조회해 엑셀을 생성하는데, 서버 오류나 조회 건수 초과 같은 조건일 때 **다운로드를 막고 안내 메시지를 띄우려면** `getDownError`로 오류 응답을 내려보냅니다.
-
-`getDownError`는 서버 엑셀 모듈(`IBSheetDown`)의 메소드로, 엑셀 파일 대신 **오류 응답**을 생성합니다. 이 응답의 메시지는 클라이언트 [onExportFinish](/docs/events/on-export-finish) 이벤트의 `message`로 전달됩니다.
+`directDown2Excel` 함수를 호출하면 요청이 **개발자가 직접 작성하는 중계(데이터) 페이지**로 전달됩니다.  
+서버 오류나 조회 건수 초과 같은 조건에서 다운로드를 막고 안내 메시지를 띄우려면, 엑셀 파일 대신 `getDownError`(`IBSheetDown`의 메소드)로 **오류 응답**을 내려보냅니다.   
+이 메시지는 클라이언트 [onExportFinish](/docs/events/on-export-finish) 이벤트의 `message`로 전달됩니다.
 
 ```java
-IBSheetDown down = new IBSheetDown();
-down.setEncoding("UTF-8");
-down.setService(request, response);      // 시트가 POST한 Data 파싱(필수)
+List<Map<String, Object>> list = queryData(...);
 
-response.setContentType("text/html;charset=UTF-8");
-response.setHeader("Content-Disposition", "");
-
-down.setDownFinish();                     // 응답을 다운로드 완료 상태로 마무리
-
-OutputStream out2 = response.getOutputStream();
-// 조건에 따라 기본 오류 또는 커스텀 메시지 전송
-out2.write(down.getDownError("조회 건수가 너무 많습니다.<br/>기간을 나누어 조회해 주십시오. (1회 최대 100,000건)"));
-out2.flush();
+if (list.size() > 100000) {                  // 오류 조건 (예: 건수 초과)
+    IBSheetDown down = new IBSheetDown();
+    down.setService(request, response);
+    OutputStream out2 = response.getOutputStream();
+    out2.write(down.getDownError("조회 건수가 너무 많습니다.<br/>기간을 나누어 조회해 주십시오."));
+    out2.flush();
+} else {                                      // 정상: SHEETDATA 설정 후 forward (DirectDown2Excel.jsp가 downToBrowser)
+    request.setAttribute("SHEETDATA", list);
+    request.getRequestDispatcher("./DirectDown2Excel.jsp").forward(request, response);
+}
 ```
 
 - `getDownError()`(인자 없음) : 기본 오류 메시지 전송
@@ -69,25 +68,38 @@ options.Events = {
 };
 ```
 
-> 정상 다운로드 시에는 이 오류 출력 구문이 실행되면 안 됩니다(파일 응답과 충돌). 정상은 `downToBrowser()`, 오류 조건에서만 `getDownError`가 실행되도록 분기하세요.
-
 ## directLoadExcel 중계 페이지에서 오류 메시지 보내기 (getLoadError)
 
-`directLoadExcel` 함수를 호출하면 선택한 엑셀 파일이 `DirectLoadExcel.jsp`(또는 이를 옮긴 컨트롤러)로 전달됩니다. `DirectLoadExcel.jsp`가 엑셀을 **읽어(파싱)** 데이터를 만든 뒤, `extendParam`의 `FP`로 지정한 **개발자가 작성한 페이지**로 그 데이터를 forward하고, 그 페이지에서 DB 저장 등을 처리합니다. **엑셀 파싱 중이나 데이터 저장 중에 오류가 나는 경우**(빈 파일·형식 오류·검증 실패·DB 저장 실패 등) `getLoadError`로 오류 응답을 내려보내 클라이언트([onImportFinish](/docs/events/on-import-finish))에 안내할 수 있습니다.
+`directLoadExcel` 함수를 호출하면 선택한 엑셀 파일이 `DirectLoadExcel.jsp`(또는 이를 옮긴 컨트롤러)로 전달됩니다.  
+`DirectLoadExcel.jsp`가 엑셀을 **읽어(파싱)** 데이터를 만든 뒤, `extendParam`의 `FP`로 지정한 **개발자가 작성한 페이지**로 그 데이터를 forward하고, 그 페이지에서 DB 저장 등을 처리합니다.   
+**엑셀 파싱 중이나 데이터 저장 중에 오류가 나는 경우**(빈 파일·형식 오류·검증 실패·DB 저장 실패 등) `getLoadError`로 오류 응답을 내려보내 클라이언트([onImportFinish](/docs/events/on-import-finish))에 안내할 수 있습니다.
 
-`getLoadError`는 서버 엑셀 모듈(`IBSheetLoad`)의 메소드로, `getLoadError(코드, 메시지)` 형태로 **오류 코드와 메시지**를 함께 전달합니다. 이 값은 클라이언트 [onImportFinish](/docs/events/on-import-finish) 이벤트의 `result`(코드)와 `message`로 전달됩니다. **`result`가 음수면 에러로 인식**되므로(0 이상이면 정상), 커스텀 오류는 `-500`처럼 음수 코드로 보냅니다. 단, [onImportFinish](/docs/events/on-import-finish)에 정의된 내부 오류 코드(`-1`, `-2`, `-3`, `-10` 등)와 겹치지 않게 지정합니다.
+`getLoadError`는 서버 엑셀 모듈(`IBSheetLoad`)의 메소드로, `getLoadError(코드, 메시지)` 형태로 **오류 코드와 메시지**를 함께 전달합니다.   
+이 값은 클라이언트 [onImportFinish](/docs/events/on-import-finish) 이벤트의 `result`(코드)와 `message`로 전달됩니다.  
+**`result`가 음수면 에러, 0 이상이면 정상**으로 처리합니다(보통 `onImportFinish` 핸들러에서 `result < 0`으로 판정).   
+제품이 자동으로 판단하는 것이 아니라 **넘긴 코드의 부호로 구분하는 규칙**이므로, 커스텀 오류는 `-500`처럼 음수 코드로 보냅니다.    
+단, [onImportFinish](/docs/events/on-import-finish)에 정의된 내부 오류 코드(`-1`, `-2`, `-3`, `-10` 등)와 겹치지 않게 지정합니다.
+
+처리에 **성공**했을 때는 `getLoadFinish(type, result, message)`로 완료를 알립니다(`result`가 `0` 이상이면 정상). 이 값도 [onImportFinish](/docs/events/on-import-finish)의 `result`/`message`로 전달됩니다.     
+성공 시 이 신호를 보내지 않으면 클라이언트가 완료를 인지하지 못할 수 있습니다.
 
 ```java
 // 개발자가 작성한 FP 페이지 — DirectLoadExcel.jsp가 파싱해 forward한 데이터를 받아 저장
 IBSheetLoad load = new IBSheetLoad();
 load.setEncoding("UTF-8");
+load.setService(request, response);   // getLoadError가 response를 사용하므로 필수 (없으면 NPE)
 
 try {
-    // 전달받은 데이터를 DB 등에 저장
+    // 전달받은 데이터를 검증·저장 (개발자 로직)
     // saveToDatabase(...);
+
+    // 성공: 완료 신호를 보냄 (result 0 이상 = 정상 → onImportFinish)
+    OutputStream out2 = response.getOutputStream();
+    out2.write(load.getLoadFinish("EXCEL", 1, "업로드 완료"));
+    out2.flush();
 } catch (Exception e) {
     OutputStream out2 = response.getOutputStream();
-    // 저장 실패 시 코드와 메시지를 지정해 전달 (음수 코드 = 에러)
+    // 저장/검증 실패 시 코드와 메시지를 지정해 전달 (음수 코드 = 에러)
     out2.write(load.getLoadError(-500, "저장 중 오류가 발생했습니다. 입력값을 확인해 주세요."));
     out2.flush();
     return;
@@ -95,9 +107,59 @@ try {
 ```
 
 - `getLoadError()`(인자 없음) : 기본 오류
-- `getLoadError(코드, 메시지)` : 지정한 코드·메시지 전달 (코드는 음수여야 에러로 인식)
+- `getLoadError(코드, 메시지)` : 지정한 코드·메시지 전달 (코드는 음수여야 에러로 처리됨 — 부호 규칙)
+- `getLoadFinish(type, 코드, 메시지)` : 성공 완료 신호 (코드 `0` 이상 = 정상)
+
+**메시지에 따옴표, 역슬래시, 줄바꿈을 그대로 넣지 마세요.** `getLoadError`와 `getLoadFinish`가 넘긴 메시지는 응답 스크립트(`postMessage('...^{"message":"..."}', '*')`)에 **이스케이프 없이 그대로** 실립니다. 이 응답은 메시지를 두 겹으로 감싸는데, 바깥은 작은따옴표로 감싼 JS 문자열이고 안쪽은 큰따옴표로 감싼 JSON입니다. 그래서 메시지에 큰따옴표(`"`)가 있으면 JSON이 깨지고, 작은따옴표(`'`)가 있으면 JS 문자열이 깨져서 스크립트가 실행되지 않고 [onImportFinish](/docs/events/on-import-finish)가 **발생하지 않습니다**(에러도 성공도 아무 반응이 없음). 예외 메시지(`e.getMessage()`)에는 따옴표가 자주 포함되므로(`For input string: "..."` 등), 사용자에게 보낼 메시지는 이런 문자를 제거하거나 치환한 뒤 전달합니다.
+
+```java
+// 예외 메시지를 그대로 넘기지 말고, 따옴표와 역슬래시, 줄바꿈을 제거한 뒤 전달
+String safeMsg = (rowNo + "행 처리 오류: " + e.getMessage())
+        .replace("\\", "")
+        .replace("\"", "")
+        .replace("'", "")
+        .replaceAll("[\r\n]", " ");
+out2.write(load.getLoadError(-500, safeMsg));
+```
 
 엑셀 파싱 단계 오류(빈 파일·형식 오류 등)는 `DirectLoadExcel.jsp`의 `catch` 블록에서 같은 방식으로 `getLoadError`를 반환합니다.
+
+**여러 행을 반복 저장하다가 중간에 오류가 나는 경우**는, 전체를 한 트랜잭션으로 묶고 오류 시 `rollback`한 뒤 `getLoadError`로 알립니다.    
+`getLoadError`는 오류 응답을 만들 뿐 반복문을 멈추지 않으므로, 반드시 `return`(또는 `break`)으로 흐름을 함께 끊어야 합니다(그러지 않으면 다음 행에서 다시 응답을 써서 응답이 겹칩니다).
+
+```java
+// 전달받은 데이터를 반복 저장 — 한 건이라도 실패하면 전체 롤백 후 중단
+List<Map<String, Object>> rows = (List<Map<String, Object>>) request.getAttribute("SHEETDATA");
+
+IBSheetLoad load = new IBSheetLoad();
+load.setEncoding("UTF-8");
+load.setService(request, response);   // getLoadError/getLoadFinish가 response를 사용 → 필수
+
+Connection conn = null;
+int rowNo = 0;
+try {
+    conn = getConnection();
+    conn.setAutoCommit(false);        // 전체를 한 트랜잭션으로 묶음
+
+    for (Map<String, Object> row : rows) {
+        rowNo++;
+        saveRow(conn, row);           // 저장 중 오류(SQLException 등) 발생 가능
+    }
+
+    conn.commit();                    // 전부 성공
+    OutputStream out2 = response.getOutputStream();
+    out2.write(load.getLoadFinish("EXCEL", 1, rows.size() + "건 저장 완료"));
+    out2.flush();
+} catch (Exception e) {               // 처리 중 오류
+    if (conn != null) conn.rollback();   // 이미 저장한 행까지 전체 취소
+    OutputStream out2 = response.getOutputStream();
+    out2.write(load.getLoadError(-500, rowNo + "행 처리 중 오류로 저장을 취소했습니다: " + e.getMessage()));
+    out2.flush();
+    return;                           // 응답을 썼으면 반드시 흐름 중단
+} finally {
+    if (conn != null) conn.close();
+}
+```
 
 클라이언트에서는 [onImportFinish](/docs/events/on-import-finish)의 `result`(코드)로 성공/실패를 판정하고, 실패 시 `message`로 사용자에게 안내합니다.
 

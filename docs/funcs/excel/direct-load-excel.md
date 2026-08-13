@@ -65,6 +65,38 @@ for (Map<String, Object> row : li) {
 }
 ```
 
+위 예시는 파싱된 데이터를 `FP` 페이지로 forward하는 방식입니다.  
+아래처럼 `directLoadExcel()`의 **반환값(List)을 중계 페이지에서 바로 받아** 처리할 수도 있습니다(FP forward 없이). 이 경우 클라이언트는 `sheet.directLoadExcel();`만 호출합니다.
+
+```java
+// directLoadExcel() 반환값(List)을 중계 페이지에서 바로 받아 처리 + 오류 처리
+IBSheetLoad load = new IBSheetLoad();
+load.setEncoding("UTF-8");
+load.setService(request, response);   // getLoadError/getLoadFinish가 response를 사용 → 필수
+
+OutputStream out = response.getOutputStream();
+try {
+    List<Map<String, String>> rows = load.directLoadExcel();   // 파일 전체를 한 번에 List로 반환
+
+    for (Map<String, String> row : rows) {
+        // 검증/저장 (개발자 로직) — 실패 시 아래 catch로
+        // myDao.insert(row);
+    }
+
+    // 성공: 완료 신호 (result 0 이상 = 정상)
+    out.write(load.getLoadFinish("EXCEL", 1, rows.size() + "건 완료"));
+    out.flush();
+} catch (Exception e) {
+    // 실패: 음수 코드 + 메시지 (메시지의 따옴표 등은 제거 후 전달)
+    String msg = ("업로드 실패: " + e.getMessage()).replace("\"", "").replace("'", "");
+    out.write(load.getLoadError(-500, msg));
+    out.flush();
+}
+```
+
+이 방식은 파일 전체를 메모리에 올리므로 일반 건수에 적합합니다. 행 수가 매우 많으면 서버 메모리 부족(`OutOfMemoryError`)이 발생할 수 있어 초대용량 처리에는 권장하지 않습니다.  
+오류 처리 상세(메시지 정제, 전체 롤백, 예약 오류 코드)는 [엑셀 서버 모듈 트러블슈팅](/docs/appx/excel-server-troubleshooting)을 참고하세요.
+
 ```cs
 //directLoadExcel 닷넷 서버모듈 예시
 List<Object> data = (List<Object>)this.Context.Items["sheetData"];

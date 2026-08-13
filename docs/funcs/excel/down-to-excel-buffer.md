@@ -1,6 +1,6 @@
 # down2ExcelBuffer ***(method)***
 
-<!-- synonyms: 여러 시트 엑셀 다운로드, 다중 워크시트 엑셀, excel buffer, 엑셀 버퍼 다운로드 -->
+<!-- synonyms: 여러 시트 엑셀 다운로드, 다중 워크시트 엑셀, 여러 시트를 한 파일로, 시트 합치기, 워크시트 합치기, 컬럼별 워크시트 분리, down2ExcelBuffer, excel buffer, 엑셀 버퍼 다운로드, combine sheets excel -->
 
 > 여러 시트의 내용을 하나의 엑셀 파일에 다운로드할 때 사용합니다.  
 > `down2ExcelBuffer(true)`로 시작하면 각 시트에서 [down2Excel](./down-to-excel) 호출이 즉시 다운로드되지 않고 버퍼에 누적되며, `down2ExcelBuffer(false)`로 종료하면 누적된 시트들이 한 엑셀 파일의 워크시트로 묶여 다운로드됩니다.  

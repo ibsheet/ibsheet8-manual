@@ -1,6 +1,6 @@
 # directDown2Excel ***(method)***
 
-<!-- synonyms: 서버 데이터 엑셀 다운로드, direct down to excel, 대용량 엑셀 다운로드, 서버 조회 결합 엑셀 -->
+<!-- synonyms: 서버 데이터 엑셀 다운로드, direct down to excel, 대용량 엑셀 다운로드, 서버 조회 결합 엑셀, 여러 시트 다운로드, 다중 워크시트, 여러 워크시트 한 파일, 시트 여러개 엑셀, down2ExcelBuffer, 서버 데이터 다중시트, SHEETDATA1, SHEETDATA2 -->
 
 > 시트의 조회 데이터는 무시하고 시트 정보(컬럼 정의 등)만 서버로 전송해, 서버에서 별도로 만든 데이터와 결합해 엑셀 파일을 생성하고 다운로드합니다.  
 > 시트의 조회 데이터 대신 서버에서 직접 만든 데이터로 엑셀을 생성하는 경우 사용합니다.  
@@ -91,6 +91,27 @@ if (!"".equals(forwardPath)) {
 }
 ```
 
+조회 결과가 조건에 맞지 않는 등 **다운로드를 중단해야 할 때**는, `forward` 대신 `IBSheetDown`의 `getDownError`로 오류 응답을 내려보냅니다.
+
+```java
+// [오류 처리] 조건에 맞지 않으면 forward 대신 getDownError로 오류 응답
+List<Map<String, Object>> data = queryData(request);   // 서버에서 데이터 조회
+
+if (data.size() > 100000) {                            // 오류 조건 (예: 건수 초과)
+    IBSheetDown down = new IBSheetDown();
+    down.setService(request, response);                // getDownError가 response를 사용 → 필수
+    OutputStream out = response.getOutputStream();
+    out.write(down.getDownError("조회 건수가 너무 많습니다. 기간을 나누어 조회해 주세요."));
+    out.flush();
+} else {                                                // 정상: SHEETDATA 담아 forward
+    request.setAttribute("SHEETDATA", data);
+    request.getRequestDispatcher("./DirectDown2Excel.jsp").forward(request, response);
+}
+```
+
+클라이언트는 [onExportFinish](/docs/events/on-export-finish)의 `result`로 성공(`1`)/실패(`0`)를 판정하고, 실패 시 `message`로 안내합니다.  
+오류 처리 상세(오류 메시지 작성 주의 등)는 [엑셀 서버 모듈 트러블슈팅](/docs/appx/excel-server-troubleshooting)을 참고하세요.
+
 ```cs
 // directDown2Excel 닷넷 서버모듈 예시
 // 엑셀로 내려질 데이터를 DB에서 조회 
@@ -126,6 +147,27 @@ if(forwardPath != "") {
   Server.Execute(forwardPath);
 }
 
+```
+
+**여러 워크시트로 다운로드** — [down2ExcelBuffer](/docs/funcs/excel/down-to-excel-buffer)로 감싸면 여러 시트를 하나의 엑셀 파일(여러 워크시트)로 내릴 수 있습니다. 버퍼 안에서 각 시트의 `directDown2Excel`을 호출하고, 서버(중계 페이지)는 시트 수만큼 `SHEETDATA`, `SHEETDATA1`, `SHEETDATA2` … 속성에 각 시트 데이터를 담습니다. (첫 시트는 `SHEETDATA`(번호 없음), 이후 `SHEETDATA`+인덱스)
+
+```javascript
+// 클라이언트: 버퍼로 감싸 여러 시트를 한 파일로
+sheet1.down2ExcelBuffer(true);
+sheet1.directDown2Excel({ url: "./salesData.do", fileName: "multi.xlsx", sheetName: "1분기" });
+sheet2.directDown2Excel({ url: "./salesData.do", sheetName: "2분기" });
+sheet3.directDown2Excel({ url: "./salesData.do", sheetName: "3분기" });
+sheet1.down2ExcelBuffer(false);   // 종료 → 다운로드 시작
+```
+
+```java
+// 서버(중계 페이지): 시트 수만큼 SHEETDATA 세팅 (첫 시트 = SHEETDATA, 이후 SHEETDATA1, SHEETDATA2 ...)
+request.setAttribute("SHEETDATA",  sheet1List);
+request.setAttribute("SHEETDATA1", sheet2List);
+request.setAttribute("SHEETDATA2", sheet3List);
+
+RequestDispatcher rd = request.getRequestDispatcher("./DirectDown2Excel.jsp");
+rd.forward(request, response);
 ```
 
 ```javascript
@@ -288,6 +330,7 @@ var param = {
 
 ### Read More
 - [down2Excel method](./down-to-excel)
+- [down2ExcelBuffer method](./down-to-excel-buffer)
 - [directLoadExcel method](./direct-load-excel)
 - [exportData method](/docs/funcs/core/export-data)
 - [SearchMode cfg](/docs/props/cfg/search-mode)
