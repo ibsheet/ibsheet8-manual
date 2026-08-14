@@ -16,7 +16,7 @@
   <div>
     <h3 style="">기본 기능</h3>
     <ul>
-      <li><a href="https://portal.ibsheet.com/support/solutions/articles/72000639119-ibsheet-%ED%99%94%EB%A9%B4%EC%97%90-%EA%B7%B8%EB%A6%AC%EA%B8%B0" target="_blank">시작하기</a></li>
+      <li><a href="#" onclick="window.event.preventDefault();window.event.stopPropagation();gotoByURL('docs/start/quick-start.html')">시작하기</a></li>
       <li><a href="#" onclick="window.event.preventDefault();window.event.stopPropagation();gotoByURL('docs/intro/files.html')">파일 구성</a></li>
       <li><a href="#" onclick="window.event.preventDefault();window.event.stopPropagation();gotoByURL('docs/start/basic-structure.html')">초기화 객체 기본 구조</a></li>
       <li><a href="#" onclick="window.event.preventDefault();window.event.stopPropagation();gotoByURL('docs/dataStructure/data-structure.html')">조회/저장 데이터 구조</a></li>
@@ -32,7 +32,7 @@
   <div>
     <h3>기타 기능</h3>
     <ul>
-      <li><a href="#" onclick="window.event.preventDefault();window.event.stopPropagation();gotoByURL('docs/appx/ibsheet7-migration.html')">ibsheet7 마이그레이션</a></li>
+      <li><a href="#" onclick="window.event.preventDefault();window.event.stopPropagation();gotoByURL('docs/migration/index.html')">ibsheet7 마이그레이션</a></li>
       <li><a href="#" onclick="window.event.preventDefault();window.event.stopPropagation();gotoByURL('docs/appx/spa-react.html')">react 기반 개발</a></li>
       <li><a href="#" onclick="window.event.preventDefault();window.event.stopPropagation();gotoByURL('docs/appx/spa-vue.html')">vue 기반 개발</a></li>
     </ul>

@@ -6,8 +6,7 @@
 > 사용 전 `/plugins/jszip.min.js` 파일이 반드시 로드되어 있어야 합니다.  
 > 함수를 호출하면 파일 선택 창이 나타나고, 사용자가 선택한 파일은 클라이언트에서 바로 처리됩니다.  
 > 엑셀 데이터를 시트에 어떻게 매핑할지는 `mode` 옵션이 결정합니다. (기본값 `HeaderMatch` — 헤더 타이틀 매칭)  
-> 지원하는 파일 형식은 **xlsx, txt, csv** 입니다. (구버전 `xls` 형식은 지원하지 않습니다.)  
-> 엑셀 다운로드/업로드 구현, 옵션, 트러블슈팅 상세는 IBSheet 지원 포털의 [엑셀 가이드 모음](https://portal.ibsheet.com/support/solutions/folders/72000394868)에서 확인하세요.
+> 지원하는 파일 형식은 **xlsx, txt, csv** 입니다. (구버전 `xls` 형식은 지원하지 않습니다.)
 
 ### Syntax
 ```javascript

@@ -1,6 +1,6 @@
 # Class ***(row)***
 
-<!-- synonyms: row class, row css class, custom css, row style class, per-row css, cell css class, 행 CSS, 사용자 CSS, CSS 클래스, 행 클래스, 셀 클래스, 사용자 정의 스타일, Class row -->
+<!-- synonyms: row class, row css class, custom css, row style class, per-row css, cell css class, 행 CSS, 사용자 CSS, CSS 클래스, 행 클래스, 셀 클래스, 사용자 정의 스타일, Class row, ClassFormula, 클래스 수식, 조건부 클래스, 조건부 CSS, 행 클래스 자동 적용 -->
 
 > 행에 포함된 각 셀에 `사용자 정의 CSS`를 설정합니다.
 
@@ -60,6 +60,26 @@ options = {
 }
 
 ```
+
+```javascript
+// ClassFormula — 조건에 따라 행 전체에 클래스를 자동 지정 (CanFormula, CalcOrder 필요)
+options = {
+    Def: {
+        Row: {
+            CanFormula: 1,
+            CalcOrder: "Class",
+            ClassFormula: function(fr) {
+                // 특정 조건의 행에 rowAlert 클래스 적용
+                if (fr.Row["sCorp"] === "GS칼텍스") return "rowAlert";
+            }
+        }
+    },
+    Cols: [
+        {Header: "회사명", Type: "Text", Name: "sCorp"}
+    ]
+};
+```
+
 ### Try it
 - [Demo of Class](https://jsfiddle.net/gh/get/library/pure/ibsheet/ibsheet8-manual-sample/tree/master/samples/properties/Row/Class/)
 - [Demo of ClassFormula](https://jsfiddle.net/gh/get/library/pure/ibsheet/ibsheet8-manual-sample/tree/master/samples/properties/Row/ClassFormula/)
@@ -67,6 +87,7 @@ options = {
 ### Read More
 - [setAttribute method](/docs/funcs/core/set-attribute)
 - [AlternateClass row](./alternate-class)
+- [attribute+Formula row](/docs/props/row/attribute-formula)
 
 ### Since
 

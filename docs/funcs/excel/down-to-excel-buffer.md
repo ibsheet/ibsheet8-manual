@@ -78,6 +78,7 @@ sheet.down2ExcelBuffer(false);
 ### Read More
 
 - [down2Excel method](./down-to-excel)
+- [한 시트를 그룹별로 나눠 여러 파일/워크시트로 다운로드 appendix](/docs/appx/excel-split-download)
 
 
 ### Since

@@ -6,7 +6,7 @@
 >
 > 특정 셀을 클릭 시 포커스에 대한 이동 및 값 변경(`Bool 타입`)이나 편집 시작(`Text 타입`) 등에 대한 이벤트가 모두 발생한 뒤에 발생합니다. 
 >
-> `ibsheet7` 제품의 [OnClick 이벤트를 마이그레이션](/docs/appx/ibsheet7-migration) 할 때는 해당 이벤트를 사용하실 것을 권합니다.
+> `ibsheet7` 제품의 [OnClick 이벤트를 마이그레이션](/docs/migration) 할 때는 해당 이벤트를 사용하실 것을 권합니다.
 
 ### Syntax
 

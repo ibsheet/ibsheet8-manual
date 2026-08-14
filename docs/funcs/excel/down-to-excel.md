@@ -9,6 +9,8 @@
 
 다운로드가 서버에서 실패하면 오류 메시지는 [onExportFinish](/docs/events/on-export-finish)의 `message`로 전달됩니다(`result`가 `0`일 때).
 
+여러 개의 엑셀 파일을 한 번에 다운로드하려면, `down2Excel`을 그냥 연달아 호출하는 대신 [onExportFinish](/docs/events/on-export-finish) 이벤트에서 다음 파일을 호출해 **한 번에 하나씩** 받거나, 각 호출에 `useXhr: 1`을 지정합니다. (연달아 호출하면 마지막 호출의 파일만 다운로드됩니다.)
+
 ### Syntax
 ```javascript
 void down2Excel( param );
@@ -52,7 +54,7 @@ void down2Excel( param );
 |onlyHeaderMerge|`boolean`|<span class='optional'>선택</span>|시트의 데이터 영역의 머지를 강제로 제한하고 헤더 영역의 머지만을 엑셀에 반영 여부<br>`0(false)`:헤더 영역과 데이터 영역의 머지 사항을 다운로드 시 반영 (`default`)<br>`1(true)`:헤더 영역의 머지 사항만 다운로드 시 반영|
 |numberExMode|`boolean`|<span class='optional'>선택</span>|시트의 `Int`, `Float` 타입의 컬럼을 숫자 서식으로 다운로드 받을 지 여부를 설정합니다. 설정하지 않을 시, 통화나 사용자 지정 서식으로 다운로드됩니다.<br>`0(false)`:다운로드 시, 시트의 `Int`, `Float` 타입의 컬럼을 통화나 사용자 지정 서식으로 받습니다 (`default`)<br>`1(true)`:다운로드 시, 시트의 `Int`, `Float` 타입의 컬럼을 숫자 서식으로 다운로드 받습니다|
 |numberFormatMode|`number`|<span class='optional'>선택</span>|실수 형태의 데이터 타입에 대한 셀 서식 설정 방식을 설정합니다.<br/>`0`:시트의 컬럼 포맷을 따릅니다. (`default`)<br/>`1`:셀의 값 기준에 따라 정수 또는 실수 형태로 셀 서식을 설정합니다.<br/>`2`:일반 서식으로 설정합니다.|
-|useXhr|`boolean`|<span class='optional'>선택</span>| xhr 통신을 이용해 엑셀 파일을 다운로드받습니다.<br>`0(false)`:xhr 통신 사용 안함 (`default`)<br>`1(true)`:xhr 통신 사용|
+|useXhr|`boolean`|<span class='optional'>선택</span>| xhr 통신을 이용해 엑셀 파일을 다운로드받습니다.<br/>`1(true)`로 설정하면 여러 번 연달아 호출해도 요청이 충돌하지 않아 각 파일이 모두 다운로드됩니다(기본 방식은 마지막 호출의 파일만 다운로드됨).<br>`0(false)`:xhr 통신 사용 안함 (`default`)<br>`1(true)`:xhr 통신 사용|
 |exHead|`object`|<span class='optional'>선택</span>|시트 상단에 표시하고 싶은 내용을 설정합니다.<br>titleText, userMerge, header, footer 속성과 같이 사용할 수 없으며, 같이 사용시 titleText, userMerge, header, footer속성은 무시됩니다. <br> 해당 속성은 poi를 사용하는 경우에만 설정이 가능합니다.|
 |exFoot|`object`|<span class='optional'>선택</span>|시트 하단에 표시하고 싶은 내용을 설정합니다.<br>titleText, userMerge, header, footer 속성과 같이 사용할 수 없으며, 같이 사용시 titleText, userMerge, header, footer속성은 무시됩니다. <br> 해당 속성은 poi를 사용하는 경우에만 설정이 가능합니다.|
 |tempFile|`string`|<span class='optional'>선택</span>|템플릿으로 사용할 엑셀 파일명을 설정합니다. **반드시 `Down2Excel.jsp` 또는 `Down2Excel.aspx`에서 템플릿 경로를 설정해야합니다.**|
@@ -332,6 +334,7 @@ var param = {
 - [엑셀 서버 모듈 트러블슈팅 appendix](/docs/appx/excel-server-troubleshooting)
 - [엑셀 DRM 처리 appendix](/docs/appx/excel-drm)
 - [엑셀 비밀번호 설정 appendix](/docs/appx/excel-password)
+- [한 시트를 그룹별로 나눠 여러 파일/워크시트로 다운로드 appendix](/docs/appx/excel-split-download)
 
 
 ### Since

@@ -1,6 +1,6 @@
 # Formula ***(appendix)***
 
-<!-- synonyms: 수식, 계산식, formula, 셀 계산, 자동 계산, 트리 합계 -->
+<!-- synonyms: 수식, 계산식, formula, 셀 계산, 자동 계산, 트리 합계, tree, 트리 집계, 트리 Formula, 자식 합계, 부모 자식 합계, 상위 노드 합계, TreeSumFormula, TreeAvgFormula, IB_Preset 트리 프리셋 -->
 
 > 셀의 값(value) 또는 속성(글자색, 배경색 등)을 다른 열의 값과의 계산을 통해 자동으로 설정하는 기능입니다.
 
@@ -101,9 +101,11 @@ function useFormula2(obj) {
 
 트리 시트에서 부모/자식 관계를 활용해 Formula를 작성할 수 있습니다. `fr.Row`의 트리 노드 속성으로 부모/자식 행에 접근합니다.
 
+간단한 집계(합계, 평균, 개수, 최대, 최소)는 직접 함수를 작성하지 않고 `IB_Preset` 트리 프리셋으로 처리할 수 있습니다(`ibsheet-common.js` 필요): `TreeSumFormula`(합계), `TreeAvgFormula`(평균), `TreeCountFormula`(개수), `TreeMaxFormula`(최대), `TreeMinFormula`(최소). 아래는 프리셋으로 처리하기 어려운 조건부 집계를 직접 함수로 작성하는 예입니다.
+
 | 속성 | 설명 |
 |---|---|
-| `fr.Row.childNodes.length` | 자식 수 — `0`이면 leaf, `> 0`이면 부모 |
+| `fr.Row.childNodes.length` | 자식 수 — `0`이면 말단 노드(자식 없음), `> 0`이면 부모 |
 | `fr.Row.firstChild`, `nextSibling` | 직계 자식 순회 |
 | `fr.Row.parentNode` | 부모 행 |
 | `fr.Row.Level` | 트리 레벨 (`0`=루트) |
@@ -120,7 +122,7 @@ function TreeSumExFormula(fr) {
         }
         return sum;
     } else {
-        // leaf 행: 본인 값 + 편집 가능 설정
+        // 말단 노드(자식 없는 행): 본인 값 + 편집 가능 설정
         fr.Row[fr.Col + "CanEdit"] = 1;
         return fr.Row[fr.Col];
     }
@@ -145,9 +147,9 @@ function ChildCountFormula(fr) {
 }
 ```
 
-**leaf 행만 편집 가능하게 만들기**
+**말단 노드(자식 없는 행)만 편집 가능하게 만들기**
 
-위 예제에서 `fr.Row[fr.Col + "CanEdit"] = 1` 은 행+컬럼 단위로 편집 허용을 선언하는 패턴입니다. Formula 함수가 leaf에 도달했을 때만 이 줄이 실행되므로 부모 행은 자동으로 읽기 전용이 됩니다.
+위 예제에서 `fr.Row[fr.Col + "CanEdit"] = 1` 은 행+컬럼 단위로 편집 허용을 선언하는 패턴입니다. Formula 함수가 말단 노드에 도달했을 때만 이 줄이 실행되므로 부모 행은 자동으로 읽기 전용이 됩니다.
 
 ### Read More
 - [Formula col](/docs/props/col/formula)

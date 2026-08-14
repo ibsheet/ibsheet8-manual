@@ -95,7 +95,7 @@ options.Cols = [
 ```
 
 상태가 삭제(`Row.Deleted`)인 행을 제외하고 자식 행 합계를 계산해야 할 때는 커스텀 함수로 처리합니다.  
-트리의 leaf 행(자식이 없는 말단 행)은 사용자가 직접 값을 입력해야 하므로 자기 자신의 `CanEdit`을 켜줍니다.
+트리의 말단 노드(자식이 없는 행)는 사용자가 직접 값을 입력해야 하므로 자기 자신의 `CanEdit`을 켜줍니다.
 
 ```javascript
 {Type: "Int", Name: "sumEx",
@@ -106,7 +106,7 @@ options.Cols = [
                 if (!r.Deleted) sum += (r[fr.Col] || 0);             // 삭제 상태인 행 제외
             }
             return sum;
-        } else {                                                      // leaf 행
+        } else {                                                      // 말단 노드(자식 없는 행)
             fr.Row[fr.Col + "CanEdit"] = 1;
             return fr.Row[fr.Col];
         }

@@ -1,6 +1,6 @@
 # MainCol ***(cfg)***
 
-<!-- synonyms: 트리 메인 컬럼, tree main column, 트리 열, 트리 접힘/펼침 열, 트리 표시 컬럼 -->
+<!-- synonyms: 트리 메인 컬럼, tree main column, 트리 열, 트리 접힘/펼침 열, 트리 표시 컬럼, 트리 집계, 자식 합계, 상위 노드 합계, 트리 합계 Formula, TreeSumFormula, 부서별 집계 -->
 
 > 트리 기능 사용 시 트리의 노드를 표시하는 열을 설정합니다.  
 > 지정한 열에서 트리의 접힘/펼침 아이콘이 보여지게 됩니다.  
@@ -36,8 +36,30 @@ sheet.loadSearchData([
 ]);
 ```
 
+트리 상위 노드에 자식들의 합계나 평균 등을 표시하려면, 트리 컬럼에 `Formula`로 트리 집계를 지정합니다. `IB_Preset`의 트리 집계 프리셋(`ibsheet-common.js` 필요)을 쓰면 간단합니다.
+
+```javascript
+options.Cfg = { MainCol: "Department" };                   // 트리 컬럼
+options.Def.Row = { CanFormula: 1, CalcOrder: "Sales" };   // 집계 컬럼을 CalcOrder 에 등록(공백 없이)
+options.Cols = [
+    {Header: "조직", Type: "Text", Name: "Department"},
+    {Header: "매출", Type: "Int", Name: "Sales", Format: "#,##0",
+        Formula: IB_Preset.TreeSumFormula}                 // 자식들의 Sales 합계를 상위 노드에 표시
+];
+
+// 상위 노드(영업본부)의 매출은 자식(영업1팀, 영업2팀) 합계로 자동 계산됨
+sheet.loadSearchData([
+    {Department: "영업본부", Items: [
+        {Department: "영업1팀", Sales: 1200},
+        {Department: "영업2팀", Sales: 800}
+    ]}
+]);
+```
+
+트리 집계 프리셋(`IB_Preset`)은 `TreeSumFormula`(합계), `TreeAvgFormula`(평균), `TreeCountFormula`(개수), `TreeMaxFormula`(최대), `TreeMinFormula`(최소)를 제공합니다.
+
 ### Try it
-- [Demo of MainCol](https://jsfiddle.net/gh/get/library/pure/ibsheet/ibsheet8-manual-sample/tree/master/samples/properties/Cfg/MainCol/)
+- [Demo of 트리 종합 데모 (접기/펼치기, 레벨 보기, 연결선 숨김 등)](https://jsfiddle.net/gh/get/library/pure/ibsheet/ibsheet8-manual-sample/tree/master/samples/properties/Cfg/MainCol/)
 - [Demo of Tree Formula (부서별 실적 집계)](https://jsfiddle.net/gh/get/library/pure/ibsheet/ibsheet8-manual-sample/tree/master/samples/properties/Col/Formula-TreeSum/)
 
 ### Read More

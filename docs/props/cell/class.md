@@ -1,6 +1,6 @@
 # Class ***(cell)***
 
-<!-- synonyms: 클래스, CSS 클래스, 사용자 정의 CSS, 스타일 클래스, 셀 클래스, 셀 스타일, class, css class, custom css, class-name, cell-class, className -->
+<!-- synonyms: 클래스, CSS 클래스, 사용자 정의 CSS, 스타일 클래스, 셀 클래스, 셀 스타일, class, css class, custom css, class-name, cell-class, className, ClassFormula, 클래스 수식, 조건부 클래스, 조건부 CSS, 셀 클래스 자동 적용 -->
 
 > 셀에 적용할 `사용자 정의 CSS`를 설정합니다.
 
@@ -44,6 +44,24 @@ sheet.setAttribute({ "row" :row ,"col":"CLS", "attr":"Class", "val":"RedBold" })
 }
 
 ```
+
+```javascript
+// ClassFormula — 조건에 따라 셀 클래스를 자동 지정 (CanFormula, CalcOrder 필요)
+options = {
+    Def: {
+        Row: {CanFormula: 1, CalcOrder: "CLSClass"}  // "열이름 + Class" 형식
+    },
+    Cols: [
+        {Type: "Text", Name: "CLS",
+            ClassFormula: function(fr) {
+                // CLS 셀 값이 "긴급"이면 RedBold 클래스 적용
+                if (fr.Row["CLS"] === "긴급") return "RedBold";
+            }
+        }
+    ]
+};
+```
+
 ### Try it
 - [Demo of Class](https://jsfiddle.net/gh/get/library/pure/ibsheet/ibsheet8-manual-sample/tree/master/samples/properties/Col/Class/)
 - [Demo of ClassFormula](https://jsfiddle.net/gh/get/library/pure/ibsheet/ibsheet8-manual-sample/tree/master/samples/properties/Col/ClassFormula/)
@@ -51,6 +69,7 @@ sheet.setAttribute({ "row" :row ,"col":"CLS", "attr":"Class", "val":"RedBold" })
 
 ### Read More
 - [setAttribute method](/docs/funcs/core/set-attribute)
+- [attribute+Formula col](/docs/props/col/attribute-formula)
 
 
 ### Since

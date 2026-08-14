@@ -10,7 +10,7 @@ IBSheet7에서 자주 사용되는 이벤트에 대해 IBSheet8에서 변경된 
 |---|---|---|
 |OnAfterEdit|[onAfterEdit (event)](/docs/events/on-after-edit)||
 |OnBeforeCheck|[onBeforeChange (event)](/docs/events/on-before-change)|별도에 `CheckBox`타입에서만 발생하는 이벤트는 없고,해당 이벤트는 모든 타입의 열에서 발생합니다.|
-|OnBeforeDownload|[onBeforeDownload (event)](/docs/events/on-before-download)||
+|OnBeforeDownload|[onBeforeExport (event)](/docs/events/on-before-export)||
 |OnBeforePaste|[onBeforePaste (event)](/docs/events/on-before-paste)||
 |OnButtonClick|[onClick (event)](/docs/events/on-click)|`Button`타입에서만 발생하는 이벤트는 없고,해당 이벤트는 모든 타입의 열에서 발생합니다.<br>JSON Evnet [onClickSide (props event)](/docs/props/event/on-click-side) 를 사용할 수도 있습니다.|
 |OnChange|[onAfterChange (event)](/docs/events/on-after-change)|[setValue (method)](/docs/funcs/core/set-value)와 같이 외부 함수를 통한 변경에서는 발생하지 않습니다.|

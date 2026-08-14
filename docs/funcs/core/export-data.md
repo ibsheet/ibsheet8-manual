@@ -1,13 +1,12 @@
 # exportData ***(method)***
 
-<!-- synonyms: 엑셀 다운로드, 엑셀 내려받기, 클라이언트 엑셀, jszip 엑셀, xlsx 다운로드, txt csv 다운로드, export data, CSV 인젝션, 수식 인젝션, formula injection, csv injection, escapeCsvInjection -->
+<!-- synonyms: 엑셀 다운로드, 엑셀 내려받기, 클라이언트 엑셀, jszip 엑셀, xlsx 다운로드, txt csv 다운로드, export data, CSV 인젝션, 수식 인젝션, formula injection, csv injection, escapeCsvInjection, 여러 엑셀 파일 다운로드, 엑셀 파일 나눠 다운로드, 그룹별 엑셀 다운로드, 사용자별 엑셀, 부서별 엑셀, 거래처별 엑셀, 파일 분리, 여러개 파일, split excel files, one sheet multiple files -->
 
 > 시트의 내용을 엑셀 파일로 다운로드합니다.  
 > 해당 기능은 브라우저에서 처리되는 클라이언트 기능이며, 엑셀 파일 생성을 위해 `jszip` 라이브러리를 사용합니다.  
 > `/plugins/jszip.min.js` 파일이 반드시 존재해야 하며, 해당 파일이 없으면 엑셀 다운로드 기능은 동작하지 않습니다.  
 > 지원하는 파일 형식은 **xlsx, txt, csv** 입니다. (구버전 `xls` 형식은 지원하지 않습니다.)  
-> 워크시트 이름, 폰트, 색상, 머지, 행 높이, 용지 등 **서식과 구조에 관한 옵션은 `xlsx` 형식에서만 적용**되며, 순수 텍스트인 `txt`/`csv`에는 적용되지 않습니다. (반대로 `rowDelim`/`colDelim`은 `txt`/`csv` 전용입니다.)  
-> 엑셀 다운로드/업로드 구현, 옵션, 트러블슈팅 상세는 IBSheet 지원 포털의 [엑셀 가이드 모음](https://portal.ibsheet.com/support/solutions/folders/72000394868)에서 확인하세요.
+> 워크시트 이름, 폰트, 색상, 머지, 행 높이, 용지 등 **서식과 구조에 관한 옵션은 `xlsx` 형식에서만 적용**되며, 순수 텍스트인 `txt`/`csv`에는 적용되지 않습니다. (반대로 `rowDelim`/`colDelim`은 `txt`/`csv` 전용입니다.)
 
 ### Syntax
 ```javascript
@@ -52,11 +51,11 @@ void exportData( param );
 |excelPage|`object`|<span class='optional'>선택</span>|엑셀 용지에 대한 동작을 설정합니다 <br/>ex)엑셀 용지설정(가로방향)<br/>excelPage: { orientation: "landscape" }|
 |widthRate|`number`|<span class='optional'>선택</span>|엑셀 다운로드 시 열 너비에 곱해질 배율을 설정합니다.<br/>`0`보다 큰 양수 값을 사용합니다. (예: `0.5` → 기본 크기의 절반, `0.8` → 80%, `1.3` → 130%)<br/>지정하지 않거나 `0` 이하 값을 지정하면 `1`(기본 다운로드 크기)로 적용됩니다.<br/>(`default: 1`) |
 |escapeCsvInjection|`boolean`|<span class='optional'>선택</span>|CSV 다운로드 시 CSV 인젝션(수식 인젝션) 방어를 활성화합니다. `csv` 형식에서만 동작하며, 그 외 형식(`xlsx`, `txt`)에서는 값과 무관하게 무시됩니다.<br/>`1(true)`로 설정하면 위험 선두 문자로 시작하는 문자열 셀 값 앞에 작은따옴표(`'`)를 붙여 스프레드시트가 값을 수식이 아닌 텍스트로 인식하도록 강제합니다.<br/>방어 대상 선두 문자: `=`, `+`, `-`, `@`, 탭(`\t`), CR(`\r`), LF(`\n`), `\|`, `%`<br/>`0(false)`:방어 미적용, 셀 값을 원본 그대로 CSV에 기록 (`default`)<br/>`1(true)`:위험 선두 문자로 시작하는 값에 `'` prefix 부여<br/>사용자 입력이 그대로 CSV로 내려가고, 그 파일을 제3자가 열 가능성이 있는 화면에서 켜는 것을 권장합니다. `(csv에서만 지원)`|
+|directExcelData|`array[object]`|<span class='optional'>선택</span>|시트 데이터가 아닌 **별도 JSON 데이터**로 다운로드합니다(각 key는 컬럼 `Name`과 일치).<br/>데이터 행 머지, 합계행, 셀 색상 등은 반영되지 않습니다. (`xlsx` 전용)|
+|requiredMark|`boolean`|<span class='optional'>선택</span>|필수 입력 항목 마크(`*`)를 다운로드 받을지 여부를 설정합니다. (`default: 1(true)`)|
 
 <!--!
-|`[비공개]` directExcelData|`object`|<span class='optional'>선택</span>|시트의 데이터가 아닌 별도의 데이터를 이용하여 엑셀을 다운로드 하는 기능 (xlsx에서만 지원)|
 |`[비공개]` downCombo|`string`|<span class='optional'>선택</span>|`Enum` 타입의 선택 항목을 `Enum` 속성과 `EnumKeys` 속성 어떤 형태로 다운로드를 받을 지 설정합니다.<br/> `TEXT`: `Enum` 속성을 사용하여 다운로드 합니다. (`default`)<br/> `CODE`: `EnumKeys` 속성을 사용하여 다운로드합니다.|
-|`[비공개]` requiredMark|`string`|<span class='optional'>선택</span>|필수 입력 항목 마크(`*`)를 다운로드 받을지 여부를 설정합니다.(`default: 1(true)`)|
 !-->
 
 ### downCols, downRows 사용 시 merge 적용 정리
@@ -135,53 +134,15 @@ sheet.exportData(param);
 // 셀 값이 `=1+1`, `+82-10-...`, `@SUM(...)`처럼 위험 선두 문자로 시작하면
 // 파일에 `'`가 prefix되어 저장되고, 엑셀에서 텍스트로 표시됩니다.
 sheet.exportData({fileName: "safe.csv", escapeCsvInjection: 1});
-```
 
-<!--!
-### [`비공개`] Example
-```js
-// 임의의 데이터
-var tmpData = [
-  {
-    SEQ: 1,
-    TextData: '박만우',
-    ComboData: '02',
-    ISO: 'AWG',
-    Currency: '아루바 플로린',
-    IntData: 1120,
-    FloatData: 115.25,
-    DateData: '20100922',
-    PhoneNo: '0425741245',
-    LinesData: '서해상에 위치한 고기압의 영향을 받겠습니다.',
-    Userformat: '',
-    ImageData: '|../assets/imgs/fe.jpg|||||',
-    PassData: '75646',
-    RadioData: 'M:1',
-    CheckData: 0
-  },
-  {
-    SEQ: 3,
-    TextData: '최호건',
-    ComboData: '01',
-    ISO: 'GBP',
-    Currency: '영국 파운드',
-    IntData: 65,
-    FloatData: 154.36,
-    DateData: '',
-    PhoneNo: '',
-    LinesData: '',
-    Userformat: '',
-    ImageData: '|../assets/imgs/ch.jpg|||||',
-    PassData: '4564',
-    RadioData: 'H:1',
-    CheckData: 0
-  }
+// directExcelData: 시트에 로드된 데이터가 아닌 별도 JSON 데이터로 다운로드 (xlsx 전용)
+// 각 객체의 key는 시트 컬럼의 Name 과 일치해야 합니다.
+var extraData = [
+  { SEQ: 1, TextData: "박만우", IntData: 1120, FloatData: 115.25, DateData: "20100922" },
+  { SEQ: 3, TextData: "최호건", IntData: 65,   FloatData: 154.36, DateData: "" }
 ];
-
-// 임의의 데이터를 이용한 엑셀 다운로드
-sheet.exportData({ directExcelData: tmpData });
+sheet.exportData({ directExcelData: extraData });
 ```
-!-->
 
 ```javascript
 //exHead 사용 예제
@@ -339,7 +300,6 @@ var param = {
 ```
 ![exHead,exFoot](/assets/imgs/exportDataExHeadExFoot.png "exHead,exFoot")
 
-
 ### Read More
 
 - [importData method](./import-data)
@@ -349,6 +309,7 @@ var param = {
 - [down2Text method](/docs/funcs/excel/down-to-text)
 - [onBeforeExport event](/docs/events/on-before-export)
 - [onExportFinish event](/docs/events/on-export-finish)
+- [한 시트를 그룹별로 나눠 여러 파일/워크시트로 다운로드 appendix](/docs/appx/excel-split-download)
 
 ### Since
 
@@ -359,8 +320,10 @@ var param = {
 |core|8.0.0.20|파일 형식 내용 추가|
 |core|8.0.0.21|`merge`, `allTypeToText`, `checkBoxOnValue`, `checkBoxOffValue`, `excelFontSize`, `excludeFooterRow`, `numberTypeToText` (xlsx 에서만 지원)|
 |core|8.0.0.29|`excelFontFamily` 기능 추가 (xlsx 에서만 지원)|
+|core|8.1.0.6|`directExcelData` 기능 추가 (xlsx 에서만 지원)|
 |core|8.1.0.30|`exHead`,`exFoot` 기능 추가 (xlsx 에서만 지원)|
 |core|8.1.0.39|`excelRowHeight : -1` 설정 추가|
+|core|8.1.0.40|`requiredMark` 기능 추가|
 |core|8.1.0.41|`sheetDesign : 4` 설정 추가|
 |core|8.1.0.83|`appendPrevSheet` 설정 추가 (exportDataBuffer 사용시에만 사용 가능)|
 |core|8.2.0.5|`onlyHeaderMerge` 설정 추가|
@@ -372,7 +335,5 @@ var param = {
 <!--!
 |`[비공개]` core|8.0.0.22|`downCombo` 기능 추가|
 |`[비공개]` core|8.1.0.4|`excelPage.paperSize`, `excelPage.orientation`, `excelPage.marginLeft`, `excelPage.marginRight`, `excelPage.marginTop`, `excelPage.marginBottom`, `excelPage.marginHeader`, `excelPage.marginFooter` 기능 추가|
-|`[비공개]` core|8.1.0.6|`directExcelData` 기능 추가|
-|`[비공개]` core|8.1.0.40|`requiredMark` 기능 추가|
 |`[비공개]` core|8.1.0.73|`excelPage.fitToWidth`, `excelPage.fitToHeight` 기능 추가|
 !-->

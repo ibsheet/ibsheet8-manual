@@ -36,7 +36,7 @@
 - [DecimalAdjust cfg](/docs/props/cfg/decimal-adjust)
 - [DecimalAdjust col](/docs/props/col/decimal-adjust)
 - [Format appendix](/docs/appx/format)
-- 
+
 ### Since
 
 |product|version|desc|

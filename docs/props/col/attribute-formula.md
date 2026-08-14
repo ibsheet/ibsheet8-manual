@@ -1,6 +1,6 @@
 # attribute+Formula ***(col)***
 
-<!-- synonyms: 열 속성 수식, col attribute formula, 컬럼 속성 자동 계산, 셀 색상 수식, 셀 편집 가능 수식 -->
+<!-- synonyms: 열 속성 수식, col attribute formula, 컬럼 속성 자동 계산, 셀 색상 수식, 셀 편집 가능 수식, TypeFormula, 셀별 Type 전환, Type 동적 변경, 조건부 컬럼 타입, 셀마다 다른 타입, Int Float 전환, Enum 전환, Date 전환, Bool을 Text로, 타입 변경, 타입 변환, 타입 바꾸기, 셀별 타입 변경, 컬럼 타입 변환, change column type, convert type -->
 
 > 컬럼에 설정해 셀별로 배경색(`Color`), 편집 가능 여부(`CanEdit`), 텍스트 색(`TextColor`) 등의 속성을 조건에 따라 다르게 적용할 때 이용합니다.  
 > [CanFormula](/docs/props/row/can-formula)가 `1`로 설정되어야 동작하며, [CalcOrder](/docs/props/row/calc-order)에 **`열이름+속성명`** 형식으로 정의해야 합니다.  
@@ -69,6 +69,55 @@ options.Cols = [
     }
 ];
 ```
+
+### TypeFormula — 셀별로 Type 동적 전환
+
+`TypeFormula`는 셀 값에 따라 컬럼의 Type을 셀 단위로 바꿉니다. `CalcOrder`에는 `열이름+Type` 형식(예: `"AmountType"`)으로 등록하며, Type을 바꿀 때는 그 Type이 필요로 하는 형식 속성(`Format`/`Enum`/`DataFormat` 등)과 값도 함께 지정해야 합니다.
+
+```javascript
+// (1) 값에 따라 Int/Float 로 전환 (숫자 Type + Format 지정)
+{Header: "금액", Type: "Text", Name: "Amount",
+  TypeFormula: function (fr) {
+    if (fr.Row["Currency"] === "KRW") { fr.Row["AmountFormat"] = "₩ #,##0";    return "Int"; }
+    if (fr.Row["Currency"] === "USD") { fr.Row["AmountFormat"] = "$ #,##0.00"; return "Float"; }
+  }
+}
+
+// (2) Enum 으로 전환 (Enum/EnumKeys 속성을 함께 지정)
+{Header: "결과", Type: "Text", Name: "Result",
+  TypeFormula: function (fr) {
+    if (fr.Row["ExamItem"] === "COL") {
+      fr.Row["ResultEnum"]     = "|정상|적록색맹|청황색맹";
+      fr.Row["ResultEnumKeys"] = "|N|RG|BY";
+      return "Enum";
+    }
+    return "Text";
+  }
+}
+
+// (3) Date 로 전환 (Format 3종 지정 + 값을 timestamp 로 변환)
+{Header: "결과", Type: "Text", Name: "ResultData",
+  TypeFormula: function (fr) {
+    if (fr.Row["fieldName"] !== "날짜") return "Text";
+    var s = fr.Row["ResultData"] + "";
+    if (s.length === 8) fr.Row["ResultData"] = IBSheet.stringToDate(s, "yyyyMMdd").getTime();
+    fr.Row["ResultDataFormat"]     = "yyyy/MM/dd";
+    fr.Row["ResultDataEditFormat"] = "yyyyMMdd";
+    fr.Row["ResultDataDataFormat"] = "yyyyMMdd";
+    return "Date";
+  }
+}
+
+// (4) Bool 을 Text 로 전환 (1/0 값을 표시용 라벨로)
+{Header: "상태", Type: "Bool", Name: "ActiveFlag",
+  TypeFormula: function (fr) {
+    fr.Row[fr.Col] = fr.Row[fr.Col] ? "활성" : "비활성";
+    return "Text";
+  }
+}
+```
+
+각 컬럼의 `CalcOrder`는 `Def.Row.CalcOrder`에 `"AmountType"`, `"ResultType"`처럼 `열이름+Type`으로 등록합니다.
 
 ### Try it
 - [Demo of attribute+Formula (기본 — 셀별 색상, 편집 가능 여부 적용)](https://jsfiddle.net/gh/get/library/pure/ibsheet/ibsheet8-manual-sample/tree/master/samples/properties/Col/attributeFormula/)
