@@ -64,6 +64,7 @@ void down2Excel( param );
 |freezePane|`number`|<span class='optional'>선택</span>|상단 행과 왼쪽 열을 틀 고정하여 다운로드하는 옵션입니다. 옵션 설정에 따라 다르게 틀 고정이 적용되어 다운로드되며, 비트 연산으로 동작합니다. <br/> <br/> `0`: 틀 고정을 적용하지 않음(`default`) <br/> `1`: 헤더 틀 고정 적용 (`2`과 함께 적용시 헤드 영역 틀 고정으로 동작) <br/> `2`: 헤드 영역 틀 고정 적용 <br/> `4`: 왼쪽 고정 열 틀 고정 적용|
 |workbookPassword|`string`|<span class='optional'>선택</span>| 다운받을 엑셀 파일에 비밀번호를 설정하려는 경우 사용하는 옵션입니다.<br/>xlsx 확장자 파일에서만 지원됩니다.|
 |enableFilter|`boolean`|<span class='optional'>선택</span>| 시트를 엑셀로 다운로드할 때, 시트영역에 엑셀 필터 기능을 활성화하여 다운로드합니다. <br>  **이 옵션은 현재 시트에 필터가 적용되어 있는지 여부와는 무관합니다. 더불어 이 옵션은 필터링된 결과를 다운로드하는 기능이 아니며, 단지 엑셀 필터 기능을 바로 사용할 수 있도록 시트 영역에 필터를 설정하는데 그칩니다.**|
+|widthRate|`number`|<span class='optional'>선택</span>|엑셀 다운로드 시 열 너비에 곱해질 배율을 설정합니다.<br/>`0`보다 큰 양수 값을 사용합니다. (예: `0.5` → 기본 크기의 절반, `0.8` → 80%, `1.3` → 130%)<br/>지정하지 않거나 `0` 이하 값을 지정하면 `1`(기본 다운로드 크기)로 적용됩니다.<br/>(`default: 1`) |
 <!--!
 |`[점검]` excludeSubSum|`boolean`|<span class='optional'>선택</span>|소계/누계 행 제외 여부를 설정합니다.<br/> `0(false)`: 소계/누계 모두 제외하지 않습니다. (`default`)<br/> `1(true)`: 소계/누계 모두 제외합니다.|
 |`[비공개]` autoSizeColumn|`boolean`|<span class='optional'>선택</span>|엑셀의 컬럼 너비를 자동으로 조절할 지 여부를 설정합니다.(단, 자동 조절 결과가 정확하지 않을 수 있습니다.) (`default: 0(false)`)|
@@ -348,3 +349,4 @@ var param = {
 |excel, servermodule|1.1.0, 1.1.24|`exHead`, `exFoot` 기능 추가|
 |excel, servermodule|1.1.15, 1.1.37|`freezePane` 기능 추가|
 |excel, servermodule|1.1.32(excel), 2.0.15(servermodule) |`enableFilter` 기능 추가|
+|excel|1.1.39 |`widthRate` 기능 추가|

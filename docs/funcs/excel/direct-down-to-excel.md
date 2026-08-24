@@ -48,6 +48,7 @@ void directDown2Excel( param );
 |useXhr|`boolean`|<span class='optional'>선택</span>| xhr 통신을 이용해 엑셀 파일을 다운로드받습니다.<br>`0(false)`:xhr 통신 사용 안함 (`default`)<br>`1(true)`:xhr 통신 사용|
 |exHead|`object`|<span class='optional'>선택</span>|시트 상단에 표시하고 싶은 내용을 설정합니다.<br>titleText, userMerge, header, footer 속성과 같이 사용할 수 없으며, 같이 사용시 titleText, userMerge, header, footer속성은 무시됩니다. <br> 해당 속성은 poi를 사용하는 경우에만 설정이 가능합니다.|
 |exFoot|`object`|<span class='optional'>선택</span>|시트 하단에 표시하고 싶은 내용을 설정합니다.<br>titleText, userMerge, header, footer 속성과 같이 사용할 수 없으며, 같이 사용시 titleText, userMerge, header, footer속성은 무시됩니다. <br> 해당 속성은 poi를 사용하는 경우에만 설정이 가능합니다.|
+|widthRate|`number`|<span class='optional'>선택</span>|엑셀 다운로드 시 열 너비에 곱해질 배율을 설정합니다.<br/>`0`보다 큰 양수 값을 사용합니다. (예: `0.5` → 기본 크기의 절반, `0.8` → 80%, `1.3` → 130%)<br/>지정하지 않거나 `0` 이하 값을 지정하면 `1`(기본 다운로드 크기)로 적용됩니다.<br/>(`default: 1`) |
 <!--!
 |`[비공개]` hiddenColumn|`boolean`|<span class='optional'>선택</span>|시트 내에 감춰진 열을 엑셀에서도 "열 숨기기" 형태로 다운로드 합니다.<br>`0(false)`:감춰진 열 다운로드 시 미포함 (`default`)<br>`1(true)`:감춰진 열 "열 숨기기" 형태로 다운로드 시 포함|
 !-->
@@ -347,3 +348,4 @@ var param = {
 |---|---|---|
 |excel|0.0.0|기능 추가|
 |excel|0.0.8|`reqHeader` 기능 추가|
+|excel|1.1.39|`widthRate` 기능 추가|
