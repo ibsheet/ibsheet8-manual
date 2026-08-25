@@ -5,11 +5,11 @@
 2. 기본 시트 생성 방법
 3. Formula 기능
 4. 공통 기능 정의 (Def 와 ibsheet-common.js)
-5. 함수와 이벤트
-6. 데이터 조회
-7. 데이터 추출과 저장
-8. 렌더링
-9. 시트 구조 이해
+5. 시트 구조 이해
+6. 함수와 이벤트
+7. 데이터 조회
+8. 데이터 추출과 저장
+9. 렌더링
 10. 파일 export/import 기능 사용
 11. 컨텍스트 메뉴 기능
 12. 커스텀 다이얼로그 기능 사용
@@ -172,201 +172,7 @@ IBSheet.CommonOptions 는 ibsheet-common.js 에 정의되어 있습니다.
 열에 설정되는 여러 가지 속성을 변수에 담아두었다가, Extend 속성으로 동일한 기능을 하는 열을 손쉽게 생성할 수 있습니다.  
 IB_Preset 변수는 ibsheet-common.js 파일에 정의되어 있습니다.
 
-## 5. 함수와 이벤트
-IBSheet 함수와 이벤트에 대한 기본적인 사용법을 설명합니다.
-#### 1) <a href="../../#docs/funcs/method" target="_blank">기본적인 함수 사용 방법</a>
-- 자주 사용되는 함수
-
-|함수명|기능설명|
-|---|---|
-|<a href="../../#docs/funcs/core/get-value" target="_blank">getValue</a>|셀의 값을 얻음|
-|<a href="../../#docs/funcs/core/set-value" target="_blank">setValue</a>|셀의 값을 수정|
-|<a href="../../#docs/funcs/core/get-string" target="_blank">getString</a>|포맷이 적용된 셀의 값을 얻음|
-|<a href="../../#docs/funcs/core/set-string" target="_blank">setString</a>|포맷을 포함한 문자열로 셀값을 수정|
-|<a href="../../#docs/funcs/core/set-all-check" target="_blank">setAllCheck</a>|Bool 타입 컬럼에서 전체 체크|
-|<a href="../../#docs/funcs/core/get-attribute" target="_blank">getAttribute</a>|행,열,셀의 속성을 얻음|
-|<a href="../../#docs/funcs/core/set-attribute" target="_blank">setAttribute</a>|행,열,셀의 속성을 수정|
-|<a href="../../#docs/funcs/core/add-row" target="_blank">addRow</a>|행 추가|
-|<a href="../../#docs/funcs/core/delete-row" target="_blank">deleteRow</a>|행 삭제|
-|<a href="../../#docs/funcs/core/remove-all" target="_blank">removeAll</a>|전체 데이터 제거|
-|<a href="../../#docs/funcs/core/dispose" target="_blank">dispose</a>|시트객체 제거|
-|<a href="../../#docs/funcs/core/focus" target="_blank">focus</a>|특정 위치로 포커스 이동|
-|<a href="../../#docs/funcs/core/do-sort" target="_blank">doSort</a>|특정 컬럼 소팅|
-|<a href="../../#docs/funcs/core/do-filter" target="_blank">doFilter</a>|특정 컬럼 필터링|
-|<a href="../../#docs/funcs/core/make-sub-total" target="_blank">makeSubTotal</a>|소계 삽입 기능|
-|<a href="../../#docs/funcs/core/version" target="_blank">version</a>|제품의 버전 확인|
-
-
-#### 2) <a href="../../#docs/events/01-event" target="_blank">이벤트 사용 방법</a>
-- 자주 사용되는 이벤트
-
-|이벤트명|기능설명|
-|---|---|
-|<a href="../../#docs/events/on-after-click" target="_blank">onAfterClick</a>|클릭시 발생 이벤트|
-|<a href="../../#docs/events/on-dbl-click" target="_blank">onDblClick</a>|더블클릭시 발생 이벤트|
-|<a href="../../#docs/events/on-before-change" target="_blank">onBeforeChange</a>|셀 값이 수정되기 전 발생 이벤트|
-|<a href="../../#docs/events/on-after-change" target="_blank">onAfterChange</a>|셀의 값이 수정된 후 발생 이벤트|
-|<a href="../../#docs/events/on-focus" target="_blank">onFocus</a>|시트 내에 포커스가 이동될 때 발생 이벤트|
-|<a href="../../#docs/events/on-render-first-finish" target="_blank">onRenderFirstFinish</a>|시트 객체가 최초 생성되었을 때 발생 이벤트|
-
-#### 3) JSON 이벤트 (Properties/Event)
-- 특정 행이나 열 혹은 셀에 이벤트 정의(<a href="../../#docs/props/event/on-change" target="_blank">참고</a>)
-
-## 6. 데이터 조회
-#### 1) 조회 / 데이터 로드 함수 이용
-
-시트 내에 데이터 로딩은 <a href="../../#docs/props/cfg/search-mode" target="_blank">SearchMode</a> 설정에 따라 달라집니다.
-
-|유형|함수명|기능설명|
-|---|---|---|
-|기본 조회|<a href="../../#docs/funcs/core/do-search" target="_blank">doSearch</a>|지정한 URL을 호출하여 리턴된 json을 시트에 로딩합니다.<br/>(SearchMode 0, 1, 2)|
-|페이징 조회|<a href="../../#docs/funcs/core/do-search-paging" target="_blank">doSearchPaging</a>|페이징 조회(cfg:{SearchMode:3, 4, 5}) 사용시 지속적으로 호출할 서버 URL을 설정합니다.|
-|데이터 로드|<a href="../../#docs/funcs/core/load-search-data" target="_blank">loadSearchData</a>|json 데이터(string혹은 object)를 시트에 로딩합니다.<br/>(SearchMode 0, 1, 2)|
-
-**위 함수는 모두 비동기 형식입니다.**
-
-#### 2) 관련 이벤트
-
-조회/데이터 로딩 과정에서 다음과 같은 이벤트가 발생합니다. (중간에 렌더링 이벤트는 제외)
-
-|순서|이벤트명|기능설명|
-|---|---|---|
-|1|<a href="../../#docs/events/on-search-start" target="_blank">onSearchStart</a>|조회 함수로 데이터 조회가 시작되기 전에 발생합니다. `1(true)`을 리턴하면 조회가 취소됩니다.|
-|2|<a href="../../#docs/events/on-receive-data" target="_blank">onReceiveData</a>|데이터 파싱 직전에 발생합니다. 로드 될 데이터를 조작할 수 있습니다.|
-|3|<a href="../../#docs/events/on-before-data-load" target="_blank">onBeforeDataLoad</a>|json 데이터 파싱 후 발생합니다. 파싱된 json 데이터를 조작할 수 있습니다.|
-|4|<a href="../../#docs/events/on-data-load" target="_blank">onDataLoad</a>|화면에 렌더링 전에 발생합니다.|
-|5|<a href="../../#docs/events/on-search-finish" target="_blank">onSearchFinish</a>|데이터에 대한 렌더링이 끝나고, 모든 조회 절차가 끝난 후에 발생합니다.|
-
-#### 3) 데이터 구조
-
-<a href="../../#docs/dataStructure/data-structure" target="_blank">조회 데이터 구조 참고</a>
-```javascript
-//일반적인 조회 데이터 구조
-{"data":[
-	{"colName1":"1234", "colName2":"abcd","colName3":"가나다라"},
-	{"colName1":"1234", "colName2":"abcd","colName3":"가나다라"},
-	....
-]}
-```
-## 7. 데이터 추출과 저장
-시트에서 값을 수정하거나 행을 추가하거나 삭제하면 각 행에 **상태(Status)** 가 부여됩니다.  
-저장 함수(`doSave`/`getSaveJson`/`getSaveString`)는 이 상태를 데이터와 함께 서버로 전송해, 서버가 **입력/수정/삭제**를 구분할 수 있게 합니다.
-
-|상태|언제 부여되나|의미|
-|---|---|---|
-|`Added`|`addRow` 등으로 새 행을 추가할 때|신규 입력 행|
-|`Changed`|기존 행의 셀 값을 수정할 때|수정된 행|
-|`Deleted`|`deleteRow`로 삭제 표시할 때|삭제 예정 행|
-
-시트는 이 상태에 따라 행에 배경색을 자동으로 표시합니다. 표시 여부/범위는 <a href="../../#docs/props/cfg/color-state" target="_blank">ColorState</a> 설정으로 제어하며, 기본값(`63`)에서 켜져 있습니다.
-
-행 상태를 직접 확인하려면 <a href="../../#docs/funcs/common/get-row-status" target="_blank">getRowStatus</a>, 상태별로 행을 추출하려면 <a href="../../#docs/funcs/core/get-rows-by-status" target="_blank">getRowsByStatus</a>를 사용합니다.
-
-#### 1) 데이터 추출과 저장 함수
-
-다음 함수로 시트의 변경 내용을 추출하거나 서버에 저장합니다.
-
-|함수명|기능설명|
-|---|---|
-|<a href="../../#docs/funcs/core/do-save" target="_blank">doSave</a>|시트에서 변경된 내용을 추출하여 서버로 전송하고, 서버에서 응답 JSON 내용에 따라 시트에 반영합니다.|
-|<a href="../../#docs/funcs/core/get-save-string" target="_blank">getSaveString</a>|시트 내에 수정된 내용을 행 단위로 querystring형식으로 추출하여 리턴합니다.|
-|<a href="../../#docs/funcs/core/get-save-json" target="_blank">getSaveJson</a>|시트 내에 수정된 내용을 행 단위로 json형식으로 추출하여 리턴합니다.|
-
-`doSave`는 내부적으로 데이터 취합(`getSaveString` 또는 `getSaveJson`), ajax 전송, 상태 클리어를 순차적으로 수행합니다.
-
-
-#### 2) 행,셀안에 데이터 수정 정보 확인
-
-- 수정된 행 객체를 얻음  
-<a href="../../#docs/funcs/core/get-rows-by-status" target="_blank">getRowsByStatus()</a>함수를 수정,삭제,입력 에 따라 필요한 행 객체를 추출할 수 있습니다.
-
-- 수정된 값이 1개라도 존재하는지 여부 확인  
-<a href="../../#docs/funcs/core/has-changed-data" target="_blank">hasChangedData()</a>함수를 통해 true/false로 판별할 수 있습니다.
-
-- 특정 행의 수정여부를 확인
-```javascript
-var row = sheet.getRowByIndex(55);
-if(sheet.getAttribute(row, null, "Changed")){
-	//해당 행은 수정된 내용이 있음.
-}
-if(sheet.getAttribute(row, null, "Added")){
-	//신규로 추가된 행임.
-}
-if(sheet.getAttribute(row, null, "Deleted")){
-	//삭제 예정행임
-}
-```
-
-> `Changed`/`Added`/`Deleted`는 셋 중 하나만 켜지는 게 아니라, 한 행에 여러 개가 동시에 켜질 수 있습니다(예: 조회된 행을 수정 후 삭제하면 `Changed`와 `Deleted`가 모두 `1`).  
-> 특정 상태의 행만 모으려면 <a href="../../#docs/funcs/core/get-rows-by-status" target="_blank">getRowsByStatus</a>를 사용하세요.
-
-- 특정 셀의 수정 여부 및 수정 전 값을 확인  
-셀의 수정 전(최초 로딩) 값은 <a href="../../#docs/props/cell/orig" target="_blank">Orig</a> 속성으로 확인합니다.
-```javascript
-var row = sheet.getFocusedRow();
-//Name이 AMT인 컬럼의 수정 여부와 수정 전 값을 getAttribute로 확인
-if(sheet.getAttribute(row, "AMT", "Changed")){//수정됨.
-	//수정 전 값 확인
-	var oldValue = sheet.getAttribute(row, "AMT", "Orig");
-}
-```
-
-#### 3) 저장 관련 이벤트
-
-|순서|이벤트명|기능설명|
-|---|---|---|
-|1|<a href="../../#docs/events/on-save" target="_blank">onSave</a>|doSave함수 호출시 발생합니다.|
-|2|<a href="../../#docs/events/on-before-save" target="_blank">onBeforeSave</a>|doSave함수를 통해 수정한 데이터가 서버로 전송되기 전에 발생합니다.|
-|3|<a href="../../#docs/events/on-after-save" target="_blank">onAfterSave</a>|서버에서 저장에 대한 결과를 받은 후 발생합니다.|
-
-#### 4) 데이터 구조
-
-저장 후 서버가 돌려주는 리턴 json 형식입니다. (<a href="../../#docs/dataStructure/saving-structure" target="_blank">참고</a>)
-```javascript
-{
-	"IO":{
-		"Result":1, "Message":"저장되었습니다."
-	}
-}
-```
-
-서버 응답을 직접 처리하는 경우, 이 리턴 결과를 <a href="../../#docs/funcs/core/apply-save-result" target="_blank">applySaveResult</a> 또는 <a href="../../#docs/funcs/core/accept-changed-data" target="_blank">acceptChangedData</a>로 시트에 반영합니다.  
-(`Deleted` 행은 삭제하고, `Added`/`Changed`는 상태를 클리어합니다.)
-
-## 8. 렌더링
-#### 1) 시트 내 값 변경과 렌더링
-
-시트 내에 값을 변경하거나 색상을 변경하는 등 화면에 변화를 일으키는 경우 렌더링 타이밍에 주의하여야 합니다.
-
-```javascript
-//여러번 렌더링이 일어나는 로직
-var drows = sheet.getDataRows();
-for(var i=0;i<drows.length;i++){
-	sheet.setValue(drows[i], "DWT" , "사용불가");
-	sheet.setAttribute( {row:drows[i],attr:"Color",val:"#FF0000"});
-}
-
-//단 한번만 렌더링이 일어나는 로직
-var drows = sheet.getDataRows();
-for(var i=0;i<drows.length;i++){
-	//setValue나 setAttribute에 render인자값을 0으로 설정(값의 수정이 있어도 화면에 반영되지 않음)
-	sheet.setValue(drows[i], "DWT" , "사용불가" , 0 );
-	sheet.setAttribute( {row:drows[i],attr:"Color",val:"#FF0000",render:0});
-}
-//최종 변경된 내용이 화면에 표시됨.
-sheet.rerender();
-```
-
-다양한 렌더링 함수 참고
-
-|함수|렌더링 범위|
-|---|---|
-|<a href="../../#docs/funcs/core/rerender" target="_blank">rerender()</a>|시트 전체|
-|<a href="../../#docs/funcs/core/render-body" target="_blank">renderBody()</a>|데이터(Body) 영역만|
-|<a href="../../#docs/funcs/core/refresh-row" target="_blank">refreshRow()</a>|특정 행 하나|
-|<a href="../../#docs/funcs/core/refresh-cell" target="_blank">refreshCell()</a>|특정 셀 하나|
-
-## 9. 시트 구조 이해
+## 5. 시트 구조 이해
 IBSheet 각 구조 (헤더, 헤드, 바디, 풋)에 대해 이해하고, 행/열 객체에 대해 설명합니다.
 
 
@@ -504,6 +310,200 @@ var color = sheet.getAttribute(null, "saID", "Color");
 //컬럼 속성 변경
 sheet.setAttribute({col:"AMT_12",attr:"CanEdit",val:0});
 ```
+
+## 6. 함수와 이벤트
+IBSheet 함수와 이벤트에 대한 기본적인 사용법을 설명합니다.
+#### 1) <a href="../../#docs/funcs/method" target="_blank">기본적인 함수 사용 방법</a>
+- 자주 사용되는 함수
+
+|함수명|기능설명|
+|---|---|
+|<a href="../../#docs/funcs/core/get-value" target="_blank">getValue</a>|셀의 값을 얻음|
+|<a href="../../#docs/funcs/core/set-value" target="_blank">setValue</a>|셀의 값을 수정|
+|<a href="../../#docs/funcs/core/get-string" target="_blank">getString</a>|포맷이 적용된 셀의 값을 얻음|
+|<a href="../../#docs/funcs/core/set-string" target="_blank">setString</a>|포맷을 포함한 문자열로 셀값을 수정|
+|<a href="../../#docs/funcs/core/set-all-check" target="_blank">setAllCheck</a>|Bool 타입 컬럼에서 전체 체크|
+|<a href="../../#docs/funcs/core/get-attribute" target="_blank">getAttribute</a>|행,열,셀의 속성을 얻음|
+|<a href="../../#docs/funcs/core/set-attribute" target="_blank">setAttribute</a>|행,열,셀의 속성을 수정|
+|<a href="../../#docs/funcs/core/add-row" target="_blank">addRow</a>|행 추가|
+|<a href="../../#docs/funcs/core/delete-row" target="_blank">deleteRow</a>|행 삭제|
+|<a href="../../#docs/funcs/core/remove-all" target="_blank">removeAll</a>|전체 데이터 제거|
+|<a href="../../#docs/funcs/core/dispose" target="_blank">dispose</a>|시트객체 제거|
+|<a href="../../#docs/funcs/core/focus" target="_blank">focus</a>|특정 위치로 포커스 이동|
+|<a href="../../#docs/funcs/core/do-sort" target="_blank">doSort</a>|특정 컬럼 소팅|
+|<a href="../../#docs/funcs/core/do-filter" target="_blank">doFilter</a>|특정 컬럼 필터링|
+|<a href="../../#docs/funcs/core/make-sub-total" target="_blank">makeSubTotal</a>|소계 삽입 기능|
+|<a href="../../#docs/funcs/core/version" target="_blank">version</a>|제품의 버전 확인|
+
+
+#### 2) <a href="../../#docs/events/01-event" target="_blank">이벤트 사용 방법</a>
+- 자주 사용되는 이벤트
+
+|이벤트명|기능설명|
+|---|---|
+|<a href="../../#docs/events/on-after-click" target="_blank">onAfterClick</a>|클릭시 발생 이벤트|
+|<a href="../../#docs/events/on-dbl-click" target="_blank">onDblClick</a>|더블클릭시 발생 이벤트|
+|<a href="../../#docs/events/on-before-change" target="_blank">onBeforeChange</a>|셀 값이 수정되기 전 발생 이벤트|
+|<a href="../../#docs/events/on-after-change" target="_blank">onAfterChange</a>|셀의 값이 수정된 후 발생 이벤트|
+|<a href="../../#docs/events/on-focus" target="_blank">onFocus</a>|시트 내에 포커스가 이동될 때 발생 이벤트|
+|<a href="../../#docs/events/on-render-first-finish" target="_blank">onRenderFirstFinish</a>|시트 객체가 최초 생성되었을 때 발생 이벤트|
+
+#### 3) JSON 이벤트 (Properties/Event)
+- 특정 행이나 열 혹은 셀에 이벤트 정의(<a href="../../#docs/props/event/on-change" target="_blank">참고</a>)
+
+## 7. 데이터 조회
+#### 1) 조회 / 데이터 로드 함수 이용
+
+시트 내에 데이터 로딩은 <a href="../../#docs/props/cfg/search-mode" target="_blank">SearchMode</a> 설정에 따라 달라집니다.
+
+|유형|함수명|기능설명|
+|---|---|---|
+|기본 조회|<a href="../../#docs/funcs/core/do-search" target="_blank">doSearch</a>|지정한 URL을 호출하여 리턴된 json을 시트에 로딩합니다.<br/>(SearchMode 0, 1, 2)|
+|페이징 조회|<a href="../../#docs/funcs/core/do-search-paging" target="_blank">doSearchPaging</a>|페이징 조회(cfg:{SearchMode:3, 4, 5}) 사용시 지속적으로 호출할 서버 URL을 설정합니다.|
+|데이터 로드|<a href="../../#docs/funcs/core/load-search-data" target="_blank">loadSearchData</a>|json 데이터(string혹은 object)를 시트에 로딩합니다.<br/>(SearchMode 0, 1, 2)|
+
+**위 함수는 모두 비동기 형식입니다.**
+
+#### 2) 관련 이벤트
+
+조회/데이터 로딩 과정에서 다음과 같은 이벤트가 발생합니다. (중간에 렌더링 이벤트는 제외)
+
+|순서|이벤트명|기능설명|
+|---|---|---|
+|1|<a href="../../#docs/events/on-search-start" target="_blank">onSearchStart</a>|조회 함수로 데이터 조회가 시작되기 전에 발생합니다. `1(true)`을 리턴하면 조회가 취소됩니다.|
+|2|<a href="../../#docs/events/on-receive-data" target="_blank">onReceiveData</a>|데이터 파싱 직전에 발생합니다. 로드 될 데이터를 조작할 수 있습니다.|
+|3|<a href="../../#docs/events/on-before-data-load" target="_blank">onBeforeDataLoad</a>|json 데이터 파싱 후 발생합니다. 파싱된 json 데이터를 조작할 수 있습니다.|
+|4|<a href="../../#docs/events/on-data-load" target="_blank">onDataLoad</a>|화면에 렌더링 전에 발생합니다.|
+|5|<a href="../../#docs/events/on-search-finish" target="_blank">onSearchFinish</a>|데이터에 대한 렌더링이 끝나고, 모든 조회 절차가 끝난 후에 발생합니다.|
+
+#### 3) 데이터 구조
+
+<a href="../../#docs/dataStructure/data-structure" target="_blank">조회 데이터 구조 참고</a>
+```javascript
+//일반적인 조회 데이터 구조
+{"data":[
+	{"colName1":"1234", "colName2":"abcd","colName3":"가나다라"},
+	{"colName1":"1234", "colName2":"abcd","colName3":"가나다라"},
+	....
+]}
+```
+## 8. 데이터 추출과 저장
+시트에서 값을 수정하거나 행을 추가하거나 삭제하면 각 행에 **상태(Status)** 가 부여됩니다.  
+저장 함수(`doSave`/`getSaveJson`/`getSaveString`)는 이 상태를 데이터와 함께 서버로 전송해, 서버가 **입력/수정/삭제**를 구분할 수 있게 합니다.
+
+|상태|언제 부여되나|의미|
+|---|---|---|
+|`Added`|`addRow` 등으로 새 행을 추가할 때|신규 입력 행|
+|`Changed`|기존 행의 셀 값을 수정할 때|수정된 행|
+|`Deleted`|`deleteRow`로 삭제 표시할 때|삭제 예정 행|
+
+시트는 이 상태에 따라 행에 배경색을 자동으로 표시합니다. 표시 여부/범위는 <a href="../../#docs/props/cfg/color-state" target="_blank">ColorState</a> 설정으로 제어하며, 기본값(`63`)에서 켜져 있습니다.
+
+행 상태를 직접 확인하려면 <a href="../../#docs/funcs/common/get-row-status" target="_blank">getRowStatus</a>, 상태별로 행을 추출하려면 <a href="../../#docs/funcs/core/get-rows-by-status" target="_blank">getRowsByStatus</a>를 사용합니다.
+
+#### 1) 데이터 추출과 저장 함수
+
+다음 함수로 시트의 변경 내용을 추출하거나 서버에 저장합니다.
+
+|함수명|기능설명|
+|---|---|
+|<a href="../../#docs/funcs/core/do-save" target="_blank">doSave</a>|시트에서 변경된 내용을 추출하여 서버로 전송하고, 서버에서 응답 JSON 내용에 따라 시트에 반영합니다.|
+|<a href="../../#docs/funcs/core/get-save-string" target="_blank">getSaveString</a>|시트 내에 수정된 내용을 행 단위로 querystring형식으로 추출하여 리턴합니다.|
+|<a href="../../#docs/funcs/core/get-save-json" target="_blank">getSaveJson</a>|시트 내에 수정된 내용을 행 단위로 json형식으로 추출하여 리턴합니다.|
+
+`doSave`는 내부적으로 데이터 취합(`getSaveString` 또는 `getSaveJson`), ajax 전송, 상태 클리어를 순차적으로 수행합니다.
+
+
+#### 2) 행,셀안에 데이터 수정 정보 확인
+
+- 수정된 행 객체를 얻음  
+<a href="../../#docs/funcs/core/get-rows-by-status" target="_blank">getRowsByStatus()</a>함수를 수정,삭제,입력 에 따라 필요한 행 객체를 추출할 수 있습니다.
+
+- 수정된 값이 1개라도 존재하는지 여부 확인  
+<a href="../../#docs/funcs/core/has-changed-data" target="_blank">hasChangedData()</a>함수를 통해 true/false로 판별할 수 있습니다.
+
+- 특정 행의 수정여부를 확인
+```javascript
+var row = sheet.getRowByIndex(55);
+if(sheet.getAttribute(row, null, "Changed")){
+	//해당 행은 수정된 내용이 있음.
+}
+if(sheet.getAttribute(row, null, "Added")){
+	//신규로 추가된 행임.
+}
+if(sheet.getAttribute(row, null, "Deleted")){
+	//삭제 예정행임
+}
+```
+
+> `Changed`/`Added`/`Deleted`는 셋 중 하나만 켜지는 게 아니라, 한 행에 여러 개가 동시에 켜질 수 있습니다(예: 조회된 행을 수정 후 삭제하면 `Changed`와 `Deleted`가 모두 `1`).  
+> 특정 상태의 행만 모으려면 <a href="../../#docs/funcs/core/get-rows-by-status" target="_blank">getRowsByStatus</a>를 사용하세요.
+
+- 특정 셀의 수정 여부 및 수정 전 값을 확인  
+셀의 수정 전(최초 로딩) 값은 <a href="../../#docs/props/cell/orig" target="_blank">Orig</a> 속성으로 확인합니다.
+```javascript
+var row = sheet.getFocusedRow();
+//Name이 AMT인 컬럼의 수정 여부와 수정 전 값을 getAttribute로 확인
+if(sheet.getAttribute(row, "AMT", "Changed")){//수정됨.
+	//수정 전 값 확인
+	var oldValue = sheet.getAttribute(row, "AMT", "Orig");
+}
+```
+
+#### 3) 저장 관련 이벤트
+
+|순서|이벤트명|기능설명|
+|---|---|---|
+|1|<a href="../../#docs/events/on-save" target="_blank">onSave</a>|doSave함수 호출시 발생합니다.|
+|2|<a href="../../#docs/events/on-before-save" target="_blank">onBeforeSave</a>|doSave함수를 통해 수정한 데이터가 서버로 전송되기 전에 발생합니다.|
+|3|<a href="../../#docs/events/on-after-save" target="_blank">onAfterSave</a>|서버에서 저장에 대한 결과를 받은 후 발생합니다.|
+
+#### 4) 데이터 구조
+
+저장 후 서버가 돌려주는 리턴 json 형식입니다. (<a href="../../#docs/dataStructure/saving-structure" target="_blank">참고</a>)
+```javascript
+{
+	"IO":{
+		"Result":1, "Message":"저장되었습니다."
+	}
+}
+```
+
+서버 응답을 직접 처리하는 경우, 이 리턴 결과를 <a href="../../#docs/funcs/core/apply-save-result" target="_blank">applySaveResult</a> 또는 <a href="../../#docs/funcs/core/accept-changed-data" target="_blank">acceptChangedData</a>로 시트에 반영합니다.  
+(`Deleted` 행은 삭제하고, `Added`/`Changed`는 상태를 클리어합니다.)
+
+## 9. 렌더링
+#### 1) 시트 내 값 변경과 렌더링
+
+시트 내에 값을 변경하거나 색상을 변경하는 등 화면에 변화를 일으키는 경우 렌더링 타이밍에 주의하여야 합니다.
+
+```javascript
+//여러번 렌더링이 일어나는 로직
+var drows = sheet.getDataRows();
+for(var i=0;i<drows.length;i++){
+	sheet.setValue(drows[i], "DWT" , "사용불가");
+	sheet.setAttribute( {row:drows[i],attr:"Color",val:"#FF0000"});
+}
+
+//단 한번만 렌더링이 일어나는 로직
+var drows = sheet.getDataRows();
+for(var i=0;i<drows.length;i++){
+	//setValue나 setAttribute에 render인자값을 0으로 설정(값의 수정이 있어도 화면에 반영되지 않음)
+	sheet.setValue(drows[i], "DWT" , "사용불가" , 0 );
+	sheet.setAttribute( {row:drows[i],attr:"Color",val:"#FF0000",render:0});
+}
+//최종 변경된 내용이 화면에 표시됨.
+sheet.rerender();
+```
+
+다양한 렌더링 함수 참고
+
+|함수|렌더링 범위|
+|---|---|
+|<a href="../../#docs/funcs/core/rerender" target="_blank">rerender()</a>|시트 전체|
+|<a href="../../#docs/funcs/core/render-body" target="_blank">renderBody()</a>|데이터(Body) 영역만|
+|<a href="../../#docs/funcs/core/refresh-row" target="_blank">refreshRow()</a>|특정 행 하나|
+|<a href="../../#docs/funcs/core/refresh-cell" target="_blank">refreshCell()</a>|특정 셀 하나|
 
 ## 10. 파일 export/import 기능 사용
 파일을 export하거나 import하는 방법은 크게 서버에서 수행하는 방법과 클라이언트에서 수행하는 방법으로 나누어집니다.
