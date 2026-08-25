@@ -2,14 +2,12 @@
 
 <!-- synonyms: static, 정적 메소드, 전역 함수, static method, global function, IBSheet 정적, create, 시트 생성, IBSheet.create, 시트 인스턴스 생성, 시트 만들기, 그리드 생성, 시트 초기화, initialize, create sheet, 시트 안 보임, 시트 생성 안됨, Duplicate sheet_id, 시트 안 만들어짐, await 안됨, 생성 순서, 라이프사이클, SPA 시트 생성 -->
 
-> 지정한 위치에 시트객체를 생성합니다.<br/>
-> 시트객체가 생성되면 `IBSheet`객체에 배열형식으로 추가(push)됩니다.<br/>
-
 > 지정한 위치에 시트객체를 생성합니다.  
 > 시트객체가 생성되면 `IBSheet` 객체에 배열 형식으로 추가(push)됩니다.
 
 - `el` 객체의 크기에 따라 시트의 너비/높이가 결정됩니다.
 - `el` 객체의 너비/높이가 정의되지 않은 경우에는 너비는 100%, 높이는 800px로 설정됩니다.
+- 크기는 `el`의 **인라인 `style`**로 지정합니다. CSS 클래스로 지정한 크기를 쓰려면 [UseClassStyle](/docs/props/cfg/use_class-style)를 `1`로 설정합니다.
 - 화면 크기에 맞춘 높이 지정(반응형)은 [시트객체 높이 설정](/docs/appx/sheet-height)을 참고하세요.
 
 ### Syntax

@@ -50,7 +50,9 @@ sheet.importData({
 
 ## 3. down2Excel / directDown2Excel 다운로드 시 DRM 적용 (서버 모듈)
 
-생성된 엑셀 문서를 DRM 처리하려면, `Down2Excel.jsp`(또는 `DirectDown2Excel.jsp`)의 기본 방식인 "다운로드 1"(`down.downToBrowser()`)을 주석 처리하고, "다운로드 2"(서버에 저장 후 전송) 방식으로 변경합니다. `down.saveToFile()`로 저장된 파일을 DRM 처리한 뒤 스트림으로 전송합니다. 두 jsp 모두 동일한 "다운로드 2" 구간이 제공됩니다.
+생성된 엑셀 문서를 DRM 처리하려면, `Down2Excel.jsp`(또는 `DirectDown2Excel.jsp`)의 기본 방식인 "다운로드 1"(`down.downToBrowser()`)을 주석 처리하고, "다운로드 2"(서버에 저장 후 전송) 방식으로 변경합니다.  
+`down.saveToFile()`로 저장된 파일을 DRM 처리한 뒤 스트림으로 전송합니다.  
+두 jsp 모두 동일한 "다운로드 2" 구간이 제공됩니다.
 
 ```java
 // 다운로드 1. 생성된 문서를 브라우저를 통해 다운로드

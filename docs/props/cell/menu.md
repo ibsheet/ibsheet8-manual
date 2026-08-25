@@ -2,9 +2,7 @@
 
 <!-- synonyms: Menu, 셀 메뉴, 컨텍스트 메뉴, 우클릭 메뉴, 팝업 메뉴, 오른쪽 클릭 메뉴, 셀 우클릭 메뉴, cell menu, context menu, right-click menu, popup menu -->
 
-> 특정 셀 위에서 마우스 우측 버튼 클릭시 보여질 컨텍스트 메뉴를 설정합니다.
->
-> 7장의 [Menu appendix](/docs/appx/menu)내용을 참고해 주세요.
+> 특정 셀 위에서 마우스 우측 버튼 클릭 시 보여질 컨텍스트 메뉴를 설정합니다.
 
 ### Type
 `mixed`( `object` \| `string` )
@@ -12,8 +10,8 @@
 ### Options
 |Value|Description|
 |-----|-----|
-|`string`|첫글자를 구분자로 한 컨텍스트 메뉴스트링 지정  (ex: @저장@임시저장@취소 or *상신*취소) |
-|`object`|[Menu Object 설정 링크 참고](/docs/appx/menu)
+|`string`|첫 글자를 구분자로 사용하는 메뉴 문자열 (ex: `@저장@임시저장@취소` 또는 `*상신*취소`)|
+|`object`|[Menu Object 설정 링크 참고](/docs/appx/menu)|
 
 ### Example
 ```javascript
@@ -34,10 +32,23 @@ sheet.refreshCell({row:ROW, col:"CLS"});
         {... , "CLSMenu":"|국내|해외" , ...}
     ]
 }
+
+//4. 선택한 항목은 onSelectMenu 이벤트에서 처리 (evtParam.col로 어느 셀인지 구분)
+options.Events = {
+    onSelectMenu: function (evtParam) {
+        if (evtParam.col === "CLS") {
+            // evtParam.result = 선택한 항목 (예: "진행")
+            // 선택값에 따른 처리
+        }
+    }
+};
 ```
 
 ### Read More
 - [Menu appendix](/docs/appx/menu)
+- [onSelectMenu event](/docs/events/on-select-menu)
+- [onShowMenu event](/docs/events/on-show-menu)
+- [MenuHSeparator cfg](/docs/props/cfg/menu-h-separator)
 
 
 ### Since

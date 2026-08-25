@@ -46,7 +46,8 @@ jQuery 같은 프론트엔드 라이브러리와 같은 성격으로, 소스(web
 
 ## STEP 2. 시트를 그릴 영역(div) 만들기
 
-시트는 단독으로 생성할 수 없습니다. 먼저 시트를 그릴 `div` 요소를 만들고, 그 `div`의 `id`를 시트 생성 시 `el` 값으로 지정하면 해당 `div` 안에 시트가 그려집니다.
+시트는 단독으로 생성할 수 없습니다.  
+먼저 시트를 그릴 `div` 요소를 만들고, 그 `div`의 `id`를 시트 생성 시 `el` 값으로 지정하면 해당 `div` 안에 시트가 그려집니다.
 
 ```html
 <!-- 시트가 될 DIV 객체 -->
@@ -54,7 +55,9 @@ jQuery 같은 프론트엔드 라이브러리와 같은 성격으로, 소스(web
 ```
 
 - 이 `div`는 화면에서 시트가 보일 위치, 즉 `<body>` 안에 작성합니다. (STEP 1의 파일들은 보통 `<head>`에 둡니다.)
-- 시트의 너비와 높이는 이 `div`의 크기를 따릅니다. **`div`에 높이가 없으면 너비는 100%, 높이는 800px**가 기본값으로 적용됩니다.
+- 시트의 너비와 높이는 이 `div`의 크기를 따르며, 크기는 `div`의 **인라인 `style`**(`style="width:…; height:…"`)로 지정합니다.  
+  인라인 높이가 없으면 너비는 100%, 높이는 800px가 적용됩니다.  
+  CSS 클래스나 id 선택자로 준 크기는 기본적으로 무시되며, class로 크기를 지정하려면 [UseClassStyle](/docs/props/cfg/use_class-style)를 `1`로 설정하세요.
 - 높이를 `100%` 같은 상대값으로 주려면 `div`를 감싼 **부모 요소에도 높이가 정해져 있어야** 합니다. (부모에 높이가 없으면 `100%`가 0으로 계산돼 시트가 안 보일 수 있습니다.)  
   창 크기에 맞춰 시트가 늘고 줄어드는 반응형 레이아웃은 [시트객체 높이 설정](/docs/appx/sheet-height)을 참고하세요.
 - 시트 높이는 고정된 행(헤더, 필터, 합계 행 등)이 모두 보일 정도(보통 150~200px 이상)로 설정해야 하며, 이보다 작으면 시트가 생성되지 않을 수 있습니다.
@@ -287,12 +290,15 @@ sheet.removeRow(sheet.getFirstRow());
 - 이벤트 사용법은 [event 사용법](/docs/events/01-event)
 - 초기화 옵션(`options`) 기본 구조는 [시트 객체 기본 구조](/docs/start/basic-structure)
 - 조회 방식(SearchMode)별 동작은 [SearchMode](/docs/props/cfg/search-mode)
+- React / Vue 등 SPA 환경에서의 연동은 [react 환경 개발](/docs/appx/spa-react), [vue 환경 개발](/docs/appx/spa-vue)
 
 ### Read More
 - [파일 구성 introduction](/docs/intro/files)
 - [create static](/docs/static/create)
 - [시트객체 높이 설정 appendix](/docs/appx/sheet-height)
 - [기초 개발자 교육 appendix](/docs/appx/basic-course)
+- [react 환경에서 IBSheet 개발 appendix](/docs/appx/spa-react)
+- [vue 환경에서 IBSheet 개발 appendix](/docs/appx/spa-vue)
 - [시트 객체 기본 구조 getting started](/docs/start/basic-structure)
 - [Header col](/docs/props/col/header)
 - [method 사용법 기초 method](/docs/funcs/method)

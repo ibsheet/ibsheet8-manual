@@ -2,11 +2,13 @@
 
 <!-- synonyms: Orig, 원본 값, 최초 값, 원래 데이터, 최초 로딩 데이터, 원본 데이터, 초기값, 셀 원본, original value, original data, initial data, load value -->
 
-> 셀에 최초 로딩된 데이터를 담고 있습니다.
->
-> 해당 셀에 대한 최초 조회시 데이터를 알고자 할 때 확인 용도로 사용해 주세요.
+> 셀에 **최초 로딩된 값**을 담고 있습니다.  
+> 셀을 여러 번 편집해도 처음 값이 유지되며(직전 값이 아님), 수정 전 원본과 비교하거나 되돌릴 때 사용합니다.
+
 ### Type
-`string`
+`mixed`( `string` \| `number` )
+
+원본 셀 값을 그대로 담으므로 반환 타입은 컬럼 `Type`을 따릅니다 (예: `Text`는 `string`, `Int`/`Float`는 `number`).
 
 ### Options
 |Value|Description|

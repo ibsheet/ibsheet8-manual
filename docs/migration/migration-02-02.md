@@ -112,6 +112,15 @@ IBSheet8은 아래 날짜 프리셋을 `ibsheet-common.js`의 `window.IB_Preset`
 
 이 외에 `IB_Preset.MDY`(`MM-dd-yyyy`), `IB_Preset.DMY`(`dd-MM-yyyy`)도 제공합니다.
 
+숫자 형식도 프리셋으로 제공되며, IBSheet7의 `Integer` 등과 아래처럼 대응됩니다.
+
+|IBSheet7 Format|IBSheet8 프리셋|Format(표시)|설명|
+|---|---|---|---|
+|`Integer`|`IB_Preset.Integer`|`#,##0`|정수 (0을 `0`으로 표시)|
+|`NullInteger`|`IB_Preset.NullInteger`|`#,###`|정수 (값이 0이면 빈칸)|
+|`Float`|`IB_Preset.Float`|`#,##0.######`|실수 (0을 `0`으로 표시)|
+|`NullFloat`|`IB_Preset.NullFloat`|`#,###.######`|실수 (값이 0이면 빈칸)|
+
 > **프리셋 키는 대소문자를 구분합니다.** IBSheet7의 `Ym`을 `IB_Preset.Ym`으로 쓰면 동작하지 않으며, 반드시 `IB_Preset.YM`(대문자)로 참조해야 합니다.
 
 

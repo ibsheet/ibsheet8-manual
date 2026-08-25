@@ -6,7 +6,8 @@
 
 ## Html Filter / Xss Filter 적용 후 다운로드·업로드가 안 되는 경우
 
-엑셀 다운로드/업로드 시 서버로 전송되는 데이터는 XML 형식입니다. 보안 필터가 적용되면 `<`, `>`, `(`, `)` 등의 문자가 `&lt;`, `&gt;` 등으로 인코딩되어 엑셀 로직이 정상 동작하지 않습니다.
+엑셀 다운로드/업로드 시 서버로 전송되는 데이터는 XML 형식입니다.   
+보안 필터가 적용되면 `<`, `>`, `(`, `)` 등의 문자가 `&lt;`, `&gt;` 등으로 인코딩되어 엑셀 로직이 정상 동작하지 않습니다.
 
 해결하려면 특수문자 대신 사용할 구분자를 클라이언트와 서버 양쪽에 동일하게 지정합니다.
 - 클라이언트: `Cfg`의 `MarkupTagDelimiter` 설정
@@ -16,7 +17,8 @@
 
 ## Spring Security CSRF 토큰 / X-Frame-Options 문제
 
-Spring Security 사용 시 `Refused to display in a frame because it set 'X-Frame-Options' to 'deny'` 오류로 다운로드/업로드가 차단될 수 있습니다. IBSheet은 기본적으로 iframe 기반 폼 제출(Form submit) 방식을 사용하기 때문입니다.
+Spring Security 사용 시 `Refused to display in a frame because it set 'X-Frame-Options' to 'deny'` 오류로 다운로드/업로드가 차단될 수 있습니다.  
+IBSheet은 기본적으로 iframe 기반 폼 제출(Form submit) 방식을 사용하기 때문입니다.
 
 해결하려면 요청을 XHR 방식으로 전환합니다.
 - `reqHeader`를 지정하면 iframe 폼 제출에서 XHR 방식으로 자동 전환되어, 요청 헤더에 CSRF 토큰이나 인증 정보를 직접 담을 수 있습니다.
@@ -110,7 +112,11 @@ try {
 - `getLoadError(코드, 메시지)` : 지정한 코드·메시지 전달 (코드는 음수여야 에러로 처리됨 — 부호 규칙)
 - `getLoadFinish(type, 코드, 메시지)` : 성공 완료 신호 (코드 `0` 이상 = 정상)
 
-**메시지에 따옴표, 역슬래시, 줄바꿈을 그대로 넣지 마세요.** `getLoadError`와 `getLoadFinish`가 넘긴 메시지는 응답 스크립트(`postMessage('...^{"message":"..."}', '*')`)에 **이스케이프 없이 그대로** 실립니다. 이 응답은 메시지를 두 겹으로 감싸는데, 바깥은 작은따옴표로 감싼 JS 문자열이고 안쪽은 큰따옴표로 감싼 JSON입니다. 그래서 메시지에 큰따옴표(`"`)가 있으면 JSON이 깨지고, 작은따옴표(`'`)가 있으면 JS 문자열이 깨져서 스크립트가 실행되지 않고 [onImportFinish](/docs/events/on-import-finish)가 **발생하지 않습니다**(에러도 성공도 아무 반응이 없음). 예외 메시지(`e.getMessage()`)에는 따옴표가 자주 포함되므로(`For input string: "..."` 등), 사용자에게 보낼 메시지는 이런 문자를 제거하거나 치환한 뒤 전달합니다.
+**메시지에 따옴표, 역슬래시, 줄바꿈을 그대로 넣지 마세요.**   
+`getLoadError`와 `getLoadFinish`가 넘긴 메시지는 응답 스크립트(`postMessage('...^{"message":"..."}', '*')`)에 **이스케이프 없이 그대로** 실립니다.   
+이 응답은 메시지를 두 겹으로 감싸는데, 바깥은 작은따옴표로 감싼 JS 문자열이고 안쪽은 큰따옴표로 감싼 JSON입니다.   
+그래서 메시지에 큰따옴표(`"`)가 있으면 JSON이 깨지고, 작은따옴표(`'`)가 있으면 JS 문자열이 깨져서 스크립트가 실행되지 않고 [onImportFinish](/docs/events/on-import-finish)가 **발생하지 않습니다**(에러도 성공도 아무 반응이 없음).   
+예외 메시지(`e.getMessage()`)에는 따옴표가 자주 포함되므로(`For input string: "..."` 등), 사용자에게 보낼 메시지는 이런 문자를 제거하거나 치환한 뒤 전달합니다.
 
 ```java
 // 예외 메시지를 그대로 넘기지 말고, 따옴표와 역슬래시, 줄바꿈을 제거한 뒤 전달

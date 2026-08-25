@@ -17,11 +17,12 @@ sheet.down2Excel({ fileName: "list.xlsx", workbookPassword: "1234" });
 sheet.loadExcel({ workbookPassword: "1234" });
 ```
 
-비밀번호가 틀린 경우 [onImportFinish](/docs/events/on-import-finish) 이벤트의 `result` 코드로 확인합니다. (최신 버전 `-201`, 이전 버전 `-500`)
+비밀번호가 틀린 경우 [onImportFinish](/docs/events/on-import-finish) 이벤트의 `result` 코드로 확인합니다.
 
 ## 클라이언트 모듈 — 외부 라이브러리 사용
 
-`exportData` / `importData`는 비밀번호 설정을 **기본 제공하지 않습니다.** `xlsx-populate.js` 같은 외부 라이브러리를 활용해 구현하며, `8.3.0.5-20250424-14` 이상에서 지원됩니다.
+`exportData` / `importData`는 비밀번호 설정을 **기본 제공하지 않습니다.**   
+`xlsx-populate.js` 같은 외부 라이브러리를 활용해 구현하며, `8.3.0.5-20250424-14` 이상에서 지원됩니다.
 
 - **다운로드**: `onBeforeExport` 이벤트에서 전달되는 data로 파일에 암호를 적용하고, `return 1`로 IBSheet 기본 다운로드 동작을 차단한 뒤 보호된 파일을 내려받습니다.
 - **업로드**: 파일 선택 UI에서 비밀번호를 적용해 파일을 읽은 뒤 `importData`로 시트에 바인딩합니다.

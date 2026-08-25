@@ -2,11 +2,9 @@
 
 <!-- synonyms: 메뉴 표시, 컨텍스트 메뉴 표시, 우클릭 메뉴 열림, 팝업 메뉴 표시, 메뉴 열기, on-show-menu, show menu, context menu show, menu open -->
 
-> 셀에서 마우스 오른쪽 클릭 시 시트에 설정된 메뉴가 화면에 보여질 때 호출되는 이벤트 입니다.
->
-> **[showMenu](/docs/funcs/core/show-menu) 메소드에 의해 호출되지 않습니다.**
->
-> `1(true)`를 리턴 시 설정된 메뉴를 화면에 보여주지 않습니다.
+> 마우스 오른쪽 클릭 시 시트에 설정된 메뉴가 화면에 표시될 때 호출되는 이벤트입니다.  
+> `true`를 리턴하면 설정된 메뉴를 표시하지 않습니다.  
+> [showMenu](/docs/funcs/core/show-menu) 메소드로 띄운 메뉴에는 호출되지 않습니다.
 
 ### Syntax
 
@@ -29,7 +27,7 @@ or
 |menu|`object`|화면에 보여질 메뉴에 대한 설정을 담고 있는 객체|
 
 ### Return
-***boolean***
+***boolean*** : `true`를 리턴하면 해당 메뉴를 화면에 표시하지 않습니다. (리턴값이 없으면 정상 표시)
 
 ### Example
 ```javascript
@@ -42,7 +40,8 @@ options.Events = {
 ```
 
 ### Read More
-
+- [Menu appendix](/docs/appx/menu)
+- [onSelectMenu event](./on-select-menu)
 - [onReadMenu event](./on-read-menu)
 
 ### Since

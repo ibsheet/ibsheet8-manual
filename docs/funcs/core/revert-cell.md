@@ -7,7 +7,7 @@
 
 ### Syntax
 ```javascript
-void revertCell( row, col, render );
+boolean revertCell( row, col, render );
 ```
 
 ### Parameters

@@ -7,7 +7,7 @@
 
 ### Syntax
 ```javascript
-void revertRow( row, render );
+boolean revertRow( row, render );
 ```
 
 ### Parameters
