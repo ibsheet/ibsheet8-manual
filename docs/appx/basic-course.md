@@ -100,6 +100,8 @@ IBSheet.create({
 |<a href="../../#docs/props/col/formula" target="_blank">Formula</a>|다른 컬럼 값을 이용한 셀 계산식|
 |<a href="../../#docs/props/col/formula-row" target="_blank">FormulaRow</a>|하단 합계/집계 행의 계산식|
 |<a href="../../#docs/props/col/rel-width" target="_blank">RelWidth</a>|남는 가로 공간을 비율로 나눠 갖는 너비|
+|<a href="../../#docs/props/col/visible" target="_blank">Visible</a>|열의 표시/숨김 여부 (`0`이면 숨김)|
+|<a href="../../#docs/props/col/required" target="_blank">Required</a>|필수 입력 항목 여부 (저장 시 검사)|
 
 컬럼 `Type`에 따라 함께 지정하는 속성이 있습니다.  
 (예: `Enum`은 `Enum`, `EnumKeys` / `Date`는 `DataFormat`, `Format`, `EditFormat` / `Bool`은 `TrueValue`, `FalseValue`)  

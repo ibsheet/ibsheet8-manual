@@ -1,10 +1,10 @@
-# IconAlign ***(col)***
+Align ***(col)***
 
 <!-- synonyms: 아이콘 정렬, 아이콘 위치, 좌측 아이콘, 우측 아이콘, 버튼 위치, icon align, icon position, left right icon -->
 
-> 셀 좌측에 버튼(혹은 체크박스)을 표시하는 [Icon](./icon)속성 사용시, 버튼의 위치를 설정합니다.
->
-> 기본적으로 셀의 좌측에 표시되면 오른쪽에 표시 할 수도 있습니다..
+> 셀에 표시되는 아이콘의 좌우 위치를 설정합니다.  
+> [Icon](./icon) 속성으로 표시하는 버튼(혹은 체크박스)과 `Enum` 타입의 드롭다운 아이콘에 적용됩니다.  
+> 기본은 셀 좌측이며, 우측에도 표시할 수 있습니다.
 
 
 
@@ -30,7 +30,7 @@ options.Cols = [
 
 ### Read More
 - [Icon col](./icon)
-- [IconWidth cell](../cell/icon-width)
+- [IconWidth col](./icon-width)
 
 ### Since
 
