@@ -28,7 +28,7 @@ IBSheet.CommonOptions = {
 
 |IBSheet7 속성|기능 설명|IBSheet8 대응|
 |---|---|---|
-|AutoFitColWidth|지정한 시점마다 각 열의 너비를 가로 스크롤바가 생기지 않는 범위 내로 조정해 주는 기능|열 생성시 [RelWidth (col)](/docs/props/col/rel-width) 속성을 통해 각 열의 너비를 비율로 조정하는 형태로 변경|
+|AutoFitColWidth|지정한 시점마다 각 열의 너비를 가로 스크롤바가 생기지 않는 범위 내로 조정해 주는 기능|[AutoFitColWidth (cfg)](/docs/props/cfg/auto-fit-col-width) 속성으로 동일하게 사용|
 |CountFormat,CountPosition,PagingPosition|조회된 데이터 건수 표시 기능|[InfoRowConfig (cfg)](/docs/props/cfg/info-row-config) 속성을 통해 설정|
 |DragMode|드래그 방식,가능 여부 설정| [CanDrag (cfg)](/docs/props/cfg/can-drag) 속성을 통해 설정 가능|
 |HeaderRowHeight,DataRowHeight|헤더,데이터 행의 높이를 설정|css 를 통해 설정하는 형태로 변경<br/>[Size (cfg)](/docs/props/cfg/size)를 통해 시트의 행 높이, 아이콘 크기, 버튼 크기 등 전체적인 크기 조절이 가능|

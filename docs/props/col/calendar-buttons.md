@@ -4,9 +4,11 @@
 
 > 달력이 표시될 때 달력 하단에 보여질 버튼을 설정합니다.  
 > 설정값의 합을 통해 여러 개 버튼을 표시할 수도 있습니다.  
-> 년월 달력의 경우 [AutoSelectYm](/docs/props/cfg/auto-select-Ym) 값에 따라 `"확인"` 버튼 보여짐 여부가 달라집니다.
+> 년/월 달력에서 월 선택 후 일(日) 달력으로 넘어가려면 기본적으로 `확인` 버튼(값 `4`)이 필요합니다.  
+> `확인` 버튼을 넣지 않으려면 [AutoSelectYm](/docs/props/cfg/auto-select-Ym)을 `1`로 설정하세요. 월 클릭 시 바로 일 달력으로 전환됩니다.
 
-###
+### 화면 예시
+
 1. 년월일 달력
 
 ![CalendarButtons](/assets/imgs/calendarButtons.png "CalendarButtons")
@@ -20,6 +22,8 @@
 `number`
 
 ### Options
+
+> CalendarButtons를 설정하면 `년월일`, `년월`, `년` 달력 **모두**에 그 값이 적용되며(각 모드는 아래 표 참고), 설정하지 않으면 각 모드의 `default`가 사용됩니다.
 
 * 년월일 달력 (`default: 0`)
 
@@ -38,17 +42,12 @@
 |`2`|"전체취소" 버튼|
 |`4`|"확인" 버튼|
 
-
-
 * 년 달력  (`default: 4`)
 
 |Value|Description|
 |-----|-----|
 |`2`|"전체취소" 버튼|
 |`4`|"확인" 버튼|
-
-> 년/월 달력에서 월을 선택한 뒤 일(日) 달력으로 넘어가려면 기본적으로 `확인` 버튼(값 `4`)이 필요합니다.  
-> `확인` 버튼을 넣지 않을 경우 [AutoSelectYm](/docs/props/cfg/auto-select-Ym)을 `1`로 설정하면 월 클릭 시 확인 없이 바로 일 달력으로 전환됩니다.
 
 ### Example
 ```javascript

@@ -105,7 +105,7 @@ IBSheet7에서 비교적 자주 사용되었다고 생각되는 함수에 대해
 |Enable|시트 활성화 여부|[enable (method)](/docs/funcs/core/enable),[disable (method)](/docs/funcs/core/disable) 두개 함수로 변경|
 |EtcDataString|조회 응답의 etc 추가 데이터를 문자열로 확인|조회 응답을 `{data, etc}` 형태로 구성 후 `sheet.etc`로 접근, 문자열이 필요하면 `JSON.stringify(sheet.etc)`로 변환|
 |ExportData|시트의 데이터를 인자의 형식(json/csv)으로 추출|[getSheetData (method)](/docs/funcs/excel/get-sheet-data)함수로 대체<br/>(이름이 유사한 IBSheet8 `exportData`는 엑셀 파일 다운로드용으로 별개 함수)<br/>ex) `var data = sheet.getSheetData({type: "json"});`|
-|ExtendLastCol|마지막 열의 자동 너비 조절 기능|[RelWidth (col)](/docs/props/col/rel-width)속성을 통해 열간 너비 비율 조정 가능|
+|ExtendLastCol|마지막 열의 자동 너비 조절 기능|마지막 열에 [RelWidth (col)](/docs/props/col/rel-width)을 설정하여 남는 너비를 그 열이 채우도록 변경|
 |FilteredRowCount|필터로 보이는 행 개수 확인|읽기 전용 [FilterCount (cfg)](/docs/props/cfg/filter-count) 속성(`sheet.FilterCount`)으로 확인|
 |FilteredRowIndex|필터로 보이는 행 목록 확인|[getDataRows (method)](/docs/funcs/core/get-data-rows)에서 `Visible`인 행으로 확인 (IBSheet7은 index 배열, IBSheet8은 행 객체 배열)<br/>ex) `sheet.getDataRows().filter(function(r){return r.Visible;});`|
 |FindCheckedRow|특정 열에 체크된 행 추출 기능|[getRowsByChecked (method)](/docs/funcs/core/get-rows-by-checked)함수로 변경|
@@ -115,7 +115,7 @@ IBSheet7에서 비교적 자주 사용되었다고 생각되는 함수에 대해
 |FindSubSumRow|소계/누계 행 추출|[getSubTotalRows (method)](/docs/funcs/core/get-sub-total-rows)함수로 대체<br/>ex) `var subRows = sheet.getSubTotalRows();`|
 |FindSumRow|합계(Formula) 행 추출|[getRowById (method)](/docs/funcs/core/get-row-by-id)로 `"FormulaRow"` 행을 얻음<br/>ex) `var frow = sheet.getRowById("FormulaRow");`|
 |FindText|특정 문자를 포함하는 행 추출 기능|[findText (method)](/docs/funcs/core/find-text)함수로 동일|
-|FitColWidth|열의 너비 재조정|[RelWidth (col)](/docs/props/col/rel-width)속성을 통해 자동 조정되는 형태로 변경|
+|FitColWidth|열의 너비 재조정|[fitColWidth (method)](/docs/funcs/core/fit-col-width) 함수로 동일하게 사용|
 |FitSize|모든 행 높이·모든 열 너비 재조정|열 너비는 [fitSize (method)](/docs/funcs/core/fit-size)(단일 열) 또는 [setAllFitSize (method)](/docs/funcs/common/set-all-fit-size)(전체 열)로 조정. 행 높이 재조정은 지원안함|
 |FitSizeCol|열의 너비를 열내에 가장 긴글자를 갖는 셀에 맞게 조정|[fitSize (method)](/docs/funcs/core/fit-size)함수로 변경|
 |FocusAfterProcess|데이터 로딩 후 첫번째 행에 포커스를 둘지 여부|[IgnoreFocused (cfg)](/docs/props/cfg/ignore-focused)속성으로 대체<br/>0으로 설정하면 데이터 로딩 후 첫번째 행에 포커스를 이동 시킴 (default: 0)|
