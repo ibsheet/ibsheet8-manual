@@ -47,6 +47,7 @@ IBSheet.OnAIError = function(sheet, action, query, error){
 
 ### Read More
 - [AISheetSense cfg](/docs/props/cfg/ai-sheetsense)
+- [AIUrl cfg](/docs/props/cfg/ai-url)
 - [OnBeforeAI static](./on-before-ai)
 - [OnAI static](./on-ai)
 

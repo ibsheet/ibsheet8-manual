@@ -8,7 +8,7 @@
 
 > `주의` 이 옵션은 **단독으로 동작하지 않습니다.** 서버 모듈(`ibsheet-ai-sheetsense-x.x.x.jar`), 설정 파일(`ai-gateway.properties`),
 > 클라이언트 플러그인(`ibsheet-aisheetsense.js`) 이 함께 설치되어 있어야 하며 LLM Provider 의 API 키가 필요합니다.
-> 자세한 내용은 아래 **전제 조건** 을 참고하세요.
+> 자세한 내용은 아래 **전제 조건** 을 참고하세요. 
 
 ![AISheetSense](/assets/imgs/AISheetSense_cfg.png "AI 챗 다이얼로그")
 
@@ -114,6 +114,7 @@ IBSheet.OnAIError  = function(sheet, action, query, error){ /* ... */ };
 - `ai-gateway.properties` 변경 사항은 WAS 재시작 후 적용됩니다.
 
 ### Read More
+- [AIUrl cfg](./ai-url)
 - [OnBeforeAI static](/docs/static/on-before-ai)
 - [OnAI static](/docs/static/on-ai)
 - [OnAIError static](/docs/static/on-ai-error)
