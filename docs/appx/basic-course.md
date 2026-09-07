@@ -82,6 +82,7 @@ IBSheet.create({
 |<a href="../../#docs/props/cfg/msg-locale" target="_blank">MsgLocale</a>|시트에서 사용할 언어(메시지 파일) Prefix|
 |<a href="../../#docs/props/cfg/z-index" target="_blank">ZIndex</a>|시트/팝업/메시지/커서의 css z-index 기준값|
 |<a href="../../#docs/props/cfg/size" target="_blank">Size</a>|행 최소 높이 + 폰트 크기 + 컨트롤 아이콘 크기|
+|<a href="../../#docs/props/cfg/auto-fit-col-width" target="_blank">AutoFitColWidth</a>|지정한 시점마다 컬럼 너비를 시트 폭에 맞게 자동 조정 (RelWidth와 함께 사용 불가)|
 
 #### 알아두면 좋은 Cols 속성
 

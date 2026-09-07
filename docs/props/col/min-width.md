@@ -2,9 +2,8 @@
 
 <!-- synonyms: 최소 너비, 최소 폭, 리사이즈 최소, 열 최소 크기, min width, minimum width, column min size, resize limit min -->
 
-> 열의 최소 너비를 pixel단위로 설정합니다.
->
-> 사용자가 드래그를 통해 열의 너비를 조정할 때, 지정한 크기 이하로 작아지지 않게 합니다.
+> 열의 최소 너비를 pixel단위로 설정합니다.  
+> 사용자가 드래그로 열 너비를 조정할 때는 물론, [AutoFitColWidth](/docs/props/cfg/auto-fit-col-width)/[fitColWidth](/docs/funcs/core/fit-col-width)로 너비가 자동 조정될 때도 이 값보다 작아지지 않습니다.
 
 ### Type
 `number`
@@ -17,11 +16,12 @@
 
 ### Example
 ```javascript
-//특정 열의 최소 너비를 110px로 설정합니다.
+// 초기 너비는 150px, 최소 너비는 110px로 설정
+// (드래그나 자동 조정으로 줄여도 110px 아래로는 작아지지 않음)
 options.Cols = [
-    ...
-    {Type: "Enum", Name: "DeptNm", MinWidth: 110, ...},
-    ...
+    
+    {Type: "Enum", Name: "DeptNm", Width: 150, MinWidth: 110},
+   
 ];
 ```
 
@@ -29,6 +29,8 @@ options.Cols = [
 - [Width col](./width)
 - [MaxWidth col](./max-width)
 - [RelWidth col](./rel-width)
+- [AutoFitColWidth cfg](/docs/props/cfg/auto-fit-col-width)
+- [fitColWidth method](/docs/funcs/core/fit-col-width)
 
 
 ### Since
