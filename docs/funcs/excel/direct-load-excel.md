@@ -47,8 +47,21 @@ var param = {
 sheet.directLoadExcel(param);
 ```
 
+`DirectLoadExcel.jsp`(서버모듈)에서 `directLoadExcel()`로 파싱한 뒤 `sendDirectToFP()`를 호출하면, `FP`로 지정한 페이지로 파싱 데이터가 `SHEETDATA` 속성에 담겨 forward됩니다.
+
 ```java
-//directLoadExcel 자바 서버모듈 예시
+// DirectLoadExcel.jsp (서버모듈): 엑셀 파싱 후 FP 페이지로 forward
+IBSheetLoad load = new IBSheetLoad();
+load.setEncoding("UTF-8");
+load.setService(request, response);
+load.directLoadExcel();   // 엑셀 파싱
+load.sendDirectToFP();    // FP 로 지정한 페이지로 파싱 데이터(SHEETDATA) forward
+```
+
+forward된 `FP` 페이지에서는 아래처럼 `SHEETDATA`를 받아 처리합니다.
+
+```java
+// FP 페이지(예: empExcelData.do): forward된 데이터를 SHEETDATA 로 받아 처리
 List<Map<String, Object>> data = (List<Map<String, Object>>)request.getAttribute("SHEETDATA");	
 
 Map<String, Object> header = (Map<String, Object>)data.get(0);
@@ -57,7 +70,7 @@ for (String key : header.keySet()) {
 }
 System.out.println();
 	
-for (Map<String, Object> row : li) {
+for (Map<String, Object> row : data) {
   for (String key : row.keySet()) {
     System.out.print(row.get(key) + "|");
   }
@@ -65,8 +78,7 @@ for (Map<String, Object> row : li) {
 }
 ```
 
-위 예시는 파싱된 데이터를 `FP` 페이지로 forward하는 방식입니다.  
-아래처럼 `directLoadExcel()`의 **반환값(List)을 중계 페이지에서 바로 받아** 처리할 수도 있습니다(FP forward 없이). 이 경우 클라이언트는 `sheet.directLoadExcel();`만 호출합니다.
+forward 대신, `sendDirectToFP()`를 호출하지 않고 `directLoadExcel()`의 **반환값(List)을 서버모듈에서 바로 처리**할 수도 있습니다(아래). 이 방식은 `FP`를 사용하지 않으므로, 클라이언트도 `FP` 없이 `sheet.directLoadExcel();`로 호출하면 됩니다.
 
 ```java
 // directLoadExcel() 반환값(List)을 중계 페이지에서 바로 받아 처리 + 오류 처리
@@ -122,6 +134,7 @@ foreach (Dictionary<String, String> row in data) {
 - [importData method](/docs/funcs/core/import-data)
 - [onSelectFile event](/docs/events/on-select-file)
 - [onImportFinish event](/docs/events/on-import-finish)
+- [대용량 엑셀 파일 처리 appendix](/docs/appx/large-excel-load)
 - [엑셀 업로드/다운로드 설정 appendix](/docs/appx/import-export)
 - [엑셀 서버 모듈 트러블슈팅 appendix](/docs/appx/excel-server-troubleshooting)
 - [엑셀 DRM 처리 appendix](/docs/appx/excel-drm)

@@ -357,7 +357,8 @@ IBSheet 함수와 이벤트에 대한 기본적인 사용법을 설명합니다.
 ## 7. 데이터 조회
 #### 1) 조회 / 데이터 로드 함수 이용
 
-시트 내에 데이터 로딩은 <a href="../../#docs/props/cfg/search-mode" target="_blank">SearchMode</a> 설정에 따라 달라집니다.
+시트 내에 데이터 로딩은 <a href="../../#docs/props/cfg/search-mode" target="_blank">SearchMode<
+/a> 설정에 따라 달라집니다.
 
 |유형|함수명|기능설명|
 |---|---|---|
@@ -399,6 +400,8 @@ IBSheet 함수와 이벤트에 대한 기본적인 사용법을 설명합니다.
 |`Added`|`addRow` 등으로 새 행을 추가할 때|신규 입력 행|
 |`Changed`|기존 행의 셀 값을 수정할 때|수정된 행|
 |`Deleted`|`deleteRow`로 삭제 표시할 때|삭제 예정 행|
+
+저장 함수를 호출하면 각 행에 이 상태가 기본 키 `STATUS`로 함께 전송됩니다(예: `{"STATUS":"Added", "컬럼명":"값", ...}`).
 
 시트는 이 상태에 따라 행에 배경색을 자동으로 표시합니다. 표시 여부/범위는 <a href="../../#docs/props/cfg/color-state" target="_blank">ColorState</a> 설정으로 제어하며, 기본값(`63`)에서 켜져 있습니다.
 

@@ -107,7 +107,7 @@ IBSheet.OnAIError  = function(sheet, action, query, error){ /* ... */ };
 ### 제약 사항
 
 - LLM Provider 의 API 키가 필요합니다. (Provider 측 유료 서비스)
-- 응답이 `429 insufficient_quota` 인 경우 Provider 계정의 크레딧 잔액을 확인하세요.
+- 응답이 `429 insufficient_quota` 인 경우 Provider 계정의 크레딧 잔액을 확인하세요. 
   `OnAIError` 에서 `-429` 로 전달됩니다.
 - `CanEdit` 가 `0` 인 보호된 셀은 AI 가 값을 변경할 수 없습니다.
 - AI 가 실행하는 시트 API 는 화이트리스트 방식으로 허용된 것만 실행됩니다.
