@@ -1,14 +1,14 @@
 # AISheetSense ***(cfg)***
 
-<!-- synonyms: AI, AISheetSense, 자연어, 챗봇, chat, ibsheet-ai-sheetsense.jar, ibsheet-aisheetsense.js, ai-gateway.properties, LLM, GPT, AI 서버모듈, AI 설치
+<!-- synonyms: AI, AISheetSense, 자연어, 챗봇, chat, ibsheet-ai-sheetsense.jar, ibsheet-aisheetsense.js, ai-gateway.properties, LLM, GPT, AI 서버모듈, AI 설치, Ollama, vLLM, 로컬 LLM
 -->
 
-> IBSheet8 에서 LLM Provider(OpenAI, Anthropic Claude) 를 활용해 자연어 질의 기능을 이용할 수 있는 챗 다이얼로그를 생성합니다.
+> IBSheet8 에서 LLM Provider(OpenAI, Anthropic Claude, Ollama, vLLM) 를 활용해 자연어 질의 기능을 이용할 수 있는 챗 다이얼로그를 생성합니다.
 > 시트의 데이터 분석/요약/이상치 탐색이나 필터, 그룹핑, 정렬, Formula(수식 적용) 등 시트 기능을 자연어 질문을 통해 확인하고 제어할 수 있습니다.
 
 > `주의` 이 옵션은 **단독으로 동작하지 않습니다.** 서버 모듈(`ibsheet-ai-sheetsense-x.x.x.jar`), 설정 파일(`ai-gateway.properties`),
 > 클라이언트 플러그인(`ibsheet-aisheetsense.js`) 이 함께 설치되어 있어야 하며 LLM Provider 의 API 키가 필요합니다.
-> 자세한 내용은 아래 **전제 조건** 을 참고하세요. 
+> 자세한 내용은 아래 **전제 조건** 을 참고하세요.
 
 ![AISheetSense](/assets/imgs/AISheetSense_cfg.png "AI 챗 다이얼로그")
 
@@ -30,7 +30,7 @@
 함께 제공되는 `ai-gateway.properties.sample` 을 `ai-gateway.properties` 로 복사한 뒤 값을 입력합니다.
 
 ```properties
-# ai.provider : openai | claude
+# ai.provider : openai | claude | ollama
 ai.provider=openai
 ai.api-key=발급받은_API_키
 ai.model=gpt-4o-mini
@@ -38,6 +38,7 @@ ai.model=gpt-4o-mini
 
 - API 키는 환경변수 `AI_API_KEY` 로도 설정할 수 있으며, 환경변수가 설정된 경우 **환경변수가 우선 적용**됩니다.
 - 설정 파일은 **서버 시작 시 한 번만** 읽습니다. 값을 변경하면 WAS 를 재시작해야 합니다.
+- `Ollama`, `vLLM` 등 로컬 LLM 도 지원합니다.
 
 **클라이언트 플러그인 로드**
 
@@ -59,7 +60,7 @@ ai.model=gpt-4o-mini
 |---|---|
 |IBSheet8 Core|`ibsheet.js` `8.4.0.16` 이상|
 |WAS|Tomcat 8.5 / 9 (`javax`) 또는 Tomcat 10 이상 (Jakarta EE)|
-|LLM Provider|OpenAI, Anthropic Claude|
+|LLM Provider|OpenAI, Anthropic Claude, Ollama, vLLM|
 
 ### Type
 `boolean`
@@ -106,8 +107,8 @@ IBSheet.OnAIError  = function(sheet, action, query, error){ /* ... */ };
 
 ### 제약 사항
 
-- LLM Provider 의 API 키가 필요합니다. (Provider 측 유료 서비스)
-- 응답이 `429 insufficient_quota` 인 경우 Provider 계정의 크레딧 잔액을 확인하세요. 
+- OpenAI / Claude 등 클라우드 Provider 는 API 키가 필요합니다. (Provider 측 유료 서비스)
+- 응답이 `429 insufficient_quota` 인 경우 Provider 계정의 크레딧 잔액을 확인하세요.
   `OnAIError` 에서 `-429` 로 전달됩니다.
 - `CanEdit` 가 `0` 인 보호된 셀은 AI 가 값을 변경할 수 없습니다.
 - AI 가 실행하는 시트 API 는 화이트리스트 방식으로 허용된 것만 실행됩니다.
