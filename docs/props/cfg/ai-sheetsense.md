@@ -7,7 +7,7 @@
 > 시트의 데이터 분석/요약/이상치 탐색이나 필터, 그룹핑, 정렬, Formula(수식 적용) 등 시트 기능을 자연어 질문을 통해 확인하고 제어할 수 있습니다.
 
 > `주의` 이 옵션은 **단독으로 동작하지 않습니다.** 서버 모듈(`ibsheet-ai-sheetsense-x.x.x.jar`), 설정 파일(`ai-gateway.properties`),
-> 클라이언트 플러그인(`ibsheet-aisheetsense.js`) 이 함께 설치되어 있어야 하며 LLM Provider 의 API 키가 필요합니다.
+> 클라이언트 플러그인(`ibsheet-aisheetsense.js`) 이 함께 설치되어 있어야 하며 LLM Provider 의 접속 정보가 필요합니다.
 > 자세한 내용은 아래 **전제 조건** 을 참고하세요.
 
 ![AISheetSense](/assets/imgs/AISheetSense_cfg.png "AI 챗 다이얼로그")
@@ -87,9 +87,11 @@ AI 요청의 전/후 처리는 **AISheetSense 전용 범용 이벤트**로 제�
 
 ```
 사용자 질의 입력
-  └→ OnBeforeAI      요청 직전 (파라미터 수정 / 요청 취소 가능)
+  └→ OnBeforeAI           요청 직전 (파라미터 수정 / 요청 취소 가능)
        └→ 서버 모듈(ibsheet-ai-sheetsense.jar) → LLM Provider
             ├→ 성공 → OnAI
+            │          └→ OnBeforeAIApply   시트 적용 직전 (응답 수정 / 적용 취소 가능)
+            │               └→ 시트 반영
             └→ 실패 → OnAIError
 ```
 
@@ -97,12 +99,14 @@ AI 요청의 전/후 처리는 **AISheetSense 전용 범용 이벤트**로 제�
 |---|---|---|
 |[OnBeforeAI](/docs/static/on-before-ai)|요청 전송 직전|요청 파라미터 수정, 특정 액션 차단|
 |[OnAI](/docs/static/on-ai)|요청 성공|응답 후처리, 사용 이력 로깅|
+|[OnBeforeAIApply](/docs/static/on-before-ai-apply)|응답을 시트에 적용하기 직전|응답 검증 / 수정, 위험한 동작 차단|
 |[OnAIError](/docs/static/on-ai-error)|요청 실패|오류 유형별 사용자 메시지 처리|
 
 ```javascript
-IBSheet.OnBeforeAI = function(sheet, action, query, options){ /* ... */ };
-IBSheet.OnAI       = function(sheet, action, query, response){ /* ... */ };
-IBSheet.OnAIError  = function(sheet, action, query, error){ /* ... */ };
+IBSheet.OnBeforeAI       = function(sheet, action, query, options){ /* ... */ };
+IBSheet.OnAI             = function(sheet, action, query, response){ /* ... */ };
+IBSheet.OnBeforeAIApply  = function(sheet, action, query, response){ /* ... */ };
+IBSheet.OnAIError        = function(sheet, action, query, error){ /* ... */ };
 ```
 
 ### 제약 사항
@@ -118,6 +122,7 @@ IBSheet.OnAIError  = function(sheet, action, query, error){ /* ... */ };
 - [AIUrl cfg](./ai-url)
 - [OnBeforeAI static](/docs/static/on-before-ai)
 - [OnAI static](/docs/static/on-ai)
+- [OnBeforeAIApply static](/docs/static/on-before-ai-apply)
 - [OnAIError static](/docs/static/on-ai-error)
 - [Export.Url cfg](../cfg/export)
 - [CanEdit col](/docs/props/col/can-edit)
