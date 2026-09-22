@@ -62,6 +62,7 @@ IBSheet.OnBeforeAIApply = function(sheet, action, query, response){ ... };
 ```
 
 ### Read More
+- [AISheetSense 설치 및 설정 appendix](/docs/appx/ai-sheetsense-setup)
 - [AISheetSense cfg](/docs/props/cfg/ai-sheetsense)
 - [OnBeforeAI static](./on-before-ai)
 - [OnAI static](./on-ai)

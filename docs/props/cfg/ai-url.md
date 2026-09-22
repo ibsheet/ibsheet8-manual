@@ -36,6 +36,7 @@ options.Cfg = {
 ```
 
 ### Read More
+- [AISheetSense 설치 및 설정 appendix](/docs/appx/ai-sheetsense-setup)
 - [AISheetSense cfg](./ai-sheetsense)
 - [Export.Url cfg](./export)
 - [OnAIError static](/docs/static/on-ai-error)
