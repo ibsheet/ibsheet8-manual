@@ -1,6 +1,3 @@
----
-title: ai-sheetsense-setup
----
 # AISheetSense 설치 및 설정  ***(appendix)***
 
 <!-- synonyms: AISheetSense, AI 설치, AI 서버모듈, 서버 모듈 설치, 환경 설정, 환경 셋팅, 서버 셋팅, jar 설치, ai-gateway.properties, ibsheet-aisheetsense.js, javax, jakarta, Ollama, vLLM, 로컬 LLM, 폐쇄망, 온프레미스, 자연어 질의, AI 트러블슈팅, token.daily-limit, ai setup -->

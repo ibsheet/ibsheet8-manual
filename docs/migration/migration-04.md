@@ -43,7 +43,7 @@ IBSheet7에서 비교적 자주 사용되었다고 생각되는 함수에 대해
 |ClipPasteMode|클립보드 붙여넣기 방식 설정|[PasteFocused (cfg)](/docs/props/cfg/paste-focused)속성으로 대체|
 |ColBackColor|열 전체의 배경색 설정|[Color (col)](/docs/props/col/color)속성으로 대체<br/>ex) `sheet.setAttribute(null, 'colName', 'Color', '#FF9AE0');`|
 |ColCondProperty|조건(Formula)에 따라 셀 속성 적용|[attribute+Formula (col)](/docs/props/col/attribute-formula)로 대체 (셀 값 외 색상, 편집가능 여부 등도 동적 계산)|
-|ColDelete|지정한 열 삭제|[removeCol (method)](/docs/funcs/core/remove-col)함수로 대체|
+|ColDelete|지정한 열 삭제|[removeCol (method)](/docs/funcs/core/remove-Col)함수로 대체|
 |ColFontBold|열 전체의 font-weight를 설정|[TextStyle (col)](/docs/props/col/text-style)속성으로 대체<br/>ex) `sheet.setAttribute(null, 'colName', 'TextStyle', 1);`|
 |ColFontColor|열 전체의 글자색을 설정|[TextColor (col)](/docs/props/col/text-color)속성으로 대체<br/>ex) `sheet.setAttribute(null, 'colName', 'TextColor', '#FF0000');`|
 |ColFontUnderline|열 전체 내용에 밑줄(Underline)설정|[TextStyle (col)](/docs/props/col/text-style)속성으로 대체<br/>ex) `sheet.setAttribute(null, 'colName', 'TextStyle', 4);`|

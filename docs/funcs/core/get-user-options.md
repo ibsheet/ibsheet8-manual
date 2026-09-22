@@ -4,9 +4,9 @@
 
 > 시트 초기화 설정값을 리턴합니다.
 >
-> 시트 생성시 [IBSheet.create({options})](/docx/static/create)으로 설정한 내용을 리턴합니다.
+> 시트 생성시 [IBSheet.create({options})](/docs/static/create)으로 설정한 내용을 리턴합니다.
 >
-> [IBSheet.CommonOptions](/docx/static/common-options) 이나 [IBSheet.onBeforeCreate](on-before-create)를 통해 공통으로 적용받은 내용도 같이 리턴되나, 생성 후 추가하거나 수정한 내용은 리턴되지 않습니다.
+> [IBSheet.CommonOptions](/docs/static/common-options) 이나 [IBSheet.onBeforeCreate](/docs/static/on-before-create)를 통해 공통으로 적용받은 내용도 같이 리턴되나, 생성 후 추가하거나 수정한 내용은 리턴되지 않습니다.
 >
 > `mode`에 따라 리턴하는 설정값이 달리짐. 
 

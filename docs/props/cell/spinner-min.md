@@ -6,7 +6,7 @@
 >
 > 
 >
-> 추가적으로 [SpinnerStep](./spinner-step), [SpinnerMax](./spinner-Max)을 통해 input의 step, max를 설정 할 수 있습니다. 
+> 추가적으로 [SpinnerStep](./spinner-step), [SpinnerMax](./spinner-max)을 통해 input의 step, max를 설정 할 수 있습니다. 
 
 ### Type
 `number`

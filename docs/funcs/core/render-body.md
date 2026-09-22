@@ -37,7 +37,6 @@ sheet.renderBody();
 - [setAttribute method](./set-attribute)
 - [rerender method](./rerender)
 <!--!
-- `[비공개]` [render method](./render) 
 !-->
 
 ### Since

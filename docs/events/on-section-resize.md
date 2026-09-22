@@ -43,7 +43,7 @@ options.Events = {
 ### Read More
 
 - [SectionCanResize cfg](/docs/props/cfg/section-can-resize)
-- [LeftCanResize cfg](/docs/props/cfg/Left-can-resize)
+- [LeftCanResize cfg](/docs/props/cfg/left-can-resize)
 - [RightCanResize cfg](/docs/props/cfg/right-can-resize)
 - [LeftWidth cfg](/docs/props/cfg/left-width)
 - [RightWidth cfg](/docs/props/cfg/right-width)

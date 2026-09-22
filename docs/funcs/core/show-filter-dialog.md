@@ -12,7 +12,7 @@ boolean showFilterDialog(opt);
 ### Parameters
 |Name|Type|Required| Description |
 |----------|-----|---|----|
-|opt|`number` \| `object`|<span class='optional'>선택</span>|[UseFilterDialog cfg](docs/props/cfg/use-filter-dialog) 옵션 사용|
+|opt|`number` \| `object`|<span class='optional'>선택</span>|[UseFilterDialog cfg](/docs/props/cfg/use-filter-dialog) 옵션 사용|
 
 ### Return Value
 ***boolean***

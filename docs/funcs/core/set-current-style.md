@@ -26,7 +26,7 @@ sheet.setCurrentStyle( info );
 
 ### Read More
 - [행(Row) 구조에 대한 이해 getting started](/docs/start/row)
-- [getCurrentStyle method](./get-current-Style)
+- [getCurrentStyle method](./get-current-style)
 - [AlternateColor row](/docs/props/row/alternate-color.md)
 - [Color row](/docs/props/row/color.md)
 - [TextColor row](/docs/props/row/text-color.md)

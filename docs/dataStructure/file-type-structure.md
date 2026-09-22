@@ -208,7 +208,7 @@ $.ajax({
 - [onSetFile event](/docs/events/on-set-file)
 - [onCancelFile event](/docs/events/on-cancle-file)
 - [onBeforeFileDown event](/docs/events/on-before-file-down)
-- [Path cell](/docs/props/cell/Path)
+- [Path cell](/docs/props/cell/path)
 - [type appendix](/docs/appx/type)
 
 ### Since

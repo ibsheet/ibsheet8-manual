@@ -40,7 +40,6 @@ sheet.rerender();
 - [DebounceRender cfg](/docs/props/cfg/debounce-render)
 - [renderBody method](./render-body)
 <!--!
-- `[비공개]` [render method](./render)
 !-->
 
 ### Since

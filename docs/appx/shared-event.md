@@ -192,7 +192,7 @@ IBSheet.onBeforeCreate = function(obj){
 ### Read More
 - [event 사용법 기초](/docs/events/01-event)
 - [CommonOptions static](/docs/static/common-options)
-- [onBeforeCreate static](/docs/static/before-create)
+- [onBeforeCreate static](/docs/static/on-before-create)
 
 ### Since
 

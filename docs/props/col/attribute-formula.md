@@ -4,7 +4,7 @@
 
 > 컬럼에 설정해 셀별로 배경색(`Color`), 편집 가능 여부(`CanEdit`), 텍스트 색(`TextColor`) 등의 속성을 조건에 따라 다르게 적용할 때 이용합니다.  
 > [CanFormula](/docs/props/row/can-formula)가 `1`로 설정되어야 동작하며, [CalcOrder](/docs/props/row/calc-order)에 **`열이름+속성명`** 형식으로 정의해야 합니다.  
-> 컬럼에 설정하지만 셀 단위로 실행되므로, 도움말 [properties → Cell](/docs/props/cell/) 카테고리에 정의된 셀 단위 속성만 `속성명Formula` 형식으로 사용할 수 있습니다.
+> 컬럼에 설정하지만 셀 단위로 실행되므로, 도움말 [properties → Cell](/docs/props/cell/index) 카테고리에 정의된 셀 단위 속성만 `속성명Formula` 형식으로 사용할 수 있습니다.
 
 ### Type
 `mixed`( `function` \| `string` )
