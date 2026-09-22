@@ -30,6 +30,9 @@ IBSheet.OnBeforeAIApply = function(sheet, action, query, response){ ... };
 |`{object}`|인자로 받은 `response` 를 반환한 객체로 **교체**한 뒤 적용합니다.|
 |`none`|`response` 를 그대로 사용하여 적용합니다.|
 
+- `false` 반환으로 취소하면 챗 다이얼로그가 대기 상태로 돌아가며 `"작업이 취소되었습니다."` 안내가 표시됩니다.
+- 반환값은 `false` 와 **엄격히 일치**해야 취소됩니다. `0`, `''`, `null` 등은 취소로 처리되지 않습니다.
+
 ### Example
 
 ```javascript
@@ -57,3 +60,15 @@ IBSheet.OnBeforeAIApply = function(sheet, action, query, response){ ... };
     }
   };
 ```
+
+### Read More
+- [AISheetSense cfg](/docs/props/cfg/ai-sheetsense)
+- [OnBeforeAI static](./on-before-ai)
+- [OnAI static](./on-ai)
+- [OnAIError static](./on-ai-error)
+
+### Since
+
+|product|version|desc|
+|---|---|---|
+|aisheetsense|1.0.1|OnBeforeAIApply 이벤트 추가|

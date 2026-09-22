@@ -21,7 +21,7 @@
 
 |파일|배치 위치|역할|
 |---|---|---|
-|`ibsheet-ai-sheetsense-x.x.x.jar`|`WEB-INF/lib`|AI 요청을 LLM Provider 로 중계하는 서버 모듈|
+|`ibsheet-ai-sheetsense-x.x.x.jar`|`WEB-INF/lib`|AI 요청을 LLM Provider 로 중계하는 서버 모듈.<br/>Tomcat 10 이상은 `-jakarta` 빌드를 사용합니다.|
 |`ai-gateway.properties`|`WEB-INF` 직하|LLM Provider / API 키 / 모델 설정 파일|
 |`ibsheet-aisheetsense.js`|IBSheet8 `plugins` 폴더|챗 다이얼로그 UI 를 제공하는 클라이언트 플러그인|
 
@@ -30,15 +30,42 @@
 함께 제공되는 `ai-gateway.properties.sample` 을 `ai-gateway.properties` 로 복사한 뒤 값을 입력합니다.
 
 ```properties
-# ai.provider : openai | claude | ollama
+# ai.provider : openai | claude | local
 ai.provider=openai
 ai.api-key=발급받은_API_키
 ai.model=gpt-4o-mini
 ```
 
+**사내 구축형(로컬) LLM 사용 시**
+
+`Ollama`, `vLLM` 등 **OpenAI 호환 API 를 제공하는 구동 환경**이면 사내 서버의 모델을 연결할 수 있습니다.
+구동 환경이 무엇이든 `ai.provider` 값은 항상 `local` 이며, API 키는 필요하지 않습니다.
+
+```properties
+# Ollama - 기본 포트(11434) 를 사용하는 경우
+# ai.api-url 은 기본값과 동일하므로 생략 가능
+ai.provider=local
+ai.model=llama3
+ai.api-url=http://localhost:11434/v1/chat/completions
+```
+
+```properties
+# vLLM 등 기본 주소가 아닌 경우 - ai.api-url 을 반드시 지정합니다
+ai.provider=local
+ai.model=meta-llama/Llama-3-8b-chat-hf
+ai.api-url=http://gpu-server:8000/v1/chat/completions
+```
+
 - API 키는 환경변수 `AI_API_KEY` 로도 설정할 수 있으며, 환경변수가 설정된 경우 **환경변수가 우선 적용**됩니다.
 - 설정 파일은 **서버 시작 시 한 번만** 읽습니다. 값을 변경하면 WAS 를 재시작해야 합니다.
-- `Ollama`, `vLLM` 등 로컬 LLM 도 지원합니다.
+- 로컬 LLM 이 JSON 응답 형식(`json_object`)을 지원하지 않는 경우 `ai.json-format=false` 로 설정합니다.
+- `ai.api-url` 은 생략 시 Provider 별 기본값이 적용됩니다.
+
+|ai.provider|ai.api-url 기본값|
+|---|---|
+|`openai`|`https://api.openai.com/v1/chat/completions`|
+|`claude`|`https://api.anthropic.com/v1/messages`|
+|`local`|`http://localhost:11434/v1/chat/completions` (Ollama 기본 포트)|
 
 **클라이언트 플러그인 로드**
 
@@ -49,7 +76,7 @@ ai.model=gpt-4o-mini
 **설치 순서**
 
 1. 위 3개 파일을 각 지정 위치에 배치
-2. `ai-gateway.properties.sample` → `ai-gateway.properties` 복사 후 Provider / API 키 / 모델 입력
+2. `ai-gateway.properties.sample` → `ai-gateway.properties` 복사 후 Provider / 모델 / (클라우드의 경우) API 키 입력
 3. HTML 에 클라이언트 플러그인 `<script>` 추가
 4. `options.Cfg` 에 `AISheetSense: 1` 설정
 5. WAS 재시작
@@ -59,8 +86,11 @@ ai.model=gpt-4o-mini
 |항목|사양|
 |---|---|
 |IBSheet8 Core|`ibsheet.js` `8.4.0.16` 이상|
+|AISheetSense|`ibsheet-aisheetsense.js` `1.0.0` 이상|
 |WAS|Tomcat 8.5 / 9 (`javax`) 또는 Tomcat 10 이상 (Jakarta EE)|
-|LLM Provider|OpenAI, Anthropic Claude, Ollama, vLLM|
+|서버 모듈 빌드|Tomcat 9 이하 → `ibsheet-ai-sheetsense-x.x.x.jar`<br/>Tomcat 10 이상 → `ibsheet-ai-sheetsense-x.x.x-jakarta.jar`|
+|JDK|Java 8 이상|
+|LLM Provider|OpenAI, Anthropic Claude, Local(Ollama, vLLM)|
 
 ### Type
 `boolean`
@@ -88,7 +118,7 @@ AI 요청의 전/후 처리는 **AISheetSense 전용 범용 이벤트**로 제�
 ```
 사용자 질의 입력
   └→ OnBeforeAI           요청 직전 (파라미터 수정 / 요청 취소 가능)
-       └→ 서버 모듈(ibsheet-ai-sheetsense.jar) → LLM Provider
+       └→ 서버 모듈(ibsheet-ai-sheetsense-x.x.x.jar) → LLM Provider
             ├→ 성공 → OnAI
             │          └→ OnBeforeAIApply   시트 적용 직전 (응답 수정 / 적용 취소 가능)
             │               └→ 시트 반영
@@ -124,7 +154,6 @@ IBSheet.OnAIError        = function(sheet, action, query, error){ /* ... */ };
 - [OnAI static](/docs/static/on-ai)
 - [OnBeforeAIApply static](/docs/static/on-before-ai-apply)
 - [OnAIError static](/docs/static/on-ai-error)
-- [Export.Url cfg](../cfg/export)
 - [CanEdit col](/docs/props/col/can-edit)
 
 ### Since
