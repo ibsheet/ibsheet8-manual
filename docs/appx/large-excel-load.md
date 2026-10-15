@@ -30,7 +30,7 @@ sheet.directDown2Excel({
 
 ## 서버 (JSP)
 
-제품이 제공하는 `DirectDown2Excel.jsp`를 바탕으로, 데이터를 한 번에 읽는 `setDirectRequestData()` 대신 **`setExcelStreamingMode(true)` + `eventRegistration(pageCallback)`**을 넣고, 콜백에서 페이지 단위로 DB를 조회해 반환합니다.
+제품이 제공하는 `DirectDown2Excel.jsp`를 바탕으로, 데이터를 한 번에 읽는 `setDirectRequestData()` 대신 **`setExcelStreamingMode(true)` + `eventRegistration(pageCallback)` 호출**을 넣고, 콜백에서 페이지 단위로 DB를 조회해 반환합니다.
 
 ```jsp
 <%@ page contentType="text/html;charset=UTF-8" %>
@@ -265,7 +265,7 @@ document.getElementById("directLoadExcel").addEventListener("click", function ()
 
 ## 서버 (JSP)
 
-제품이 제공하는 `DirectLoadExcel.jsp`를 바탕으로, `directLoadExcel()`(List 반환) 자리에 **`setStreamingUploadMode(true)` + `directLoadExcelStreaming(callback)`**을 넣고, 콜백에서 한 행씩 바로 저장합니다.
+제품이 제공하는 `DirectLoadExcel.jsp`를 바탕으로, `directLoadExcel()`(List 반환) 자리에 **`setStreamingUploadMode(true)` + `directLoadExcelStreaming(callback)` 호출**을 넣고, 콜백에서 한 행씩 바로 저장합니다.
 
 콜백은 데이터 행을 하나씩 받습니다. `map`은 한 행이고 key는 시트 컬럼 `Name`입니다. 받은 행을 그 자리에서 처리(insert)하면 됩니다.
 

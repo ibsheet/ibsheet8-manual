@@ -185,7 +185,7 @@ var OPT = {
 };
 ```
 
-`IBSheet.create`의 `data` 인자로도 생성과 동시에 데이터를 넣을 수 있지만 **권장하지 않습니다.** 실제 개발에서는 위처럼 조회 함수(`loadSearchData` / `doSearch`)로 데이터를 불러옵니다.
+`IBSheet.create`의 `data` 인자로도 생성과 동시에 데이터를 넣을 수 있지만 **권장하지 않습니다.** `data` 인자로 넣으면 조회와 관련된 이벤트는 발생하지 않습니다. 실제 개발에서는 위처럼 조회 함수(`loadSearchData` / `doSearch`)로 데이터를 불러옵니다.
 
 ```javascript
 // 권장하지 않음 — data 인자로 로드
