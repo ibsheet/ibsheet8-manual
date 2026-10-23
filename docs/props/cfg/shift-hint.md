@@ -2,11 +2,9 @@
 
 <!-- synonyms: ShiftHint, shift hint, hint position shift, hint left align, tooltip shift, 힌트 위치 이동, 힌트 좌측 이동, Hint 우측 잘림, 힌트 표시 위치, 툴팁 위치 조정, 힌트 자동 이동 -->
 
-> 셀 크기보다 셀 내용이 많을 때 마우스 호버시 셀 데이터를 `Hint` 로 보여줍니다.
->
-> 최우측 열의 셀들이 `Hint`로 나타날 때, `Hint` 위치를 왼쪽으로 이동하여 셀 데이터를 모두 표시하게 됩니다. 
->
-> 이 때, `Hint` 위치를 왼쪽으로 이동시키지 않도록 설정 할 수 있으며, `false` 으로 설정시 `Hint` 로 보여질 데이터의 일부가 잘려서 노출되지 않을 수 있습니다.
+> 힌트가 화면 오른쪽 끝을 넘을 만큼 길 때, 힌트 위치를 왼쪽으로 옮겨 셀 내용을 모두 표시할지 여부를 설정합니다.  
+> `false`로 설정하면 힌트 위치를 옮기지 않으므로, 힌트로 보여질 내용의 일부가 잘려서 노출되지 않을 수 있습니다.  
+> [HintMaxWidth](/docs/props/cfg/hint-max-width)가 설정되어 있으면 `ShiftHint`는 동작하지 않습니다.
 
 
 ### Type
@@ -15,15 +13,14 @@
 ### Options
 |Value|Description|
 |-----|-----|
-|`0(false)`|`Hint` 생성 기준점에서 공간이 부족하더라도 현재위치에서 표시|
-|`1(true)`|`Hint` 생성 기준점에서 공간이 부족할 때 왼쪽으로 이동시켜 표시 (`default`)|
+|`0(false)`|화면 오른쪽 공간이 부족해도 힌트 위치를 옮기지 않고 표시|
+|`1(true)`|화면 오른쪽 공간이 부족하면 힌트를 왼쪽으로 옮겨 표시 (`default`)|
 
 
 ### Example
 ```javascript
 options.Cfg = {
-   ShiftHint: false,  // Hint 공간이 부족하더라도 셀 위에 표시
-   ...
+    ShiftHint: false  // 공간이 부족해도 힌트 위치를 옮기지 않음
 };
 ```
 
@@ -31,7 +28,8 @@ options.Cfg = {
 - [ShowHint row](/docs/props/row/show-hint)
 - [ShowHint col](/docs/props/col/show-hint)
 - [ShowHint cell](/docs/props/cell/show-hint)
-
+- [HintMaxWidth cfg](/docs/props/cfg/hint-max-width)
+- [HintMaxWidth col](/docs/props/col/hint-max-width)
 
 ### Since
 
