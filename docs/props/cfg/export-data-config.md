@@ -4,7 +4,7 @@
 
 > [exportData](/docs/funcs/core/export-data) 함수 호출시 들어가는 인자를 공통으로 설정합니다.
 >
-> [CommontOptions (static)](/docs/static/common-options)에 Cfg속성에 설정하시면 모든 화면에서 [exportData](/docs/funcs/core/export-data) 함수 호출시 기본적인 속성을 설정하실 수 있습니다.
+> [CommonOptions (static)](/docs/static/common-options)에 Cfg속성에 설정하시면 모든 화면에서 [exportData](/docs/funcs/core/export-data) 함수 호출시 기본적인 속성을 설정하실 수 있습니다.
 
 ### Type
 `object`

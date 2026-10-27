@@ -35,7 +35,7 @@ sheet.selectCol("QTY", 1);
 - [clearSelection method](./clear-selection)
 - [selectRow method](./select-row)
 - [selectRange method](./select-range)
-- [getSelectedRange method](./get-selected-range)
+- [getSelectedRanges method](./get-selected-range)
 - [onSelectEnd event](/docs/events/on-select-end)
 
 ### Since

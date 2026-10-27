@@ -56,7 +56,7 @@ sheet.refreshCell({row:ROW, col:"CLS"});
 - [Type appendix](/docs/appx/type)
 - [File Type 업로드 appendix](/docs/appx/file-type-upload)
 - [Path cell](/docs/props/cell/path)
-- [Format]
+- [Format cell](/docs/props/cell/format)
 
 ### Since
 

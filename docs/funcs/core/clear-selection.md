@@ -24,7 +24,7 @@ sheet.clearSelection();
 - [selectRow method](./select-row)
 - [selectCol method](./select-col)
 - [selectRange method](./select-range)
-- [getSelectedRange method](./get-selected-range)
+- [getSelectedRanges method](./get-selected-range)
 
 
 ### Since

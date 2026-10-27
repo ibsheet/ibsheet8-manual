@@ -38,7 +38,7 @@ sheet.refreshCell({row:ROW, col:"CLS"});
 ```
 
 ### Read More
-- [Tip cell](./tip-value)
+- [Tip cell](./tip)
 - [TipPosition cell](./tip-position)
 - [TipClass cell](./tip-class)
 

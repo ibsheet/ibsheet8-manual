@@ -2,7 +2,7 @@
 
 <!-- synonyms: Expanded, 접힘, 펼침, 접힘 여부, 펼침 여부, 확장 상태, 접힘 상태, expanded state, collapsed, 접힘/펼침, 헤더 확장 -->
 
-> (cell) [ExpandedCols](/docs/props/cell/expand-cols), (cell) [ExpandedRows](/docs/props/cell/expand-rows)로 사용하는 접힘/펼침 여부를 설정합니다.
+> (cell) [ExpandCols](/docs/props/cell/expand-cols), (cell) [ExpandRows](/docs/props/cell/expand-rows)로 사용하는 접힘/펼침 여부를 설정합니다.
 
 
 ### Type

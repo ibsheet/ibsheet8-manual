@@ -33,7 +33,7 @@ sheet.selectRow( row, 1);
 - [clearSelection method](./clear-selection)
 - [selectCol method](./select-col)
 - [selectRange method](./select-range)
-- [getSelectedRange method](./get-selected-range)
+- [getSelectedRanges method](./get-selected-range)
 - [getSelectedRows method](./get-selected-rows)
 - [onSelectEnd event](/docs/events/on-select-end)
 ### Since

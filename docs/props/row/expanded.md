@@ -4,7 +4,7 @@
 
 > 트리 기능 사용 시 행의 접힘/펼침 여부를 설정합니다.
 <!--!
-> `[비공개 설명]` (cell) [ExpandedCols](/docs/props/cell/expand-cols), (cell) [ExpandedRows](/docs/props/cell/expand-rows)로 사용하는 접힘/펼침 여부도 설정가능합니다.
+> `[비공개 설명]` (cell) [ExpandCols](/docs/props/cell/expand-cols), (cell) [ExpandRows](/docs/props/cell/expand-rows)로 사용하는 접힘/펼침 여부도 설정가능합니다.
 !-->
 
 ### Type

@@ -39,7 +39,7 @@ sheet.loadSearchData(rtnData); // 이후 조회 시 반영됨
 ### Read More
 - [create static](/docs/static/create)
 - [NoDataMiddle cfg](/docs/props/cfg/no-data-middle)
-- [loadSearch method](/docs/funcs/core/load-search-data)
+- [loadSearchData method](/docs/funcs/core/load-search-data)
 - [doSearch method](/docs/funcs/core/do-search)
 - [doSearchPaging method](/docs/funcs/core/do-search-paging)
 - [setMessage method](/docs/funcs/core/set-message)

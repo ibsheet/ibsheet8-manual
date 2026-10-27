@@ -29,7 +29,7 @@ or
 |type|`string`|조회/엑셀/텍스트 여부 (`Search`, `EXCEL`, `TEXT`)|
 
 ### Return
-***string | object***
+***object | boolean(true)***
 
 ### Example
 ```js
@@ -88,7 +88,7 @@ options.Events = {
 ```
 
 ### Return으로 넘겨야 하는 데이터 구조
-> 기본 구조: `{Data: [{...}, {...}]}`  
+> 기본 구조: `{Data: [{...}, {...}]}` 형태의 JSON 데이터
 > doSearchPaging의 경우 `Total` 필수: `{Total: 건수, Data: [{...}]}`  
 > loadSearchData는 배열만 `[{...}, {...}]` 으로도 가능  
 > 트리 구조: [트리 응답 규격](/docs/dataStructure/tree-structure) 참고  

@@ -38,7 +38,7 @@ sheet.selectCell( row, col, 1);
 - [selectRow method](./select-row)
 - [selectCol method](./select-col)
 - [selectRange method](./select-range)
-- [getSelectedRange method](./get-selected-range)
+- [getSelectedRanges method](./get-selected-range)
 - [getSelectedRows method](./get-selected-rows)
 - [onSelectEnd event](/docs/events/on-select-end)
 ### Since

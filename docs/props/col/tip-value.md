@@ -25,7 +25,7 @@ options.Cols = [
 ```
 
 ### Read More
-- [Tip col](./tip-value)
+- [Tip col](./tip)
 - [TipClass col](./tip-class)
 
 

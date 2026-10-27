@@ -102,7 +102,7 @@ sheet.showFilterRow();
 ### *솔리드 행*
 상단 고정이나 하단 고정 주변에 임의의 행을 추가할 수 있습니다.  
 이렇게 추가된 행은 시트 내 열과 무관하게 기능과 크기를 가질 수 있습니다.  
-보다 자세한 내용은 (appendix) [Soild](/docs/appx/solid)을 참고하세요.
+보다 자세한 내용은 (appendix) [Solid](/docs/appx/solid)을 참고하세요.
 
 
 
@@ -120,7 +120,7 @@ sheet.showFilterRow();
 - [loadSearchData method](/docs/funcs/core/load-search-data)
 - [showFilterRow method](/docs/funcs/core/show-filter-row)
 - [행 객체 appendix](/docs/appx/row-object)
-- [Soild appendix](/docs/appx/solid)
+- [Solid appendix](/docs/appx/solid)
 
 
 ### Since

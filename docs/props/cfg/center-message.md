@@ -25,7 +25,8 @@ options = {
 ```
 
 ### Read More
-- [showMessage cfg](./suppress-message) 
+- [SuppressMessage cfg](./suppress-message) 
+- [showMessage method](/docs/funcs/core/show-message) 
 - [showMessageTime method](/docs/funcs/core/show-message-time) 
 - [SuppressMessage cfg](./suppress-message) 
 

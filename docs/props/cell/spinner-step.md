@@ -6,7 +6,7 @@
 >
 > 
 >
-> 추가적으로 [SpinnerMax](./spinner-max), [SpinnerMax](./spinner-min)을 통해 input의 min, max를 설정 할 수 있습니다. 
+> 추가적으로 [SpinnerMax](./spinner-max), [SpinnerMin](./spinner-min)을 통해 input의 min, max를 설정 할 수 있습니다. 
 
 ### Type
 `number`

@@ -31,7 +31,7 @@ sheet.selectAllRows(1);
 - [selectCol method](./select-col)
 - [selectRow method](./select-row)
 - [selectRange method](./select-range)
-- [getSelectedRange method](./get-selected-range)
+- [getSelectedRanges method](./get-selected-range)
 - [getSelectedRows method](./get-selected-rows)
 - [onSelectEnd event](/docs/events/on-select-end)
 ### Since
