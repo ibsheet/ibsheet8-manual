@@ -357,8 +357,7 @@ IBSheet 함수와 이벤트에 대한 기본적인 사용법을 설명합니다.
 ## 7. 데이터 조회
 #### 1) 조회 / 데이터 로드 함수 이용
 
-시트 내에 데이터 로딩은 <a href="../../#docs/props/cfg/search-mode" target="_blank">SearchMode<
-/a> 설정에 따라 달라집니다.
+시트 내에 데이터 로딩은 <a href="../../#docs/props/cfg/search-mode" target="_blank">SearchMode</a> 설정에 따라 달라집니다.
 
 |유형|함수명|기능설명|
 |---|---|---|

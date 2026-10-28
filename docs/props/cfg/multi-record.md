@@ -16,7 +16,7 @@
 |열 제어|열 이동 불가<br/>`hideCol` / `showCol` 불가<br/>동적 열 추가/삭제 불가<br/>생성 시 `Visible` 사용 주의(마지막 열 배치 권장)<br/>셀/열 단위 선택/복사 불가(행 단위만 가능)|
 |출력|엑셀 다운로드/업로드, 행 복사/붙여넣기, `doPrint`, `down2Pdf` 시<br/>모든 열이 일렬로 처리되어 화면 모양이 유지되지 않음<br/>(`down2Excel`은 [MultiRecordShape](/docs/props/cfg/multi-record-shape):`1`로 화면 모양 유지 가능, 단 머지 많으면 느림)|
 |너비|최상단 헤더행 기준으로 Width 적용(그 외 행의 Width/RelWidth 불가)<br/>`RecordColSpan` 더미컬럼은 RelWidth 미동작|
-|기타|`Def.Header.SortIcons:1` 사용 불가<br/>`LeftCols` / `RightCols`와 `Type:"Lines"` 병용 불가|
+|기타|`Def.Header.SortIcons:1` 사용 불가<br/>`LeftCols` / `RightCols`가 있는 시트에서 `Type:"Lines"` 열과 [Wrap](/docs/props/col/wrap):`1`을 설정한 열 사용 불가 (줄넘김으로 고정 영역과 본문 영역의 행 높이가 어긋남)|
 
 `Header.RecordRowSpan` / `Header.RecordColSpan` 사용 시 제약:
 
