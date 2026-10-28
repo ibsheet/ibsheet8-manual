@@ -24,12 +24,26 @@ or
 | Name | Type | Description |
 |----------|-----|------------|
 |sheet|`object`|데이터를 로딩할 시트 객체|
-|data|`string`|서버에서 조회된 데이터|
+|data|`mixed`( `string` \| `object` )|조회된 데이터<br/>서버 응답(`loadSearchData`는 넘긴 값)이 문자열이면 `string`, 객체면 `object`로 전달됩니다.<br/>엑셀 업로드(`type`이 `EXCEL`) 시에는 행 데이터 배열로 전달됩니다.|
 |response|`object`|`response` 객체|
 |type|`string`|조회/엑셀/텍스트 여부 (`Search`, `EXCEL`, `TEXT`)|
 
 ### Return
-***object | boolean(true)***
+***mixed( `object` \| `boolean` )***
+
+|리턴값|동작|
+|---|---|
+|없음|받은 데이터를 그대로 시트에 로딩합니다.|
+|`object`|받은 데이터 대신 리턴한 데이터를 시트에 로딩합니다.|
+|`true(1)`|이후 데이터 파싱과 관련 이벤트를 중단합니다.|
+
+> 리턴하는 데이터의 구조는 호출한 함수에 따라 다릅니다.  
+> doSearch는 `Data`가 있어야 합니다: `{Data: [{...}, {...}]}`  
+> doSearchPaging은 `Total`도 있어야 합니다: `{Total: 건수, Data: [{...}]}`  
+> loadSearchData는 배열 `[{...}, {...}]`만 리턴해도 됩니다.  
+> 엑셀 업로드(`type`이 `EXCEL`)도 배열 `[{...}, {...}]`만 리턴해도 됩니다.  
+> 트리 구조는 [트리 응답 규격](/docs/dataStructure/tree-structure)을 참고하세요.  
+> 상세 내용은 [조회 응답 규격](/docs/dataStructure/data-structure), [페이징 응답 규격](/docs/dataStructure/paging-structure)을 참고하세요.
 
 ### Example
 ```js
@@ -37,7 +51,7 @@ or
 options.Events = {
     onReceiveData: function(evtParam) {
         var DATA = evtParam.data; // 조회 결과 데이터
-        var parseData = JSON.parse(DATA); // string으로 들어오는 data parsing
+        var parseData = typeof DATA === "string" ? JSON.parse(DATA) : DATA; // string이면 parsing
 
         // 조회된 데이터 일부를 수정한다
         /**
@@ -61,7 +75,8 @@ options.Events = {
 // doSearchPaging은 AJAX가 내장되어 있으므로 서버 응답을 가공할 수 있는 시점은 이 이벤트뿐입니다.
 options.Events = {
     onReceiveData: function(evtParam) {
-        var response = JSON.parse(evtParam.data);
+        var data = evtParam.data;
+        var response = typeof data === "string" ? JSON.parse(data) : data;
         // 외부 API 응답 구조를 IBSheet 구조로 변환
         var result = {
             Data: response.items.map(function(item) {
@@ -81,18 +96,12 @@ options.Events = {
 // doSearch는 AJAX가 내장되어 있으므로 변환할 수 있는 시점은 이 이벤트뿐입니다.
 options.Events = {
     onReceiveData: function(evtParam) {
-        var data = JSON.parse(evtParam.data);
+        var data = evtParam.data;
+        if (typeof data === "string") data = JSON.parse(data);
         return IBSheet.v7.convertTreeData(data);
     }
 }
 ```
-
-### Return으로 넘겨야 하는 데이터 구조
-> 기본 구조: `{Data: [{...}, {...}]}` 형태의 JSON 데이터
-> doSearchPaging의 경우 `Total` 필수: `{Total: 건수, Data: [{...}]}`  
-> loadSearchData는 배열만 `[{...}, {...}]` 으로도 가능  
-> 트리 구조: [트리 응답 규격](/docs/dataStructure/tree-structure) 참고  
-> 상세 내용은 [조회 응답 규격](/docs/dataStructure/data-structure), [페이징 응답 규격](/docs/dataStructure/paging-structure)을 참고하세요.
 
 ### Read More
 
