@@ -6,7 +6,7 @@
 ```javascript
 init.Cols = [
     {Header:"첫번째 열 타이틀", Type:"Int", Name:"sActSum", Width:100},
-    {Header:"두번째 열 타이틀", Type:"Date", Name:"sDate", Width:120},
+    {Header:"두번째 열 타이틀", Type:"Date", Name:"sDate", Format:"yyyy-MM-dd", EditFormat:"yyyyMMdd", DataFormat:"yyyyMMdd", Width:120},
     ...
 ]
 ```

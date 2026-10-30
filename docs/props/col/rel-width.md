@@ -24,7 +24,7 @@
 //특정 열이 나머지 영역을 모두 차지하게 설정
 options.Cols = [
     ...
-    {Type: "Date", Name: "em_date", RelWidth: 1, MinWidth: 100, ...},
+    {Type: "Date", Name: "em_date", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd", RelWidth: 1, MinWidth: 100, ...},
     ...
 ];
 ```

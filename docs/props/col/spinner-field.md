@@ -26,10 +26,10 @@
 options.Cols = [
     ...
     // 주문일자 — 월 단위로 스피너 증감
-    {Type: "Date", Name: "OrderDate", SpinnerVisible: true, SpinnerField: "M", Format: "yyyy-MM-dd"},
+    {Type: "Date", Name: "OrderDate", SpinnerVisible: true, SpinnerField: "M", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd"},
 
     // 출고시각 — 분 단위로 스피너 증감
-    {Type: "Date", Name: "ShipTime", SpinnerVisible: true, SpinnerField: "m", Format: "yyyy-MM-dd HH:mm:ss"},
+    {Type: "Date", Name: "ShipTime", SpinnerVisible: true, SpinnerField: "m", Format: "yyyy-MM-dd HH:mm:ss", EditFormat: "yyyyMMddHHmmss", DataFormat: "yyyyMMddHHmmss"},
     ...
 ];
 ```

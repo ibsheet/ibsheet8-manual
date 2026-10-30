@@ -23,10 +23,10 @@ options.Cfg = {
 
 options.Cols = [
     // 시간 전용 포맷 — 편집 시작 시 현재 시각이 자동으로 채워짐
-    {Type: "Date", Name: "StartTime", Format: "hh:mm:ss"},
+    {Type: "Date", Name: "StartTime", Format: "hh:mm:ss", EditFormat: "hhmmss", DataFormat: "HHmmss"},
 
     // 날짜가 포함된 포맷 — 영향 없음
-    {Type: "Date", Name: "OrderDate", Format: "yyyy-MM-dd"}
+    {Type: "Date", Name: "OrderDate", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd"}
 ];
 ```
 

@@ -40,7 +40,7 @@ options.Cols = [
         {Header: "주문자",   Name: "orderer", Type: "Text", Width: 100},
         {Header: "연락처",   Name: "tel",     Type: "Text", Width: 100},
         {Header: "결제수단", Name: "payType", Type: "Text", Width: 100},
-        {Header: "주문일",   Name: "ordDate", Type: "Date", Width: 100}
+        {Header: "주문일",   Name: "ordDate", Type: "Date", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd", Width: 100}
     ],
     //세번째 단위데이터행(DataRow)
     [

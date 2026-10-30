@@ -23,7 +23,9 @@ options.Cols = [
     {
      Type: "Date", 
      Name: "Edate", 
-     Format: 'MM-dd-yyyy'
+     Format: 'MM-dd-yyyy',
+     EditFormat: 'MMddyyyy',
+     DataFormat: 'yyyyMMdd'
     }
     
 ];

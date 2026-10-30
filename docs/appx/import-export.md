@@ -13,18 +13,20 @@
 
 - Java 이용시 필요 파일 (POI 5.4.1 기준)
 
-> **서버모듈 사양**: JDK `1.8` 이상, Dynamic Web Module `3.1` 이상
+> **서버모듈 사양**: JDK `1.8` 이상, Dynamic Web Module `3.1` 이상  
+> 서버코어모듈은 WAS 환경에 맞는 jar를 하나만 사용합니다. Tomcat 8.5 / 9 등 `javax` 환경은 `ibsheet8-x.x.x.jar`, Tomcat 10 이상 / Spring Boot 3 이상 등 Jakarta EE(`jakarta`) 환경은 `ibsheet8-x.x.x-jakarta.jar`를 사용합니다.
 
 |파일명|용도|
 |---|---|
-|ibsheet8-x.x.x.jar|엑셀 서버코어모듈|
+|ibsheet8-x.x.x.jar|엑셀 서버코어모듈 (`javax` 환경)|
+|ibsheet8-x.x.x-jakarta.jar|엑셀 서버코어모듈 (Jakarta EE 환경)|
 |ibsheet8-hwpx-x.x.x.jar|`down2Hwpx` 서버코어모듈|
 |poi-5.4.1, poi-ooxml-5.4.1, poi-ooxml-lite-5.4.1|엑셀 파일 생성/파싱 모듈|
 |commons-collections4-4.4.jar, commons-compress-1.27.1.jar<br/>commons-math3-3.6.1.jar, curvesapi-1.08.jar, servlet-api.jar<br/>SparseBitSet-1.3.jar, xmlbeans-5.3.0.jar |poi 이용시 필요 파일|
 |commons-codec-1.18.0.jar|엑셀 업로드 관련 인코딩 모듈, `down2Hwpx`시 필요|
 |log4j-api-2.24.3.jar|로그 모듈|
 |ib-itext.jar|pdf 다운로드 모듈|
-|batik-all-1.17.jar, commons-io-2.18.0.jar<br/>xml-apis-ext-1.3.04.jar, xmlgraphics-commons-2.9.jar<br/>|이미지 처리 관련 모듈, `down2Hwpx`시 필요|
+|batik-all-1.19.jar, commons-io-2.18.0.jar, commons-logging-1.1.3.jar<br/>xml-apis-ext-1.3.04.jar, xmlgraphics-commons-2.11.jar<br/>|이미지 처리 관련 모듈, `down2Hwpx`시 필요|
 
 - dotnet 4.0 이용시 필요 파일
 
@@ -61,13 +63,18 @@ Maven을 사용하는 경우 `pom.xml`에 아래 의존성을 추가합니다. (
     <dependency>
         <groupId>org.apache.xmlgraphics</groupId>
         <artifactId>batik-all</artifactId>
-        <version>1.17</version>
+        <version>1.19</version>
         <type>pom</type>
     </dependency>
     <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
         <version>2.18.0</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>1.1.3</version>
     </dependency>
     <dependency>
         <groupId>xml-apis</groupId>
@@ -77,7 +84,7 @@ Maven을 사용하는 경우 `pom.xml`에 아래 의존성을 추가합니다. (
     <dependency>
         <groupId>org.apache.xmlgraphics</groupId>
         <artifactId>xmlgraphics-commons</artifactId>
-        <version>2.9</version>
+        <version>2.11</version>
     </dependency>
 
     <!--엑셀 처리 관련 JAR-->

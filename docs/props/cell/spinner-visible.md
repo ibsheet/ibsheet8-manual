@@ -24,13 +24,13 @@
 options.Cols = [
     ...
     {Type: "Int", Name: "Qty", SpinnerVisible: false},
-    {Type: "Date", Name: "OrderDate"},
+    {Type: "Date", Name: "OrderDate", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd"},
     ...
 ];
 
 // 데이터 단위로 특정 셀에서만 스피너 활성화/비활성화
 var data = [
-    {Qty: 10, QtySpinnerVisible: true, OrderDate: "2026-05-29", OrderDateSpinnerVisible: true, OrderDateSpinnerField: "M"},
+    {Qty: 10, QtySpinnerVisible: true, OrderDate: "20260529", OrderDateSpinnerVisible: true, OrderDateSpinnerField: "M"},
     {Qty: 20, QtySpinnerVisible: false}
 ];
 ```

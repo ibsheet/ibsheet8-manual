@@ -27,6 +27,7 @@ options.Cols = [
         Type: "Date", 
         Format: "yyyy-MM-dd", //보여지는 포맷
         EditFormat: "ddMMyyyy", //편집시 포맷
+        DataFormat: "yyyyMMdd", //데이터 포맷
         Name: "enterDate",
         Width: 120
     }

@@ -45,7 +45,7 @@ options.Cols = [
     // Align 지정은 그대로 두어도 됩니다. RTL 모드가 시각적으로 반전합니다.
     {Type: "Text", Name: "Name",  Header: "이름", Align: "Left"},
     {Type: "Int",  Name: "Qty",   Header: "수량", Align: "Right"},
-    {Type: "Date", Name: "Regdt", Header: "등록일"}
+    {Type: "Date", Name: "Regdt", Header: "등록일", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd"}
 ];
 ```
 

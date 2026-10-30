@@ -24,7 +24,7 @@
 //특정 열의 타입을 설정합니다.
 options.Cols = [
     {Type: "Int", Name: "Seq", Width: 70, ...},
-    {Type: "Date", Name: "enterDate", Width: 120, ...},
+    {Type: "Date", Name: "enterDate", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd", Width: 120, ...},
     {Type: "Text", Name: "sa_Nm", Width: 100, ...},
     ...
 ];

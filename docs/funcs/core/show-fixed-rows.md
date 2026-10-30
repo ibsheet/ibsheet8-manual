@@ -37,7 +37,7 @@ var OPTS = {
     Cols: [
         { Header: "상품명", Name: "prodName", Type: "Text", Width: 150 },
         { Header: "수량", Name: "qty", Type: "Int", Width: 80 },
-        { Header: "납품일", Name: "delivDate", Type: "Date", Format: "yyyy-MM-dd", Width: 100 }
+        { Header: "납품일", Name: "delivDate", Type: "Date", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd", Width: 100 }
     ],
     Events: {
         onRenderFirstFinish: function(evtParam) {

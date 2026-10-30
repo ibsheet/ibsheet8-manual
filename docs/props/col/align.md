@@ -23,7 +23,7 @@
 //특정 열의 문자열을 가운데 정렬로 설정
 options.Cols = [
     {Type: "Int", Name: "Seq", Align: "Center", Width: 70, ...},
-    {Type: "Date", Name: "enterDate", Align: "Center", Width: 120, ...},
+    {Type: "Date", Name: "enterDate", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd", Align: "Center", Width: 120, ...},
     {Type: "Text", Name: "sa_Nm", Align: "Center", Width: 100, ...},
     ...
 ];

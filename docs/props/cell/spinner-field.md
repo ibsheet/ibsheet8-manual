@@ -25,14 +25,14 @@
 ```javascript
 options.Cols = [
     ...
-    {Type: "Date", Name: "OrderDate", SpinnerVisible: true, SpinnerField: "d"},
+    {Type: "Date", Name: "OrderDate", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd", SpinnerVisible: true, SpinnerField: "d"},
     ...
 ];
 
 // 데이터 단위로 특정 행의 셀만 증감 단위를 다르게 지정
 var data = [
-    {OrderDate: "2026-05-29", OrderDateSpinnerField: "M"}, // 이 행은 월 단위 증감
-    {OrderDate: "2026-05-30"}                              // 나머지 행은 열 설정(d) 적용
+    {OrderDate: "20260529", OrderDateSpinnerField: "M"}, // 이 행은 월 단위 증감
+    {OrderDate: "20260530"}                              // 나머지 행은 열 설정(d) 적용
 ];
 ```
 

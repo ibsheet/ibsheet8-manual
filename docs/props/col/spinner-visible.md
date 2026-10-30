@@ -27,7 +27,7 @@ options.Cols = [
     {Type: "Int", Name: "Qty", SpinnerVisible: true, SpinnerStep: 10},
 
     // Date 열 — 날짜 스피너 (월 단위 증감)
-    {Type: "Date", Name: "OrderDate", SpinnerVisible: true, SpinnerField: "M"},
+    {Type: "Date", Name: "OrderDate", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd", SpinnerVisible: true, SpinnerField: "M"},
     ...
 ];
 ```

@@ -21,7 +21,7 @@
 //특정 컬럼만 너비 조정 불가
 options.Cols = [
 
-    {Type: "Date", Name: "kDate", Width: 110, CanResize: 0},
+    {Type: "Date", Name: "kDate", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd", Width: 110, CanResize: 0},
 ];
 ```
 

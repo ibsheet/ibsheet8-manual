@@ -21,7 +21,7 @@
 //프로젝트 공통으로 사용할 열 설정 정보를 변수에 정의해 둡니다.(ibsheet-common.js파일 참고)
 var IB_Preset = {
     USD:{Type: "Float", Format: "$ #,##0.#", Width: 120, CanResize: 0,Color: "#FFFF88"},  //미화 표시
-    YMD:{Type: "Date", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", Width: 110}, //년월일 기본 표시
+    YMD:{Type: "Date", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd", Width: 110}, //년월일 기본 표시
     REGD:{Type: "Date", Format: "yyyy-MM-dd HH:mm", DataFormat: "yyyyMMddHHmm",CanEdit: 0, Width: 150}, //작성일시
     ... 여러가지 열 형식을 미리 정의해 둔다 ...
 };

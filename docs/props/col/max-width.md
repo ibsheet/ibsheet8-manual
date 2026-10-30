@@ -18,7 +18,7 @@
 //특정 열의 최대 너비를 120px로 설정합니다.
 options.Cols = [
     ...
-    {Type: "Date", Name: "em_date", MaxWidth: 120, ...},
+    {Type: "Date", Name: "em_date", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd", MaxWidth: 120, ...},
     ...
 ];
 ```

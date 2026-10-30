@@ -35,7 +35,7 @@
 //시분초 컬럼에 TimePicker 설정.
 options.Cols = [
     ...
-    {Type:"Date", Name: "Data_Hms", Format: 'HH:mm:ss', TimePicker: true}
+    {Type:"Date", Name: "Data_Hms", Format: 'HH:mm:ss', EditFormat: 'HHmmss', DataFormat: 'HHmmss', TimePicker: true}
     ...
 ];
 ```

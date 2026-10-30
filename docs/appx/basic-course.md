@@ -212,10 +212,10 @@ options.Cols = [
 	{ Header : ["선택", "선택"], Type : "Bool", Name: "CHK"}, 
 	{ Header : ["신청\n사유", "신청\n사유"], Type : "Text", Name : "reason"},  
 	{ Header : ["신청\n금액", "신청\n금액"], Type : "Int", Name : "amtReq"},  
-	{ Header : ["근태기간", "시작일"], Type : "Date", Name : "startWD"},  
-	{ Header : ["근태기간", "종료일"], Type : "Date", Name : "endWD"},  
-	{ Header : ["시간", "시작"], Type : "Date", Name : "startHm", Format: "HH:mm"},  
-	{ Header : ["시간", "종료"], Type : "Date", Name : "endHm", Format: "HH:mm"}  
+	{ Header : ["근태기간", "시작일"], Type : "Date", Name : "startWD", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd"},  
+	{ Header : ["근태기간", "종료일"], Type : "Date", Name : "endWD", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd"},  
+	{ Header : ["시간", "시작"], Type : "Date", Name : "startHm", Format: "HH:mm", EditFormat: "HHmm", DataFormat: "HHmm"},  
+	{ Header : ["시간", "종료"], Type : "Date", Name : "endHm", Format: "HH:mm", EditFormat: "HHmm", DataFormat: "HHmm"}  
 ];
 ```
 ##### 나. 헤더행에 디자인 속성(배경색, 글자색 등) 적용하기

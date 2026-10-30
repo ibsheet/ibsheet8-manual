@@ -41,7 +41,7 @@ options.Cols = [
         {Header: "카테고리", Name: "category", Type: "Text", Width: 100},
         {Header: "사진"},
         {Header: "색상",     Name: "color",    Type: "Text", Width: 100},
-        {Header: "등록일",   Name: "regDate",  Type: "Date", Width: 100}
+        {Header: "등록일",   Name: "regDate",  Type: "Date", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd", Width: 100}
     ],
     //세번째 단위데이터행(DataRow)
     [

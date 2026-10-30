@@ -54,10 +54,10 @@
 options.Cols = [
     ...
     // 년월일 달력에 어제, 오늘 버튼을 표시한다.
-    {Type: "Date", Name: "sa_enterDate", CalendarButtons: 9 ...},
+    {Type: "Date", Name: "sa_enterDate", Format: "yyyy-MM-dd", EditFormat: "yyyyMMdd", DataFormat: "yyyyMMdd", CalendarButtons: 9 ...},
     ...
     // 년월 달력에 이번달, 전체취소, 확인 버튼을 표시한다.
-    {Type: "Date", Name: "sa_monthDate", CalendarButtons: 7, Format: "yyyy/MM" ...}
+    {Type: "Date", Name: "sa_monthDate", CalendarButtons: 7, Format: "yyyy/MM", EditFormat: "yyyyMM", DataFormat: "yyyyMM" ...}
 ];
 ```
 
